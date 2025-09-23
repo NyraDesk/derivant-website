@@ -73,8 +73,7 @@ const RelevantAIHero = () => {
                       borderRadius: '0 0 8px 8px'
                     }}
                   >
-                    <source src="src/assets/nyra-demo.mp4" type="video/mp4" />
-                    <source src="src/assets/test nyra sito.mp4" type="video/mp4" />
+                    <source src="src/assets/nyrademo1.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
