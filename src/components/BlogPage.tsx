@@ -42,16 +42,32 @@ const BlogPage = () => {
               to={`/blog/${article.id}`}
               className="block group"
             >
-              <div className="relative bg-gradient-to-br from-slate-900/80 via-blue-800/60 to-gray-900/40 backdrop-blur-xl rounded-3xl overflow-hidden border border-slate-600/30 hover:border-slate-400/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20">
-                {/* 3D shadow layers */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-700/30 to-blue-800/30 rounded-3xl transform translate-x-2 translate-y-2 blur-xl -z-10"></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-600/20 to-gray-700/20 rounded-3xl transform translate-x-1 translate-y-1 blur-lg -z-10"></div>
+              <div 
+                className="relative rounded-3xl overflow-hidden border border-slate-600/30 hover:border-slate-400/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20"
+                style={{
+                  backgroundColor: 'black',
+                  backdropFilter: 'blur(24px)'
+                }}
+              >
+                {/* NO GRADIENT SHADOWS - PURE BLACK */}
+                
                 
                 <div className="p-8">
                   {/* Header */}
                   <div className="flex items-center justify-between mb-6">
-                    <div className="bg-black/80 backdrop-blur-xl border border-white/10 rounded-full px-4 py-2">
-                      <span className="text-white text-sm font-medium">{article.category}</span>
+                    {/* BLACK TAB IN NORMAL POSITION */}
+                    <div 
+                      style={{
+                        backgroundColor: 'black',
+                        color: 'white',
+                        padding: '8px 16px',
+                        borderRadius: '9999px',
+                        fontSize: '14px',
+                        fontWeight: 'bold',
+                        border: '1px solid rgba(255, 255, 255, 0.1)'
+                      }}
+                    >
+                      {article.category}
                     </div>
                     <span className="text-white/70 text-sm">{article.date}</span>
                   </div>

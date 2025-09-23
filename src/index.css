@@ -524,3 +524,21 @@ html {
   border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
 }
+
+/* FORCE BLACK TABS - Blog Article Category Badges */
+.blog-tab-black {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+}
+
+/* FORCE BLACK TABS - More specific selector */
+div.blog-tab-black {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+}
+
+/* FORCE BLACK TABS - Even more specific */
+.backdrop-blur-xl.border.border-white\/10.rounded-full.px-4.py-2.blog-tab-black {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+}

@@ -29,8 +29,18 @@ const BlogArticlePage = () => {
           
           <div className="flex items-center space-x-4 mb-8">
             <span className="text-white/70 text-lg">{article.date}</span>
-            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-2">
-              <span className="text-white text-sm font-medium">{article.category}</span>
+            <div 
+              style={{
+                backgroundColor: 'black',
+                color: 'white',
+                padding: '8px 16px',
+                borderRadius: '9999px',
+                fontSize: '14px',
+                fontWeight: 'bold',
+                border: '1px solid rgba(255, 255, 255, 0.1)'
+              }}
+            >
+              {article.category}
             </div>
           </div>
         </div>
