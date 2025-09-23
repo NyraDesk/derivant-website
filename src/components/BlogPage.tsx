@@ -50,8 +50,8 @@ const BlogPage = () => {
                 <div className="p-8">
                   {/* Header */}
                   <div className="flex items-center justify-between mb-6">
-                    <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-2">
-                      <span className="text-black text-sm font-medium">{article.category}</span>
+                    <div className="bg-black/80 backdrop-blur-xl border border-white/10 rounded-full px-4 py-2">
+                      <span className="text-white text-sm font-medium">{article.category}</span>
                     </div>
                     <span className="text-white/70 text-sm">{article.date}</span>
                   </div>
