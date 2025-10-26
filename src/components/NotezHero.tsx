@@ -123,9 +123,9 @@ const NotezHero = () => {
           <div className="bg-gray-100 rounded-3xl pt-4 md:pt-10 px-4 md:px-10 pb-4 md:pb-10 shadow-xl border border-gray-300 mb-0">
 
             {/* Video Container */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-white border border-gray-300 h-[400px] md:h-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-black border border-gray-300 h-[400px] md:h-auto">
               <video
-                className="w-full h-full md:h-auto object-cover md:object-contain"
+                className="w-full h-full object-contain"
                 autoPlay
                 loop
                 muted
