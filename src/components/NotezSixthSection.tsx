@@ -68,8 +68,8 @@ const NotezSixthSection = () => {
                   muted
                   playsInline
                 >
-                  <source src="/calendario demo uff.mov" type="video/mp4" />
-                  <source src="/calendario demo uff.mov" type="video/quicktime" />
+                  <source src="https://res.cloudinary.com/dvnjinxo4/video/upload/v1761469323/calendario_demo_uff_fstjph.mov" type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dvnjinxo4/video/upload/v1761469323/calendario_demo_uff_fstjph.mov" type="video/quicktime" />
                   Il tuo browser non supporta il tag video.
                 </video>
               </div>
@@ -104,8 +104,8 @@ const NotezSixthSection = () => {
                   muted
                   playsInline
                 >
-                  <source src="/todo ok.mov" type="video/mp4" />
-                  <source src="/todo ok.mov" type="video/quicktime" />
+                  <source src="https://res.cloudinary.com/dvnjinxo4/video/upload/v1761469324/todo_video_ufficiale_xzwjy6.mov" type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dvnjinxo4/video/upload/v1761469324/todo_video_ufficiale_xzwjy6.mov" type="video/quicktime" />
                   Il tuo browser non supporta il tag video.
                 </video>
               </div>
@@ -151,8 +151,8 @@ const NotezSixthSection = () => {
                 muted
                 playsInline
               >
-                <source src="/note demo ufficiale.mov" type="video/mp4" />
-                <source src="/note demo ufficiale.mov" type="video/quicktime" />
+                <source src="https://res.cloudinary.com/dvnjinxo4/video/upload/v1761469324/note_demo_ufficiale_x59ciz.mov" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dvnjinxo4/video/upload/v1761469324/note_demo_ufficiale_x59ciz.mov" type="video/quicktime" />
                 Il tuo browser non supporta il tag video.
               </video>
             </div>
