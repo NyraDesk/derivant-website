@@ -135,7 +135,7 @@ const NotezHero = () => {
                   objectFit: 'contain'
                 }}
               >
-                <source src="/src/assets/DEMO FUNZIONALITA' NOTEZ hq.mp4" type="video/mp4" />
+                <source src="/DEMO FUNZIONALITA' NOTEZ hq.mp4" type="video/mp4" />
                 Il tuo browser non supporta il tag video.
               </video>
             </div>
