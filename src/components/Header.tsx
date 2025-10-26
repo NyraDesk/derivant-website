@@ -34,12 +34,6 @@ const Header = () => {
                 <span className="text-gray-800">●</span>
                 <span>home</span>
               </Link>
-              <a
-                href="#nyra"
-                className="text-gray-800 font-medium text-sm hover:bg-gray-100 hover:text-black transition-all duration-200 px-3 py-2 rounded-full"
-              >
-                nyra
-              </a>
               <Link
                 to="/features"
                 className="text-gray-800 font-medium text-sm hover:bg-gray-100 hover:text-black transition-all duration-200 px-3 py-2 rounded-full"
@@ -105,23 +99,15 @@ const Header = () => {
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/10 overflow-hidden animate-fade-in-up">
             <div className="py-6">
               <div className="flex flex-col space-y-1">
-                <Link 
-                  to="/" 
+                <Link
+                  to="/"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="flex items-center space-x-3 px-6 py-4 font-medium text-base text-white hover:bg-white/10 transition-all duration-200"
                 >
                   <span className="text-white">●</span>
                   <span>Home</span>
                 </Link>
-                
-                <a 
-                  href="#nyra" 
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-6 py-4 text-white font-medium text-base hover:bg-white/10 transition-all duration-200"
-                >
-                  NYRA
-                </a>
-                
+
                 <Link
                   to="/features"
                   onClick={() => setIsMobileMenuOpen(false)}
