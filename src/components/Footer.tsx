@@ -76,7 +76,7 @@ const Footer = () => {
         {/* Bottom row */}
         <div className="border-t border-gray-800 pt-6 md:pt-8 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0">
           <p className="text-gray-500 text-xs md:text-sm text-center md:text-left">
-            © 2025 NYRA. All rights reserved.
+            © 2025 Notez. All rights reserved.
           </p>
           <p className="text-gray-500 text-xs md:text-sm text-center md:text-left">
             Made for productivity and privacy.

@@ -25,7 +25,7 @@ const RelevantAIHero = () => {
               <div className="circle"></div>
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gradient-nyra leading-tight tracking-tight" style={{ fontFamily: 'Inter', fontWeight: 800 }}>
-              <span className="text-gradient-meet-nyra">MEET NYRA</span>
+              <span className="text-gradient-meet-nyra">MEET NOTEZ</span>
             </h1>
           </div>
         </div>
@@ -33,7 +33,7 @@ const RelevantAIHero = () => {
         <div className="animate-fade-in-up animation-delay-200 mb-6 md:mb-8">
           <div className="mt-8 md:mt-12">
             <h3 className="text-xl md:text-3xl lg:text-5xl xl:text-6xl mb-4 md:mb-6 leading-tight text-white font-bold text-center whitespace-nowrap" style={{ fontFamily: 'Inter', width: '100%', maxWidth: '100%', overflow: 'visible' }}>
-              The AI that handles all your repetitive work
+              Pensa, crea, organizza. Il tuo tempo potenziato
             </h3>
           </div>
           

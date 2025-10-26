@@ -4,11 +4,24 @@ const EarlyAccessPage = () => {
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      setIsSubmitted(true);
-      console.log('Email submitted:', email);
+      try {
+        const response = await fetch('https://formspree.io/f/x1doeydg', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ email })
+        });
+
+        if (response.ok) {
+          setIsSubmitted(true);
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+      }
     }
   };
 
@@ -31,7 +44,7 @@ const EarlyAccessPage = () => {
             You're on the list!
           </h1>
           <p className="text-lg text-gray-300 mb-8" style={{ fontFamily: 'Inter', fontWeight: 400 }}>
-            We'll reach out as soon as NYRA is ready for you.
+            We'll reach out as soon as NotezAI is ready for you.
           </p>
           <button
             onClick={() => window.history.back()}
@@ -50,11 +63,11 @@ const EarlyAccessPage = () => {
       <div className="w-full max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <div className="w-full flex justify-center items-center">
-            <h1 
-              style={{ 
-                fontFamily: 'Inter', 
-                fontSize: '48px', 
-                fontWeight: 700, 
+            <h1
+              style={{
+                fontFamily: 'Inter',
+                fontSize: '48px',
+                fontWeight: 700,
                 color: '#ffffff',
                 textAlign: 'center',
                 width: 'auto',
@@ -69,15 +82,15 @@ const EarlyAccessPage = () => {
                 marginTop: '-24px'
               }}
             >
-              Work faster with Nyra AI for data, files and emails
+              Work smarter with NotezAI for notes, tasks and calendar
             </h1>
           </div>
           <div className="w-full flex justify-center" style={{ marginTop: '120px', marginBottom: '60px' }}>
-            <p 
-              style={{ 
-                fontFamily: 'Inter', 
-                fontWeight: 500, 
-                fontSize: '17px', 
+            <p
+              style={{
+                fontFamily: 'Inter',
+                fontWeight: 500,
+                fontSize: '17px',
                 color: '#9CA3AF',
                 textAlign: 'center',
                 width: '100%',
@@ -86,7 +99,7 @@ const EarlyAccessPage = () => {
                 whiteSpace: 'nowrap'
               }}
             >
-              Analyze content, generate files, extract insights and send multi-emails all in one place
+              Workspace unificato con AI integrata. Tutto connesso. Sempre veloce. Privacy-first.
             </p>
           </div>
         </div>
