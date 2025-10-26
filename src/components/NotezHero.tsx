@@ -119,20 +119,19 @@ const NotezHero = () => {
         </div>
 
         {/* Video Tab - Apple Password Style */}
-        <div className="max-w-7xl mx-auto animate-fade-in-up animation-delay-200 mb-0 px-4">
-          <div className="bg-gray-100 rounded-3xl pt-8 md:pt-10 px-8 md:px-10 pb-8 md:pb-10 shadow-xl border border-gray-300 mb-0">
+        <div className="max-w-7xl mx-auto animate-fade-in-up animation-delay-200 mb-0 px-2 md:px-4">
+          <div className="bg-gray-100 rounded-3xl pt-4 md:pt-10 px-4 md:px-10 pb-4 md:pb-10 shadow-xl border border-gray-300 mb-0">
 
             {/* Video Container */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-white border border-gray-300">
               <video
-                className="w-full h-auto"
+                className="w-full h-auto object-cover md:object-contain"
                 autoPlay
                 loop
                 muted
                 playsInline
                 style={{
-                  display: 'block',
-                  objectFit: 'contain'
+                  display: 'block'
                 }}
               >
                 <source src="https://res.cloudinary.com/dvnjinxo4/video/upload/v1761469703/DEMO_FUNZIONALITA_NOTEZ_hq_tqyhwq.mp4" type="video/mp4" />
