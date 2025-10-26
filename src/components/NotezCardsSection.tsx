@@ -69,9 +69,9 @@ const NotezCardsSection = () => {
 
           {/* Card Destra - Video Canvas */}
           <div className="w-full lg:w-[1100px] flex-shrink-0">
-            <div className="bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl p-4 md:p-8 h-[500px] md:h-[700px] flex items-center justify-center shadow-xl border border-gray-200 overflow-hidden">
+            <div className="bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl p-4 md:p-8 h-[600px] md:h-[700px] flex items-center justify-center shadow-xl border border-gray-200 overflow-hidden">
               <video
-                className="w-full h-full object-cover rounded-2xl"
+                className="w-full h-full object-cover md:object-cover rounded-2xl"
                 autoPlay
                 loop
                 muted
