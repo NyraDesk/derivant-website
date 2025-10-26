@@ -77,7 +77,7 @@ const NotezCardsSection = () => {
                 muted
                 playsInline
               >
-                <source src="/src/assets/DEMO SOLO CANVAS.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dvnjinxo4/video/upload/v1761469329/DEMO_SOLO_CANVAS_ikihjz.mp4" type="video/mp4" />
                 Il tuo browser non supporta il tag video.
               </video>
             </div>

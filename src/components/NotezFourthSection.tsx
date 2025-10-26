@@ -67,7 +67,7 @@ const NotezFourthSection = () => {
                 muted
                 playsInline
               >
-                <source src="/src/assets/DEMO AI CHAT.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dvnjinxo4/video/upload/v1761469327/DEMO_AI_CHAT_htw8dq.mp4" type="video/mp4" />
                 Il tuo browser non supporta il tag video.
               </video>
             </div>

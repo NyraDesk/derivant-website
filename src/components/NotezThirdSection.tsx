@@ -133,7 +133,7 @@ const NotezThirdSection = () => {
                 muted
                 playsInline
               >
-                <source src="/src/assets/DEMO SMART VOICE .mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dvnjinxo4/video/upload/v1761469326/DEMO_SMART_VOICE_m3woga.mp4" type="video/mp4" />
                 Il tuo browser non supporta il tag video.
               </video>
             </div>
