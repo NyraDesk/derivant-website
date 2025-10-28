@@ -125,7 +125,7 @@ const NotezThirdSection = () => {
 
           {/* Card Destra - Video Smart Voice */}
           <div className="w-full lg:w-[1100px] flex-shrink-0">
-            <div className="bg-black rounded-3xl p-4 md:p-8 h-[400px] md:h-[700px] flex items-center justify-center shadow-xl border border-gray-200 overflow-hidden">
+            <div className="bg-gray-100 rounded-3xl p-4 md:p-8 h-[400px] md:h-[700px] flex items-center justify-center shadow-xl border border-gray-200 overflow-hidden">
               <video
                 className="w-full h-full object-contain rounded-2xl"
                 autoPlay

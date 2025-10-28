@@ -58,9 +58,9 @@ const NotezPlansSection = () => {
               className="space-y-3 mb-8 flex-grow"
               style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
             >
-              <li className="text-gray-700">✓ Basic features</li>
-              <li className="text-gray-700">✓ 1 user</li>
-              <li className="text-gray-700">✓ Limited storage</li>
+              <li className="text-gray-700">✓ Core features complete</li>
+              <li className="text-gray-700">✓ Local storage unlimited</li>
+              <li className="text-gray-700">✓ AI 5,000 token/mese</li>
             </ul>
             <Link to="/early-access" className="w-full">
               <button
@@ -106,10 +106,11 @@ const NotezPlansSection = () => {
               className="space-y-3 mb-8 flex-grow"
               style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
             >
-              <li className="text-gray-700">✓ All Free features</li>
-              <li className="text-gray-700">✓ Up to 5 users</li>
-              <li className="text-gray-700">✓ 50GB storage</li>
-              <li className="text-gray-700">✓ Priority support</li>
+              <li className="text-gray-700">✓ Tutto del FREE</li>
+              <li className="text-gray-700">✓ AI: 300,000 token/mese</li>
+              <li className="text-gray-700">✓ Voice transcription 30 min/mese</li>
+              <li className="text-gray-700">✓ CANVAS 20 immagini/mese</li>
+              <li className="text-gray-700">✓ Canvas AI automation</li>
             </ul>
             <Link to="/early-access" className="w-full">
               <button
@@ -147,11 +148,10 @@ const NotezPlansSection = () => {
               className="space-y-3 mb-8 flex-grow"
               style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
             >
-              <li className="text-gray-700">✓ All Starter features</li>
-              <li className="text-gray-700">✓ Unlimited users</li>
-              <li className="text-gray-700">✓ Unlimited storage</li>
-              <li className="text-gray-700">✓ 24/7 Premium support</li>
-              <li className="text-gray-700">✓ Advanced AI features</li>
+              <li className="text-gray-700">✓ Tutto del PRO</li>
+              <li className="text-gray-700">✓ AI: 1,000,000 token/mese</li>
+              <li className="text-gray-700">✓ Voice transcription 2h/mese</li>
+              <li className="text-gray-700">✓ DALL-E 50</li>
             </ul>
             <Link to="/early-access" className="w-full">
               <button
