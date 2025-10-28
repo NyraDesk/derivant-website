@@ -87,12 +87,13 @@ const EarlyAccessPage = () => {
 
         <div className="flex justify-center" style={{ marginTop: '40px' }}>
           <form
-            action="https://formspree.io/f/x1doeydg"
+            action="https://api.web3forms.com/submit"
             method="POST"
             className="space-y-8 w-full max-w-md"
           >
-            <input type="hidden" name="_next" value="https://derivant.ai/early-access?submitted=true" />
-            <input type="hidden" name="_subject" value="New NotezAI Waitlist Signup" />
+            <input type="hidden" name="access_key" value="9f92b39f-70b2-4573-9b46-eb036376a2c8" />
+            <input type="hidden" name="redirect" value="https://derivant.ai/early-access?submitted=true" />
+            <input type="hidden" name="subject" value="New NotezAI Waitlist Signup" />
 
             <div className="text-center">
               <p
