@@ -1,44 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const EarlyAccessPage = () => {
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      try {
-        const response = await fetch('https://formspree.io/f/x1doeydg', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            email: email,
-            _subject: 'New NotezAI Waitlist Signup'
-          })
-        });
-
-        if (response.ok) {
-          setIsSubmitted(true);
-        } else {
-          const data = await response.json();
-          console.error('Form submission failed:', data);
-          alert('Si è verificato un errore. Riprova per favore.');
-        }
-      } catch (error) {
-        console.error('Error submitting form:', error);
-        alert('Si è verificato un errore di connessione. Riprova per favore.');
-      }
+  useEffect(() => {
+    // Check if we're returning from Formspree redirect
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('submitted') === 'true') {
+      setIsSubmitted(true);
     }
-  };
-
-  const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-      handleSubmit(e as any);
-    }
-  };
+  }, []);
 
   if (isSubmitted) {
     return (
@@ -114,11 +86,18 @@ const EarlyAccessPage = () => {
         </div>
 
         <div className="flex justify-center" style={{ marginTop: '40px' }}>
-          <form onSubmit={handleSubmit} className="space-y-8 w-full max-w-md">
+          <form
+            action="https://formspree.io/f/x1doeydg"
+            method="POST"
+            className="space-y-8 w-full max-w-md"
+          >
+            <input type="hidden" name="_next" value="https://derivant.ai/early-access?submitted=true" />
+            <input type="hidden" name="_subject" value="New NotezAI Waitlist Signup" />
+
             <div className="text-center">
-              <p 
-                style={{ 
-                  fontFamily: 'Inter', 
+              <p
+                style={{
+                  fontFamily: 'Inter',
                   fontSize: '17px',
                   fontWeight: 500,
                   color: '#9CA3AF',
@@ -131,26 +110,26 @@ const EarlyAccessPage = () => {
             <div className="relative" style={{ marginTop: '80px' }}>
               <input
                 type="email"
+                name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                onKeyPress={handleKeyPress}
                 placeholder="name@example.com"
                 required
                 className="w-full px-4 py-3 text-center bg-transparent border-0 border-b-2 border-gray-600 text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-0 transition-colors"
-                style={{ 
-                  fontFamily: 'Inter', 
+                style={{
+                  fontFamily: 'Inter',
                   fontWeight: 400,
                   fontSize: '16px'
                 }}
               />
             </div>
-            
+
             <div className="flex items-center justify-center space-x-4 w-full" style={{ marginTop: '40px' }}>
               <button
                 type="submit"
                 className="bg-gradient-to-r from-blue-600 to-slate-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-blue-500/25"
-                style={{ 
-                  fontFamily: 'Inter', 
+                style={{
+                  fontFamily: 'Inter',
                   fontWeight: 500,
                   fontSize: '16px',
                   padding: '12px 24px'
@@ -158,11 +137,11 @@ const EarlyAccessPage = () => {
               >
                 Join the Waitlist
               </button>
-              <span 
-                className="text-gray-400 text-sm" 
-                style={{ 
-                  fontFamily: 'Inter', 
-                  fontWeight: 400 
+              <span
+                className="text-gray-400 text-sm"
+                style={{
+                  fontFamily: 'Inter',
+                  fontWeight: 400
                 }}
               >
                 press Enter ↵
