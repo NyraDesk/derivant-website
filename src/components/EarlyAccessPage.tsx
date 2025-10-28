@@ -11,16 +11,25 @@ const EarlyAccessPage = () => {
         const response = await fetch('https://formspree.io/f/x1doeydg', {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
           },
-          body: JSON.stringify({ email })
+          body: JSON.stringify({
+            email: email,
+            _subject: 'New NotezAI Waitlist Signup'
+          })
         });
 
         if (response.ok) {
           setIsSubmitted(true);
+        } else {
+          const data = await response.json();
+          console.error('Form submission failed:', data);
+          alert('Si è verificato un errore. Riprova per favore.');
         }
       } catch (error) {
         console.error('Error submitting form:', error);
+        alert('Si è verificato un errore di connessione. Riprova per favore.');
       }
     }
   };
