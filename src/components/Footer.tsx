@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-black text-gray-300 py-8 md:py-16">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8 md:mb-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
           {/* Left - Brand */}
           <div className="md:col-span-1">
             <div className="mb-3 md:mb-4 text-center md:text-left">
@@ -17,8 +17,8 @@ const Footer = () => {
               The AI assistant that gets things done, locally. Transform your productivity while keeping your privacy intact.
             </p>
           </div>
-          
-          {/* Center - Product */}
+
+          {/* Product */}
           <div className="text-center md:text-left">
             <h3 className="text-white font-medium mb-4 md:mb-6 text-sm md:text-base">Product</h3>
             <ul className="space-y-3 md:space-y-4">
@@ -44,8 +44,35 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
-          {/* Right - Support */}
+
+          {/* FAQ */}
+          <div className="text-center md:text-left">
+            <h3 className="text-white font-medium mb-4 md:mb-6 text-sm md:text-base">FAQ</h3>
+            <ul className="space-y-3 md:space-y-4">
+              <li>
+                <a href="#faq-1" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
+                  Cos'è NotezAI?
+                </a>
+              </li>
+              <li>
+                <a href="#faq-2" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
+                  È gratuito?
+                </a>
+              </li>
+              <li>
+                <a href="#faq-3" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
+                  Privacy e offline
+                </a>
+              </li>
+              <li>
+                <a href="#faq-4" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
+                  Per studenti
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Support */}
           <div className="text-center md:text-left">
             <h3 className="text-white font-medium mb-4 md:mb-6 text-sm md:text-base">Support</h3>
             <ul className="space-y-3 md:space-y-4">
