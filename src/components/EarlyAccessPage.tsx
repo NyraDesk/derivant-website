@@ -44,8 +44,23 @@ const EarlyAccessPage = () => {
       <div className="w-full max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <div className="w-full flex justify-center items-center">
+            <style dangerouslySetInnerHTML={{__html: `
+              .mobile-title-ea {
+                display: block;
+              }
+              .desktop-title-ea {
+                display: none;
+              }
+              @media (min-width: 768px) {
+                .mobile-title-ea {
+                  display: none !important;
+                }
+                .desktop-title-ea {
+                  display: block !important;
+                }
+              }
+            `}} />
             <h1
-              className="hidden md:block"
               style={{
                 fontFamily: 'Inter',
                 fontSize: '48px',
@@ -62,11 +77,12 @@ const EarlyAccessPage = () => {
                 top: '30%',
                 marginTop: '-24px'
               }}
+              className="desktop-title-ea"
             >
               Work smarter with NotezAI for notes, tasks and calendar
             </h1>
             <h1
-              className="block md:hidden text-3xl font-bold text-white text-center px-4"
+              className="mobile-title-ea text-3xl font-bold text-white text-center px-4"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 700,
@@ -83,8 +99,24 @@ const EarlyAccessPage = () => {
             </h1>
           </div>
           <div className="w-full flex justify-center" style={{ marginTop: '120px', marginBottom: '60px' }}>
+            <style dangerouslySetInnerHTML={{__html: `
+              .mobile-subtitle-ea {
+                display: block;
+              }
+              .desktop-subtitle-ea {
+                display: none;
+              }
+              @media (min-width: 768px) {
+                .mobile-subtitle-ea {
+                  display: none !important;
+                }
+                .desktop-subtitle-ea {
+                  display: block !important;
+                }
+              }
+            `}} />
             <p
-              className="hidden md:block"
+              className="desktop-subtitle-ea"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
@@ -99,7 +131,7 @@ const EarlyAccessPage = () => {
               Workspace unificato con AI integrata. Tutto connesso. Sempre veloce. Privacy-first.
             </p>
             <p
-              className="block md:hidden text-base text-gray-400 text-center px-4"
+              className="mobile-subtitle-ea text-base text-gray-400 text-center px-4"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
@@ -123,6 +155,22 @@ const EarlyAccessPage = () => {
             <input type="hidden" name="subject" value="New NotezAI Waitlist Signup" />
 
             <div className="text-center">
+              <style dangerouslySetInnerHTML={{__html: `
+                .mobile-cta-ea {
+                  display: block;
+                }
+                .desktop-cta-ea {
+                  display: none;
+                }
+                @media (min-width: 768px) {
+                  .mobile-cta-ea {
+                    display: none !important;
+                  }
+                  .desktop-cta-ea {
+                    display: block !important;
+                  }
+                }
+              `}} />
               <p
                 style={{
                   fontFamily: 'Inter',
@@ -131,12 +179,12 @@ const EarlyAccessPage = () => {
                   color: '#9CA3AF',
                   marginBottom: '30px'
                 }}
-                className="hidden md:block"
+                className="desktop-cta-ea"
               >
                 Secure your spot now, early access is limited!
               </p>
               <p
-                className="block md:hidden text-base text-gray-400 px-4"
+                className="mobile-cta-ea text-base text-gray-400 px-4"
                 style={{
                   fontFamily: 'Inter',
                   fontWeight: 500,
