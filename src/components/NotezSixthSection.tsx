@@ -62,7 +62,7 @@ const NotezSixthSection = () => {
               </div>
               <div className="flex-1 flex items-center justify-center">
                 <video
-                  className="w-3/4 h-auto object-contain rounded-2xl"
+                  className="w-full md:w-3/4 h-auto object-contain rounded-2xl"
                   autoPlay
                   loop
                   muted
@@ -98,7 +98,7 @@ const NotezSixthSection = () => {
               </div>
               <div className="flex-1 flex items-center justify-center">
                 <video
-                  className="w-3/5 h-auto object-contain rounded-2xl"
+                  className="w-full md:w-3/5 h-auto object-contain rounded-2xl"
                   autoPlay
                   loop
                   muted
@@ -128,7 +128,7 @@ const NotezSixthSection = () => {
 
           {/* Colonna Destra - Card Grande con Video Note */}
           <div className="lg:col-span-4">
-            <div className="bg-[#E8DCC8] rounded-3xl h-[750px] flex flex-col shadow-xl overflow-hidden p-8">
+            <div className="bg-[#E8DCC8] rounded-3xl h-[550px] md:h-[750px] flex flex-col shadow-xl overflow-hidden p-8">
               <div className="mb-4">
                 <h3
                   className="text-2xl font-medium text-black mb-2"
