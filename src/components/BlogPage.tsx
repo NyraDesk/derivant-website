@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const articles = [
   {
-    id: 'future-of-workflows',
-    category: 'Article',
-    date: 'Jan 15, 2025',
-    title: 'The Future of Workflows: Why AI Automation Is the Standard',
-    description: 'Discover how businesses are replacing repetitive tasks with intelligent automation — and why early adoption gives you...',
-    image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
+    id: 'privacy-app-note-local-first',
+    category: 'Privacy',
+    date: 'Oct 29, 2025',
+    title: 'Privacy nelle App Note: Perché i Tuoi Dati Dovrebbero Restare Sul Tuo Dispositivo',
+    description: 'Scopri perché le app note cloud-based mettono a rischio i tuoi dati. Come funziona il local-first storage e perché è più sicuro.',
+    image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
   },
   {
     id: 'ai-assistants-operations',

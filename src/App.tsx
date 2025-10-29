@@ -79,7 +79,7 @@ function App() {
               <Footer />
             </>
           } />
-          <Route path="/blog/future-of-workflows" element={
+          <Route path="/blog/privacy-app-note-local-first" element={
             <>
               <Header />
               <BlogArticlePage />
