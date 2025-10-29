@@ -96,47 +96,47 @@ const Header = () => {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden fixed top-24 left-1/2 transform -translate-x-1/2 z-40 w-full px-6" style={{ maxWidth: '100%' }}>
-          <div className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/10 overflow-hidden animate-fade-in-up">
+          <div className="bg-gray-200 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-300 overflow-hidden animate-fade-in-up">
             <div className="py-6">
               <div className="flex flex-col space-y-1">
                 <Link
                   to="/"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="flex items-center space-x-3 px-6 py-4 font-medium text-base text-white hover:bg-white/10 transition-all duration-200"
+                  className="flex items-center space-x-3 px-6 py-4 font-medium text-base text-black hover:bg-gray-300 transition-all duration-200"
                 >
-                  <span className="text-white">●</span>
+                  <span className="text-black">●</span>
                   <span>Home</span>
                 </Link>
 
                 <Link
                   to="/features"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-6 py-4 text-white font-medium text-base hover:bg-white/10 transition-all duration-200"
+                  className="px-6 py-4 text-black font-medium text-base hover:bg-gray-300 transition-all duration-200"
                 >
                   Features
                 </Link>
-                
-                <Link 
-                  to="/plans" 
+
+                <Link
+                  to="/plans"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-6 py-4 text-white font-medium text-base hover:bg-white/10 transition-all duration-200"
+                  className="px-6 py-4 text-black font-medium text-base hover:bg-gray-300 transition-all duration-200"
                 >
                   Plans
                 </Link>
-                
-                <Link 
-                  to="/blog" 
+
+                <Link
+                  to="/blog"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-6 py-4 text-white font-medium text-base hover:bg-white/10 transition-all duration-200"
+                  className="px-6 py-4 text-black font-medium text-base hover:bg-gray-300 transition-all duration-200"
                 >
                   Blog
                 </Link>
-                
+
                 <div className="px-6 py-4">
-                  <Link 
+                  <Link
                     to="/early-access"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="w-full bg-white/5 backdrop-blur-xl border border-white/10 text-white px-6 py-4 rounded-full font-medium text-base hover:bg-white/10 hover:scale-105 transition-all duration-200 block text-center"
+                    className="w-full bg-blue-600 text-white px-6 py-4 rounded-full font-medium text-base hover:bg-blue-700 hover:scale-105 transition-all duration-200 block text-center shadow-sm"
                   >
                     Get early access →
                   </Link>

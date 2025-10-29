@@ -144,8 +144,8 @@ const NotezSixthSection = () => {
                 </p>
               </div>
               <video
-                className="w-full rounded-2xl"
-                style={{ height: '550px', objectFit: 'fill' }}
+                className="w-full rounded-2xl h-[400px] md:h-[550px]"
+                style={{ objectFit: 'fill' }}
                 autoPlay
                 loop
                 muted

@@ -151,7 +151,7 @@ const NotezPlansSection = () => {
               <li className="text-gray-700">✓ Tutto del PRO</li>
               <li className="text-gray-700">✓ AI: 1,000,000 token/mese</li>
               <li className="text-gray-700">✓ Voice transcription 2h/mese</li>
-              <li className="text-gray-700">✓ DALL-E 50</li>
+              <li className="text-gray-700">✓ Canvas 50 immagini/mese</li>
             </ul>
             <Link to="/early-access" className="w-full">
               <button
