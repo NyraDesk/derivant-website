@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://derivant.ai/sitemap.xml
+Sitemap: https://www.derivant.ai/sitemap.xml
