@@ -55,9 +55,9 @@ const EarlyAccessPage = () => {
         }
         .responsive-title-ea span {
           display: block;
+          font-size: 1.5rem !important;
         }
         .responsive-title-ea span:first-child {
-          font-size: 1.5rem !important;
           white-space: nowrap;
         }
         @media (min-width: 768px) {
