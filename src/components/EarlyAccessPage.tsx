@@ -45,6 +45,7 @@ const EarlyAccessPage = () => {
         <div className="text-center mb-12">
           <div className="w-full flex justify-center items-center">
             <h1
+              className="hidden md:block"
               style={{
                 fontFamily: 'Inter',
                 fontSize: '48px',
@@ -53,7 +54,6 @@ const EarlyAccessPage = () => {
                 textAlign: 'center',
                 width: 'auto',
                 margin: '0 auto',
-                display: 'block',
                 lineHeight: '1.2',
                 whiteSpace: 'nowrap',
                 position: 'absolute',
@@ -62,7 +62,6 @@ const EarlyAccessPage = () => {
                 top: '30%',
                 marginTop: '-24px'
               }}
-              className="hidden md:block"
             >
               Work smarter with NotezAI for notes, tasks and calendar
             </h1>
@@ -85,6 +84,7 @@ const EarlyAccessPage = () => {
           </div>
           <div className="w-full flex justify-center" style={{ marginTop: '120px', marginBottom: '60px' }}>
             <p
+              className="hidden md:block"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
@@ -93,10 +93,8 @@ const EarlyAccessPage = () => {
                 textAlign: 'center',
                 width: '100%',
                 margin: '0 auto',
-                display: 'block',
                 whiteSpace: 'nowrap'
               }}
-              className="hidden md:block"
             >
               Workspace unificato con AI integrata. Tutto connesso. Sempre veloce. Privacy-first.
             </p>
@@ -106,7 +104,6 @@ const EarlyAccessPage = () => {
                 fontFamily: 'Inter',
                 fontWeight: 500,
                 margin: '0 auto',
-                display: 'block',
                 maxWidth: '90%'
               }}
             >
