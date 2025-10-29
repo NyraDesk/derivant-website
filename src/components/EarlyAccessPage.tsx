@@ -49,13 +49,9 @@ const EarlyAccessPage = () => {
           color: #ffffff;
           text-align: center;
           line-height: 1.2;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          top: 30%;
-          margin-top: -24px;
           max-width: 90%;
           padding: 0 1rem;
+          margin: 0 auto;
         }
         @media (min-width: 768px) {
           .responsive-title-ea {
@@ -64,6 +60,11 @@ const EarlyAccessPage = () => {
             padding: 0;
             max-width: none;
             width: auto;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 30%;
+            margin-top: -24px;
           }
         }
         .responsive-subtitle-ea {
