@@ -45,7 +45,29 @@ const EarlyAccessPage = () => {
         <div className="text-center mb-12">
           <div className="w-full flex justify-center items-center">
             <h1
-              className="text-3xl md:text-5xl font-bold text-white text-center px-4 md:px-0"
+              style={{
+                fontFamily: 'Inter',
+                fontSize: '48px',
+                fontWeight: 700,
+                color: '#ffffff',
+                textAlign: 'center',
+                width: 'auto',
+                margin: '0 auto',
+                display: 'block',
+                lineHeight: '1.2',
+                whiteSpace: 'nowrap',
+                position: 'absolute',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                top: '30%',
+                marginTop: '-24px'
+              }}
+              className="hidden md:block"
+            >
+              Work smarter with NotezAI for notes, tasks and calendar
+            </h1>
+            <h1
+              className="block md:hidden text-3xl font-bold text-white text-center px-4"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 700,
@@ -63,7 +85,23 @@ const EarlyAccessPage = () => {
           </div>
           <div className="w-full flex justify-center" style={{ marginTop: '120px', marginBottom: '60px' }}>
             <p
-              className="text-base md:text-lg text-gray-400 text-center px-4 md:px-0"
+              style={{
+                fontFamily: 'Inter',
+                fontWeight: 500,
+                fontSize: '17px',
+                color: '#9CA3AF',
+                textAlign: 'center',
+                width: '100%',
+                margin: '0 auto',
+                display: 'block',
+                whiteSpace: 'nowrap'
+              }}
+              className="hidden md:block"
+            >
+              Workspace unificato con AI integrata. Tutto connesso. Sempre veloce. Privacy-first.
+            </p>
+            <p
+              className="block md:hidden text-base text-gray-400 text-center px-4"
               style={{
                 fontFamily: 'Inter',
                 fontWeight: 500,
@@ -87,9 +125,21 @@ const EarlyAccessPage = () => {
             <input type="hidden" name="redirect" value="https://derivant.ai/early-access?submitted=true" />
             <input type="hidden" name="subject" value="New NotezAI Waitlist Signup" />
 
-            <div className="text-center px-4">
+            <div className="text-center">
               <p
-                className="text-base md:text-lg text-gray-400"
+                style={{
+                  fontFamily: 'Inter',
+                  fontSize: '17px',
+                  fontWeight: 500,
+                  color: '#9CA3AF',
+                  marginBottom: '30px'
+                }}
+                className="hidden md:block"
+              >
+                Secure your spot now, early access is limited!
+              </p>
+              <p
+                className="block md:hidden text-base text-gray-400 px-4"
                 style={{
                   fontFamily: 'Inter',
                   fontWeight: 500,
