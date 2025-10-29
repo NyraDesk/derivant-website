@@ -48,10 +48,17 @@ const EarlyAccessPage = () => {
           font-weight: 700;
           color: #ffffff;
           text-align: center;
-          line-height: 1.2;
-          max-width: 90%;
+          line-height: 1.3;
+          max-width: 100%;
           padding: 0 1rem;
           margin: 0 auto;
+        }
+        .responsive-title-ea span {
+          display: block;
+        }
+        .responsive-title-ea span:first-child {
+          font-size: 1.5rem !important;
+          white-space: nowrap;
         }
         @media (min-width: 768px) {
           .responsive-title-ea {
@@ -65,6 +72,10 @@ const EarlyAccessPage = () => {
             transform: translateX(-50%);
             top: 30%;
             margin-top: -24px;
+          }
+          .responsive-title-ea span {
+            display: inline;
+            font-size: 48px !important;
           }
         }
         .responsive-subtitle-ea {
