@@ -101,7 +101,7 @@ const EarlyAccessPage = () => {
           }
         }
       `}} />
-      <div className="min-h-screen bg-black flex items-center justify-center px-6">
+      <div className="min-h-screen bg-black flex items-center justify-center px-6 pt-32 md:pt-0">
         <div className="w-full max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="w-full flex justify-center items-center">
