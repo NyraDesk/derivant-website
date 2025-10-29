@@ -40,61 +40,74 @@ const EarlyAccessPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center px-6">
-      <div className="w-full max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <style dangerouslySetInnerHTML={{__html: `
-            .responsive-title-ea {
-              font-family: Inter;
-              font-size: 1.875rem;
-              font-weight: 700;
-              color: #ffffff;
-              text-align: center;
-              line-height: 1.2;
-              position: absolute;
-              left: 50%;
-              transform: translateX(-50%);
-              top: 30%;
-              margin-top: -24px;
-              max-width: 90%;
-              padding: 0 1rem;
-            }
-            @media (min-width: 768px) {
-              .responsive-title-ea {
-                font-size: 48px;
-                white-space: nowrap;
-                padding: 0;
-                max-width: none;
-                width: auto;
-              }
-            }
-          `}} />
-          <div className="w-full flex justify-center items-center">
-            <h1 className="responsive-title-ea">
-              Work smarter with NotezAI for notes, tasks and calendar
-            </h1>
-          </div>
-          <style dangerouslySetInnerHTML={{__html: `
-            .responsive-subtitle-ea {
-              font-family: Inter;
-              font-size: 1rem;
-              font-weight: 500;
-              color: #9CA3AF;
-              text-align: center;
-              margin: 0 auto;
-              max-width: 90%;
-              padding: 0 1rem;
-            }
-            @media (min-width: 768px) {
-              .responsive-subtitle-ea {
-                font-size: 17px;
-                white-space: nowrap;
-                padding: 0;
-                max-width: none;
-                width: 100%;
-              }
-            }
-          `}} />
+    <>
+      <style dangerouslySetInnerHTML={{__html: `
+        .responsive-title-ea {
+          font-family: Inter;
+          font-size: 1.875rem !important;
+          font-weight: 700;
+          color: #ffffff;
+          text-align: center;
+          line-height: 1.2;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 30%;
+          margin-top: -24px;
+          max-width: 90%;
+          padding: 0 1rem;
+        }
+        @media (min-width: 768px) {
+          .responsive-title-ea {
+            font-size: 48px !important;
+            white-space: nowrap;
+            padding: 0;
+            max-width: none;
+            width: auto;
+          }
+        }
+        .responsive-subtitle-ea {
+          font-family: Inter;
+          font-size: 1rem !important;
+          font-weight: 500;
+          color: #9CA3AF;
+          text-align: center;
+          margin: 0 auto;
+          max-width: 90%;
+          padding: 0 1rem;
+        }
+        @media (min-width: 768px) {
+          .responsive-subtitle-ea {
+            font-size: 17px !important;
+            white-space: nowrap;
+            padding: 0;
+            max-width: none;
+            width: 100%;
+          }
+        }
+        .responsive-cta-ea {
+          font-family: Inter;
+          font-size: 1rem !important;
+          font-weight: 500;
+          color: #9CA3AF;
+          margin-bottom: 30px;
+          padding: 0 1rem;
+        }
+        @media (min-width: 768px) {
+          .responsive-cta-ea {
+            font-size: 17px !important;
+            padding: 0;
+          }
+        }
+      `}} />
+      <div className="min-h-screen bg-black flex items-center justify-center px-6">
+        <div className="w-full max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="w-full flex justify-center items-center">
+              <h1 className="responsive-title-ea">
+                Work smarter with NotezAI for notes, tasks and calendar
+              </h1>
+            </div>
           <div className="w-full flex justify-center" style={{ marginTop: '120px', marginBottom: '60px' }}>
             <p className="responsive-subtitle-ea">
               Workspace unificato con AI integrata. Tutto connesso. Sempre veloce. Privacy-first.
@@ -112,22 +125,6 @@ const EarlyAccessPage = () => {
             <input type="hidden" name="redirect" value="https://derivant.ai/early-access?submitted=true" />
             <input type="hidden" name="subject" value="New NotezAI Waitlist Signup" />
 
-            <style dangerouslySetInnerHTML={{__html: `
-              .responsive-cta-ea {
-                font-family: Inter;
-                font-size: 1rem;
-                font-weight: 500;
-                color: #9CA3AF;
-                margin-bottom: 30px;
-                padding: 0 1rem;
-              }
-              @media (min-width: 768px) {
-                .responsive-cta-ea {
-                  font-size: 17px;
-                  padding: 0;
-                }
-              }
-            `}} />
             <div className="text-center">
               <p className="responsive-cta-ea">
                 Secure your spot now, early access is limited!
@@ -177,6 +174,7 @@ const EarlyAccessPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
