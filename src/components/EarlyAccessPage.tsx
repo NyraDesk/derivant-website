@@ -43,102 +43,60 @@ const EarlyAccessPage = () => {
     <div className="min-h-screen bg-black flex items-center justify-center px-6">
       <div className="w-full max-w-4xl mx-auto">
         <div className="text-center mb-12">
+          <style dangerouslySetInnerHTML={{__html: `
+            .responsive-title-ea {
+              font-family: Inter;
+              font-size: 1.875rem;
+              font-weight: 700;
+              color: #ffffff;
+              text-align: center;
+              line-height: 1.2;
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              top: 30%;
+              margin-top: -24px;
+              max-width: 90%;
+              padding: 0 1rem;
+            }
+            @media (min-width: 768px) {
+              .responsive-title-ea {
+                font-size: 48px;
+                white-space: nowrap;
+                padding: 0;
+                max-width: none;
+                width: auto;
+              }
+            }
+          `}} />
           <div className="w-full flex justify-center items-center">
-            <style dangerouslySetInnerHTML={{__html: `
-              .mobile-title-ea {
-                display: block;
-              }
-              .desktop-title-ea {
-                display: none;
-              }
-              @media (min-width: 768px) {
-                .mobile-title-ea {
-                  display: none !important;
-                }
-                .desktop-title-ea {
-                  display: block !important;
-                }
-              }
-            `}} />
-            <h1
-              style={{
-                fontFamily: 'Inter',
-                fontSize: '48px',
-                fontWeight: 700,
-                color: '#ffffff',
-                textAlign: 'center',
-                width: 'auto',
-                margin: '0 auto',
-                lineHeight: '1.2',
-                whiteSpace: 'nowrap',
-                position: 'absolute',
-                left: '50%',
-                transform: 'translateX(-50%)',
-                top: '30%',
-                marginTop: '-24px'
-              }}
-              className="desktop-title-ea"
-            >
-              Work smarter with NotezAI for notes, tasks and calendar
-            </h1>
-            <h1
-              className="mobile-title-ea text-3xl font-bold text-white text-center px-4"
-              style={{
-                fontFamily: 'Inter',
-                fontWeight: 700,
-                lineHeight: '1.2',
-                position: 'absolute',
-                left: '50%',
-                transform: 'translateX(-50%)',
-                top: '30%',
-                marginTop: '-24px',
-                maxWidth: '90%'
-              }}
-            >
+            <h1 className="responsive-title-ea">
               Work smarter with NotezAI for notes, tasks and calendar
             </h1>
           </div>
+          <style dangerouslySetInnerHTML={{__html: `
+            .responsive-subtitle-ea {
+              font-family: Inter;
+              font-size: 1rem;
+              font-weight: 500;
+              color: #9CA3AF;
+              text-align: center;
+              margin: 0 auto;
+              max-width: 90%;
+              padding: 0 1rem;
+            }
+            @media (min-width: 768px) {
+              .responsive-subtitle-ea {
+                font-size: 17px;
+                white-space: nowrap;
+                padding: 0;
+                max-width: none;
+                width: 100%;
+              }
+            }
+          `}} />
           <div className="w-full flex justify-center" style={{ marginTop: '120px', marginBottom: '60px' }}>
-            <style dangerouslySetInnerHTML={{__html: `
-              .mobile-subtitle-ea {
-                display: block;
-              }
-              .desktop-subtitle-ea {
-                display: none;
-              }
-              @media (min-width: 768px) {
-                .mobile-subtitle-ea {
-                  display: none !important;
-                }
-                .desktop-subtitle-ea {
-                  display: block !important;
-                }
-              }
-            `}} />
-            <p
-              className="desktop-subtitle-ea"
-              style={{
-                fontFamily: 'Inter',
-                fontWeight: 500,
-                fontSize: '17px',
-                color: '#9CA3AF',
-                textAlign: 'center',
-                width: '100%',
-                margin: '0 auto',
-                whiteSpace: 'nowrap'
-              }}
-            >
-              Workspace unificato con AI integrata. Tutto connesso. Sempre veloce. Privacy-first.
-            </p>
-            <p
-              className="mobile-subtitle-ea text-base text-gray-400 text-center px-4"
-              style={{
-                fontFamily: 'Inter',
-                fontWeight: 500,
-                margin: '0 auto',
-                maxWidth: '90%'
-              }}
-            >
+            <p className="responsive-subtitle-ea">
               Workspace unificato con AI integrata. Tutto connesso. Sempre veloce. Privacy-first.
             </p>
           </div>
@@ -154,43 +112,24 @@ const EarlyAccessPage = () => {
             <input type="hidden" name="redirect" value="https://derivant.ai/early-access?submitted=true" />
             <input type="hidden" name="subject" value="New NotezAI Waitlist Signup" />
 
+            <style dangerouslySetInnerHTML={{__html: `
+              .responsive-cta-ea {
+                font-family: Inter;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #9CA3AF;
+                margin-bottom: 30px;
+                padding: 0 1rem;
+              }
+              @media (min-width: 768px) {
+                .responsive-cta-ea {
+                  font-size: 17px;
+                  padding: 0;
+                }
+              }
+            `}} />
             <div className="text-center">
-              <style dangerouslySetInnerHTML={{__html: `
-                .mobile-cta-ea {
-                  display: block;
-                }
-                .desktop-cta-ea {
-                  display: none;
-                }
-                @media (min-width: 768px) {
-                  .mobile-cta-ea {
-                    display: none !important;
-                  }
-                  .desktop-cta-ea {
-                    display: block !important;
-                  }
-                }
-              `}} />
-              <p
-                style={{
-                  fontFamily: 'Inter',
-                  fontSize: '17px',
-                  fontWeight: 500,
-                  color: '#9CA3AF',
-                  marginBottom: '30px'
-                }}
-                className="desktop-cta-ea"
-              >
-                Secure your spot now, early access is limited!
-              </p>
-              <p
-                className="mobile-cta-ea text-base text-gray-400 px-4"
-                style={{
-                  fontFamily: 'Inter',
-                  fontWeight: 500,
-                  marginBottom: '30px'
-                }}
-              >
+              <p className="responsive-cta-ea">
                 Secure your spot now, early access is limited!
               </p>
             </div>
