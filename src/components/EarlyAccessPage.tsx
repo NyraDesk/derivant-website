@@ -106,7 +106,8 @@ const EarlyAccessPage = () => {
           <div className="text-center mb-8 md:mb-12">
             <div className="w-full flex justify-center items-center mb-8 md:mb-0">
               <h1 className="responsive-title-ea">
-                Work smarter with NotezAI for notes, tasks and calendar
+                <span className="block md:inline">Work smarter with NotezAI</span>
+                <span className="block md:inline"> for notes, tasks and calendar</span>
               </h1>
             </div>
           <div className="w-full flex justify-center mb-8 md:mb-0" style={{ marginTop: '0', marginBottom: '0' }}>
