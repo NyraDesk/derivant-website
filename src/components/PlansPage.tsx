@@ -32,7 +32,7 @@ const PlansPage = () => {
           </div>
 
           {/* Plans Grid */}
-          <div style={{
+          <div className="plans-grid" style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '24px',

@@ -9,7 +9,7 @@ const Footer = () => {
       padding: '80px 24px 40px',
     }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{
+        <div className="footer-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(4, 1fr)',
           gap: '48px',

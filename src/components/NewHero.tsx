@@ -244,7 +244,7 @@ const NewHero = () => {
         </div>
 
         {/* Grid: Features + Video */}
-        <div style={{
+        <div className="hero-grid" style={{
           display: 'grid',
           gridTemplateColumns: '2fr 3fr',
           gap: '60px',
@@ -383,7 +383,7 @@ const NewHero = () => {
       </div>
 
       {/* === 3-COLUMN GRID === */}
-      <div style={{
+      <div className="cards-grid" style={{
         width: '100%',
         maxWidth: '1200px',
         marginTop: '72px',
@@ -552,7 +552,7 @@ const NewHero = () => {
       }}>
         Your Canvas, Your Rules.
       </h3>
-      <div style={{
+      <div className="canvas-grid" style={{
         width: '100%',
         display: 'grid',
         gridTemplateColumns: '380px 1fr',
@@ -786,7 +786,7 @@ const NewHero = () => {
           </p>
         </div>
 
-        <div style={{
+        <div className="plans-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
           gap: '24px',
