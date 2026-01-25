@@ -1229,7 +1229,7 @@ const NewHero = () => {
             color: '#000000',
             WebkitTextStroke: '0.5px rgba(255, 255, 255, 0.12)',
             paintOrder: 'stroke fill',
-            letterSpacing: '-0.02em',
+            letterSpacing: '-0.06em',
             margin: '0 auto',
             lineHeight: 1,
             transition: '-webkit-text-stroke-color 0.5s ease',
@@ -1237,6 +1237,7 @@ const NewHero = () => {
             userSelect: 'none',
             textTransform: 'uppercase',
             textAlign: 'center',
+            transform: 'scaleX(0.92)',
           }}
         >
           DERIVANT
