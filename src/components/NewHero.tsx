@@ -286,10 +286,10 @@ const NewHero = () => {
         </div>
       </div>
 
-      <div style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
+      <div className="mobile-divider" style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
 
       {/* === FEATURE SECTION === */}
-      <div ref={(el) => { sectionRef.current = el; slide2Ref.current = el; }} style={{
+      <div ref={(el) => { sectionRef.current = el; slide2Ref.current = el; }} className="mobile-section-spacing" style={{
         width: '100%',
         maxWidth: '1200px',
         marginTop: '120px',
@@ -554,10 +554,10 @@ const NewHero = () => {
         </div>
       </div>
 
-      <div style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
+      <div className="mobile-divider" style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
 
       {/* === SLIDE 3: GALLERY === */}
-      <h2 className="mobile-section-title" style={{
+      <h2 className="mobile-section-title mobile-section-spacing" style={{
         fontFamily: "'Inter', sans-serif",
         fontSize: '48px',
         fontWeight: 700,
@@ -571,7 +571,7 @@ const NewHero = () => {
         Your content, our elite layouts.
       </h2>
 
-      <div ref={galleryRef} style={{
+      <div ref={galleryRef} className="gallery-wrapper" style={{
         width: '100vw',
         marginLeft: 'calc(-50vw + 50%)',
         overflow: 'hidden',
@@ -619,10 +619,10 @@ const NewHero = () => {
         </div>
       </div>
 
-      <div style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
+      <div className="mobile-divider" style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
 
       {/* === SLIDE 4: THE CANVAS === */}
-      <h3 className="mobile-section-title" style={{
+      <h3 className="mobile-section-title mobile-section-spacing" style={{
         fontFamily: "'Inter', sans-serif",
         fontSize: '48px',
         fontWeight: 700,
@@ -1227,7 +1227,7 @@ const NewHero = () => {
             fontSize: 'clamp(80px, 14vw, 200px)',
             fontWeight: 800,
             color: '#000000',
-            WebkitTextStroke: '1px rgba(255, 255, 255, 0.15)',
+            WebkitTextStroke: '0.5px rgba(255, 255, 255, 0.12)',
             paintOrder: 'stroke fill',
             letterSpacing: '-0.02em',
             margin: '0 auto',
