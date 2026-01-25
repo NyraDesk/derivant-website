@@ -71,7 +71,7 @@ const NewHero = () => {
   }, []);
 
   return (
-    <div style={{
+    <div className="mobile-container" style={{
       backgroundColor: '#000',
       display: 'flex',
       flexDirection: 'column',
@@ -85,7 +85,7 @@ const NewHero = () => {
         textAlign: 'center',
         lineHeight: 1.05,
       }}>
-        <span style={{
+        <span className="mobile-hero-main" style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '56px',
           fontWeight: 700,
@@ -95,7 +95,7 @@ const NewHero = () => {
         }}>
           Derivant AI turns your ideas and briefs
         </span>
-        <span style={{
+        <span className="mobile-hero-sub" style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '40px',
           fontWeight: 700,
@@ -106,7 +106,7 @@ const NewHero = () => {
         }}>
           into professional design-driven presentations.
         </span>
-        <span style={{
+        <span className="mobile-hero-small" style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '36px',
           fontWeight: 700,
@@ -117,7 +117,7 @@ const NewHero = () => {
         }}>
           Instantly ready to present.
         </span>
-        <span style={{
+        <span className="mobile-hero-desc" style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '20px',
           fontWeight: 400,
@@ -218,7 +218,7 @@ const NewHero = () => {
           transform: slide2Visible ? 'translateY(0)' : 'translateY(20px)',
           transition: 'opacity 0.8s ease 0s, transform 0.8s ease 0s',
         }}>
-          <h3 style={{
+          <h3 className="mobile-section-title" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '60px',
             fontWeight: 700,
@@ -230,7 +230,7 @@ const NewHero = () => {
           }}>
             Elite design, AI speed.
           </h3>
-          <p style={{
+          <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '19px',
             fontWeight: 400,
@@ -258,7 +258,7 @@ const NewHero = () => {
           }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '36px', marginBottom: '48px' }}>
               <div>
-                <p style={{
+                <p className="mobile-feature-title" style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '24px',
                   fontWeight: 800,
@@ -269,7 +269,7 @@ const NewHero = () => {
                 }}>
                   AI Text Mastering
                 </p>
-                <p style={{
+                <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '17px',
                   fontWeight: 400,
@@ -281,7 +281,7 @@ const NewHero = () => {
                 </p>
               </div>
               <div>
-                <p style={{
+                <p className="mobile-feature-title" style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '24px',
                   fontWeight: 800,
@@ -292,7 +292,7 @@ const NewHero = () => {
                 }}>
                   Contextual Image AI
                 </p>
-                <p style={{
+                <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '17px',
                   fontWeight: 400,
@@ -304,7 +304,7 @@ const NewHero = () => {
                 </p>
               </div>
               <div>
-                <p style={{
+                <p className="mobile-feature-title" style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '24px',
                   fontWeight: 800,
@@ -315,7 +315,7 @@ const NewHero = () => {
                 }}>
                   Instant Translation
                 </p>
-                <p style={{
+                <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '17px',
                   fontWeight: 400,
@@ -394,7 +394,7 @@ const NewHero = () => {
         <div className="glass-card" style={{
           padding: '40px 36px',
         }}>
-          <h3 style={{
+          <h3 className="mobile-feature-title" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '22px',
             fontWeight: 700,
@@ -405,7 +405,7 @@ const NewHero = () => {
           }}>
             STUDIO AESTHETICS
           </h3>
-          <p style={{
+          <p className="mobile-feature-desc" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '16px',
             fontWeight: 400,
@@ -420,7 +420,7 @@ const NewHero = () => {
         <div className="glass-card" style={{
           padding: '40px 36px',
         }}>
-          <h3 style={{
+          <h3 className="mobile-feature-title" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '22px',
             fontWeight: 700,
@@ -431,7 +431,7 @@ const NewHero = () => {
           }}>
             ZERO FRICTION
           </h3>
-          <p style={{
+          <p className="mobile-feature-desc" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '16px',
             fontWeight: 400,
@@ -446,7 +446,7 @@ const NewHero = () => {
         <div className="glass-card" style={{
           padding: '40px 36px',
         }}>
-          <h3 style={{
+          <h3 className="mobile-feature-title" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '22px',
             fontWeight: 700,
@@ -457,7 +457,7 @@ const NewHero = () => {
           }}>
             FULL-POWER EDITOR
           </h3>
-          <p style={{
+          <p className="mobile-feature-desc" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '16px',
             fontWeight: 400,
@@ -473,7 +473,7 @@ const NewHero = () => {
       <div style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
 
       {/* === SLIDE 3: GALLERY === */}
-      <h2 style={{
+      <h2 className="mobile-section-title" style={{
         fontFamily: "'Inter', sans-serif",
         fontSize: '48px',
         fontWeight: 700,
@@ -538,7 +538,7 @@ const NewHero = () => {
       <div style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
 
       {/* === SLIDE 4: THE CANVAS === */}
-      <h3 style={{
+      <h3 className="mobile-section-title" style={{
         fontFamily: "'Inter', sans-serif",
         fontSize: '48px',
         fontWeight: 700,
@@ -562,7 +562,7 @@ const NewHero = () => {
         maxWidth: '1200px',
       }}>
         <div>
-          <p style={{
+          <p className="mobile-feature-desc" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '22px',
             fontWeight: 400,
@@ -575,7 +575,7 @@ const NewHero = () => {
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
             <div>
-              <p style={{
+              <p className="mobile-feature-title" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '22px',
                 fontWeight: 700,
@@ -585,7 +585,7 @@ const NewHero = () => {
               }}>
                 Pixel-Perfect Canvas
               </p>
-              <p style={{
+              <p className="mobile-feature-desc" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '17px',
                 fontWeight: 400,
@@ -597,7 +597,7 @@ const NewHero = () => {
               </p>
             </div>
             <div>
-              <p style={{
+              <p className="mobile-feature-title" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '22px',
                 fontWeight: 700,
@@ -607,7 +607,7 @@ const NewHero = () => {
               }}>
                 Deep Customization
               </p>
-              <p style={{
+              <p className="mobile-feature-desc" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '17px',
                 fontWeight: 400,
@@ -621,7 +621,7 @@ const NewHero = () => {
           </div>
         </div>
 
-        <div style={{
+        <div className="mobile-canvas-video" style={{
           borderRadius: '20px',
           overflow: 'hidden',
           height: '580px',
@@ -658,7 +658,7 @@ const NewHero = () => {
         textAlign: 'center',
         padding: '80px 60px',
       }}>
-        <h3 style={{
+        <h3 className="mobile-enterprise-title" style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '54px',
           fontWeight: 700,
@@ -670,7 +670,7 @@ const NewHero = () => {
         }}>
           Scale Excellence. Automate the Workflow.
         </h3>
-        <p style={{
+        <p className="mobile-enterprise-desc" style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '21px',
           fontWeight: 400,
@@ -682,9 +682,9 @@ const NewHero = () => {
         }}>
           Tailored solutions for agencies and teams that need to produce elite presentations at industrial scale.
         </p>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '60px', maxWidth: '700px', margin: '0 auto 48px' }}>
+        <div className="enterprise-features" style={{ display: 'flex', justifyContent: 'center', gap: '60px', maxWidth: '700px', margin: '0 auto 48px' }}>
           <div style={{ textAlign: 'center', flex: 1 }}>
-            <p style={{
+            <p className="mobile-feature-title" style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '18px',
               fontWeight: 700,
@@ -694,7 +694,7 @@ const NewHero = () => {
             }}>
               Custom Template Engine
             </p>
-            <p style={{
+            <p className="mobile-feature-desc" style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '16px',
               fontWeight: 400,
@@ -706,7 +706,7 @@ const NewHero = () => {
             </p>
           </div>
           <div style={{ textAlign: 'center', flex: 1 }}>
-            <p style={{
+            <p className="mobile-feature-title" style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '18px',
               fontWeight: 700,
@@ -716,7 +716,7 @@ const NewHero = () => {
             }}>
               Brand Governance
             </p>
-            <p style={{
+            <p className="mobile-feature-desc" style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '16px',
               fontWeight: 400,
@@ -763,7 +763,7 @@ const NewHero = () => {
       {/* === SLIDE 6: PLANS === */}
       <div style={{ width: '100%', marginTop: '120px', maxWidth: '1100px' }}>
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-          <h3 style={{
+          <h3 className="mobile-section-title" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '60px',
             fontWeight: 700,
@@ -775,7 +775,7 @@ const NewHero = () => {
           }}>
             Choose your plan
           </h3>
-          <p style={{
+          <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '19px',
             fontWeight: 400,
@@ -821,7 +821,7 @@ const NewHero = () => {
               Perfect for getting started with AI presentations
             </p>
             <div style={{ marginBottom: '32px' }}>
-              <span style={{
+              <span className="mobile-price" style={{
                 fontFamily: "'Space Mono', monospace",
                 fontSize: '48px',
                 fontWeight: 700,
@@ -925,7 +925,7 @@ const NewHero = () => {
               For professionals who need more power
             </p>
             <div style={{ marginBottom: '32px' }}>
-              <span style={{
+              <span className="mobile-price" style={{
                 fontFamily: "'Space Mono', monospace",
                 fontSize: '48px',
                 fontWeight: 700,
@@ -1015,7 +1015,7 @@ const NewHero = () => {
               For teams and organizations at scale
             </p>
             <div style={{ marginBottom: '32px' }}>
-              <span style={{
+              <span className="mobile-price" style={{
                 fontFamily: "'Space Mono', monospace",
                 fontSize: '48px',
                 fontWeight: 700,
@@ -1159,7 +1159,7 @@ const NewHero = () => {
       {/* === SLIDE 7: FAQ === */}
       <div style={{ width: '100%', marginTop: '120px', maxWidth: '800px' }}>
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-          <h3 style={{
+          <h3 className="mobile-section-title" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '60px',
             fontWeight: 700,
@@ -1171,7 +1171,7 @@ const NewHero = () => {
           }}>
             FAQ
           </h3>
-          <p style={{
+          <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '19px',
             fontWeight: 400,
@@ -1237,7 +1237,7 @@ const NewHero = () => {
                   textAlign: 'left',
                 }}
               >
-                <span style={{
+                <span className="mobile-faq-question" style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '18px',
                   fontWeight: 600,

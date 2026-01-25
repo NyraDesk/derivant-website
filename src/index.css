@@ -581,8 +581,13 @@ html {
 
   .canvas-grid {
     grid-template-columns: 1fr !important;
-    gap: 40px !important;
+    gap: 32px !important;
     padding-left: 0 !important;
+  }
+
+  .enterprise-features {
+    flex-direction: column !important;
+    gap: 32px !important;
   }
 
   .glass-card {
@@ -590,7 +595,134 @@ html {
   }
 
   .derivant-outline-text {
-    font-size: clamp(48px, 12vw, 100px) !important;
+    font-size: clamp(40px, 11vw, 80px) !important;
+  }
+
+  /* Mobile Hero Typography */
+  .mobile-hero-main {
+    font-size: 32px !important;
+    line-height: 1.1 !important;
+  }
+
+  .mobile-hero-sub {
+    font-size: 24px !important;
+    line-height: 1.15 !important;
+  }
+
+  .mobile-hero-small {
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+  }
+
+  .mobile-hero-desc {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Mobile Section Titles */
+  .mobile-section-title {
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+  }
+
+  .mobile-section-subtitle {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Mobile Enterprise */
+  .mobile-enterprise-title {
+    font-size: 28px !important;
+    line-height: 1.15 !important;
+  }
+
+  .mobile-enterprise-desc {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Mobile Feature Items */
+  .mobile-feature-title {
+    font-size: 20px !important;
+  }
+
+  .mobile-feature-desc {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Mobile Gallery */
+  .gallery-scroll > div {
+    width: 320px !important;
+  }
+
+  /* Mobile Canvas Video */
+  .mobile-canvas-video {
+    height: 280px !important;
+  }
+
+  /* Mobile Plans Pricing */
+  .mobile-price {
+    font-size: 36px !important;
+  }
+
+  /* Mobile FAQ */
+  .mobile-faq-question {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Mobile Container Padding */
+  .mobile-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 100px !important;
+  }
+
+  /* Mobile Section Spacing */
+  .glass-card#enterprise {
+    padding: 40px 24px !important;
+    margin-top: 80px !important;
+  }
+
+  /* Mobile Divider Lines */
+  [style*="marginTop: '100px'"][style*="height: '1px'"] {
+    margin-top: 60px !important;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .mobile-hero-main {
+    font-size: 26px !important;
+  }
+
+  .mobile-hero-sub {
+    font-size: 20px !important;
+  }
+
+  .mobile-hero-small {
+    font-size: 18px !important;
+  }
+
+  .mobile-section-title {
+    font-size: 26px !important;
+  }
+
+  .mobile-enterprise-title {
+    font-size: 24px !important;
+  }
+
+  .gallery-scroll > div {
+    width: 280px !important;
+  }
+
+  .mobile-canvas-video {
+    height: 220px !important;
+  }
+
+  .mobile-price {
+    font-size: 32px !important;
   }
 }
 
