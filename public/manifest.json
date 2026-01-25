@@ -1,0 +1,29 @@
+{
+  "name": "Derivant AI - AI Presentation Builder",
+  "short_name": "Derivant",
+  "description": "High-End Presentations at the speed of thought. Elite editorial design with generative intelligence.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "id": "/derivant-app",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/icon/derivant-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon/derivant-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "business", "design"],
+  "prefer_related_applications": false
+}

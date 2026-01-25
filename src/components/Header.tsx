@@ -15,13 +15,15 @@ const Header = () => {
     <div>
       <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-full px-6" style={{ maxWidth: '100%' }}>
         {/* Desktop Navigation */}
-        <nav className="hidden md:block bg-gray-100/80 backdrop-blur-2xl rounded-full px-6 py-3 shadow-sm w-full mx-auto border border-gray-200/50" style={{ maxWidth: '100%' }}>
+        <nav className="hidden md:block glass-nav rounded-full px-6 py-3 w-full mx-auto" style={{ maxWidth: '100%' }}>
           <div className="flex items-center justify-between w-full">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
-              <Link to="/" className="font-bold text-lg">
-                <span className="text-gradient-nyra">●</span>
-                <span className="text-gray-900 ml-1">DERIVANT AI</span>
+              <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+                <img src="/icon/derivant-icon.png" alt="Derivant" style={{ width: '28px', height: '28px', borderRadius: '6px' }} />
+                <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: '18px', letterSpacing: '-0.03em', color: '#fff', textTransform: 'uppercase' }}>
+                  DERIVANT
+                </span>
               </Link>
             </div>
 
@@ -29,36 +31,33 @@ const Header = () => {
             <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-8">
               <Link
                 to="/"
-                className="flex items-center space-x-1 font-medium text-sm text-gray-800 hover:bg-gray-100 hover:text-black transition-all duration-200 px-3 py-2 rounded-full"
+                className="text-white/70 hover:text-white hover:bg-white/10 transition-all duration-200 px-3 py-2 rounded-full"
+                style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
               >
-                <span className="text-gray-800">●</span>
-                <span>home</span>
+                home
               </Link>
-              <Link
-                to="/features"
-                className="text-gray-800 font-medium text-sm hover:bg-gray-100 hover:text-black transition-all duration-200 px-3 py-2 rounded-full"
+              <a
+                href="/#enterprise"
+                className="text-white/70 hover:text-white hover:bg-white/10 transition-all duration-200 px-3 py-2 rounded-full"
+                style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
               >
-                features
-              </Link>
+                enterprise
+              </a>
               <Link
                 to="/plans"
-                className="text-gray-800 font-medium text-sm hover:bg-gray-100 hover:text-black transition-all duration-200 px-3 py-2 rounded-full"
+                className="text-white/70 hover:text-white hover:bg-white/10 transition-all duration-200 px-3 py-2 rounded-full"
+                style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
               >
                 plans
               </Link>
-              <Link
-                to="/blog"
-                className="text-gray-800 font-medium text-sm hover:bg-gray-100 hover:text-black transition-all duration-200 px-3 py-2 rounded-full"
-              >
-                blog
-              </Link>
             </div>
-            
+
             {/* CTA Button */}
             <div className="flex-shrink-0">
               <Link
                 to="/early-access"
-                className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-blue-700 hover:scale-105 transition-all duration-200 shadow-sm"
+                className="bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 hover:scale-105 transition-all duration-200 border border-white/20"
+                style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
               >
                 Get early access →
               </Link>
@@ -67,20 +66,22 @@ const Header = () => {
         </nav>
 
         {/* Mobile Navigation */}
-        <nav className="md:hidden bg-gray-100/80 backdrop-blur-2xl rounded-full px-6 py-3 shadow-sm w-full mx-auto border border-gray-200/50" style={{ maxWidth: '100%' }}>
+        <nav className="md:hidden glass-nav rounded-full px-6 py-3 w-full mx-auto" style={{ maxWidth: '100%' }}>
           <div className="flex items-center justify-between w-full">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
-              <Link to="/" className="font-bold text-lg">
-                <span className="text-gradient-nyra">●</span>
-                <span className="text-gray-900 ml-1">DERIVANT AI</span>
+              <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+                <img src="/icon/derivant-icon.png" alt="Derivant" style={{ width: '28px', height: '28px', borderRadius: '6px' }} />
+                <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: '18px', letterSpacing: '-0.03em', color: '#fff', textTransform: 'uppercase' }}>
+                  DERIVANT
+                </span>
               </Link>
             </div>
 
             {/* Hamburger Menu Button */}
             <button
               onClick={toggleMobileMenu}
-              className="p-2 text-gray-800 hover:text-black transition-colors duration-200"
+              className="p-2 text-white/70 hover:text-white transition-colors duration-200"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (
@@ -96,47 +97,39 @@ const Header = () => {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden fixed top-24 left-1/2 transform -translate-x-1/2 z-40 w-full px-6" style={{ maxWidth: '100%' }}>
-          <div className="bg-gray-200 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-300 overflow-hidden animate-fade-in-up">
+          <div className="glass-nav rounded-2xl overflow-hidden animate-fade-in-up">
             <div className="py-6">
               <div className="flex flex-col space-y-1">
                 <Link
                   to="/"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="flex items-center space-x-3 px-6 py-4 font-medium text-base text-black hover:bg-gray-300 transition-all duration-200"
+                  className="flex items-center space-x-3 px-6 py-4 font-medium text-base text-white/70 hover:text-white hover:bg-white/10 transition-all duration-200"
                 >
-                  <span className="text-black">●</span>
+                  <span className="text-white/70">●</span>
                   <span>Home</span>
                 </Link>
 
-                <Link
-                  to="/features"
+                <a
+                  href="/#enterprise"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-6 py-4 text-black font-medium text-base hover:bg-gray-300 transition-all duration-200"
+                  className="px-6 py-4 text-white/70 font-medium text-base hover:text-white hover:bg-white/10 transition-all duration-200"
                 >
-                  Features
-                </Link>
+                  Enterprise
+                </a>
 
                 <Link
                   to="/plans"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-6 py-4 text-black font-medium text-base hover:bg-gray-300 transition-all duration-200"
+                  className="px-6 py-4 text-white/70 font-medium text-base hover:text-white hover:bg-white/10 transition-all duration-200"
                 >
                   Plans
-                </Link>
-
-                <Link
-                  to="/blog"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-6 py-4 text-black font-medium text-base hover:bg-gray-300 transition-all duration-200"
-                >
-                  Blog
                 </Link>
 
                 <div className="px-6 py-4">
                   <Link
                     to="/early-access"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="w-full bg-blue-600 text-white px-6 py-4 rounded-full font-medium text-base hover:bg-blue-700 hover:scale-105 transition-all duration-200 block text-center shadow-sm"
+                    className="w-full bg-white/10 text-white px-6 py-4 rounded-full font-medium text-base hover:bg-white/20 transition-all duration-200 block text-center border border-white/20"
                   >
                     Get early access →
                   </Link>

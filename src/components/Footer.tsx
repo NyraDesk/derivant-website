@@ -1,112 +1,228 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 py-8 md:py-16">
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
-          {/* Left - Brand */}
-          <div className="md:col-span-1">
-            <div className="mb-3 md:mb-4 text-center md:text-left">
-              <span className="font-bold text-lg">
-                <span className="text-gradient-nyra">●</span>
-                <span className="text-gradient-nyra ml-1">DERIVANT</span>
-              </span>
-            </div>
-            <p className="text-gray-400 leading-relaxed max-w-sm text-sm md:text-base text-center md:text-left mx-auto md:mx-0">
-              The AI assistant that gets things done, locally. Transform your productivity while keeping your privacy intact.
+    <footer style={{
+      background: '#000',
+      borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+      padding: '80px 24px 40px',
+    }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(4, 1fr)',
+          gap: '48px',
+          marginBottom: '60px',
+        }}>
+
+          {/* Column 1: Brand & Vision */}
+          <div>
+            <p style={{
+              fontFamily: "'Syne', sans-serif",
+              fontWeight: 800,
+              fontSize: '18px',
+              letterSpacing: '-0.03em',
+              color: '#fff',
+              textTransform: 'uppercase',
+              margin: 0,
+              marginBottom: '16px',
+            }}>
+              DERIVANT
+            </p>
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '14px',
+              fontWeight: 400,
+              color: 'rgba(255, 255, 255, 0.5)',
+              lineHeight: 1.7,
+              margin: 0,
+            }}>
+              The AI Presentation Builder that combines strategy and design. Transform your ideas into professional presentations, pitch decks, and moodboards in minutes.
             </p>
           </div>
 
-          {/* Product */}
-          <div className="text-center md:text-left">
-            <h3 className="text-white font-medium mb-4 md:mb-6 text-sm md:text-base">Product</h3>
-            <ul className="space-y-3 md:space-y-4">
-              <li>
-                <a href="#features" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  Features
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  Download
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  Changelog
-                </a>
-              </li>
-            </ul>
+          {/* Column 2: Product */}
+          <div>
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '14px',
+              fontWeight: 600,
+              color: '#ffffff',
+              margin: 0,
+              marginBottom: '20px',
+            }}>
+              Product
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              <a href="/#enterprise" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Enterprise
+              </a>
+              <a href="#" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Showcase
+              </a>
+              <Link to="/plans" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Pricing
+              </Link>
+              <a href="#" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Changelog
+              </a>
+            </div>
           </div>
 
-          {/* FAQ */}
-          <div className="text-center md:text-left">
-            <h3 className="text-white font-medium mb-4 md:mb-6 text-sm md:text-base">FAQ</h3>
-            <ul className="space-y-3 md:space-y-4">
-              <li>
-                <a href="#faq-1" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  Cos'è NotezAI?
-                </a>
-              </li>
-              <li>
-                <a href="#faq-2" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  È gratuito?
-                </a>
-              </li>
-              <li>
-                <a href="#faq-3" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  Privacy e offline
-                </a>
-              </li>
-              <li>
-                <a href="#faq-4" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  Per studenti
-                </a>
-              </li>
-            </ul>
+          {/* Column 3: FAQ */}
+          <div>
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '14px',
+              fontWeight: 600,
+              color: '#ffffff',
+              margin: 0,
+              marginBottom: '20px',
+            }}>
+              FAQ
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              <a href="#" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                What is Derivant?
+              </a>
+              <a href="#" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Do credits expire?
+              </a>
+              <a href="#" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Can I cancel anytime?
+              </a>
+              <a href="#" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                How does AI work in blocks?
+              </a>
+            </div>
           </div>
 
-          {/* Support */}
-          <div className="text-center md:text-left">
-            <h3 className="text-white font-medium mb-4 md:mb-6 text-sm md:text-base">Support</h3>
-            <ul className="space-y-3 md:space-y-4">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  Help Center
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  Contact Us
-                </a>
-              </li>
-              <li>
-                <a href="#privacy" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm md:text-base">
-                  Terms of Service
-                </a>
-              </li>
-            </ul>
+          {/* Column 4: Support */}
+          <div>
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '14px',
+              fontWeight: 600,
+              color: '#ffffff',
+              margin: 0,
+              marginBottom: '20px',
+            }}>
+              Support
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              <a href="#" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Help Center
+              </a>
+              <a href="mailto:info@derivant.it" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Contact Us
+              </a>
+              <a href="#" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Privacy Policy
+              </a>
+              <a href="#" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Terms of Service
+              </a>
+            </div>
           </div>
+
         </div>
-        
-        {/* Bottom row */}
-        <div className="border-t border-gray-800 pt-6 md:pt-8 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0">
-          <p className="text-gray-500 text-xs md:text-sm text-center md:text-left">
-            © 2025 Notez. All rights reserved.
+
+        {/* Bottom */}
+        <div style={{
+          borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+          paddingTop: '24px',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}>
+          <p style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: '13px',
+            color: 'rgba(255, 255, 255, 0.35)',
+            margin: 0,
+          }}>
+            &copy; 2026 Derivant AI. All rights reserved.
           </p>
-          <p className="text-gray-500 text-xs md:text-sm text-center md:text-left">
-            Made for productivity and privacy.
+          <p style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: '13px',
+            color: 'rgba(255, 255, 255, 0.35)',
+            margin: 0,
+          }}>
+            Made for strategy and design.
           </p>
         </div>
       </div>
