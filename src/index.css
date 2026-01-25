@@ -562,6 +562,30 @@ html {
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
 }
 
+/* Floating Nav Hover Effects */
+.floating-nav a:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Mobile/Desktop Text Visibility */
+.show-mobile {
+  display: none;
+}
+
+.hide-mobile {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .show-mobile {
+    display: inline !important;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .hero-grid {
@@ -688,6 +712,17 @@ html {
   /* Mobile Divider Lines */
   [style*="marginTop: '100px'"][style*="height: '1px'"] {
     margin-top: 60px !important;
+  }
+
+  /* Mobile Floating Nav */
+  .floating-nav {
+    padding: 10px 16px !important;
+    gap: 8px !important;
+  }
+
+  .floating-nav a {
+    font-size: 12px !important;
+    padding: 6px 12px !important;
   }
 }
 

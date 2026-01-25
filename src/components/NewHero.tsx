@@ -8,6 +8,8 @@ const NewHero = () => {
   const [galleryVisible, setGalleryVisible] = useState(false);
   const slide2Ref = useRef<HTMLDivElement>(null);
   const [slide2Visible, setSlide2Visible] = useState(false);
+  const [showFloatingNav, setShowFloatingNav] = useState(false);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -70,15 +72,95 @@ const NewHero = () => {
     return () => slide2Observer.disconnect();
   }, []);
 
+  // Scroll direction detection for floating nav
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const isScrollingUp = currentScrollY < lastScrollY.current;
+      const isNotAtTop = currentScrollY > 400;
+
+      setShowFloatingNav(isScrollingUp && isNotAtTop);
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="mobile-container" style={{
-      backgroundColor: '#000',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'flex-start',
-      padding: '110px 40px 100px',
-    }}>
+    <>
+      {/* Floating Navigation */}
+      <div
+        className="glass-nav floating-nav"
+        style={{
+          position: 'fixed',
+          bottom: showFloatingNav ? '24px' : '-100px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          zIndex: 100,
+          padding: '12px 24px',
+          borderRadius: '100px',
+          display: 'flex',
+          gap: '16px',
+          alignItems: 'center',
+          transition: 'bottom 0.3s ease',
+        }}
+      >
+        <a
+          href="#enterprise"
+          style={{
+            fontFamily: "'Space Mono', monospace",
+            fontSize: '13px',
+            color: 'rgba(255, 255, 255, 0.8)',
+            textDecoration: 'none',
+            padding: '8px 16px',
+            borderRadius: '100px',
+            transition: 'all 0.2s ease',
+          }}
+        >
+          Enterprise
+        </a>
+        <a
+          href="/plans"
+          style={{
+            fontFamily: "'Space Mono', monospace",
+            fontSize: '13px',
+            color: 'rgba(255, 255, 255, 0.8)',
+            textDecoration: 'none',
+            padding: '8px 16px',
+            borderRadius: '100px',
+            transition: 'all 0.2s ease',
+          }}
+        >
+          Plans
+        </a>
+        <a
+          href="/early-access"
+          style={{
+            fontFamily: "'Space Mono', monospace",
+            fontSize: '13px',
+            fontWeight: 600,
+            color: '#ffffff',
+            textDecoration: 'none',
+            padding: '8px 20px',
+            borderRadius: '100px',
+            background: 'rgba(255, 255, 255, 0.15)',
+            border: '1px solid rgba(255, 255, 255, 0.2)',
+            transition: 'all 0.2s ease',
+          }}
+        >
+          Try Free
+        </a>
+      </div>
+
+      <div className="mobile-container" style={{
+        backgroundColor: '#000',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        padding: '110px 40px 100px',
+      }}>
 
       {/* === HEADLINE === */}
       <div style={{
@@ -93,7 +175,8 @@ const NewHero = () => {
           letterSpacing: '-0.05em',
           display: 'block',
         }}>
-          Derivant AI turns your ideas and briefs
+          <span className="hide-mobile">Derivant AI turns your ideas and briefs</span>
+          <span className="show-mobile">Derivant AI turns<br />your ideas and briefs</span>
         </span>
         <span className="mobile-hero-sub" style={{
           fontFamily: "'Inter', sans-serif",
@@ -104,7 +187,8 @@ const NewHero = () => {
           display: 'block',
           marginTop: '12px',
         }}>
-          into professional design-driven presentations.
+          <span className="hide-mobile">into professional design-driven presentations.</span>
+          <span className="show-mobile">into professional<br />design-driven presentations.</span>
         </span>
         <span className="mobile-hero-small" style={{
           fontFamily: "'Inter', sans-serif",
@@ -1131,7 +1215,9 @@ const NewHero = () => {
       <div style={{
         width: '100%',
         marginTop: '120px',
-        textAlign: 'center',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         padding: '0 24px',
       }}>
         <h2
@@ -1144,12 +1230,13 @@ const NewHero = () => {
             WebkitTextStroke: '1px rgba(255, 255, 255, 0.15)',
             paintOrder: 'stroke fill',
             letterSpacing: '-0.02em',
-            margin: 0,
+            margin: '0 auto',
             lineHeight: 1,
             transition: '-webkit-text-stroke-color 0.5s ease',
             cursor: 'default',
             userSelect: 'none',
             textTransform: 'uppercase',
+            textAlign: 'center',
           }}
         >
           DERIVANT
@@ -1281,6 +1368,7 @@ const NewHero = () => {
       </div>
 
     </div>
+    </>
   );
 };
 
