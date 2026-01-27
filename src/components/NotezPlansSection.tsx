@@ -29,8 +29,8 @@ const NotezPlansSection = () => {
           </p>
         </div>
 
-        {/* Grid 3 Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        {/* Grid 2 Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
 
           {/* Card 1 - Free */}
           <div className="bg-[#E8DCC8] rounded-3xl p-8 shadow-xl flex flex-col">
@@ -40,6 +40,12 @@ const NotezPlansSection = () => {
             >
               Free
             </h3>
+            <p
+              className="text-gray-600 mb-6"
+              style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
+            >
+              Perfect for getting started with AI presentations
+            </p>
             <div className="mb-6">
               <span
                 className="text-5xl font-semibold text-black"
@@ -54,113 +60,78 @@ const NotezPlansSection = () => {
                 /month
               </span>
             </div>
-            <ul
-              className="space-y-3 mb-8 flex-grow"
-              style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
-            >
-              <li className="text-gray-700">✓ Core features complete</li>
-              <li className="text-gray-700">✓ Local storage unlimited</li>
-              <li className="text-gray-700">✓ AI 5,000 token/mese</li>
-            </ul>
-            <Link to="/early-access" className="w-full">
-              <button
-                className="w-full bg-black text-white py-3 px-6 rounded-xl font-medium hover:bg-gray-800 transition"
+            <div className="mb-8">
+              <div
+                className="w-full bg-gray-400 text-white py-3 px-6 rounded-xl font-medium text-center"
                 style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
               >
-                Get Started
-              </button>
-            </Link>
-          </div>
-
-          {/* Card 2 - Starter */}
-          <div className="bg-[#E8DCC8] rounded-3xl p-8 shadow-xl flex flex-col">
-            <h3
-              className="text-3xl font-medium text-black mb-2"
-              style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
-            >
-              Starter
-            </h3>
-            <div className="mb-6">
-              <span
-                className="text-5xl font-semibold text-black"
-                style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
-              >
-                €5.99
-              </span>
-              <span
-                className="text-xl text-gray-700 ml-2"
-                style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
-              >
-                /month
-              </span>
-              <div className="mt-2">
-                <span
-                  className="text-lg text-gray-500 line-through"
-                  style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
-                >
-                  €9.00
-                </span>
+                Current Plan
               </div>
             </div>
             <ul
-              className="space-y-3 mb-8 flex-grow"
+              className="space-y-3 flex-grow"
               style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
             >
-              <li className="text-gray-700">✓ Tutto del FREE</li>
-              <li className="text-gray-700">✓ AI: 300,000 token/mese</li>
-              <li className="text-gray-700">✓ Voice transcription 30 min/mese</li>
-              <li className="text-gray-700">✓ CANVAS 20 immagini/mese</li>
-              <li className="text-gray-700">✓ Canvas AI automation</li>
+              <li className="text-gray-700">✓ Try AI presentations</li>
+              <li className="text-gray-700">✓ All templates</li>
+              <li className="text-gray-700">✓ PDF export with watermark</li>
             </ul>
-            <Link to="/early-access" className="w-full">
-              <button
-                className="w-full bg-black text-white py-3 px-6 rounded-xl font-medium hover:bg-gray-800 transition"
-                style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
-              >
-                Get Started
-              </button>
-            </Link>
           </div>
 
-          {/* Card 3 - All Access */}
-          <div className="bg-[#E8DCC8] rounded-3xl p-8 shadow-xl flex flex-col">
+          {/* Card 2 - Pro */}
+          <div className="bg-[#E8DCC8] rounded-3xl p-8 shadow-xl flex flex-col relative">
+            <div className="absolute top-4 right-4 bg-black text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+              Launch Offer
+            </div>
             <h3
               className="text-3xl font-medium text-black mb-2"
               style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
             >
-              All Access
+              Pro
             </h3>
-            <div className="mb-6">
+            <p
+              className="text-gray-600 mb-6"
+              style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
+            >
+              For professionals who need more power
+            </p>
+            <div className="mb-6 flex items-baseline gap-3">
+              <span
+                className="text-2xl text-gray-500 line-through"
+                style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
+              >
+                €9.99
+              </span>
               <span
                 className="text-5xl font-semibold text-black"
                 style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
               >
-                €20
+                €6.99
               </span>
               <span
-                className="text-xl text-gray-700 ml-2"
+                className="text-xl text-gray-700"
                 style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
               >
                 /month
               </span>
             </div>
-            <ul
-              className="space-y-3 mb-8 flex-grow"
-              style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
-            >
-              <li className="text-gray-700">✓ Tutto del PRO</li>
-              <li className="text-gray-700">✓ AI: 1,000,000 token/mese</li>
-              <li className="text-gray-700">✓ Voice transcription 2h/mese</li>
-              <li className="text-gray-700">✓ Canvas 50 immagini/mese</li>
-            </ul>
-            <Link to="/early-access" className="w-full">
+            <Link to="/early-access" className="w-full mb-8">
               <button
-                className="w-full bg-black text-white py-3 px-6 rounded-xl font-medium hover:bg-gray-800 transition"
+                className="w-full bg-blue-500 text-white py-3 px-6 rounded-xl font-medium hover:bg-blue-600 transition"
                 style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
               >
-                Get Started
+                Upgrade to Pro
               </button>
             </Link>
+            <ul
+              className="space-y-3 flex-grow"
+              style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
+            >
+              <li className="text-gray-700">✓ 500 credits/month</li>
+              <li className="text-gray-700">✓ Advanced AI images</li>
+              <li className="text-gray-700">✓ PDF export without watermark</li>
+              <li className="text-gray-700">✓ Priority support</li>
+            </ul>
           </div>
 
         </div>

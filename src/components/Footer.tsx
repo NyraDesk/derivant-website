@@ -55,15 +55,6 @@ const Footer = () => {
               Product
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              <a href="/#enterprise" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '14px',
-                color: 'rgba(255, 255, 255, 0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s ease',
-              }}>
-                Enterprise
-              </a>
               <a href="#" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
