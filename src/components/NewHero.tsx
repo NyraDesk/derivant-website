@@ -313,7 +313,7 @@ const NewHero = () => {
           display: 'grid',
           gridTemplateColumns: '2fr 3fr',
           gap: '60px',
-          alignItems: 'center',
+          alignItems: 'start',
         }}>
           {/* Colonna Sinistra: Features */}
           <div style={{
@@ -685,7 +685,6 @@ const NewHero = () => {
         <div className="mobile-canvas-video" style={{
           borderRadius: '20px',
           overflow: 'hidden',
-          height: '580px',
           background: '#0a0a0a',
           position: 'relative',
           border: '0.5px solid rgba(255, 255, 255, 0.08)',
@@ -695,8 +694,8 @@ const NewHero = () => {
             alt="Canvas preview"
             style={{
               width: '100%',
-              height: '100%',
-              objectFit: 'contain',
+              height: 'auto',
+              display: 'block',
             }}
           />
         </div>
