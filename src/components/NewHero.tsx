@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from 'react';
+import VideoComponent from './VideoComponent';
 
 const NewHero = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
   const galleryRef = useRef<HTMLDivElement>(null);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -11,14 +11,13 @@ const NewHero = () => {
   const [showFloatingNav, setShowFloatingNav] = useState(false);
   const lastScrollY = useRef(0);
 
+  // Slide 2 visibility observer
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            videoRef.current?.play();
-          } else {
-            videoRef.current?.pause();
+            setSlide2Visible(true);
           }
         });
       },
@@ -264,19 +263,24 @@ const NewHero = () => {
             position: 'relative',
             overflow: 'hidden',
           }}>
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
+            <VideoComponent
+              src="/VIDEO/derivant-demo.webm"
+              title="Derivant AI - Presentation Builder Demo"
+              description="Scopri come Derivant trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck."
+              thumbnailUrl="/VIDEO/derivant-demo-thumbnail.jpg"
+              duration="PT1M"
+              uploadDate="2026-01-27"
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              playsInline={true}
+              lazyLoad={false}
               style={{
                 width: '100%',
                 height: '100%',
                 objectFit: 'cover',
               }}
-            >
-              <source src="/VIDEO/derivant-demo.webm" type="video/webm" />
-            </video>
+            />
           </div>
         </div>
       </div>
@@ -439,20 +443,25 @@ const NewHero = () => {
             transform: slide2Visible ? 'translateY(0)' : 'translateY(20px)',
             transition: 'opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s',
           }}>
-            <video
-              ref={videoRef}
-              muted
-              loop
-              playsInline
-              autoPlay
+            <VideoComponent
+              src="/VIDEO/slide2-demo.webm"
+              title="Derivant AI - Design Workflow Demo"
+              description="Guarda come il workflow di Derivant mantiene la coerenza estetica su tutto il deck. Dallo stile Aura ai layout professionali, tutto automatizzato dall'AI."
+              thumbnailUrl="/VIDEO/slide2-demo-thumbnail.jpg"
+              duration="PT45S"
+              uploadDate="2026-01-27"
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              playsInline={true}
+              lazyLoad={true}
+              rootMargin="300px"
               style={{
                 width: '100%',
                 height: '100%',
                 objectFit: 'contain',
               }}
-            >
-              <source src="/VIDEO/slide2-demo.webm" type="video/webm" />
-            </video>
+            />
           </div>
         </div>
       </div>
