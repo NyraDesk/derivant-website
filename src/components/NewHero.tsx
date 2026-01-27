@@ -107,6 +107,20 @@ const NewHero = () => {
         }}
       >
         <a
+          href="#enterprise"
+          style={{
+            fontFamily: "'Space Mono', monospace",
+            fontSize: '13px',
+            color: 'rgba(255, 255, 255, 0.8)',
+            textDecoration: 'none',
+            padding: '8px 16px',
+            borderRadius: '100px',
+            transition: 'all 0.2s ease',
+          }}
+        >
+          Enterprise
+        </a>
+        <a
           href="/plans"
           style={{
             fontFamily: "'Space Mono', monospace",
