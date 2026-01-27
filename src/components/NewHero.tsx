@@ -417,7 +417,7 @@ const NewHero = () => {
           <div style={{
             borderRadius: '20px',
             overflow: 'hidden',
-            aspectRatio: '4 / 3',
+            aspectRatio: '16 / 9',
             background: '#0a0a0a',
             position: 'relative',
             border: '0.5px solid rgba(255, 255, 255, 0.08)',
@@ -434,7 +434,7 @@ const NewHero = () => {
               style={{
                 width: '100%',
                 height: '100%',
-                objectFit: 'cover',
+                objectFit: 'contain',
               }}
             >
               <source src="/VIDEO/slide2-demo.webm" type="video/webm" />
@@ -696,7 +696,7 @@ const NewHero = () => {
             style={{
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'contain',
             }}
           />
         </div>
