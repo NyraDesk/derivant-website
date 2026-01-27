@@ -3,19 +3,27 @@ import { Link } from 'react-router-dom';
 
 const articles = [
   {
+    id: 'derivant-vs-gamma-powerpoint-2026',
+    category: 'Comparison',
+    date: 'Jan 27, 2026',
+    title: 'Derivant vs Gamma vs PowerPoint: Perché l\'AI Generativa non basta più',
+    description: 'Scopri perché Derivant è l\'alternativa professionale a Gamma e PowerPoint per chi cerca un design d\'elite e risultati da studio creativo.',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
     id: 'privacy-app-note-local-first',
     category: 'Privacy',
-    date: 'Oct 29, 2025',
-    title: 'Privacy nelle App Note: Perché i Tuoi Dati Dovrebbero Restare Sul Tuo Dispositivo',
-    description: 'Scopri perché le app note cloud-based mettono a rischio i tuoi dati. Come funziona il local-first storage e perché è più sicuro.',
+    date: 'Jan 27, 2026',
+    title: 'Privacy nelle Presentazioni AI: Come Derivant Protegge i Tuoi Dati',
+    description: 'Scopri come funziona la privacy nelle piattaforme AI per presentazioni e perché Derivant è costruito con un approccio privacy-first.',
     image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
   },
   {
     id: 'ai-assistants-operations',
     category: 'Resources',
-    date: 'Jan 10, 2025',
-    title: '5 Ways AI Assistants Are Transforming Operations',
-    description: 'From handling support queries to managing schedules, see how AI assistants are streamlining internal workflows ...',
+    date: 'Jan 10, 2026',
+    title: '5 Modi in cui l\'AI sta Trasformando le Presentazioni Professionali',
+    description: 'Dall\'ideazione alla delivery, come l\'intelligenza artificiale sta rivoluzionando il modo in cui creiamo e presentiamo.',
     image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
   }
 ];

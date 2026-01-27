@@ -71,6 +71,13 @@ function App() {
               <Footer />
             </>
           } />
+          <Route path="/blog/derivant-vs-gamma-powerpoint-2026" element={
+            <>
+              <Header />
+              <BlogArticlePage />
+              <Footer />
+            </>
+          } />
           <Route path="/early-access" element={
             <>
               <Header />
