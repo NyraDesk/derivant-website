@@ -263,11 +263,6 @@ const NewHero = () => {
             >
               <source src="/VIDEO/derivant-demo.webm" type="video/webm" />
             </video>
-            <div style={{
-              position: 'absolute',
-              inset: 0,
-              background: 'radial-gradient(ellipse at 30% 50%, rgba(120, 80, 220, 0.12) 0%, transparent 60%), radial-gradient(ellipse at 70% 40%, rgba(60, 180, 255, 0.08) 0%, transparent 50%)',
-            }} />
           </div>
         </div>
       </div>
