@@ -430,19 +430,15 @@ const NewHero = () => {
               muted
               loop
               playsInline
+              autoPlay
               style={{
                 width: '100%',
                 height: '100%',
                 objectFit: 'cover',
               }}
             >
-              {/* <source src="/feature-video.mp4" type="video/mp4" /> */}
+              <source src="/VIDEO/slide2-demo.webm" type="video/webm" />
             </video>
-            <div style={{
-              position: 'absolute',
-              inset: 0,
-              background: 'radial-gradient(ellipse at 40% 50%, rgba(120, 80, 220, 0.1) 0%, transparent 60%), radial-gradient(ellipse at 70% 40%, rgba(60, 180, 255, 0.06) 0%, transparent 50%)',
-            }} />
           </div>
         </div>
       </div>
@@ -694,24 +690,15 @@ const NewHero = () => {
           position: 'relative',
           border: '0.5px solid rgba(255, 255, 255, 0.08)',
         }}>
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
+          <img
+            src="/slide3-image.png"
+            alt="Canvas preview"
             style={{
               width: '100%',
               height: '100%',
               objectFit: 'cover',
             }}
-          >
-            {/* <source src="/canvas-video.mp4" type="video/mp4" /> */}
-          </video>
-          <div style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'radial-gradient(ellipse at 40% 60%, rgba(120, 80, 220, 0.08) 0%, transparent 60%), radial-gradient(ellipse at 70% 30%, rgba(60, 180, 255, 0.05) 0%, transparent 50%)',
-          }} />
+          />
         </div>
       </div>
 
