@@ -6,7 +6,7 @@
   <url>
     <loc>https://derivant.ai/</loc>
     <video:video>
-      <video:thumbnail_loc>https://derivant.ai/VIDEO/derivant-demo-thumbnail.jpg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://derivant.ai/VIDEO/derivant-demo-thumbnail.png</video:thumbnail_loc>
       <video:title>Derivant AI - Presentation Builder Demo</video:title>
       <video:description>Scopri come Derivant trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck.</video:description>
       <video:content_loc>https://derivant.ai/VIDEO/derivant-demo.webm</video:content_loc>
@@ -24,7 +24,7 @@
   <url>
     <loc>https://derivant.ai/</loc>
     <video:video>
-      <video:thumbnail_loc>https://derivant.ai/VIDEO/slide2-demo-thumbnail.jpg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://derivant.ai/VIDEO/slide2-demo-thumbnail.png</video:thumbnail_loc>
       <video:title>Derivant AI - Design Workflow Demo</video:title>
       <video:description>Guarda come il workflow di Derivant mantiene la coerenza estetica su tutto il deck. Dallo stile Aura ai layout professionali, tutto automatizzato dall'AI.</video:description>
       <video:content_loc>https://derivant.ai/VIDEO/slide2-demo.webm</video:content_loc>

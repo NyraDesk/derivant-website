@@ -267,7 +267,7 @@ const NewHero = () => {
               src="/VIDEO/derivant-demo.webm"
               title="Derivant AI - Presentation Builder Demo"
               description="Scopri come Derivant trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck."
-              thumbnailUrl="/VIDEO/derivant-demo-thumbnail.jpg"
+              thumbnailUrl="/VIDEO/derivant-demo-thumbnail.png"
               duration="PT1M"
               uploadDate="2026-01-27"
               autoPlay={true}
@@ -447,7 +447,7 @@ const NewHero = () => {
               src="/VIDEO/slide2-demo.webm"
               title="Derivant AI - Design Workflow Demo"
               description="Guarda come il workflow di Derivant mantiene la coerenza estetica su tutto il deck. Dallo stile Aura ai layout professionali, tutto automatizzato dall'AI."
-              thumbnailUrl="/VIDEO/slide2-demo-thumbnail.jpg"
+              thumbnailUrl="/VIDEO/slide2-demo-thumbnail.png"
               duration="PT45S"
               uploadDate="2026-01-27"
               autoPlay={true}
