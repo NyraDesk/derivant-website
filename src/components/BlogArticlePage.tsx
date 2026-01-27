@@ -6,160 +6,142 @@ import { Helmet } from 'react-helmet-async';
 // Articles data
 const articles = {
   'privacy-app-note-local-first': {
-    date: 'October 29, 2025',
+    date: 'January 27, 2026',
     category: 'Privacy',
-    title: 'Privacy nelle App Note: Perché i Tuoi Dati Dovrebbero Restare Sul Tuo Dispositivo',
-    description: 'Scopri perché le app note cloud-based mettono a rischio i tuoi dati. Come funziona il local-first storage e perché è più sicuro per studenti e creativi.',
+    title: 'Privacy nelle Presentazioni AI: Come Derivant Protegge i Tuoi Dati',
+    description: 'Scopri come funziona la privacy nelle piattaforme AI per presentazioni e perché Derivant è costruito con un approccio privacy-first.',
     image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop',
     image2: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&h=600&q=80',
     image3: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=1200&h=600&q=80',
     author: 'Marco Conte',
-    content: `Quando prendi appunti, progetti creativi, idee personali o note di lavoro, dove vanno a finire questi dati? Se usi app popolari come Notion, Evernote o Google Keep, la risposta è semplice: sui loro server cloud.
+    content: `Quando crei una presentazione con l'AI, dove vanno a finire i tuoi dati? Pitch deck con proiezioni finanziarie, moodboard con idee creative non pubblicate, presentazioni commerciali con informazioni riservate.
 
-E questo è un problema.
+La risposta dipende dalla piattaforma che usi.
 
 
-Il Rischio Nascosto delle App Cloud-Based
+Il Problema delle Piattaforme AI Generiche
 
-Ogni volta che scrivi una nota in un'app cloud:
+Molte piattaforme di presentazione AI:
 
-1. I tuoi dati attraversano internet - Possono essere intercettati
-2. Vengono salvati su server di terze parti - Non hai controllo
-3. Possono essere analizzati - Per advertising, training AI, o altri scopi
-4. Sono vulnerabili a breach - Hacker, leak, violazioni dati
+1. Salvano tutto sui loro server - Le tue slide, i tuoi testi, le tue immagini
+2. Usano i tuoi contenuti per training - I tuoi pitch deck potrebbero "ispirare" altri utenti
+3. Non garantiscono cancellazione - I dati possono restare anche dopo che elimini il progetto
+4. Condividono con terze parti - Analytics, advertising, partner commerciali
 
-Esempio reale: Nel 2023, Evernote ha modificato la sua privacy policy permettendo ai dipendenti di leggere le note degli utenti "per migliorare il servizio".
+Per un'agenzia o una startup, questo è un rischio concreto.
 
 [IMG2]
 
-Cosa Significa "Local-First"?
+Come Derivant Gestisce i Tuoi Dati
 
-Local-first è un approccio diverso alla gestione dati:
+Derivant è costruito con un approccio privacy-conscious:
 
-- I tuoi dati vivono sul tuo dispositivo (computer, telefono)
-- Niente cloud obbligatorio - Funziona offline
-- Tu hai il controllo - Nessuno può accedere senza tuo permesso
-- Zero raccolta dati - Le tue note non lasciano mai il tuo dispositivo
+Dati Minimi:
+- Salviamo solo ciò che serve per il funzionamento
+- Le tue presentazioni sono tue
+- Nessun training AI sui tuoi contenuti
+
+Elaborazione Sicura:
+- L'AI elabora le richieste senza memorizzare il contesto
+- Le tue idee creative restano protette
+- Zero condivisione con terze parti per scopi commerciali
+
+Controllo Totale:
+- Esporta le tue presentazioni in qualsiasi momento
+- Elimina i tuoi progetti quando vuoi
+- Trasparenza completa su cosa facciamo con i dati
 
 [IMG3]
 
-I Vantaggi del Local-First Storage
+Perché la Privacy è Cruciale per i Professionisti
 
-1. Privacy Totale
-Le tue note, progetti, idee personali restano solo tue. Nessuna azienda può leggerle, analizzarle o usarle per training AI.
+Startup:
+- Pitch deck con valutazioni e proiezioni finanziarie
+- Strategie go-to-market non pubbliche
+- Round di investimento confidenziali
 
-2. Funziona Sempre
-Senza internet? Nessun problema. Le tue note sono sempre accessibili perché sono sul tuo dispositivo.
+Agenzie:
+- Proposte creative per clienti
+- Strategy deck con dati sensibili
+- Moodboard per progetti in sviluppo
 
-3. Velocità
-Non devi aspettare sync cloud. Tutto è istantaneo perché locale.
-
-4. Zero Costi Nascosti
-Niente abbonamenti cloud, limiti di storage, o upgrade forzati.
-
-5. Controllo Completo
-Vuoi fare backup? Esporta i dati. Vuoi cambiare app? I tuoi dati sono tuoi.
-
-
-Come Funziona NotezAI con Local-First
-
-NotezAI è costruito con privacy-first approach:
-
-Storage Locale:
-- Tutte le note sono salvate in IndexedDB nel tuo browser
-- Zero server esterni - I dati non lasciano mai il tuo dispositivo
-- Offline-first - L'app funziona completamente senza internet
-
-AI Privacy-Conscious:
-- L'AI elabora richieste tramite API sicure
-- Solo il testo della richiesta va all'AI (per generare risposta)
-- Il contesto delle note resta locale
-- Nessuno storico salvato su server esterni
-
-Esempio pratico:
-Quando chiedi all'AI "Riassumi le mie note di biologia":
-1. NotezAI legge le note dal tuo dispositivo (locale)
-2. Manda solo "Riassumi: [testo note]" all'AI
-3. Riceve il riassunto
-4. Lo salva sul tuo dispositivo (locale)
-
-Risultato: L'AI ti aiuta, ma le tue note originali non lasciano mai il tuo computer.
+Fashion & Luxury:
+- Collezioni non ancora lanciate
+- Trend forecasting proprietari
+- Brand deck per partner esclusivi
 
 
-Local-First vs Cloud: Confronto
+Il Nostro Impegno
 
-Privacy:
-- Cloud App: Dati su server terzi
-- NotezAI: Dati solo sul tuo dispositivo
+Derivant non è solo un tool per creare presentazioni belle velocemente. È uno strumento costruito per professionisti che lavorano con informazioni sensibili.
 
-Funziona offline:
-- Cloud App: No
-- NotezAI: Sì
+Non vendiamo i tuoi dati. Non usiamo i tuoi contenuti per training. Non condividiamo con terze parti.
 
-Velocità:
-- Cloud App: Dipende da internet
-- NotezAI: Istantanea
-
-Controllo dati:
-- Cloud App: Limitato
-- NotezAI: Totale
-
-Costo storage:
-- Cloud App: Abbonamento
-- NotezAI: Gratis (illimitato locale)
-
-
-Chi Dovrebbe Usare App Local-First?
-
-Studenti:
-- Note sensibili, esami, progetti personali
-- Lavoro offline in biblioteca/treno
-
-Creativi:
-- Progetti in sviluppo, idee non pubbliche
-- Portfolio work-in-progress
-
-Professionisti:
-- Dati clienti, strategie business
-- Note confidenziali
-
-Chiunque valorizzi privacy:
-- Journal personale
-- Idee imprenditoriali
-- Ricerche sensibili
-
-
-Il Futuro è Local-First
-
-Sempre più persone si stanno rendendo conto che i dati personali dovrebbero restare personali.
-
-Il movimento local-first sta crescendo perché offre:
-- Privacy reale
-- Controllo totale
-- Velocità superiore
-- Nessuna dipendenza da aziende tech
-
-NotezAI è parte di questo movimento. Un'app che ti aiuta con l'intelligenza artificiale, ma senza compromettere la tua privacy.
+La tua creatività resta tua.
 
 
 Conclusione
 
-Le tue note contengono idee, progetti, pensieri personali. Meritano di restare privati.
+In un mondo dove i dati sono il nuovo petrolio, scegliere strumenti che rispettano la tua privacy non è paranoia. È buon senso professionale.
 
-Con app local-first come [NotezAI](https://derivant.ai), non devi scegliere tra funzionalità moderne (come AI) e privacy. Puoi avere entrambe.
+Con Derivant, puoi creare presentazioni di livello elite senza compromettere la sicurezza delle tue idee.
 
-Scopri tutte le [funzionalità di NotezAI](/features) o esplora i [piani disponibili](/plans).
-
-Note illimitate. AI integrata. Privacy garantita. Sul tuo dispositivo.`
+Scopri i [piani disponibili](/plans) o inizia subito con [Early Access](/early-access).`
   },
   'ai-assistants-operations': {
-    date: 'January 10, 2025',
+    date: 'January 10, 2026',
     category: 'Resources',
-    title: '5 Ways AI Assistants Are Transforming Operations',
-    description: 'From handling support queries to managing schedules, see how AI assistants are streamlining internal workflows.',
+    title: '5 Modi in cui l\'AI sta Trasformando le Presentazioni Professionali',
+    description: 'Dall\'ideazione alla delivery, come l\'intelligenza artificiale sta rivoluzionando il modo in cui creiamo e presentiamo.',
     image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop',
     author: 'Marco Conte',
-    content: 'Article content coming soon...'
+    content: `L'intelligenza artificiale non sta solo automatizzando la creazione di slide. Sta ridefinendo completamente il workflow delle presentazioni professionali.
+
+Ecco 5 modi concreti in cui l'AI sta cambiando le regole del gioco.
+
+
+1. Dalla Pagina Bianca al Primo Draft in Secondi
+
+Il blocco creativo è reale. Fissare una slide vuota può paralizzare anche i professionisti più esperti.
+
+L'AI elimina questo problema. Dai un outline testuale e ottieni una struttura visiva professionale istantaneamente. Non è magia: è un punto di partenza solido su cui costruire.
+
+
+2. Coerenza Estetica Automatica
+
+Il problema più comune nelle presentazioni? Slide che sembrano fatte da persone diverse.
+
+L'AI mantiene un "filo rosso" estetico su tutto il deck. Stessi font, stessi colori, stessa gerarchia visiva. Dall'inizio alla fine.
+
+
+3. Design Professionale Senza Designer
+
+Non tutti hanno un team grafico. Non tutti possono permettersi uno studio creativo per ogni pitch.
+
+L'AI democratizza il design di livello elite. Risultati da agenzia, accessibili a tutti.
+
+
+4. Iterazioni Rapide
+
+Devi cambiare tono? Passare da "corporate" a "startup"? Adattare per un pubblico diverso?
+
+Con l'AI, le iterazioni che richiedevano ore ora richiedono minuti.
+
+
+5. Focus sulla Strategia, Non sull'Esecuzione
+
+Il vero valore di una presentazione non è nelle slide. È nel messaggio, nella strategia, nella storia che racconti.
+
+L'AI si occupa dell'esecuzione tecnica. Tu ti concentri su ciò che conta davvero.
+
+
+Il Futuro è Già Qui
+
+Derivant incarna questa visione. Un tool che combina la velocità dell'AI con l'estetica di uno studio creativo.
+
+Non rimpiazza la tua creatività. La amplifica.
+
+Scopri come su [derivant.ai](/).`
   }
 };
 
@@ -183,7 +165,7 @@ const BlogArticlePage = () => {
             <div className="relative bg-gradient-to-br from-gray-100 via-blue-50 to-gray-50 rounded-3xl overflow-hidden border border-gray-200 shadow-2xl">
               <img
                 src={article.image2}
-                alt="Rischi privacy app note cloud - server data center"
+                alt="Sicurezza dati presentazioni AI"
                 className="w-full h-80 lg:h-96 object-cover"
               />
             </div>
@@ -197,7 +179,7 @@ const BlogArticlePage = () => {
             <div className="relative bg-gradient-to-br from-gray-100 via-blue-50 to-gray-50 rounded-3xl overflow-hidden border border-gray-200 shadow-2xl">
               <img
                 src={article.image3}
-                alt="Local-first storage sicuro - privacy lock security"
+                alt="Privacy e sicurezza Derivant"
                 className="w-full h-80 lg:h-96 object-cover"
               />
             </div>
@@ -299,22 +281,22 @@ const BlogArticlePage = () => {
     <>
       <Helmet>
         {/* SEO Meta Tags */}
-        <title>Privacy nelle App Note: Perché i Tuoi Dati Dovrebbero Restare Sul Tuo Dispositivo</title>
-        <meta name="description" content="Scopri perché le app note cloud-based mettono a rischio i tuoi dati. Come funziona il local-first storage e perché è più sicuro per studenti e creativi." />
-        <meta name="keywords" content="privacy app note, local first, storage locale, sicurezza dati, app note offline, note privacy, IndexedDB, app note studenti" />
-        <link rel="canonical" href="https://derivant.ai/blog/privacy-app-note-local-first" />
+        <title>{article.title} | Derivant.ai</title>
+        <meta name="description" content={article.description} />
+        <meta name="keywords" content="AI presentazioni, privacy presentazioni, pitch deck AI, Derivant, presentazioni professionali" />
+        <link rel="canonical" href={`https://derivant.ai/blog/${slug}`} />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Privacy nelle App Note: Local-First Storage" />
-        <meta property="og:description" content="Perché i tuoi dati dovrebbero restare sul tuo dispositivo. Guida privacy app note." />
+        <meta property="og:title" content={article.title} />
+        <meta property="og:description" content={article.description} />
         <meta property="og:image" content={article.image} />
-        <meta property="og:url" content="https://derivant.ai/blog/privacy-app-note-local-first" />
+        <meta property="og:url" content={`https://derivant.ai/blog/${slug}`} />
         <meta property="og:type" content="article" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Privacy nelle App Note: Local-First Storage" />
-        <meta name="twitter:description" content="Perché i tuoi dati dovrebbero restare sul tuo dispositivo. Guida privacy app note." />
+        <meta name="twitter:title" content={article.title} />
+        <meta name="twitter:description" content={article.description} />
         <meta name="twitter:image" content={article.image} />
 
         {/* Schema.org Article */}
@@ -324,14 +306,14 @@ const BlogArticlePage = () => {
             "@type": "Article",
             "headline": article.title,
             "image": article.image,
-            "datePublished": "2025-10-29",
+            "datePublished": "2026-01-27",
             "author": {
               "@type": "Person",
               "name": article.author
             },
             "publisher": {
               "@type": "Organization",
-              "name": "NotezAI",
+              "name": "Derivant",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://derivant.ai/logo.png"
@@ -406,16 +388,16 @@ const BlogArticlePage = () => {
             <div className="mt-16 mb-12">
               <div className="bg-gradient-to-br from-blue-50 via-white to-gray-50 rounded-3xl p-8 lg:p-12 border border-gray-200 shadow-xl text-center">
                 <h3 className="text-3xl lg:text-4xl font-bold text-black mb-4">
-                  Pronto a Proteggere i Tuoi Dati?
+                  Pronto a Creare Presentazioni Elite?
                 </h3>
                 <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-                  Inizia con NotezAI oggi. Note illimitate, AI integrata, privacy garantita.
+                  Inizia con Derivant oggi. AI potente, design professionale, privacy garantita.
                 </p>
                 <Link
                   to="/early-access"
                   className="inline-flex items-center justify-center px-8 py-4 bg-black text-white rounded-full font-semibold text-lg hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
-                  Inizia con NotezAI
+                  Inizia Gratis
                 </Link>
               </div>
             </div>
@@ -423,7 +405,7 @@ const BlogArticlePage = () => {
             {/* Author */}
             <div className="mt-16 p-6 bg-gray-100 backdrop-blur-xl border border-gray-200 rounded-2xl">
               <p className="text-gray-600 text-sm mb-2">Scritto da</p>
-              <p className="text-black text-lg font-medium">{article.author}, Founder di NotezAI</p>
+              <p className="text-black text-lg font-medium">{article.author}, Founder di Derivant</p>
             </div>
 
             {/* Share Section */}

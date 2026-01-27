@@ -76,13 +76,13 @@ const FeaturesPage = () => {
                   className="text-2xl font-medium text-black mb-2"
                   style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
                 >
-                  NotezAI
+                  Derivant Presentation Builder
                 </h3>
                 <p
                   className="text-xl text-gray-700"
                   style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
                 >
-                  Workspace unificato con AI integrata
+                  AI presentation builder per pitch deck, moodboard e presentazioni professionali
                 </p>
               </div>
               <div>
