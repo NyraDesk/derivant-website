@@ -7,6 +7,11 @@ import FeaturesPage from './components/FeaturesPage';
 import BlogPage from './components/BlogPage';
 import EarlyAccessPage from './components/EarlyAccessPage';
 import BlogArticlePage from './components/BlogArticlePage';
+import ResourcesPage from './components/ResourcesPage';
+import ResourceArticlePage from './components/ResourceArticlePage';
+import GuidaPitchDeckPage from './components/GuidaPitchDeckPage';
+import AiFashionPresentationsPage from './components/AiFashionPresentationsPage';
+import AiAgenzieComunicazionePage from './components/AiAgenzieComunicazionePage';
 
 const HomePage = () => (
   <NewHero />
@@ -70,6 +75,41 @@ function App() {
             <>
               <Header />
               <EarlyAccessPage />
+            </>
+          } />
+          <Route path="/resources" element={
+            <>
+              <Header />
+              <ResourcesPage />
+              <Footer />
+            </>
+          } />
+          <Route path="/resources/:slug" element={
+            <>
+              <Header />
+              <ResourceArticlePage />
+              <Footer />
+            </>
+          } />
+          <Route path="/guida-pitch-deck-2026" element={
+            <>
+              <Header />
+              <GuidaPitchDeckPage />
+              <Footer />
+            </>
+          } />
+          <Route path="/ai-fashion-presentations" element={
+            <>
+              <Header />
+              <AiFashionPresentationsPage />
+              <Footer />
+            </>
+          } />
+          <Route path="/ai-agenzie-comunicazione" element={
+            <>
+              <Header />
+              <AiAgenzieComunicazionePage />
+              <Footer />
             </>
           } />
         </Routes>

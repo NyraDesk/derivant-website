@@ -2,5 +2,12 @@
 User-agent: *
 Allow: /
 
+# Explicitly allow Googlebot
+User-agent: Googlebot
+Allow: /
+
 # Sitemap
 Sitemap: https://derivant.ai/sitemap.xml
+
+# Host preference (no www)
+Host: https://derivant.ai
