@@ -4,6 +4,22 @@ import { Helmet } from 'react-helmet-async';
 
 const articles = [
   {
+    id: 'automatizzare-presentazioni-aziendali-ai',
+    category: 'Enterprise',
+    date: 'Feb 14, 2026',
+    title: 'Come Automatizzare le Presentazioni Aziendali con l\'AI nel 2026',
+    description: 'Guida pratica per team marketing, agenzie e aziende che producono decine di presentazioni al mese.',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
+    id: 'presentazioni-consulenti-ai-risparmio-tempo',
+    category: 'Consulting',
+    date: 'Feb 14, 2026',
+    title: 'Presentazioni per Consulenti: Come l\'AI Fa Risparmiare 10 Ore a Settimana',
+    description: 'Per consulenti e professionisti che vivono di presentazioni: dall\'idea al deck in minuti, non ore.',
+    image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
     id: 'derivant-vs-gamma-powerpoint-2026',
     category: 'Comparison',
     date: 'Jan 27, 2026',

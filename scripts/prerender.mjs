@@ -14,6 +14,8 @@ const routes = [
   '/blog/privacy-app-note-local-first',
   '/blog/derivant-vs-gamma-powerpoint-2026',
   '/blog/ai-assistants-operations',
+  '/blog/automatizzare-presentazioni-aziendali-ai',
+  '/blog/presentazioni-consulenti-ai-risparmio-tempo',
   '/early-access',
   '/resources',
   '/guida-pitch-deck-2026',
