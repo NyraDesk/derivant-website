@@ -411,104 +411,74 @@ const NewHero = () => {
             transition: 'opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s',
           }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '36px', marginBottom: '48px' }}>
-              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                <span style={{
-                  fontFamily: "'Space Mono', monospace",
-                  fontSize: '14px',
-                  fontWeight: 700,
-                  color: 'rgba(255, 255, 255, 0.3)',
-                  minWidth: '28px',
-                  marginTop: '4px',
-                }}>01</span>
-                <div>
-                  <p className="mobile-feature-title" style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '24px',
-                    fontWeight: 800,
-                    color: '#ffffff',
-                    letterSpacing: '-0.02em',
-                    margin: 0,
-                    marginBottom: '10px',
-                  }}>
-                    Input libero
-                  </p>
-                  <p className="mobile-feature-desc" style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '17px',
-                    fontWeight: 400,
-                    color: 'rgba(255, 255, 255, 0.55)',
-                    margin: 0,
-                    lineHeight: 1.6,
-                  }}>
-                    Brief, documento o link. Qualsiasi formato.
-                  </p>
-                </div>
+              <div>
+                <p className="mobile-feature-title" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '24px',
+                  fontWeight: 800,
+                  color: '#ffffff',
+                  letterSpacing: '-0.02em',
+                  margin: 0,
+                  marginBottom: '10px',
+                }}>
+                  Incolla, scrivi o carica
+                </p>
+                <p className="mobile-feature-desc" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '17px',
+                  fontWeight: 400,
+                  color: 'rgba(255, 255, 255, 0.55)',
+                  margin: 0,
+                  lineHeight: 1.6,
+                }}>
+                  Il tuo testo, un brief, un documento o un link. Tu dai il contenuto, l'AI fa il resto.
+                </p>
               </div>
-              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                <span style={{
-                  fontFamily: "'Space Mono', monospace",
-                  fontSize: '14px',
-                  fontWeight: 700,
-                  color: 'rgba(255, 255, 255, 0.3)',
-                  minWidth: '28px',
-                  marginTop: '4px',
-                }}>02</span>
-                <div>
-                  <p className="mobile-feature-title" style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '24px',
-                    fontWeight: 800,
-                    color: '#ffffff',
-                    letterSpacing: '-0.02em',
-                    margin: 0,
-                    marginBottom: '10px',
-                  }}>
-                    L'AI costruisce
-                  </p>
-                  <p className="mobile-feature-desc" style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '17px',
-                    fontWeight: 400,
-                    color: 'rgba(255, 255, 255, 0.55)',
-                    margin: 0,
-                    lineHeight: 1.6,
-                  }}>
-                    Ricerca, struttura, brand kit. In automatico.
-                  </p>
-                </div>
+              <div>
+                <p className="mobile-feature-title" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '24px',
+                  fontWeight: 800,
+                  color: '#ffffff',
+                  letterSpacing: '-0.02em',
+                  margin: 0,
+                  marginBottom: '10px',
+                }}>
+                  L'AI struttura tutto
+                </p>
+                <p className="mobile-feature-desc" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '17px',
+                  fontWeight: 400,
+                  color: 'rgba(255, 255, 255, 0.55)',
+                  margin: 0,
+                  lineHeight: 1.6,
+                }}>
+                  Ricerca dati, organizza i contenuti, applica il tuo brand. Automaticamente.
+                </p>
               </div>
-              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                <span style={{
-                  fontFamily: "'Space Mono', monospace",
-                  fontSize: '14px',
-                  fontWeight: 700,
-                  color: 'rgba(255, 255, 255, 0.3)',
-                  minWidth: '28px',
-                  marginTop: '4px',
-                }}>03</span>
-                <div>
-                  <p className="mobile-feature-title" style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '24px',
-                    fontWeight: 800,
-                    color: '#ffffff',
-                    letterSpacing: '-0.02em',
-                    margin: 0,
-                    marginBottom: '10px',
-                  }}>
-                    Pronto
-                  </p>
-                  <p className="mobile-feature-desc" style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '17px',
-                    fontWeight: 400,
-                    color: 'rgba(255, 255, 255, 0.55)',
-                    margin: 0,
-                    lineHeight: 1.6,
-                  }}>
-                    Modifica, presenta o esporta. Subito.
-                  </p>
-                </div>
+              <div>
+                <p className="mobile-feature-title" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '24px',
+                  fontWeight: 800,
+                  color: '#ffffff',
+                  letterSpacing: '-0.02em',
+                  margin: 0,
+                  marginBottom: '10px',
+                }}>
+                  Presenta o esporta
+                </p>
+                <p className="mobile-feature-desc" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '17px',
+                  fontWeight: 400,
+                  color: 'rgba(255, 255, 255, 0.55)',
+                  margin: 0,
+                  lineHeight: 1.6,
+                }}>
+                  Deck pronto. Modifica quello che vuoi, esporta in PowerPoint o PDF.
+                </p>
               </div>
             </div>
             <a
