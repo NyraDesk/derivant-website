@@ -421,7 +421,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  Incolla, scrivi o carica
+                  Hai già tutto quello che serve
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -431,7 +431,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Il tuo testo, un brief, un documento o un link. Tu dai il contenuto, l'AI fa il resto.
+                  Un brief, un documento, il testo di una email. L'AI parte da lì.
                 </p>
               </div>
               <div>
@@ -444,7 +444,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  L'AI struttura tutto
+                  Le ore di lavoro manuale spariscono
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -454,7 +454,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Ricerca dati, organizza i contenuti, applica il tuo brand. Automaticamente.
+                  Struttura, contenuti, brand. Quello che il tuo team faceva in mezza giornata.
                 </p>
               </div>
               <div>
@@ -467,7 +467,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  Presenta o esporta
+                  Pronto quando serve a te
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -477,7 +477,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Deck pronto. Modifica quello che vuoi, esporta in PowerPoint o PDF.
+                  Presentazione finita. PowerPoint, PDF. Presenta o condividi.
                 </p>
               </div>
             </div>
