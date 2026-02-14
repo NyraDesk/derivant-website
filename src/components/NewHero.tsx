@@ -421,7 +421,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  Hai già tutto quello che serve
+                  Un brief basta.
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -431,7 +431,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Un brief, un documento, il testo di una email. L'AI parte da lì.
+                  Testo, documento o link. Cinque minuti dopo hai un deck.
                 </p>
               </div>
               <div>
@@ -444,7 +444,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  Le ore di lavoro manuale spariscono
+                  Mezza giornata? Cinque minuti.
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -454,7 +454,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Struttura, contenuti, brand. Quello che il tuo team faceva in mezza giornata.
+                  Web research, struttura, contenuti, brand. Tutto automatico.
                 </p>
               </div>
               <div>
@@ -467,7 +467,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  Pronto quando serve a te
+                  Presenta domani mattina.
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -477,7 +477,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Presentazione finita. PowerPoint, PDF. Presenta o condividi.
+                  Deck finito. PowerPoint, PDF. Modifica o presenta così com'è.
                 </p>
               </div>
             </div>
