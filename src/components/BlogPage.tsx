@@ -20,6 +20,46 @@ const articles = [
     image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&h=600&q=80'
   },
   {
+    id: 'presentazioni-pharma-ai-compliant',
+    category: 'Pharma',
+    date: 'Feb 14, 2026',
+    title: 'Presentazioni Pharma con l\'AI: Velocità e Compliance per il Settore Farmaceutico',
+    description: 'Come le aziende farmaceutiche possono accelerare la produzione di presentazioni mantenendo compliance e brand governance.',
+    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
+    id: 'presentazioni-hr-onboarding-formazione',
+    category: 'HR',
+    date: 'Feb 14, 2026',
+    title: 'Presentazioni HR: Come l\'AI Trasforma Onboarding, Formazione e Comunicazione Interna',
+    description: 'Per i team HR che devono produrre materiali formativi e comunicazioni interne professionali.',
+    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
+    id: 'presentazioni-formazione-aziendale-ai',
+    category: 'Training',
+    date: 'Feb 14, 2026',
+    title: 'Formazione Aziendale con l\'AI: Creare Corsi e Materiali Formativi in Minuti',
+    description: 'Come formatori e training manager possono usare l\'AI per creare materiali didattici professionali.',
+    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
+    id: 'presentazioni-sales-team-ai',
+    category: 'Sales',
+    date: 'Feb 14, 2026',
+    title: 'Presentazioni per Sales Team: Come l\'AI Accelera il Ciclo di Vendita',
+    description: 'Per direttori commerciali e sales team che devono creare pitch personalizzati per ogni prospect.',
+    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
+    id: 'pitch-deck-startup-ai-investitori',
+    category: 'Startup',
+    date: 'Feb 14, 2026',
+    title: 'Pitch Deck per Startup: Come Creare un Deck che Convince gli Investitori con l\'AI',
+    description: 'Guida pratica per founder che devono creare pitch deck professionali per investitori e acceleratori.',
+    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
     id: 'derivant-vs-gamma-powerpoint-2026',
     category: 'Comparison',
     date: 'Jan 27, 2026',

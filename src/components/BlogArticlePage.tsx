@@ -388,6 +388,448 @@ Il consiglio è semplice: prendi la prossima presentazione che devi creare e pro
 La maggior parte dei consulenti che provano Derivant non tornano più al workflow manuale. Non per pigrizia — per efficienza.
 
 Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+  },
+  'presentazioni-pharma-ai-compliant': {
+    date: 'February 14, 2026',
+    category: 'Pharma',
+    title: 'Presentazioni Pharma con l\'AI: Velocità e Compliance per il Settore Farmaceutico',
+    description: 'Come le aziende farmaceutiche possono accelerare la produzione di presentazioni mantenendo compliance, coerenza scientifica e brand governance.',
+    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&h=600&q=80',
+    author: 'Marco Conte',
+    content: `Il settore farmaceutico ha un rapporto complicato con le presentazioni. Ne produce centinaia ogni mese, ma ogni slide deve rispettare vincoli stringenti: compliance normativa, accuratezza scientifica, approvazione del regulatory.
+
+Il risultato è un paradosso. Le presentazioni pharma richiedono velocità (il mercato non aspetta) ma anche rigore (un claim sbagliato può costare milioni). E il processo tradizionale non riesce a garantire entrambi.
+
+
+Il Volume delle Presentazioni nel Pharma
+
+Un'azienda farmaceutica media produce presentazioni per:
+
+- Launch di prodotto — deck per la forza vendita, materiali per i KOL, presentazioni per i congressi
+- Medical Affairs — slide scientifiche per advisory board, pubblicazioni, medical education
+- Marketing — campagne, materiali promozionali, presentazioni per le farmacie
+- Training interno — formazione ISF, aggiornamenti di prodotto, procedure operative
+- Corporate — board meeting, investor relations, report trimestrali
+
+Ogni categoria ha i suoi standard, i suoi template e i suoi processi di approvazione. Moltiplicato per il numero di prodotti in portfolio, il volume diventa enorme.
+
+
+Il Collo di Bottiglia: Il Processo di Creazione
+
+Il workflow tipico di una presentazione pharma:
+
+1. Il product manager scrive il brief → 1 giorno
+2. L'agenzia o il team interno crea il deck → 3-5 giorni
+3. Review del medical → 1-2 giorni
+4. Revisioni e approvazione regulatory → 2-3 giorni
+5. Versione finale → 1 giorno
+
+Totale: 8-12 giorni per una presentazione. In un settore dove i competitor lanciano prodotti ogni settimana.
+
+Il vero problema non è il passaggio 3-4 (review e compliance, che sono necessari). È il passaggio 2: la creazione fisica delle slide, che richiede giorni quando potrebbe richiedere minuti.
+
+
+Come l'AI Accelera il Passaggio Critico
+
+L'AI non sostituisce il processo di compliance. Lo accelera riducendo drasticamente il tempo di creazione iniziale.
+
+Con Derivant, il product manager può:
+- Inserire il brief e ottenere un primo draft completo in minuti
+- Avere slide già strutturate con la gerarchia visiva corretta
+- Integrare dati reali dal web (studi clinici, dati di mercato, statistiche)
+- Rispettare automaticamente il Brand Kit aziendale
+
+Il deck arriva alla fase di review in ore, non in giorni. Il regulatory ha più tempo per la revisione. Il time-to-market si riduce.
+
+
+Brand Governance nel Pharma
+
+Nel farmaceutico, la coerenza del brand non è un nice-to-have. È un requisito regolatorio. Ogni presentazione deve usare i colori approvati, i font ufficiali, il logo nella posizione corretta, i disclaimer standard.
+
+Con il Brand Kit di Derivant, questi vincoli vengono applicati automaticamente a ogni presentazione generata. Zero rischio di slide "fuori standard" che richiedono revisioni aggiuntive.
+
+
+La Forza Vendita: Presentazioni Personalizzate su Scala
+
+Gli ISF (Informatori Scientifici del Farmaco) hanno bisogno di presentazioni personalizzate per ogni interlocutore. Il medico di base vuole vedere dati diversi rispetto allo specialista. L'ospedale ha esigenze diverse dalla farmacia.
+
+Creare varianti personalizzate manualmente è insostenibile. Con l'AI, si parte da una base approvata e si generano varianti mirate in minuti.
+
+
+Il ROI per il Pharma
+
+Il calcolo è semplice:
+- Riduzione tempo creazione: da 3-5 giorni a poche ore
+- Riduzione costi agenzia: meno revisioni, meno ore fatturate
+- Accelerazione time-to-market: il deck è pronto prima, il lancio parte prima
+- Riduzione errori: meno passaggi manuali = meno errori da correggere
+
+Per un'azienda che produce 50+ presentazioni al mese, il risparmio è nell'ordine delle centinaia di ore annue.
+
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+  },
+  'presentazioni-hr-onboarding-formazione': {
+    date: 'February 14, 2026',
+    category: 'HR',
+    title: 'Presentazioni HR: Come l\'AI Trasforma Onboarding, Formazione e Comunicazione Interna',
+    description: 'Per i team HR che devono produrre materiali formativi, presentazioni di onboarding e comunicazioni interne professionali senza perdere settimane.',
+    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&h=600&q=80',
+    author: 'Marco Conte',
+    content: `Il reparto HR è uno dei maggiori produttori di presentazioni in azienda. E quasi nessuno se ne rende conto.
+
+Onboarding dei nuovi assunti, corsi di formazione, policy aziendali, comunicazioni del management, presentazioni per il recruiting, slide per i town hall meeting. Ogni processo HR passa per un deck.
+
+Il problema: i team HR raramente hanno accesso a designer o a budget dedicati per la comunicazione visiva. Le slide vengono create con template vecchi, copia-incollando da deck precedenti, e il risultato è spesso inconsistente e poco professionale.
+
+
+Perché le Presentazioni HR Contano Più di Quanto Pensi
+
+Le presentazioni HR sono il primo punto di contatto tra l'azienda e il dipendente. Ecco cosa comunicano:
+
+- L'onboarding deck è la prima impressione — un deck professionale dice "questa è un'azienda seria"
+- I materiali formativi influenzano l'apprendimento — slide chiare = concetti che restano
+- Le comunicazioni interne definiscono la cultura — il modo in cui comunichi è il tuo brand interno
+
+Un deck di onboarding sciatto comunica sciatteria. Un materiale formativo confuso genera confusione. Non è solo estetica: è efficacia.
+
+
+Il Volume Nascosto
+
+Un team HR di un'azienda media produce ogni anno:
+
+- 12+ deck di onboarding (uno per ogni ciclo di assunzioni)
+- 20-30 presentazioni formative (safety, compliance, soft skills, tool interni)
+- 10+ comunicazioni corporate (town hall, quarterly update, policy changes)
+- Materiali per il recruiting (employer branding, presentazioni per career day)
+
+Totale: 50-80 presentazioni all'anno. Spesso create dall'HR generalist che ha altre 50 priorità.
+
+
+Il Problema del "Template Aziendale"
+
+Molte aziende hanno un template PowerPoint ufficiale. In teoria, basta usare quello.
+
+In pratica:
+- Il template ha 3 layout e ne servirebbero 15
+- Nessuno sa dove trovare la versione aggiornata
+- Ogni persona adatta il template a modo suo
+- Dopo 6 mesi, circolano 10 versioni diverse
+
+Il risultato: zero coerenza visiva nonostante il template esista.
+
+
+Come l'AI Risolve il Problema
+
+Con Derivant, il team HR può:
+
+1. Configurare il Brand Kit una volta — colori, font, logo, stile dell'azienda
+2. Generare presentazioni da un brief — "crea un deck di onboarding per il team engineering, 10 slide"
+3. Personalizzare nell'editor — aggiungere contenuti specifici, foto del team, procedure interne
+4. Esportare in PPTX o PDF — per condivisione interna o stampa
+
+Il deck base viene generato in minuti. La personalizzazione richiede altri 10-15 minuti. Totale: meno di 30 minuti per un deck che prima richiedeva mezza giornata.
+
+
+Caso d'Uso: Onboarding Scalabile
+
+Ogni nuovo assunto dovrebbe ricevere un onboarding personalizzato per il suo ruolo. In pratica, tutti ricevono lo stesso deck generico perché nessuno ha tempo di personalizzarlo.
+
+Con l'AI, creare varianti è veloce:
+- Onboarding Engineering → focus su tool, architettura, processi di sviluppo
+- Onboarding Sales → focus su prodotto, CRM, processo commerciale
+- Onboarding Marketing → focus su brand guidelines, tool, campagne in corso
+
+Stesso standard qualitativo, contenuti mirati. Senza moltiplicare il lavoro.
+
+
+Caso d'Uso: Formazione Continua
+
+I corsi di formazione interni soffrono di un problema cronico: slide create una volta e mai aggiornate. Il corso sulla safety del 2024 viene riproposto nel 2026 con gli stessi dati.
+
+Con la web research integrata di Derivant, i materiali formativi possono includere dati aggiornati automaticamente. Normative recenti, statistiche attuali, best practice del settore.
+
+
+Per gli HR Director
+
+Se gestisci un team HR, l'AI per le presentazioni non è un nice-to-have. È uno strumento che:
+- Libera tempo per le attività ad alto valore (colloqui, strategia, people management)
+- Garantisce coerenza su tutti i materiali aziendali
+- Alza il livello percepito della comunicazione interna
+- Scala senza richiedere nuove assunzioni
+
+Il primo passo: prova a generare il prossimo deck di onboarding con l'AI e confronta tempi e risultato.
+
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+  },
+  'presentazioni-formazione-aziendale-ai': {
+    date: 'February 14, 2026',
+    category: 'Training',
+    title: 'Formazione Aziendale con l\'AI: Creare Corsi e Materiali Formativi in Minuti',
+    description: 'Come formatori, training manager e L&D team possono usare l\'AI per creare materiali didattici professionali senza competenze grafiche.',
+    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&h=600&q=80',
+    author: 'Marco Conte',
+    content: `La formazione aziendale vive di presentazioni. Ogni corso, ogni workshop, ogni sessione di training passa per un deck che deve essere chiaro, coinvolgente e didatticamente efficace.
+
+Ma chi crea questi materiali? Nella maggior parte dei casi, il formatore stesso. E il formatore è un esperto di contenuti, non di design.
+
+Il risultato: slide piene di testo, layout confusi, inconsistenza visiva. Materiali che funzionano "nonostante" il design, non "grazie" al design.
+
+
+Il Paradosso del Formatore
+
+Un buon formatore sa che le slide non devono essere un copione da leggere. Devono essere un supporto visivo che rinforza il messaggio.
+
+La teoria dice: poche parole, immagini impattanti, concetti chiave ben evidenziati.
+
+La pratica dice: non ho tempo, non so usare i tool grafici, e alla fine metto tutto il testo nella slide perché almeno i partecipanti possono rivederlo dopo.
+
+L'AI elimina questo paradosso. Dai il contenuto del corso in formato testuale e ottieni slide con la giusta gerarchia visiva, automaticamente.
+
+
+Tipi di Materiali Formativi
+
+Un training manager produce diversi tipi di presentazioni:
+
+- Corsi tecnici — procedure, sistemi, tool aziendali
+- Soft skills — leadership, comunicazione, time management
+- Compliance — safety, GDPR, normative di settore
+- Onboarding — introduzione all'azienda, ai processi, al team
+- Workshop interattivi — esercizi, case study, role playing
+
+Ogni tipo ha esigenze diverse. Un corso sulla safety richiede un tono diverso da un workshop sulla leadership. L'AI si adatta al contesto.
+
+
+Il Problema del "Corso da Aggiornare"
+
+Ogni formatore ha quel corso creato 2 anni fa che andrebbe aggiornato ma non c'è mai tempo. I dati sono vecchi, le normative sono cambiate, le slide hanno il logo sbagliato.
+
+Con Derivant:
+1. Inserisci il nuovo contenuto aggiornato
+2. L'AI genera un deck fresco con dati attuali
+3. Personalizzi i dettagli specifici
+4. Il corso è aggiornato in 30 minuti invece di 2 giorni
+
+La web research automatica è particolarmente utile qui: statistiche di settore aggiornate, normative recenti, benchmark attuali — tutto integrato automaticamente.
+
+
+Materiali che Funzionano: Le Regole del Design Didattico
+
+Le presentazioni formative efficaci seguono regole precise:
+
+- Una idea per slide — non 5 bullet point, ma un concetto chiaro
+- Gerarchia visiva — il concetto chiave è immediatamente riconoscibile
+- Spazio bianco — il cervello ha bisogno di respiro per processare
+- Consistenza — stesso stile dall'inizio alla fine crea fiducia
+
+L'AI di Derivant applica queste regole automaticamente. Non genera "slide piene di testo" — genera slide strutturate per l'apprendimento.
+
+
+Per le Società di Formazione
+
+Se gestisci una società di formazione, il volume è il tuo principale problema. Ogni cliente vuole materiali personalizzati. Ogni corso va adattato al settore del cliente.
+
+Con l'AI:
+- Parti da un framework comune per il corso
+- Generi varianti personalizzate per ogni cliente
+- Applichi il Brand Kit del cliente automaticamente
+- Consegni materiali professionali in tempi impossibili con il metodo tradizionale
+
+Il vantaggio competitivo: puoi offrire personalizzazione senza che questo moltiplichi i costi.
+
+
+Il Futuro della Formazione è Ibrido
+
+L'AI non sostituisce il formatore. Lo potenzia. Il formatore si concentra sui contenuti, sull'interazione, sul valore aggiunto umano. L'AI si occupa del packaging visivo.
+
+È la stessa logica di qualsiasi automazione: elimina il lavoro ripetitivo per liberare tempo per ciò che conta davvero.
+
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+  },
+  'presentazioni-sales-team-ai': {
+    date: 'February 14, 2026',
+    category: 'Sales',
+    title: 'Presentazioni per Sales Team: Come l\'AI Accelera il Ciclo di Vendita',
+    description: 'Per direttori commerciali e sales team che devono creare pitch personalizzati per ogni prospect senza perdere giorni a fare slide.',
+    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&h=600&q=80',
+    author: 'Marco Conte',
+    content: `Nel B2B, la presentazione commerciale è spesso il momento decisivo. È quando il prospect decide se andare avanti o fermarsi. È quando il tuo valore deve essere cristallino.
+
+Eppure, la maggior parte dei sales team usa lo stesso deck per tutti i prospect. Cambia il nome dell'azienda sulla prima slide, aggiorna qualche dato, e spera che funzioni.
+
+Non funziona. O meglio: funziona meno di quanto potrebbe.
+
+
+Il Problema della Presentazione Generica
+
+Un deck commerciale generico dice al prospect: "Non ti conosco abbastanza da personalizzare la presentazione per te."
+
+Un deck personalizzato dice: "Ho capito il tuo problema specifico e ho una soluzione su misura."
+
+La differenza nel tasso di conversione è enorme. Secondo i dati di settore, le presentazioni personalizzate convertono il 40-60% in più rispetto a quelle generiche.
+
+Ma personalizzare ogni deck manualmente è insostenibile quando il tuo team gestisce 20-50 prospect al mese.
+
+
+Il Workflow del Sales che Non Scala
+
+Il ciclo tipico:
+
+1. Il commercial riceve un lead qualificato
+2. Deve preparare una presentazione personalizzata
+3. Copia il template aziendale, modifica contenuti → 2-3 ore
+4. Chiede al marketing un design migliore → 1-2 giorni di attesa
+5. Fa la presentazione al prospect
+6. Ripeti per ogni prospect
+
+Il collo di bottiglia: il passaggio 3-4. Il commercial dovrebbe vendere, non fare slide. Ma se usa il deck generico, perde conversioni.
+
+
+Come l'AI Risolve il Trade-off
+
+Con Derivant, il commercial può creare un deck personalizzato in 15 minuti:
+
+1. Inserisce il brief — "presentazione per [azienda], settore [X], problema [Y], soluzione [Z]"
+2. L'AI genera un deck strutturato con dati reali sul settore del prospect
+3. Il commercial aggiusta i dettagli specifici
+4. Esporta in PPTX o presenta direttamente
+
+Nessuna attesa dal marketing. Nessun compromesso sulla qualità. Ogni prospect riceve un deck che parla la sua lingua.
+
+
+La Web Research per il Sales
+
+La funzione killer per i sales team è la web research automatica. Quando generi una presentazione per un prospect, l'AI può:
+
+- Trovare dati sul settore del prospect (market size, trend, sfide)
+- Identificare benchmark rilevanti
+- Cercare statistiche a supporto della tua proposta di valore
+
+Il risultato: un deck che dimostra competenza e preparazione. Il prospect vede che hai fatto i compiti.
+
+
+Il Brand Kit per il Team Commerciale
+
+Un problema comune nei sales team: ogni commercial usa una versione diversa del deck aziendale. Font diversi, colori approssimativi, logo pixelato.
+
+Con il Brand Kit centralizzato, ogni presentazione generata è automaticamente on-brand. Zero variazioni, zero imbarazzo quando il prospect confronta il tuo deck con quello di un collega.
+
+
+Metriche che Contano
+
+Per un direttore commerciale, l'impatto è misurabile:
+
+- Tempo per creare un deck: da 3 ore a 15 minuti
+- Numero di deck personalizzati/mese: da 5 a 30+ (senza aumentare il team)
+- Tasso di conversione: +40-60% con deck personalizzati
+- Tempo del sales su attività di vendita: +15-20 ore/mese liberate
+
+Il ROI non è teorico. È il tempo che ogni commercial recupera per fare ciò che sa fare meglio: vendere.
+
+
+Per il Direttore Commerciale
+
+Se gestisci un team di 5-10 commerciali, l'AI per le presentazioni non è un tool in più. È un moltiplicatore di produttività.
+
+Ogni commercial produce deck migliori, più velocemente, con meno supporto dal marketing. Il pipeline si muove più veloce. I deal si chiudono prima.
+
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+  },
+  'pitch-deck-startup-ai-investitori': {
+    date: 'February 14, 2026',
+    category: 'Startup',
+    title: 'Pitch Deck per Startup: Come Creare un Deck che Convince gli Investitori con l\'AI',
+    description: 'Guida pratica per founder e startup che devono creare pitch deck professionali per investitori, acceleratori e grant. Dall\'idea al deck in minuti.',
+    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1200&h=600&q=80',
+    author: 'Marco Conte',
+    content: `Hai 10 minuti per convincere un investitore. Non 10 slide — 10 minuti. Ogni secondo conta, ogni slide deve lavorare per te.
+
+Il pitch deck è l'arma più importante di una startup. Non è un documento informativo: è uno strumento di persuasione. E come ogni strumento, la differenza la fa come lo usi.
+
+
+Il Problema dei Pitch Deck nel 2026
+
+Gli investitori vedono centinaia di pitch ogni mese. Sanno riconoscere immediatamente:
+- Un deck fatto con un template gratuito di Canva
+- Un deck generato con Gamma (tutti uguali)
+- Un deck fatto da qualcuno che non sa usare PowerPoint
+- Un deck professionale che comunica credibilità
+
+Il design del tuo deck comunica quanto seriamente prendi la tua startup. Non è giusto, ma è così. Un deck sciatto con un'idea geniale perde contro un deck professionale con un'idea buona.
+
+
+La Struttura del Pitch Deck Vincente
+
+Dopo centinaia di pitch analizzati, la struttura che funziona è questa:
+
+1. Hook — una frase che cattura l'attenzione nei primi 5 secondi
+2. Problema — il dolore reale che il tuo mercato sente
+3. Soluzione — come lo risolvi (non come funziona, come lo risolvi)
+4. Mercato — TAM, SAM, SOM con dati credibili
+5. Traction — numeri reali, non proiezioni fantasiose
+6. Business Model — come fai soldi, chiaramente
+7. Team — perché proprio voi siete le persone giuste
+8. Roadmap — dove state andando nei prossimi 12-18 mesi
+9. Ask — quanto chiedete e per fare cosa
+10. Closing — CTA chiara e memorabile
+
+10 slide, ognuna con un messaggio chiaro. L'investitore non legge — scansiona. Se deve sforzarsi per capire, hai perso.
+
+
+Perché l'AI è Perfetta per i Pitch Deck
+
+I founder hanno due problemi con i pitch deck:
+
+1. Non sono designer — e il design conta per la credibilità
+2. Non hanno tempo — stanno costruendo un prodotto, non facendo slide
+
+L'AI risolve entrambi. Inserisci il tuo brief (cos'è la startup, il problema, la soluzione, i numeri) e ottieni un deck strutturato con design professionale in minuti.
+
+Ma attenzione: l'AI è un punto di partenza, non il prodotto finale. Il pitch deck deve avere la tua voce, la tua storia, i tuoi numeri reali. L'AI elimina la parte meccanica (layout, design, struttura). Tu aggiungi la parte umana (visione, passione, credibilità).
+
+
+I Dati che gli Investitori Vogliono Vedere
+
+La web research di Derivant è particolarmente utile per i pitch deck perché trova automaticamente:
+
+- Market size del tuo settore con fonti verificate
+- Trend di crescita e proiezioni
+- Competitor e benchmark di mercato
+- Statistiche a supporto del problema che stai risolvendo
+
+Niente più "il mercato vale $X miliardi" senza fonte. Ogni dato ha una base reale.
+
+
+Errori Comuni nei Pitch Deck
+
+1. Troppo testo — se l'investitore deve leggere, stai sbagliando
+2. Troppe slide — 10-12 è il massimo, 15+ è un documento, non un pitch
+3. Numeri senza contesto — "100 utenti" non dice nulla, "100 utenti in 2 settimane senza marketing" dice molto
+4. Design inconsistente — font diversi, colori random = poca attenzione al dettaglio
+5. Nessuna ask chiara — se l'investitore non sa cosa vuoi, non può dartelo
+
+L'AI di Derivant evita automaticamente il punto 1, 2, 4 e 5. Il punto 3 dipende da te.
+
+
+Il Pitch Deck per Acceleratori e Grant
+
+Non tutti i pitch deck sono per investitori VC. Molti founder preparano deck per:
+- Acceleratori (Y Combinator, Techstars, acceleratori italiani)
+- Grant pubblici (Horizon Europe, PNRR, bandi regionali)
+- Business angel e club deal
+- Partner strategici
+
+Ogni audience ha aspettative diverse. Un deck per Y Combinator è diverso da un deck per un bando PNRR. Con l'AI, generare varianti mirate è veloce.
+
+
+Per i Founder
+
+Il pitch deck perfetto non esiste. Ma esiste il pitch deck che comunica il tuo valore nel modo più efficace possibile, nel minor tempo possibile.
+
+L'AI ti dà un vantaggio competitivo: più tempo per perfezionare la storia e i numeri, meno tempo su layout e formattazione.
+
+Il tuo prossimo pitch potrebbe essere quello che cambia tutto. Fallo contare.
+
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
   }
 };
 
