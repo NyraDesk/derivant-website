@@ -382,7 +382,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '24px',
           }}>
-            Scrivi. Genera. Presenta.
+            Derivant AI genera presentazioni perfette.
           </h3>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
@@ -393,7 +393,7 @@ const NewHero = () => {
             margin: '0 auto',
             maxWidth: '800px',
           }}>
-            Dal tuo brief a un deck completo, in pochi minuti.
+            Dal brief al PowerPoint. In minuti.
           </p>
         </div>
 
@@ -421,7 +421,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  Un brief basta.
+                  Ricerche web automatiche
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -431,7 +431,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Testo, documento o link. Cinque minuti dopo hai un deck.
+                  Incolli il brief. L'AI esplora il web, trova dati aggiornati, struttura slide intelligenti.
                 </p>
               </div>
               <div>
@@ -444,7 +444,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  Mezza giornata? Cinque minuti.
+                  Brand sempre perfetto
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -454,7 +454,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Web research, struttura, contenuti, brand. Tutto automatico.
+                  Il tuo kit — colori, font, stile — applicato istantaneamente. Ogni deck coerente.
                 </p>
               </div>
               <div>
@@ -467,7 +467,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  Presenta domani mattina.
+                  Pronto in un click
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -477,7 +477,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Deck finito. PowerPoint, PDF. Modifica o presenta così com'è.
+                  Esporta PowerPoint o PDF. Editabile. Professionale. Subito utilizzabile.
                 </p>
               </div>
             </div>
