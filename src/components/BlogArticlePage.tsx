@@ -830,6 +830,573 @@ L'AI ti dà un vantaggio competitivo: più tempo per perfezionare la storia e i 
 Il tuo prossimo pitch potrebbe essere quello che cambia tutto. Fallo contare.
 
 Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+  },
+  'migliori-ai-presentazioni-2026': {
+    date: 'February 14, 2026',
+    category: 'Guide',
+    title: 'Migliori AI per Presentazioni nel 2026: Guida Completa e Confronto',
+    description: 'Classifica aggiornata dei migliori strumenti AI per creare presentazioni professionali nel 2026. Confronto dettagliato: Derivant, Gamma, Beautiful.ai, Canva, PowerPoint Copilot e altri.',
+    image: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&h=600&q=80',
+    author: 'Marco Conte',
+    content: `Cerchi la migliore AI per creare presentazioni? Nel 2026 il mercato è esploso: ci sono decine di tool che promettono di generare slide professionali in pochi secondi.
+
+Ma quale funziona davvero? Quale produce risultati utilizzabili senza ore di ritocchi? E soprattutto: quale è adatto al tuo caso d'uso?
+
+Abbiamo testato i principali strumenti AI per presentazioni disponibili oggi. Ecco la guida completa con pro, contro e per chi è pensato ogni tool.
+
+
+1. Derivant AI — Il Migliore per Professionisti e Aziende
+
+Derivant è un motore AI per presentazioni pensato per chi ha bisogno di qualità professionale, non di slide generiche. A differenza degli altri tool, Derivant integra web research automatica (cerca dati reali dal web), Brand Kit (i tuoi colori, font e logo applicati automaticamente) e un editor canvas completo.
+
+Pro:
+- Web research integrata — le slide contengono dati reali e aggiornati
+- Brand Kit — ogni presentazione rispetta la tua identità visiva
+- Design professionale — layout studiati per la comunicazione business
+- Esportazione PPTX e PDF — compatibilità totale con PowerPoint
+- Editor drag & drop — personalizzazione completa dopo la generazione
+
+Contro:
+- In fase di early access — non tutte le funzionalità sono disponibili
+- Meno template decorativi rispetto a Canva
+
+Ideale per: consulenti, agenzie, team marketing, aziende che producono presentazioni ad alto volume.
+
+[Prova Derivant gratis →](/early-access)
+
+
+2. Gamma — Il Più Popolare
+
+Gamma è probabilmente il tool AI per presentazioni più conosciuto. Genera slide da un prompt testuale con layout moderni e un'estetica pulita.
+
+Pro:
+- Interfaccia semplice e immediata
+- Buon design di base
+- Piano gratuito generoso
+- Supporta l'italiano
+
+Contro:
+- Le presentazioni tendono a sembrare tutte uguali
+- Nessuna web research — i contenuti sono solo generati dall'AI
+- Brand Kit limitato nella versione gratuita
+- Esportazione PPTX con limitazioni
+
+Ideale per: uso personale, presentazioni scolastiche, draft veloci.
+
+
+3. Beautiful.ai — Il Migliore per Design Automatico
+
+Beautiful.ai si distingue per il suo motore di design che applica automaticamente regole estetiche a ogni slide. Non devi preoccuparti di allineamento, spaziatura o layout.
+
+Pro:
+- Design engine intelligente — le slide sono sempre "belle"
+- Template professionali di alta qualità
+- Buona integrazione con PowerPoint
+
+Contro:
+- Meno controllo creativo — il design engine decide per te
+- Prezzo più alto della media
+- Nessuna web research integrata
+- Generazione contenuti AI meno avanzata
+
+Ideale per: team che vogliono design consistente senza designer.
+
+
+4. Microsoft PowerPoint + Copilot — Il Classico Potenziato
+
+PowerPoint con Copilot porta l'AI direttamente nello strumento che tutti conoscono. Puoi generare slide, riscrivere testi e creare layout da un prompt.
+
+Pro:
+- Integrato nell'ecosistema Microsoft 365
+- Familiare per tutti
+- Potente per chi già usa PowerPoint
+- Funziona con i template esistenti
+
+Contro:
+- Richiede abbonamento Microsoft 365 Copilot (costoso)
+- Il design generato è spesso basico
+- Non è pensato per generare presentazioni da zero
+- Curva di apprendimento per le funzioni AI
+
+Ideale per: aziende già nell'ecosistema Microsoft che vogliono potenziare PowerPoint.
+
+
+5. Canva — Il Più Versatile
+
+Canva è una piattaforma di design completa che include anche funzionalità AI per le presentazioni. Magic Design genera slide da un prompt o da un documento.
+
+Pro:
+- Libreria enorme di template e asset
+- Piano gratuito molto ricco
+- Facile da usare per tutti
+- Funzionalità AI in crescita
+
+Contro:
+- Non è specializzato in presentazioni — è un tool generico
+- Le slide generate dall'AI sono spesso generiche
+- Nessuna web research
+- L'export PPTX perde formattazione
+
+Ideale per: chi ha bisogno di un tool "tutto-in-uno" per grafica e presentazioni.
+
+
+6. SlidesAI — Il Migliore per Google Slides
+
+SlidesAI è un add-on per Google Slides che genera presentazioni complete da un testo. Si integra direttamente nel tuo workflow Google.
+
+Pro:
+- Si integra in Google Slides — nessun tool esterno
+- Generazione veloce da testo
+- Supporta l'italiano
+- Piano gratuito disponibile
+
+Contro:
+- Limitato alle funzionalità di Google Slides
+- Design meno sofisticato
+- Nessuna web research
+- Personalizzazione limitata
+
+Ideale per: chi lavora in Google Workspace e vuole restare nell'ecosistema.
+
+
+7. Tome — Il Più Creativo
+
+Tome si posiziona come piattaforma di storytelling AI. Genera non solo slide ma intere narrazioni visive con layout creativi.
+
+Pro:
+- Approccio narrativo unico
+- Design creativi e non convenzionali
+- Buona generazione di contenuti
+
+Contro:
+- Le presentazioni non sono sempre "business-appropriate"
+- Export limitato
+- Meno adatto per pitch deck e report formali
+- Pricing cambiato più volte
+
+Ideale per: creativi, storytelling, presentazioni non convenzionali.
+
+
+Come Scegliere: La Matrice Decisionale
+
+La scelta dipende dal tuo caso d'uso:
+
+- Presentazioni professionali ad alto volume → Derivant
+- Draft veloci per uso personale → Gamma
+- Design automatico senza designer → Beautiful.ai
+- Già usi Microsoft 365 → PowerPoint Copilot
+- Tool generico per tutto → Canva
+- Lavori in Google Workspace → SlidesAI
+- Storytelling creativo → Tome
+
+
+Il Trend del 2026: Dall'AI Generica all'AI Specializzata
+
+Il mercato si sta dividendo in due: tool generici (che fanno tutto ma niente benissimo) e tool specializzati (che fanno una cosa sola ma la fanno meglio di tutti).
+
+Per le presentazioni professionali — pitch deck, strategy deck, report aziendali — gli strumenti specializzati stanno emergendo come la scelta più efficace. Non perché gli altri siano cattivi, ma perché il contesto business richiede accuratezza, brand governance e qualità che i tool generici non garantiscono.
+
+Scopri i [piani disponibili](/plans) o [prova Derivant gratis](/early-access).`
+  },
+  'creare-presentazioni-ai-guida': {
+    date: 'February 14, 2026',
+    category: 'Tutorial',
+    title: 'Come Creare Presentazioni con l\'AI: Guida Pratica Step-by-Step (2026)',
+    description: 'Tutorial completo per creare presentazioni professionali con l\'intelligenza artificiale. Dalla scrittura del prompt alla personalizzazione finale, passo dopo passo.',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=600&q=80',
+    author: 'Marco Conte',
+    content: `Vuoi creare una presentazione con l'AI ma non sai da dove partire? Questa guida ti porta dalla pagina bianca alla presentazione finita, passo dopo passo.
+
+Non importa se devi fare un pitch deck per investitori, un report per il management o una presentazione commerciale. Il processo è lo stesso.
+
+
+Step 1: Definisci l'Obiettivo (Prima del Prompt)
+
+L'errore più comune: aprire il tool AI e scrivere "fammi una presentazione su [argomento]". Il risultato sarà generico quanto il tuo prompt.
+
+Prima di toccare qualsiasi strumento, rispondi a queste domande:
+
+- Chi è il pubblico? (investitori, clienti, team interno, studenti)
+- Qual è l'obiettivo? (convincere, informare, formare, vendere)
+- Quante slide servono? (10 per un pitch, 20-30 per un corso)
+- Che tono vuoi? (formale, dinamico, tecnico, divulgativo)
+
+Queste risposte diventano il tuo brief per l'AI.
+
+
+Step 2: Scrivi un Prompt Efficace
+
+Il prompt è tutto. La differenza tra una presentazione mediocre e una eccellente sta nella qualità delle istruzioni che dai all'AI.
+
+Prompt scarso:
+"Fai una presentazione sulla nostra azienda"
+
+Prompt efficace:
+"Crea una presentazione di 10 slide per potenziali clienti B2B. L'azienda è [nome], opera nel settore [X], e il messaggio principale è [Y]. Il tono deve essere professionale ma non freddo. Includi dati di mercato aggiornati."
+
+Più contesto dai, migliore sarà il risultato.
+
+Elementi chiave del prompt:
+- Numero di slide desiderato
+- Pubblico target
+- Messaggio principale
+- Tono e stile
+- Dati o informazioni specifiche da includere
+
+
+Step 3: Genera la Prima Versione
+
+Una volta inserito il prompt, l'AI genera una prima versione completa della presentazione. A seconda del tool che usi, questo include:
+
+- Struttura logica delle slide (introduzione → corpo → conclusione)
+- Titoli e sottotitoli per ogni slide
+- Contenuti testuali
+- Suggerimenti per immagini
+- Layout e design
+
+Questa prima versione non è il prodotto finale. È un punto di partenza solido — il "80% del lavoro" fatto in pochi minuti.
+
+Con tool come Derivant, la generazione include anche web research automatica: l'AI cerca dati reali dal web (statistiche, trend, benchmark) e li integra direttamente nelle slide. Questo significa che i numeri che vedi non sono inventati dall'AI — sono dati verificabili.
+
+
+Step 4: Personalizza e Raffina
+
+Nessuna AI produce un risultato perfetto al primo colpo. La personalizzazione è dove aggiungi il tuo valore:
+
+- Rivedi i contenuti — l'AI è un punto di partenza, non la verità assoluta
+- Controlla i dati — verifica che numeri e statistiche siano corretti
+- Adatta il linguaggio — usa il tuo tono di voce, non quello dell'AI
+- Aggiungi dettagli specifici — case study, screenshot, loghi dei clienti
+- Riordina le slide — la sequenza narrativa potrebbe necessitare aggiustamenti
+
+L'editor drag & drop ti permette di spostare, ridimensionare e modificare ogni elemento. Non sei bloccato con quello che l'AI ha generato.
+
+
+Step 5: Applica il Brand
+
+Se la presentazione rappresenta la tua azienda, deve rispettare il brand:
+
+- Colori aziendali
+- Font ufficiali
+- Logo nella posizione corretta
+- Tono di comunicazione coerente
+
+Con un Brand Kit configurato, questo passaggio è automatico. Senza, dovrai applicare manualmente le linee guida del brand — ed è qui che si perde più tempo.
+
+
+Step 6: Esporta nel Formato Giusto
+
+A seconda dell'uso:
+- PPTX — se devi condividere con colleghi o presentare da PowerPoint
+- PDF — se devi inviare via email o archiviare
+- Link web — se vuoi condividere online senza file
+
+Assicurati che l'esportazione mantenga il layout. Alcuni tool AI generano presentazioni che si rompono quando esportate in PowerPoint. Testa sempre il file esportato prima di presentare.
+
+
+Errori da Evitare
+
+1. Fidarsi ciecamente dell'AI — controlla sempre i contenuti generati
+2. Non personalizzare — una presentazione "AI-generated" si riconosce
+3. Prompt troppo vaghi — "fai una bella presentazione" non funziona
+4. Ignorare il brand — slide senza identità visiva = zero credibilità
+5. Non testare l'export — il PPTX potrebbe non essere identico all'anteprima
+
+
+Quanto Tempo si Risparmia Davvero?
+
+Il confronto realistico:
+
+Metodo tradizionale (PowerPoint manuale):
+- Struttura e outline: 30-60 minuti
+- Contenuti per ogni slide: 1-2 ore
+- Design e formattazione: 2-3 ore
+- Revisioni: 30-60 minuti
+- Totale: 4-7 ore
+
+Con AI:
+- Scrittura del prompt: 5-10 minuti
+- Generazione: 1-2 minuti
+- Personalizzazione: 15-30 minuti
+- Revisione finale: 10-15 minuti
+- Totale: 30-60 minuti
+
+Il risparmio è reale: 80-90% del tempo. Non perché il risultato sia perfetto al primo colpo, ma perché l'AI elimina il lavoro meccanico (layout, formattazione, struttura) e ti lascia concentrare sul contenuto.
+
+Scopri i [piani disponibili](/plans) o [prova Derivant gratis](/early-access).`
+  },
+  'generatore-presentazioni-ai-gratis': {
+    date: 'February 14, 2026',
+    category: 'Tool',
+    title: 'Generatore di Presentazioni AI Gratis: I Migliori Strumenti del 2026',
+    description: 'Cerchi un generatore di presentazioni AI gratuito? Ecco i migliori tool gratis per creare slide professionali con l\'intelligenza artificiale nel 2026.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&h=600&q=80',
+    author: 'Marco Conte',
+    content: `Non tutti hanno budget per tool premium. Se cerchi un generatore di presentazioni AI gratuito che produca risultati utilizzabili, questa guida è per te.
+
+Abbiamo testato i principali strumenti gratuiti per creare presentazioni con l'intelligenza artificiale. Ecco quali funzionano davvero, quali hanno limitazioni nascoste e quale scegliere in base alle tue esigenze.
+
+
+Cosa Può Fare un Generatore di Presentazioni AI
+
+Prima di confrontare i tool, è utile capire cosa aspettarsi da un generatore AI per slide:
+
+- Generazione automatica — dai un testo o un prompt e l'AI crea le slide
+- Layout intelligenti — il design viene applicato automaticamente
+- Contenuti generati — testi, titoli, struttura logica
+- Immagini suggerite — foto o grafiche contestuali
+
+Quello che cambia tra un tool e l'altro è la qualità di ognuno di questi elementi. E soprattutto: quanto del risultato è usabile senza modifiche.
+
+
+I Migliori Generatori Gratis nel 2026
+
+1. Canva (Magic Design) — Il Più Completo
+
+Canva offre un generatore AI per presentazioni nel piano gratuito. Inserisci un prompt e Magic Design crea un deck completo.
+
+Cosa è gratis:
+- Generazione AI base
+- Template limitati (ma comunque molti)
+- Export in PDF e presentazione online
+- Collaborazione di base
+
+Limitazioni del piano gratuito:
+- Template premium bloccati
+- Funzionalità AI avanzate limitate
+- Nessun Brand Kit
+- Export PPTX con formattazione non sempre perfetta
+
+Qualità risultato: buona per presentazioni semplici, generica per uso professionale.
+
+
+2. Gamma — Il Più Semplice
+
+Gamma permette di generare presentazioni da un prompt con un piano gratuito generoso. L'interfaccia è immediata: scrivi cosa vuoi e ottieni le slide.
+
+Cosa è gratis:
+- Generazione illimitata (con watermark)
+- Design moderni
+- Export base
+- Supporto italiano
+
+Limitazioni del piano gratuito:
+- Watermark "Made with Gamma" su ogni slide
+- Export PPTX solo per utenti premium
+- Nessuna web research
+- Brand Kit non disponibile
+
+Qualità risultato: buona esteticamente, ma le presentazioni tendono a sembrare tutte uguali.
+
+
+3. Google Slides + Gemini — L'Integrato
+
+Google ha integrato Gemini direttamente in Google Slides. Puoi generare presentazioni, suggerire contenuti e creare layout dall'interno di Slides.
+
+Cosa è gratis:
+- Integrazione nativa in Google Slides
+- Generazione contenuti base
+- Collaborazione in tempo reale (la migliore del mercato)
+- Nessun watermark
+
+Limitazioni del piano gratuito:
+- Funzionalità AI limitate nella versione base
+- Design meno sofisticato degli altri tool
+- Template basici
+- Richiede Google Workspace per le funzioni AI avanzate
+
+Qualità risultato: funzionale ma esteticamente basica.
+
+
+4. SlidesAI — Il Migliore per Google Slides
+
+SlidesAI è un add-on gratuito per Google Slides che genera presentazioni complete da un testo.
+
+Cosa è gratis:
+- 3 presentazioni al mese
+- Generazione da testo
+- Integrazione Google Slides
+- Supporto multilingua
+
+Limitazioni del piano gratuito:
+- Solo 3 generazioni/mese
+- Template limitati
+- Nessuna personalizzazione avanzata
+
+Qualità risultato: buona per draft veloci, limitata per uso professionale.
+
+
+5. Derivant AI (Early Access) — Per Risultati Professionali
+
+Derivant offre un accesso gratuito in early access con funzionalità complete: generazione AI, web research, Brand Kit e editor canvas.
+
+Cosa è gratis:
+- Generazione completa con web research
+- Brand Kit configurabile
+- Editor drag & drop
+- Esportazione PPTX e PDF
+- Crediti mensili inclusi
+
+Limitazioni:
+- In fase di early access (accesso su invito)
+- Crediti mensili limitati nel piano free
+
+Qualità risultato: la più alta del confronto per presentazioni professionali e business.
+
+
+Gratis vs Premium: Quando Conviene Pagare?
+
+Il piano gratuito va bene se:
+- Fai presentazioni occasionali (1-2 al mese)
+- Non ti serve il Brand Kit
+- Il watermark non è un problema
+- Il design "generico" è accettabile
+
+Conviene pagare quando:
+- Produci presentazioni regolarmente (4+ al mese)
+- Rappresenti un'azienda o un brand
+- Devi esportare in PPTX pulito
+- Vuoi dati reali dalla web research
+- Il design deve essere professionale
+
+
+Come Ottenere il Massimo dal Piano Gratuito
+
+1. Scrivi prompt dettagliati — più contesto = risultato migliore
+2. Usa il piano giusto per il caso d'uso — Canva per visual, Gamma per velocità, Derivant per qualità
+3. Personalizza sempre — non usare il risultato AI così com'è
+4. Combina più tool — genera con l'AI, poi rifinisci in PowerPoint se serve
+5. Testa l'export — verifica che il PPTX funzioni prima di presentare
+
+
+Il Futuro: Sempre Più AI, Sempre Meno Gratis
+
+Il trend è chiaro: le funzionalità AI più potenti stanno diventando premium. I piani gratuiti offriranno sempre meno, e la qualità dei risultati sarà sempre più legata alla versione a pagamento.
+
+Il consiglio: approfitta delle versioni gratuite e degli early access ora, mentre sono disponibili.
+
+Scopri i [piani disponibili](/plans) o [richiedi accesso gratuito a Derivant](/early-access).`
+  },
+  'automatizzare-presentazioni-azienda': {
+    date: 'February 14, 2026',
+    category: 'Business',
+    title: 'Come Automatizzare le Presentazioni in Azienda: Guida per Manager e Team',
+    description: 'Guida pratica per manager e team leader che vogliono automatizzare la creazione di presentazioni aziendali, ridurre i tempi e mantenere la qualità.',
+    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&h=600&q=80',
+    author: 'Marco Conte',
+    content: `In ogni azienda c'è un processo invisibile che consuma centinaia di ore l'anno: la creazione di presentazioni.
+
+Report trimestrali, pitch commerciali, presentazioni per il board, training interni, deck per eventi. Ogni dipartimento ne produce, nessuno tiene il conto di quanto tempo ci vuole.
+
+Eppure, automatizzare le presentazioni è uno dei modi più rapidi e a basso rischio per recuperare produttività. Non servono trasformazioni digitali complesse. Serve lo strumento giusto.
+
+
+Quanto Costa NON Automatizzare
+
+Prendiamo un'azienda media con 50 dipendenti. Stima conservativa:
+
+- Marketing: 8 presentazioni/mese × 4 ore = 32 ore/mese
+- Sales: 12 pitch/mese × 3 ore = 36 ore/mese
+- Management: 4 board deck/mese × 5 ore = 20 ore/mese
+- HR: 3 presentazioni/mese × 4 ore = 12 ore/mese
+- Training: 2 corsi/mese × 6 ore = 12 ore/mese
+
+Totale: 112 ore/mese = 1.344 ore/anno dedicate solo a fare slide.
+
+Se il costo medio orario (caricato) di un dipendente è €40, sono €53.760/anno. Per fare slide.
+
+
+Il Problema Non È il Singolo Deck
+
+Il problema è il processo. Ogni presentazione segue lo stesso ciclo:
+
+1. Qualcuno scrive i contenuti (30-60 min)
+2. Qualcuno li mette nelle slide (2-4 ore)
+3. Qualcuno li rivede e corregge (30-60 min)
+4. Qualcuno chiede al designer di "renderlo bello" (1-2 giorni di attesa)
+5. Il designer modifica (1-2 ore)
+6. Revisione finale (30 min)
+
+6 passaggi, 3+ persone coinvolte, 1-3 giorni di calendario. Per un singolo deck.
+
+Con l'automazione AI, i passaggi 2, 4 e 5 vengono compressi in uno: la generazione automatica.
+
+
+3 Livelli di Automazione
+
+Livello 1: Generazione Assistita
+
+Il singolo professionista usa un tool AI per velocizzare la propria creazione di slide. Non cambia il processo aziendale — cambia lo strumento individuale.
+
+Impatto: -60% tempo per persona.
+Implementazione: immediata, nessun cambiamento organizzativo.
+
+Livello 2: Template Intelligenti
+
+L'azienda configura Brand Kit e template standard. Ogni dipendente genera presentazioni automaticamente on-brand, senza passare dal designer.
+
+Impatto: -80% tempo + coerenza brand garantita.
+Implementazione: 1-2 giorni di setup, training minimo.
+
+Livello 3: Workflow Automatizzati
+
+Le presentazioni ricorrenti (report mensili, pitch standard, onboarding) vengono generate automaticamente da brief pre-impostati. Il dipendente personalizza solo i dettagli specifici.
+
+Impatto: -90% tempo per i deck ricorrenti.
+Implementazione: richiede analisi dei deck più frequenti e setup dei brief.
+
+
+Come Iniziare: Il Metodo Pratico
+
+Non cercare di automatizzare tutto subito. Inizia con il caso più ovvio.
+
+Passo 1: Identifica il "Deck Ricorrente"
+
+Ogni azienda ha 2-3 presentazioni che vengono ricreate ogni settimana o ogni mese con contenuti diversi. Trovale. Sono il candidato perfetto.
+
+Esempi comuni:
+- Il pitch commerciale personalizzato per ogni prospect
+- Il report mensile per il management
+- La presentazione di onboarding per i nuovi assunti
+- Il deck per i quarterly business review
+
+Passo 2: Configura il Brand Kit
+
+Carica colori, font e logo aziendali nel tool AI. Una volta fatto, ogni generazione successiva sarà automaticamente on-brand.
+
+Passo 3: Crea il Brief Template
+
+Scrivi il brief "tipo" per il deck ricorrente. Questo diventa il punto di partenza per ogni generazione futura. Cambi solo i dati specifici (nome cliente, numeri, date).
+
+Passo 4: Testa e Itera
+
+Genera il primo deck automatizzato e confrontalo con la versione manuale. Aggiusta il brief fino a ottenere un risultato che richiede minime personalizzazioni.
+
+
+Il ROI è Immediato
+
+A differenza di altre automazioni aziendali (che richiedono mesi di implementazione e training), l'automazione delle presentazioni ha ROI immediato:
+
+- Setup: 1-2 ore (configurazione Brand Kit + primo brief)
+- Primo risparmio: lo stesso giorno
+- Break-even: al primo deck generato
+
+Non c'è curva di apprendimento lunga, non c'è migrazione di dati, non c'è change management complesso. È uno dei quick win più evidenti per qualsiasi azienda.
+
+
+Per i Decision Maker
+
+Se gestisci un team e vuoi proporre l'automazione delle presentazioni al tuo management:
+
+- Quantifica le ore/anno che il team dedica alle slide (usa i numeri sopra come benchmark)
+- Calcola il costo (ore × costo orario)
+- Mostra il risparmio potenziale (80-90% del tempo)
+- Proponi un pilot su un singolo tipo di deck ricorrente
+- Misura i risultati dopo 2 settimane
+
+I dati parlano da soli.
+
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
   }
 };
 

@@ -20,6 +20,38 @@ const articles = [
     image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&h=600&q=80'
   },
   {
+    id: 'migliori-ai-presentazioni-2026',
+    category: 'Guide',
+    date: 'Feb 14, 2026',
+    title: 'Migliori AI per Presentazioni nel 2026: Guida Completa e Confronto',
+    description: 'Classifica aggiornata dei migliori strumenti AI per creare presentazioni professionali. Derivant, Gamma, Beautiful.ai, Canva a confronto.',
+    image: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
+    id: 'creare-presentazioni-ai-guida',
+    category: 'Tutorial',
+    date: 'Feb 14, 2026',
+    title: 'Come Creare Presentazioni con l\'AI: Guida Pratica Step-by-Step (2026)',
+    description: 'Tutorial completo: dalla scrittura del prompt alla presentazione finita, passo dopo passo.',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
+    id: 'generatore-presentazioni-ai-gratis',
+    category: 'Tool',
+    date: 'Feb 14, 2026',
+    title: 'Generatore di Presentazioni AI Gratis: I Migliori Strumenti del 2026',
+    description: 'Cerchi un generatore di presentazioni AI gratuito? I migliori tool gratis testati e confrontati.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
+    id: 'automatizzare-presentazioni-azienda',
+    category: 'Business',
+    date: 'Feb 14, 2026',
+    title: 'Come Automatizzare le Presentazioni in Azienda: Guida per Manager e Team',
+    description: 'Guida pratica per manager che vogliono automatizzare le presentazioni aziendali e ridurre i tempi.',
+    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&h=600&q=80'
+  },
+  {
     id: 'presentazioni-pharma-ai-compliant',
     category: 'Pharma',
     date: 'Feb 14, 2026',
