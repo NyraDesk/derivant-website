@@ -29,6 +29,11 @@
       "source": "/resources/derivant-vs-competitors",
       "destination": "/resources",
       "permanent": true
+    },
+    {
+      "source": "/ai-fashion-presentations",
+      "destination": "/resources",
+      "permanent": true
     }
   ],
   "cleanUrls": true

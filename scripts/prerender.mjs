@@ -28,7 +28,6 @@ const routes = [
   '/early-access',
   '/resources',
   '/guida-pitch-deck-2026',
-  '/ai-fashion-presentations',
   '/ai-agenzie-comunicazione',
 ];
 

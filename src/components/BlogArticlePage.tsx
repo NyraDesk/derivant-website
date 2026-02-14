@@ -1746,6 +1746,37 @@ const BlogArticlePage = () => {
               </div>
             </div>
           </div>
+
+          {/* Related Articles */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-bold text-black mb-8">Articoli Correlati</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {(() => {
+                const currentCategory = article.category;
+                const allOthers = Object.entries(articles).filter(([slug]) => slug !== articleSlug);
+                const sameCategory = allOthers.filter(([, a]) => (a as any).category === currentCategory);
+                const different = allOthers.filter(([, a]) => (a as any).category !== currentCategory);
+                const related = [...sameCategory, ...different].slice(0, 3);
+                return related;
+              })().map(([slug, art]) => (
+                  <Link
+                    key={slug}
+                    to={`/blog/${slug}`}
+                    className="group block rounded-2xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300"
+                  >
+                    <img
+                      src={(art as any).image}
+                      alt={(art as any).title}
+                      className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="p-4">
+                      <span className="text-xs font-medium text-blue-600 uppercase tracking-wide">{(art as any).category}</span>
+                      <h4 className="text-sm font-semibold text-black mt-1 leading-snug line-clamp-2">{(art as any).title}</h4>
+                    </div>
+                  </Link>
+                ))}
+            </div>
+          </div>
         </div>
       </div>
     </>

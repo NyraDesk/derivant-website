@@ -11,13 +11,6 @@ const ResourcesPage = () => {
       isExternal: true,
     },
     {
-      slug: 'ai-fashion-presentations',
-      title: 'AI per il Fashion: Presentazioni di Alta Moda',
-      description: 'Come creare lookbook e presentazioni luxury mantenendo un\'estetica d\'élite.',
-      date: '2026-01-27',
-      isExternal: true,
-    },
-    {
       slug: 'ai-agenzie-comunicazione',
       title: 'AI per Agenzie di Comunicazione',
       description: 'Scalare la creazione di Strategy Deck senza aumentare i costi.',

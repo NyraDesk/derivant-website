@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import NewHero from './components/NewHero';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -9,7 +9,6 @@ import BlogArticlePage from './components/BlogArticlePage';
 import ResourcesPage from './components/ResourcesPage';
 import ResourceArticlePage from './components/ResourceArticlePage';
 import GuidaPitchDeckPage from './components/GuidaPitchDeckPage';
-import AiFashionPresentationsPage from './components/AiFashionPresentationsPage';
 import AiAgenzieComunicazionePage from './components/AiAgenzieComunicazionePage';
 
 const HomePage = () => (
@@ -75,13 +74,7 @@ function App() {
             <Footer />
           </>
         } />
-        <Route path="/ai-fashion-presentations" element={
-          <>
-            <Header />
-            <AiFashionPresentationsPage />
-            <Footer />
-          </>
-        } />
+        <Route path="/ai-fashion-presentations" element={<Navigate to="/resources" replace />} />
         <Route path="/ai-agenzie-comunicazione" element={
           <>
             <Header />
