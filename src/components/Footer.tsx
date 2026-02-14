@@ -82,6 +82,15 @@ const Footer = () => {
               }}>
                 Pricing
               </Link>
+              <Link to="/blog" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Blog
+              </Link>
               <Link to="/resources" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
