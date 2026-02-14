@@ -348,7 +348,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '24px',
           }}>
-            Tre passaggi. Un deck completo.
+            Da input a deck. Automatico.
           </h3>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
@@ -359,7 +359,7 @@ const NewHero = () => {
             margin: '0 auto',
             maxWidth: '800px',
           }}>
-            Tu fornisci il contenuto. L'AI fa il resto.
+            Tutto il controllo. Zero lavoro manuale.
           </p>
         </div>
 
@@ -396,7 +396,7 @@ const NewHero = () => {
                     margin: 0,
                     marginBottom: '10px',
                   }}>
-                    Inserisci il contenuto
+                    Input libero
                   </p>
                   <p className="mobile-feature-desc" style={{
                     fontFamily: "'Inter', sans-serif",
@@ -406,7 +406,7 @@ const NewHero = () => {
                     margin: 0,
                     lineHeight: 1.6,
                   }}>
-                    Carica un documento, incolla un brief o inserisci un link.
+                    Brief, documento o link. Qualsiasi formato.
                   </p>
                 </div>
               </div>
@@ -429,7 +429,7 @@ const NewHero = () => {
                     margin: 0,
                     marginBottom: '10px',
                   }}>
-                    L'AI analizza e struttura
+                    L'AI costruisce
                   </p>
                   <p className="mobile-feature-desc" style={{
                     fontFamily: "'Inter', sans-serif",
@@ -439,7 +439,7 @@ const NewHero = () => {
                     margin: 0,
                     lineHeight: 1.6,
                   }}>
-                    Genera testi, titoli e grafici coerenti, applicando il tuo brand kit.
+                    Ricerca, struttura, brand kit. In automatico.
                   </p>
                 </div>
               </div>
@@ -462,7 +462,7 @@ const NewHero = () => {
                     margin: 0,
                     marginBottom: '10px',
                   }}>
-                    Deck pronto
+                    Pronto
                   </p>
                   <p className="mobile-feature-desc" style={{
                     fontFamily: "'Inter', sans-serif",
@@ -472,7 +472,7 @@ const NewHero = () => {
                     margin: 0,
                     lineHeight: 1.6,
                   }}>
-                    Slide professionali, pronte per revisioni rapide o presentazione immediata.
+                    Modifica, presenta o esporta. Subito.
                   </p>
                 </div>
               </div>
