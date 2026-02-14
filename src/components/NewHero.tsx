@@ -11,6 +11,9 @@ const NewHero = () => {
   const [slide2Visible, setSlide2Visible] = useState(false);
   const [showFloatingNav, setShowFloatingNav] = useState(false);
   const lastScrollY = useRef(0);
+  const statsRef = useRef<HTMLDivElement>(null);
+  const [statsVisible, setStatsVisible] = useState(false);
+  const [counters, setCounters] = useState({ speed: 0, time: 0, brand: 0 });
 
   // Slide 2 visibility observer
   useEffect(() => {
@@ -86,6 +89,37 @@ const NewHero = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Stats counter animation
+  useEffect(() => {
+    const statsObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !statsVisible) {
+            setStatsVisible(true);
+            const duration = 1800;
+            const steps = 60;
+            const targets = { speed: 5, time: 80, brand: 100 };
+            let step = 0;
+            const interval = setInterval(() => {
+              step++;
+              const progress = step / steps;
+              const ease = 1 - Math.pow(1 - progress, 3);
+              setCounters({
+                speed: Math.round(targets.speed * ease),
+                time: Math.round(targets.time * ease),
+                brand: Math.round(targets.brand * ease),
+              });
+              if (step >= steps) clearInterval(interval);
+            }, duration / steps);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    if (statsRef.current) statsObserver.observe(statsRef.current);
+    return () => statsObserver.disconnect();
+  }, [statsVisible]);
 
   return (
     <>
@@ -632,6 +666,84 @@ const NewHero = () => {
         </div>
       </div>
 
+      {/* === STATS COUNTER === */}
+      <div ref={statsRef} style={{
+        width: '100%',
+        maxWidth: '1000px',
+        marginTop: '100px',
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 1fr)',
+        gap: '40px',
+        textAlign: 'center',
+      }} className="cards-grid">
+        <div style={{
+          opacity: statsVisible ? 1 : 0,
+          transform: statsVisible ? 'translateY(0)' : 'translateY(20px)',
+          transition: 'opacity 0.6s ease 0s, transform 0.6s ease 0s',
+        }}>
+          <span style={{
+            fontFamily: "'Space Mono', monospace",
+            fontSize: '64px',
+            fontWeight: 700,
+            color: '#ffffff',
+            display: 'block',
+            lineHeight: 1,
+          }}>{counters.speed}x</span>
+          <span style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: '15px',
+            fontWeight: 400,
+            color: 'rgba(255, 255, 255, 0.5)',
+            marginTop: '12px',
+            display: 'block',
+          }}>più veloce del processo manuale</span>
+        </div>
+        <div style={{
+          opacity: statsVisible ? 1 : 0,
+          transform: statsVisible ? 'translateY(0)' : 'translateY(20px)',
+          transition: 'opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s',
+        }}>
+          <span style={{
+            fontFamily: "'Space Mono', monospace",
+            fontSize: '64px',
+            fontWeight: 700,
+            color: '#ffffff',
+            display: 'block',
+            lineHeight: 1,
+          }}>{counters.time}%</span>
+          <span style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: '15px',
+            fontWeight: 400,
+            color: 'rgba(255, 255, 255, 0.5)',
+            marginTop: '12px',
+            display: 'block',
+          }}>tempo risparmiato per deck</span>
+        </div>
+        <div style={{
+          opacity: statsVisible ? 1 : 0,
+          transform: statsVisible ? 'translateY(0)' : 'translateY(20px)',
+          transition: 'opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s',
+        }}>
+          <span style={{
+            fontFamily: "'Space Mono', monospace",
+            fontSize: '64px',
+            fontWeight: 700,
+            color: '#ffffff',
+            display: 'block',
+            lineHeight: 1,
+          }}>{counters.brand}%</span>
+          <span style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: '15px',
+            fontWeight: 400,
+            color: 'rgba(255, 255, 255, 0.5)',
+            marginTop: '12px',
+            display: 'block',
+          }}>coerenza brand garantita</span>
+        </div>
+      </div>
+
       {/* === FEATURE PROCESSO === */}
       <div style={{
         width: '100%',
@@ -861,7 +973,7 @@ const NewHero = () => {
           margin: 0,
           marginBottom: '32px',
         }}>
-          Scala l'eccellenza. Automatizza il workflow.
+          Automatizza i processi. Scala i risultati.
         </h3>
         <p className="mobile-enterprise-desc" style={{
           fontFamily: "'Inter', sans-serif",
@@ -873,7 +985,7 @@ const NewHero = () => {
           marginBottom: '44px',
           maxWidth: '680px',
         }}>
-          Template proprietari, brand governance automatica e workflow standardizzati. Per agenzie, direzioni marketing e team consulenza.
+          Web research automatica, brand kit integrato, generazione in pochi minuti. La tecnologia che serve al tuo team per produrre di più, in meno tempo.
         </p>
         <div className="enterprise-features" style={{ display: 'flex', justifyContent: 'center', gap: '60px', maxWidth: '700px', margin: '0 auto 48px' }}>
           <div style={{ textAlign: 'center', flex: 1 }}>
@@ -885,7 +997,7 @@ const NewHero = () => {
               margin: 0,
               marginBottom: '8px',
             }}>
-              Template proprietari
+              Riduzione tempi 80%
             </p>
             <p className="mobile-feature-desc" style={{
               fontFamily: "'Inter', sans-serif",
@@ -895,7 +1007,7 @@ const NewHero = () => {
               margin: 0,
               lineHeight: 1.6,
             }}>
-              Carica i tuoi layout. L'AI genera contenuti solo dentro i template approvati.
+              Da ore di lavoro a pochi minuti. Per ogni singola presentazione.
             </p>
           </div>
           <div style={{ textAlign: 'center', flex: 1 }}>
@@ -907,7 +1019,7 @@ const NewHero = () => {
               margin: 0,
               marginBottom: '8px',
             }}>
-              Brand Governance
+              100% on-brand
             </p>
             <p className="mobile-feature-desc" style={{
               fontFamily: "'Inter', sans-serif",
@@ -917,7 +1029,7 @@ const NewHero = () => {
               margin: 0,
               lineHeight: 1.6,
             }}>
-              Ogni deck rispetta automaticamente colori, font e linee guida. Senza eccezioni.
+              Ogni output rispetta colori, font e linee guida. Automaticamente.
             </p>
           </div>
         </div>
