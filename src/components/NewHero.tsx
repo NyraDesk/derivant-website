@@ -206,14 +206,14 @@ const NewHero = () => {
         </span>
         <span className="mobile-hero-small" style={{
           fontFamily: "'Inter', sans-serif",
-          fontSize: '36px',
+          fontSize: '40px',
           fontWeight: 700,
           color: '#ffffff',
           letterSpacing: '-0.03em',
           display: 'block',
           marginTop: '12px',
         }}>
-          In pochi minuti. Non ore.
+          In pochi minuti.
         </span>
         <span className="mobile-hero-desc" style={{
           fontFamily: "'Inter', sans-serif",
@@ -224,7 +224,7 @@ const NewHero = () => {
           display: 'block',
           marginTop: '48px',
         }}>
-          Da brief, documenti o link a presentazioni strutturate<br />e coerenti con il tuo brand.
+          Trasforma brief e documenti in presentazioni professionali,<br />coerenti con il tuo brand.
         </span>
       </div>
 
@@ -278,16 +278,6 @@ const NewHero = () => {
         >
           oppure prenota una demo →
         </a>
-        <p style={{
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '14px',
-          fontWeight: 400,
-          color: 'rgba(255, 255, 255, 0.35)',
-          margin: 0,
-          marginTop: '8px',
-        }}>
-          Anche per consulenti e piccoli team.
-        </p>
       </div>
 
       {/* === VIDEO === */}
@@ -358,7 +348,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '24px',
           }}>
-            Come funziona
+            Tre passaggi. Un deck completo.
           </h3>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
@@ -369,7 +359,7 @@ const NewHero = () => {
             margin: '0 auto',
             maxWidth: '800px',
           }}>
-            Da input a presentazione pronta. In tre passaggi.
+            Tu fornisci il contenuto. L'AI fa il resto.
           </p>
         </div>
 
