@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const articles = [
   {
@@ -30,6 +31,19 @@ const articles = [
 
 const BlogPage = () => {
   return (
+    <>
+      <Helmet>
+        <title>Blog | Derivant AI — News e Approfondimenti sulle Presentazioni AI</title>
+        <meta name="description" content="Articoli, guide e approfondimenti su presentazioni AI, pitch deck, strategie di comunicazione e produttività professionale." />
+        <link rel="canonical" href="https://www.derivant.ai/blog" />
+        <meta property="og:title" content="Blog | Derivant AI" />
+        <meta property="og:description" content="Articoli, guide e approfondimenti su presentazioni AI, pitch deck e produttività professionale." />
+        <meta property="og:url" content="https://www.derivant.ai/blog" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Blog | Derivant AI" />
+        <meta name="twitter:description" content="Articoli, guide e approfondimenti su presentazioni AI e produttività professionale." />
+      </Helmet>
     <div className="pt-32 pb-24 bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
@@ -114,6 +128,7 @@ const BlogPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

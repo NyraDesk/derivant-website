@@ -1,12 +1,21 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const AiAgenzieComunicazionePage = () => {
-  useEffect(() => {
-    document.title = 'AI per Agenzie di Comunicazione: Strategy Deck Veloci | Derivant.ai';
-  }, []);
-
   return (
+    <>
+      <Helmet>
+        <title>AI per Agenzie di Comunicazione: Strategy Deck Veloci | Derivant.ai</title>
+        <meta name="description" content="Come le agenzie di comunicazione possono scalare la produzione di strategy deck e presentazioni con l'AI, senza aumentare i costi." />
+        <link rel="canonical" href="https://www.derivant.ai/ai-agenzie-comunicazione" />
+        <meta property="og:title" content="AI per Agenzie di Comunicazione | Derivant" />
+        <meta property="og:description" content="Scala la produzione di strategy deck e presentazioni con l'AI, senza aumentare i costi." />
+        <meta property="og:url" content="https://www.derivant.ai/ai-agenzie-comunicazione" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AI per Agenzie di Comunicazione | Derivant" />
+        <meta name="twitter:description" content="Scala la produzione di strategy deck e presentazioni con l'AI." />
+      </Helmet>
     <div style={{
       minHeight: '100vh',
       background: '#000',
@@ -151,6 +160,7 @@ const AiAgenzieComunicazionePage = () => {
         }
       `}</style>
     </div>
+    </>
   );
 };
 

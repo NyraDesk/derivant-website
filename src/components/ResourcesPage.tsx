@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const ResourcesPage = () => {
   const articles = [
@@ -26,6 +27,19 @@ const ResourcesPage = () => {
   ];
 
   return (
+    <>
+      <Helmet>
+        <title>Risorse | Derivant AI — Guide e Approfondimenti</title>
+        <meta name="description" content="Guide pratiche su pitch deck, presentazioni per agenzie e strategie AI per la comunicazione professionale." />
+        <link rel="canonical" href="https://www.derivant.ai/resources" />
+        <meta property="og:title" content="Risorse | Derivant AI" />
+        <meta property="og:description" content="Guide pratiche su pitch deck, presentazioni per agenzie e strategie AI per la comunicazione professionale." />
+        <meta property="og:url" content="https://www.derivant.ai/resources" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Risorse | Derivant AI" />
+        <meta name="twitter:description" content="Guide pratiche su pitch deck, presentazioni per agenzie e comunicazione professionale." />
+      </Helmet>
     <div style={{
       minHeight: '100vh',
       background: '#000',
@@ -122,6 +136,7 @@ const ResourcesPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

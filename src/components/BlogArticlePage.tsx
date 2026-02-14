@@ -395,13 +395,13 @@ const BlogArticlePage = () => {
         <title>{article.title} | Derivant.ai</title>
         <meta name="description" content={article.description} />
         <meta name="keywords" content="AI presentazioni, privacy presentazioni, pitch deck AI, Derivant, presentazioni professionali" />
-        <link rel="canonical" href={`https://derivant.ai/blog/${articleSlug}`} />
+        <link rel="canonical" href={`https://www.derivant.ai/blog/${articleSlug}`} />
 
         {/* Open Graph */}
         <meta property="og:title" content={article.title} />
         <meta property="og:description" content={article.description} />
         <meta property="og:image" content={article.image} />
-        <meta property="og:url" content={`https://derivant.ai/blog/${articleSlug}`} />
+        <meta property="og:url" content={`https://www.derivant.ai/blog/${articleSlug}`} />
         <meta property="og:type" content="article" />
 
         {/* Twitter Card */}
@@ -427,7 +427,7 @@ const BlogArticlePage = () => {
               "name": "Derivant",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://derivant.ai/logo.png"
+                "url": "https://www.derivant.ai/logo.png"
               }
             },
             "description": article.description

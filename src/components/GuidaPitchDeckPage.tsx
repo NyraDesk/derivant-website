@@ -1,12 +1,21 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const GuidaPitchDeckPage = () => {
-  useEffect(() => {
-    document.title = 'Pitch Deck 2026: Guida e Tool AI per Startup | Derivant.ai';
-  }, []);
-
   return (
+    <>
+      <Helmet>
+        <title>Pitch Deck 2026: Guida e Tool AI per Startup | Derivant.ai</title>
+        <meta name="description" content="Guida completa per creare un pitch deck vincente nel 2026. Scopri i 3 pilastri, le best practice e come l'AI sta cambiando le regole del pitch." />
+        <link rel="canonical" href="https://www.derivant.ai/guida-pitch-deck-2026" />
+        <meta property="og:title" content="Pitch Deck 2026: Guida e Tool AI per Startup" />
+        <meta property="og:description" content="Guida completa per creare un pitch deck vincente nel 2026. I 3 pilastri e come l'AI sta cambiando le regole del pitch." />
+        <meta property="og:url" content="https://www.derivant.ai/guida-pitch-deck-2026" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Pitch Deck 2026: Guida e Tool AI per Startup" />
+        <meta name="twitter:description" content="Guida completa per creare un pitch deck vincente nel 2026." />
+      </Helmet>
     <div style={{
       minHeight: '100vh',
       background: '#000',
@@ -179,6 +188,7 @@ const GuidaPitchDeckPage = () => {
         }
       `}</style>
     </div>
+    </>
   );
 };
 

@@ -1,9 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const PlansPage = () => {
   return (
     <div style={{ minHeight: '100vh', background: '#000' }}>
+      <Helmet>
+        <title>Piani e Prezzi | Derivant AI — Presentazioni Professionali</title>
+        <meta name="description" content="Scegli il piano Derivant perfetto per te. Genera presentazioni professionali con AI: brand kit, web research, esportazione PPTX e PDF." />
+        <link rel="canonical" href="https://www.derivant.ai/plans" />
+        <meta property="og:title" content="Piani e Prezzi | Derivant AI" />
+        <meta property="og:description" content="Scegli il piano Derivant perfetto per te. Genera presentazioni professionali con AI." />
+        <meta property="og:url" content="https://www.derivant.ai/plans" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Piani e Prezzi | Derivant AI" />
+        <meta name="twitter:description" content="Scegli il piano Derivant perfetto per te. Genera presentazioni professionali con AI." />
+      </Helmet>
       <section style={{ paddingTop: '160px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 

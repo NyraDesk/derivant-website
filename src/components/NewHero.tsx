@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import VideoComponent from './VideoComponent';
 
 const NewHero = () => {
@@ -88,6 +89,20 @@ const NewHero = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Derivant AI — Presentazioni Professionali Generate dall'Intelligenza Artificiale</title>
+        <meta name="description" content="Derivant è il motore AI che genera presentazioni professionali in pochi minuti. Web research automatica, brand kit integrato, esportazione PPTX e PDF." />
+        <meta name="keywords" content="presentazioni AI, generare slide, presentazioni automatiche, AI presentation maker, pitch deck AI, Derivant" />
+        <link rel="canonical" href="https://www.derivant.ai/" />
+        <meta property="og:title" content="Derivant AI — Presentazioni Professionali con AI" />
+        <meta property="og:description" content="Il motore AI che genera presentazioni professionali in pochi minuti. Web research, brand kit, export PPTX e PDF." />
+        <meta property="og:url" content="https://www.derivant.ai/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Derivant AI — Presentazioni Professionali con AI" />
+        <meta name="twitter:description" content="Il motore AI che genera presentazioni professionali in pochi minuti. Web research, brand kit, export PPTX e PDF." />
+      </Helmet>
+
       {/* Floating Navigation */}
       <div
         className="glass-nav floating-nav"

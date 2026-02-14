@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const EarlyAccessPage = () => {
   const [email, setEmail] = useState('');
@@ -81,6 +82,19 @@ const EarlyAccessPage = () => {
   }
 
   return (
+    <>
+      <Helmet>
+        <title>Early Access | Derivant AI — Accedi in Anteprima</title>
+        <meta name="description" content="Registrati per accedere in anteprima a Derivant AI. Genera presentazioni professionali con intelligenza artificiale, brand kit e web research integrati." />
+        <link rel="canonical" href="https://www.derivant.ai/early-access" />
+        <meta property="og:title" content="Early Access | Derivant AI" />
+        <meta property="og:description" content="Registrati per accedere in anteprima a Derivant AI. Presentazioni professionali generate dall'AI." />
+        <meta property="og:url" content="https://www.derivant.ai/early-access" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Early Access | Derivant AI" />
+        <meta name="twitter:description" content="Registrati per accedere in anteprima a Derivant AI." />
+      </Helmet>
     <div style={{
       minHeight: '100vh',
       background: '#000',
@@ -203,6 +217,7 @@ const EarlyAccessPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
