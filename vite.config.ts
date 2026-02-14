@@ -7,4 +7,8 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  ssr: {
+    // Bundle all dependencies into the SSR build (avoid CJS/ESM issues)
+    noExternal: true,
+  },
 });

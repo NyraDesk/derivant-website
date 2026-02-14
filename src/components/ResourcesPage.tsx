@@ -23,12 +23,6 @@ const ResourcesPage = () => {
       date: '2026-01-27',
       isExternal: true,
     },
-    {
-      slug: 'derivant-vs-competitors',
-      title: 'Derivant vs Competitors',
-      description: 'How Derivant compares to other AI presentation tools.',
-      date: '2026-01-27',
-    },
   ];
 
   return (

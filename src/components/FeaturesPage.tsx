@@ -85,20 +85,6 @@ const FeaturesPage = () => {
                   AI presentation builder per pitch deck, moodboard e presentazioni professionali
                 </p>
               </div>
-              <div>
-                <h3
-                  className="text-2xl font-medium text-black mb-2"
-                  style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
-                >
-                  NYRA (coming soon)
-                </h3>
-                <p
-                  className="text-xl text-gray-700"
-                  style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
-                >
-                  AI personal assistant locale
-                </p>
-              </div>
             </div>
           </div>
 

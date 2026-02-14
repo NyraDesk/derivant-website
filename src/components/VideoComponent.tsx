@@ -28,7 +28,7 @@ const VideoComponent = ({
   title,
   description,
   thumbnailUrl,
-  uploadDate = '2026-01-27',
+  uploadDate = '2026-01-27T00:00:00+01:00',
   duration = 'PT1M',
   contentUrl,
   embedUrl,
