@@ -64,15 +64,6 @@ const Footer = () => {
               }}>
                 Enterprise
               </a>
-              <a href="#" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '14px',
-                color: 'rgba(255, 255, 255, 0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s ease',
-              }}>
-                Showcase
-              </a>
               <Link to="/plans" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
@@ -109,15 +100,6 @@ const Footer = () => {
               }}>
                 Guida Pitch Deck 2026
               </Link>
-              <Link to="/ai-fashion-presentations" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '14px',
-                color: 'rgba(255, 255, 255, 0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s ease',
-              }}>
-                AI per il Fashion
-              </Link>
               <Link to="/ai-agenzie-comunicazione" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
@@ -127,15 +109,6 @@ const Footer = () => {
               }}>
                 AI per Agenzie
               </Link>
-              <a href="#" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '14px',
-                color: 'rgba(255, 255, 255, 0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s ease',
-              }}>
-                Changelog
-              </a>
             </div>
           </div>
 
