@@ -348,7 +348,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '24px',
           }}>
-            Da input a deck. Automatico.
+            Scrivi. Genera. Presenta.
           </h3>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
@@ -359,7 +359,7 @@ const NewHero = () => {
             margin: '0 auto',
             maxWidth: '800px',
           }}>
-            Tutto il controllo. Zero lavoro manuale.
+            Dal tuo brief a un deck completo, in pochi minuti.
           </p>
         </div>
 
