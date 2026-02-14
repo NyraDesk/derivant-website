@@ -861,7 +861,7 @@ const NewHero = () => {
           margin: 0,
           marginBottom: '32px',
         }}>
-          Per team che producono ad alto volume.
+          Scala l'eccellenza. Automatizza il workflow.
         </h3>
         <p className="mobile-enterprise-desc" style={{
           fontFamily: "'Inter', sans-serif",
