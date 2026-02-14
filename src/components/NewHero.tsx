@@ -146,7 +146,7 @@ const NewHero = () => {
             transition: 'all 0.2s ease',
           }}
         >
-          Plans
+          Piani
         </a>
         <a
           href="/early-access"
@@ -163,7 +163,7 @@ const NewHero = () => {
             transition: 'all 0.2s ease',
           }}
         >
-          Try Free
+          Prova gratis
         </a>
       </div>
 
@@ -189,8 +189,8 @@ const NewHero = () => {
           letterSpacing: '-0.05em',
           display: 'block',
         }}>
-          <span className="hide-mobile">Derivant AI turns your ideas and briefs</span>
-          <span className="show-mobile">Derivant AI turns<br />your ideas and briefs</span>
+          <span className="hide-mobile">Automatizza la produzione</span>
+          <span className="show-mobile">Automatizza la produzione</span>
         </span>
         <span className="mobile-hero-sub" style={{
           fontFamily: "'Inter', sans-serif",
@@ -201,8 +201,8 @@ const NewHero = () => {
           display: 'block',
           marginTop: '12px',
         }}>
-          <span className="hide-mobile">into professional design-driven presentations.</span>
-          <span className="show-mobile">into professional<br />design-driven presentations.</span>
+          <span className="hide-mobile">delle tue presentazioni.</span>
+          <span className="show-mobile">delle tue presentazioni.</span>
         </span>
         <span className="mobile-hero-small" style={{
           fontFamily: "'Inter', sans-serif",
@@ -213,7 +213,7 @@ const NewHero = () => {
           display: 'block',
           marginTop: '12px',
         }}>
-          Instantly ready to present.
+          In pochi minuti. Non ore.
         </span>
         <span className="mobile-hero-desc" style={{
           fontFamily: "'Inter', sans-serif",
@@ -224,7 +224,7 @@ const NewHero = () => {
           display: 'block',
           marginTop: '48px',
         }}>
-          The AI editor that thinks like a designer.<br />Fully customizable.
+          Da brief, documenti o link a presentazioni strutturate<br />e coerenti con il tuo brand.
         </span>
       </div>
 
@@ -255,8 +255,40 @@ const NewHero = () => {
           e.currentTarget.style.color = 'rgba(255, 255, 255, 0.9)';
         }}
       >
-        Try free →
+        Provalo gratis →
       </a>
+
+      {/* CTA Secondaria + Nota */}
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', marginTop: '16px' }}>
+        <a
+          href="https://calendly.com/derivant/new-meeting"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            fontFamily: "'Space Mono', monospace",
+            fontSize: '13px',
+            fontWeight: 400,
+            color: 'rgba(255, 255, 255, 0.5)',
+            letterSpacing: '0.02em',
+            textDecoration: 'none',
+            transition: 'color 0.2s ease',
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.color = 'rgba(255, 255, 255, 0.8)'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255, 255, 255, 0.5)'; }}
+        >
+          oppure prenota una demo →
+        </a>
+        <p style={{
+          fontFamily: "'Inter', sans-serif",
+          fontSize: '14px',
+          fontWeight: 400,
+          color: 'rgba(255, 255, 255, 0.35)',
+          margin: 0,
+          marginTop: '8px',
+        }}>
+          Anche per consulenti e piccoli team.
+        </p>
+      </div>
 
       {/* === VIDEO === */}
       <div style={{
@@ -326,7 +358,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '24px',
           }}>
-            Elite design, AI speed.
+            Come funziona
           </h3>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
@@ -337,7 +369,7 @@ const NewHero = () => {
             margin: '0 auto',
             maxWidth: '800px',
           }}>
-            Generate presentations with the same aesthetic care as a Senior Graphic Designer. A coherent, balanced visual narrative ready for the most demanding stages.
+            Da input a presentazione pronta. In tre passaggi.
           </p>
         </div>
 
@@ -355,74 +387,104 @@ const NewHero = () => {
             transition: 'opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s',
           }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '36px', marginBottom: '48px' }}>
-              <div>
-                <p className="mobile-feature-title" style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '24px',
-                  fontWeight: 800,
-                  color: '#ffffff',
-                  letterSpacing: '-0.02em',
-                  margin: 0,
-                  marginBottom: '10px',
-                }}>
-                  AI Text Mastering
-                </p>
-                <p className="mobile-feature-desc" style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '17px',
-                  fontWeight: 400,
-                  color: 'rgba(255, 255, 255, 0.55)',
-                  margin: 0,
-                  lineHeight: 1.6,
-                }}>
-                  Select any text block to summarize, expand, change tone, or rewrite content instantly.
-                </p>
+              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                <span style={{
+                  fontFamily: "'Space Mono', monospace",
+                  fontSize: '14px',
+                  fontWeight: 700,
+                  color: 'rgba(255, 255, 255, 0.3)',
+                  minWidth: '28px',
+                  marginTop: '4px',
+                }}>01</span>
+                <div>
+                  <p className="mobile-feature-title" style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '24px',
+                    fontWeight: 800,
+                    color: '#ffffff',
+                    letterSpacing: '-0.02em',
+                    margin: 0,
+                    marginBottom: '10px',
+                  }}>
+                    Inserisci il contenuto
+                  </p>
+                  <p className="mobile-feature-desc" style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '17px',
+                    fontWeight: 400,
+                    color: 'rgba(255, 255, 255, 0.55)',
+                    margin: 0,
+                    lineHeight: 1.6,
+                  }}>
+                    Carica un documento, incolla un brief o inserisci un link.
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="mobile-feature-title" style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '24px',
-                  fontWeight: 800,
-                  color: '#ffffff',
-                  letterSpacing: '-0.02em',
-                  margin: 0,
-                  marginBottom: '10px',
-                }}>
-                  Contextual Image AI
-                </p>
-                <p className="mobile-feature-desc" style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '17px',
-                  fontWeight: 400,
-                  color: 'rgba(255, 255, 255, 0.55)',
-                  margin: 0,
-                  lineHeight: 1.6,
-                }}>
-                  AI analyzes your text and in one click to replace them or generate alternatives consistent with your message.
-                </p>
+              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                <span style={{
+                  fontFamily: "'Space Mono', monospace",
+                  fontSize: '14px',
+                  fontWeight: 700,
+                  color: 'rgba(255, 255, 255, 0.3)',
+                  minWidth: '28px',
+                  marginTop: '4px',
+                }}>02</span>
+                <div>
+                  <p className="mobile-feature-title" style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '24px',
+                    fontWeight: 800,
+                    color: '#ffffff',
+                    letterSpacing: '-0.02em',
+                    margin: 0,
+                    marginBottom: '10px',
+                  }}>
+                    L'AI analizza e struttura
+                  </p>
+                  <p className="mobile-feature-desc" style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '17px',
+                    fontWeight: 400,
+                    color: 'rgba(255, 255, 255, 0.55)',
+                    margin: 0,
+                    lineHeight: 1.6,
+                  }}>
+                    Genera testi, titoli e grafici coerenti, applicando il tuo brand kit.
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="mobile-feature-title" style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '24px',
-                  fontWeight: 800,
-                  color: '#ffffff',
-                  letterSpacing: '-0.02em',
-                  margin: 0,
-                  marginBottom: '10px',
-                }}>
-                  Instant Translation
-                </p>
-                <p className="mobile-feature-desc" style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '17px',
-                  fontWeight: 400,
-                  color: 'rgba(255, 255, 255, 0.55)',
-                  margin: 0,
-                  lineHeight: 1.6,
-                }}>
-                  Translate entire slides or individual paragraphs into any language, keeping the layout intact.
-                </p>
+              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                <span style={{
+                  fontFamily: "'Space Mono', monospace",
+                  fontSize: '14px',
+                  fontWeight: 700,
+                  color: 'rgba(255, 255, 255, 0.3)',
+                  minWidth: '28px',
+                  marginTop: '4px',
+                }}>03</span>
+                <div>
+                  <p className="mobile-feature-title" style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '24px',
+                    fontWeight: 800,
+                    color: '#ffffff',
+                    letterSpacing: '-0.02em',
+                    margin: 0,
+                    marginBottom: '10px',
+                  }}>
+                    Deck pronto
+                  </p>
+                  <p className="mobile-feature-desc" style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '17px',
+                    fontWeight: 400,
+                    color: 'rgba(255, 255, 255, 0.55)',
+                    margin: 0,
+                    lineHeight: 1.6,
+                  }}>
+                    Slide professionali, pronte per revisioni rapide o presentazione immediata.
+                  </p>
+                </div>
               </div>
             </div>
             <a
@@ -442,7 +504,7 @@ const NewHero = () => {
                 transition: 'all 0.2s ease',
               }}
             >
-              Discover the editor →
+              Provalo gratis →
             </a>
           </div>
 
@@ -481,11 +543,22 @@ const NewHero = () => {
         </div>
       </div>
 
-      {/* === 3-COLUMN GRID === */}
+      {/* === PER CHI È PENSATO === */}
+      <div style={{ textAlign: 'center', marginTop: '72px', marginBottom: '32px' }}>
+        <h3 className="mobile-section-title" style={{
+          fontFamily: "'Inter', sans-serif",
+          fontSize: '36px',
+          fontWeight: 700,
+          color: '#ffffff',
+          letterSpacing: '-0.03em',
+          margin: 0,
+        }}>
+          Per chi è pensato
+        </h3>
+      </div>
       <div className="cards-grid" style={{
         width: '100%',
         maxWidth: '1200px',
-        marginTop: '72px',
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
         gap: '24px',
@@ -502,7 +575,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '20px',
           }}>
-            STUDIO AESTHETICS
+            CONSULENTI E FREELANCE
           </h3>
           <p className="mobile-feature-desc" style={{
             fontFamily: "'Inter', sans-serif",
@@ -512,7 +585,7 @@ const NewHero = () => {
             lineHeight: 1.7,
             margin: 0,
           }}>
-            Every slide follows the golden rules of design: typographic grids, visual weights and chromatic harmony. The result is indistinguishable from handcrafted excellence.
+            Accelera la produzione dei deck per clienti senza perdere struttura, coerenza e qualità.
           </p>
         </div>
 
@@ -528,7 +601,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '20px',
           }}>
-            ZERO FRICTION
+            PICCOLI TEAM E STARTUP
           </h3>
           <p className="mobile-feature-desc" style={{
             fontFamily: "'Inter', sans-serif",
@@ -538,7 +611,7 @@ const NewHero = () => {
             lineHeight: 1.7,
             margin: 0,
           }}>
-            Go from brief to complete deck in seconds. Eliminate hours lost in micro-tasking and focus only on strategy and creative vision.
+            Mantieni coerenza visiva con il brand kit personalizzabile, anche con volumi medi di presentazioni.
           </p>
         </div>
 
@@ -554,7 +627,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '20px',
           }}>
-            FULL-POWER EDITOR
+            TEAM MARKETING E CORPORATE
           </h3>
           <p className="mobile-feature-desc" style={{
             fontFamily: "'Inter', sans-serif",
@@ -564,9 +637,50 @@ const NewHero = () => {
             lineHeight: 1.7,
             margin: 0,
           }}>
-            Nothing is set in stone. AI-editable text and a fully customizable editor let you refine every detail to perfection.
+            Standardizza template e riduci tempi di revisione, anche per grandi volumi di presentazioni.
           </p>
         </div>
+      </div>
+
+      {/* === FEATURE PROCESSO === */}
+      <div style={{
+        width: '100%',
+        maxWidth: '1000px',
+        marginTop: '100px',
+        display: 'grid',
+        gridTemplateColumns: 'repeat(2, 1fr)',
+        gap: '20px 48px',
+      }} className="cards-grid">
+        {[
+          { title: 'Brand kit personalizzabile', desc: 'Colori, font e loghi sempre coerenti su ogni deck.' },
+          { title: 'Creazione slide da link', desc: 'Trasforma pagine web o documenti in presentazioni complete.' },
+          { title: 'Generazione contenuti', desc: 'Testi, titoli e bullet pronti all\'uso, generati dall\'AI.' },
+          { title: 'Mood visivi su misura', desc: 'Look & feel personalizzati per ogni progetto o cliente.' },
+          { title: 'Editing completo', desc: 'Modifica manuale su ogni elemento, preview immediata.' },
+          { title: 'Export pronto', desc: 'PowerPoint, PDF o formati aziendali standard.' },
+        ].map((feat, i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', padding: '16px 0' }}>
+            <span style={{ color: 'rgba(255, 255, 255, 0.3)', fontSize: '14px', marginTop: '2px', flexShrink: 0 }}>✓</span>
+            <div>
+              <p style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '16px',
+                fontWeight: 600,
+                color: '#ffffff',
+                margin: 0,
+                marginBottom: '4px',
+              }}>{feat.title}</p>
+              <p style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                fontWeight: 400,
+                color: 'rgba(255, 255, 255, 0.5)',
+                margin: 0,
+                lineHeight: 1.5,
+              }}>{feat.desc}</p>
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="mobile-divider" style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
@@ -583,7 +697,7 @@ const NewHero = () => {
         marginBottom: '40px',
         textAlign: 'center',
       }}>
-        Your content, our elite layouts.
+        I tuoi contenuti, i nostri layout.
       </h2>
 
       <div ref={galleryRef} className="gallery-wrapper" style={{
@@ -649,7 +763,7 @@ const NewHero = () => {
         marginBottom: '48px',
         textAlign: 'center',
       }}>
-        Your Canvas, Your Rules.
+        Il tuo canvas, le tue regole.
       </h3>
       <div className="canvas-grid" style={{
         width: '100%',
@@ -670,7 +784,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '40px',
           }}>
-            A professional editor with no constraints, where every element is fluid. From millimetric spacing control to radical layout customization, the final control is always in your hands.
+            Ogni elemento è modificabile. Sposta blocchi, ridimensiona, cambia stili. Il risultato finale lo decidi tu.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
             <div>
@@ -682,7 +796,7 @@ const NewHero = () => {
                 margin: 0,
                 marginBottom: '8px',
               }}>
-                Pixel-Perfect Canvas
+                Canvas pixel-perfect
               </p>
               <p className="mobile-feature-desc" style={{
                 fontFamily: "'Inter', sans-serif",
@@ -692,7 +806,7 @@ const NewHero = () => {
                 margin: 0,
                 lineHeight: 1.6,
               }}>
-                Move and organize content with natural, frictionless drag-and-drop.
+                Sposta e organizza i contenuti con drag-and-drop naturale e senza frizioni.
               </p>
             </div>
             <div>
@@ -704,7 +818,7 @@ const NewHero = () => {
                 margin: 0,
                 marginBottom: '8px',
               }}>
-                Deep Customization
+                Personalizzazione totale
               </p>
               <p className="mobile-feature-desc" style={{
                 fontFamily: "'Inter', sans-serif",
@@ -714,7 +828,7 @@ const NewHero = () => {
                 margin: 0,
                 lineHeight: 1.6,
               }}>
-                Edit styles, visual weights, and graphic assets to make every single deck unique.
+                Modifica stili, pesi visivi e asset grafici per rendere ogni singolo deck unico.
               </p>
             </div>
           </div>
@@ -757,7 +871,7 @@ const NewHero = () => {
           margin: 0,
           marginBottom: '32px',
         }}>
-          Scale Excellence. Automate the Workflow.
+          Per team che producono ad alto volume.
         </h3>
         <p className="mobile-enterprise-desc" style={{
           fontFamily: "'Inter', sans-serif",
@@ -769,7 +883,7 @@ const NewHero = () => {
           marginBottom: '44px',
           maxWidth: '680px',
         }}>
-          Tailored solutions for agencies and teams that need to produce elite presentations at industrial scale.
+          Template proprietari, brand governance automatica e workflow standardizzati. Per agenzie, direzioni marketing e team consulenza.
         </p>
         <div className="enterprise-features" style={{ display: 'flex', justifyContent: 'center', gap: '60px', maxWidth: '700px', margin: '0 auto 48px' }}>
           <div style={{ textAlign: 'center', flex: 1 }}>
@@ -781,7 +895,7 @@ const NewHero = () => {
               margin: 0,
               marginBottom: '8px',
             }}>
-              Custom Template Engine
+              Template proprietari
             </p>
             <p className="mobile-feature-desc" style={{
               fontFamily: "'Inter', sans-serif",
@@ -791,7 +905,7 @@ const NewHero = () => {
               margin: 0,
               lineHeight: 1.6,
             }}>
-              AI will only populate layouts defined by your brand.
+              Carica i tuoi layout. L'AI genera contenuti solo dentro i template approvati.
             </p>
           </div>
           <div style={{ textAlign: 'center', flex: 1 }}>
@@ -813,7 +927,7 @@ const NewHero = () => {
               margin: 0,
               lineHeight: 1.6,
             }}>
-              Ensures every deck strictly follows your aesthetic guidelines.
+              Ogni deck rispetta automaticamente colori, font e linee guida. Senza eccezioni.
             </p>
           </div>
         </div>
@@ -845,7 +959,7 @@ const NewHero = () => {
             e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.25)';
           }}
         >
-          BOOK A DEMO
+          PRENOTA UNA DEMO
         </a>
       </div>
 
@@ -862,7 +976,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '16px',
           }}>
-            Choose your plan
+            Scegli il tuo piano
           </h3>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
@@ -871,7 +985,7 @@ const NewHero = () => {
             color: 'rgba(255, 255, 255, 0.6)',
             margin: 0,
           }}>
-            Unlock the full power of AI presentations
+            Sblocca tutta la potenza delle presentazioni AI
           </p>
         </div>
 
@@ -909,7 +1023,7 @@ const NewHero = () => {
               marginBottom: '32px',
               lineHeight: 1.5,
             }}>
-              Perfect for getting started with AI presentations
+              Perfetto per iniziare con le presentazioni AI
             </p>
             <div style={{ marginBottom: '32px' }}>
               <span className="mobile-price" style={{
@@ -943,21 +1057,21 @@ const NewHero = () => {
                 fontWeight: 400,
                 color: 'rgba(255, 255, 255, 0.5)',
               }}>
-                Current Plan
+                Piano attuale
               </span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Try AI presentations</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Prova le presentazioni AI</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>All templates</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Tutti i template</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>PDF export with watermark</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Export PDF con watermark</span>
               </div>
             </div>
           </div>
@@ -987,7 +1101,7 @@ const NewHero = () => {
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase',
               }}>
-                Launch Offer
+                Offerta Lancio
               </span>
             </div>
             <h4 style={{
@@ -1009,7 +1123,7 @@ const NewHero = () => {
               marginBottom: '32px',
               lineHeight: 1.5,
             }}>
-              For professionals who need more power
+              Per professionisti che vogliono di più
             </p>
             <div style={{ marginBottom: '32px', display: 'flex', alignItems: 'baseline', gap: '12px' }}>
               <span style={{
@@ -1054,25 +1168,25 @@ const NewHero = () => {
                 fontWeight: 700,
                 color: '#ffffff',
               }}>
-                Upgrade to Pro
+                Passa a Pro
               </span>
             </a>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>500 credits/month</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>500 crediti/mese</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Advanced AI images</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Immagini AI avanzate</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>PDF export without watermark</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Export PDF senza watermark</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Priority support</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Supporto prioritario</span>
               </div>
             </div>
           </div>
@@ -1090,7 +1204,7 @@ const NewHero = () => {
             marginBottom: '12px',
             fontStyle: 'italic',
           }}>
-            * Unlimited AI creations refer to daily use within fair use. Premium features (Agent, advanced models) require credits.
+            * Le creazioni AI illimitate si riferiscono all'uso giornaliero entro il fair use. Le funzionalità premium (Agent, modelli avanzati) richiedono crediti.
           </p>
           <p style={{
             fontFamily: "'Space Mono', monospace",
@@ -1099,7 +1213,7 @@ const NewHero = () => {
             color: 'rgba(255, 255, 255, 0.5)',
             margin: 0,
           }}>
-            Cancel anytime. No questions asked.
+            Cancella quando vuoi. Senza domande.
           </p>
           <a
             href="/early-access"
@@ -1127,7 +1241,7 @@ const NewHero = () => {
               e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.25)';
             }}
           >
-            Start creating →
+            Inizia a creare →
           </a>
         </div>
       </div>
@@ -1190,39 +1304,39 @@ const NewHero = () => {
             color: 'rgba(255, 255, 255, 0.6)',
             margin: 0,
           }}>
-            Transparency and control
+            Trasparenza e controllo
           </p>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
           {[
             {
-              q: 'How does presentation generation work with Derivant?',
-              a: 'The user enters a brief or a document; the AI analyzes the content, creates a logical outline, and then generates an elite design respecting the golden rules of graphic composition.',
+              q: 'Come funziona la generazione di presentazioni con Derivant?',
+              a: 'Inserisci un brief o un documento — l\'AI analizza il contenuto, crea un outline logico, ricerca dati reali dal web e genera un design professionale rispettando le regole d\'oro della composizione grafica.',
             },
             {
-              q: 'What are credits and how are they consumed?',
-              a: 'Credits are the unit of measurement of the system. Each action (generating a slide, text, or image) consumes a predetermined amount of credits included in your monthly plan.',
+              q: 'Cosa sono i crediti e come vengono consumati?',
+              a: 'I crediti sono l\'unità di misura del sistema. Ogni azione (generare una slide, un testo o un\'immagine) consuma una quantità predeterminata di crediti inclusi nel tuo piano mensile.',
             },
             {
-              q: 'Do credits expire?',
-              a: 'No. Unused credits at the end of the month do not expire — they accumulate in your account to be used when you need them most.',
+              q: 'I crediti scadono?',
+              a: 'No. I crediti non utilizzati a fine mese non scadono — si accumulano nel tuo account per essere usati quando ne hai più bisogno.',
             },
             {
-              q: 'Can I generate new images directly in blocks?',
-              a: 'Yes. There are no automatic suggestions: you ask the AI to create unique visuals by entering a text prompt directly in the image block, without leaving the editor.',
+              q: 'Posso generare nuove immagini direttamente nei blocchi?',
+              a: 'Sì. Nessun suggerimento automatico: chiedi all\'AI di creare visual unici inserendo un prompt testuale direttamente nel blocco immagine, senza uscire dall\'editor.',
             },
             {
-              q: 'How does AI work in individual text blocks?',
-              a: 'You can select any block to ask the AI to summarize content, expand it, translate it, or change its tone of voice instantly.',
+              q: 'Come funziona l\'AI nei singoli blocchi di testo?',
+              a: 'Puoi selezionare qualsiasi blocco per chiedere all\'AI di riassumere il contenuto, espanderlo, tradurlo o cambiarne il tono di voce istantaneamente.',
             },
             {
-              q: 'Can I cancel my subscription at any time?',
-              a: 'Yes. There are no commitments or long-term contracts. You can cancel your Pro plan with one click from settings, keeping access until the end of the paid period.',
+              q: 'Posso cancellare l\'abbonamento in qualsiasi momento?',
+              a: 'Sì. Nessun vincolo o contratto a lungo termine. Puoi cancellare il piano Pro con un click dalle impostazioni, mantenendo l\'accesso fino alla fine del periodo pagato.',
             },
             {
-              q: 'Can I translate slides into other languages?',
-              a: 'Absolutely. You can translate entire slides or individual blocks while keeping the original layout and formatting intact.',
+              q: 'Posso tradurre le slide in altre lingue?',
+              a: 'Assolutamente. Puoi tradurre intere slide o singoli blocchi mantenendo il layout e la formattazione originali.',
             },
           ].map((faq, index) => (
             <div
