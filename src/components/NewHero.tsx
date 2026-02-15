@@ -244,7 +244,7 @@ const NewHero = () => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        padding: '110px 40px 100px',
+        padding: '150px 40px 100px',
         position: 'relative',
         overflow: 'hidden',
       }}>
@@ -255,10 +255,15 @@ const NewHero = () => {
         lineHeight: 1.05,
         position: 'relative',
         zIndex: 1,
+        minHeight: 'calc(100vh - 420px)',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
       }}>
         <span className="mobile-hero-main" style={{
           fontFamily: "'Inter', sans-serif",
-          fontSize: '68px',
+          fontSize: '72px',
           fontWeight: 700,
           color: '#ffffff',
           letterSpacing: '-0.05em',
@@ -271,7 +276,7 @@ const NewHero = () => {
         </span>
         <span className="mobile-hero-sub" style={{
           fontFamily: "'Inter', sans-serif",
-          fontSize: '48px',
+          fontSize: '52px',
           fontWeight: 700,
           color: '#ffffff',
           letterSpacing: '-0.03em',
@@ -285,58 +290,57 @@ const NewHero = () => {
         </span>
         <span className="mobile-hero-desc" style={{
           fontFamily: "'Inter', sans-serif",
-          fontSize: '20px',
+          fontSize: '24px',
           fontWeight: 400,
           color: 'rgba(255, 255, 255, 0.82)',
           letterSpacing: '-0.01em',
           display: 'block',
-          marginTop: '48px',
+          marginTop: '60px',
           opacity: 0,
           animation: 'heroFadeUp 0.8s ease forwards',
           animationDelay: '0.6s',
         }}>
           Derivant trasforma testi, documenti e idee<br />in presentazioni strutturate e pronte alla consegna.<br />Un motore intelligente che automatizza la produzione<br />e garantisce coerenza in ogni slide.
         </span>
+        {/* CTA Button */}
+        <a
+          href="/early-access"
+          className="glass-nav"
+          style={{
+            opacity: 0,
+            animation: 'heroFadeUp 0.8s ease forwards',
+            animationDelay: '0.9s',
+            marginTop: '40px',
+            padding: '14px 36px',
+            borderRadius: '100px',
+            fontFamily: "'Space Mono', monospace",
+            fontSize: '15px',
+            fontWeight: 400,
+            color: 'rgba(255, 255, 255, 0.9)',
+            letterSpacing: '0.04em',
+            textTransform: 'uppercase',
+            textDecoration: 'none',
+            cursor: 'pointer',
+            transition: 'all 0.2s ease',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.12)';
+            e.currentTarget.style.color = '#ffffff';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = '';
+            e.currentTarget.style.color = 'rgba(255, 255, 255, 0.9)';
+          }}
+        >
+          Provalo gratis →
+        </a>
       </div>
-
-      {/* CTA Button */}
-      <a
-        href="/early-access"
-        className="glass-nav"
-        style={{
-          opacity: 0,
-          animation: 'heroFadeUp 0.8s ease forwards',
-          animationDelay: '0.9s',
-          marginTop: '40px',
-          padding: '14px 36px',
-          borderRadius: '100px',
-          fontFamily: "'Space Mono', monospace",
-          fontSize: '15px',
-          fontWeight: 400,
-          color: 'rgba(255, 255, 255, 0.9)',
-          letterSpacing: '0.04em',
-          textTransform: 'uppercase',
-          textDecoration: 'none',
-          cursor: 'pointer',
-          transition: 'all 0.2s ease',
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.12)';
-          e.currentTarget.style.color = '#ffffff';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.background = '';
-          e.currentTarget.style.color = 'rgba(255, 255, 255, 0.9)';
-        }}
-      >
-        Provalo gratis →
-      </a>
 
       {/* === VIDEO === */}
       <div style={{
         width: '100%',
         maxWidth: '1100px',
-        marginTop: '40px',
+        marginTop: '80px',
         opacity: 0,
         animation: 'heroVideoScale 1s ease forwards',
         animationDelay: '1.1s',
