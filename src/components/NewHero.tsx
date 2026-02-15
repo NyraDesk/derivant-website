@@ -161,17 +161,17 @@ const NewHero = () => {
   return (
     <>
       <Helmet>
-        <title>Derivant AI — Presentazioni Professionali Generate dall'Intelligenza Artificiale</title>
-        <meta name="description" content="Derivant è il motore AI che genera presentazioni professionali in pochi minuti. Web research automatica, brand kit integrato, esportazione PPTX e PDF." />
-        <meta name="keywords" content="presentazioni AI, generare slide, presentazioni automatiche, AI presentation maker, pitch deck AI, Derivant" />
+        <title>Derivant AI — Accelera la produzione delle tue presentazioni</title>
+        <meta name="description" content="Derivant trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Un motore intelligente che automatizza la produzione e garantisce coerenza in ogni slide." />
+        <meta name="keywords" content="presentazioni AI, generare slide, presentazioni automatiche, AI presentation maker, pitch deck AI, Derivant, presentation operating system" />
         <link rel="canonical" href="https://www.derivant.ai/" />
-        <meta property="og:title" content="Derivant AI — Presentazioni Professionali con AI" />
-        <meta property="og:description" content="Il motore AI che genera presentazioni professionali in pochi minuti. Web research, brand kit, export PPTX e PDF." />
+        <meta property="og:title" content="Derivant AI — Accelera la produzione delle tue presentazioni" />
+        <meta property="og:description" content="Derivant trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Automatizza la produzione e garantisce coerenza in ogni slide." />
         <meta property="og:url" content="https://www.derivant.ai/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Derivant AI — Presentazioni Professionali con AI" />
-        <meta name="twitter:description" content="Il motore AI che genera presentazioni professionali in pochi minuti. Web research, brand kit, export PPTX e PDF." />
+        <meta name="twitter:title" content="Derivant AI — Accelera la produzione delle tue presentazioni" />
+        <meta name="twitter:description" content="Derivant trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Automatizza la produzione e garantisce coerenza in ogni slide." />
       </Helmet>
 
       {/* Floating Navigation */}
