@@ -14,6 +14,11 @@ const NewHero = () => {
   const statsRef = useRef<HTMLDivElement>(null);
   const [statsVisible, setStatsVisible] = useState(false);
   const [counters, setCounters] = useState({ speed: 0, time: 0, brand: 0 });
+  const posTitle = 'Presentation ';
+  const posTitleFire = 'Operating System.';
+  const fullPosTitle = posTitle + posTitleFire;
+  const [typedCount, setTypedCount] = useState(0);
+  const typingStarted = useRef(false);
 
   // Slide 2 visibility observer
   useEffect(() => {
@@ -121,6 +126,38 @@ const NewHero = () => {
     return () => statsObserver.disconnect();
   }, [statsVisible]);
 
+  // Divider grow animation
+  useEffect(() => {
+    const dividerObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    document.querySelectorAll('.divider-animate').forEach((el) => {
+      dividerObserver.observe(el);
+    });
+    return () => dividerObserver.disconnect();
+  }, []);
+
+  // Typing effect for POS title
+  useEffect(() => {
+    if (slide2Visible && !typingStarted.current) {
+      typingStarted.current = true;
+      let i = 0;
+      const interval = setInterval(() => {
+        i++;
+        setTypedCount(i);
+        if (i >= fullPosTitle.length) clearInterval(interval);
+      }, 75);
+      return () => clearInterval(interval);
+    }
+  }, [slide2Visible, fullPosTitle.length]);
+
   return (
     <>
       <Helmet>
@@ -208,57 +245,57 @@ const NewHero = () => {
         alignItems: 'center',
         justifyContent: 'flex-start',
         padding: '110px 40px 100px',
+        position: 'relative',
+        overflow: 'hidden',
       }}>
 
       {/* === HEADLINE === */}
       <div style={{
         textAlign: 'center',
         lineHeight: 1.05,
+        position: 'relative',
+        zIndex: 1,
       }}>
         <span className="mobile-hero-main" style={{
           fontFamily: "'Inter', sans-serif",
-          fontSize: '56px',
+          fontSize: '68px',
           fontWeight: 700,
           color: '#ffffff',
           letterSpacing: '-0.05em',
           display: 'block',
+          opacity: 0,
+          animation: 'heroFadeUp 0.8s ease forwards',
+          animationDelay: '0.1s',
         }}>
-          <span className="hide-mobile">Automatizza la produzione</span>
-          <span className="show-mobile">Automatizza la produzione</span>
+          Accelera la produzione
         </span>
         <span className="mobile-hero-sub" style={{
           fontFamily: "'Inter', sans-serif",
-          fontSize: '40px',
+          fontSize: '48px',
           fontWeight: 700,
           color: '#ffffff',
           letterSpacing: '-0.03em',
           display: 'block',
           marginTop: '12px',
+          opacity: 0,
+          animation: 'heroFadeUp 0.8s ease forwards',
+          animationDelay: '0.3s',
         }}>
-          <span className="hide-mobile">delle tue presentazioni.</span>
-          <span className="show-mobile">delle tue presentazioni.</span>
-        </span>
-        <span className="mobile-hero-small" style={{
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '40px',
-          fontWeight: 700,
-          color: '#ffffff',
-          letterSpacing: '-0.03em',
-          display: 'block',
-          marginTop: '12px',
-        }}>
-          In pochi minuti.
+          delle tue presentazioni.
         </span>
         <span className="mobile-hero-desc" style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '20px',
           fontWeight: 400,
-          color: 'rgba(255, 255, 255, 0.7)',
+          color: 'rgba(255, 255, 255, 0.82)',
           letterSpacing: '-0.01em',
           display: 'block',
           marginTop: '48px',
+          opacity: 0,
+          animation: 'heroFadeUp 0.8s ease forwards',
+          animationDelay: '0.6s',
         }}>
-          Trasforma brief e documenti in presentazioni professionali,<br />coerenti con il tuo brand.
+          Derivant trasforma testi, documenti e idee<br />in presentazioni strutturate e pronte alla consegna.<br />Un motore intelligente che automatizza la produzione<br />e garantisce coerenza in ogni slide.
         </span>
       </div>
 
@@ -267,6 +304,9 @@ const NewHero = () => {
         href="/early-access"
         className="glass-nav"
         style={{
+          opacity: 0,
+          animation: 'heroFadeUp 0.8s ease forwards',
+          animationDelay: '0.9s',
           marginTop: '40px',
           padding: '14px 36px',
           borderRadius: '100px',
@@ -292,35 +332,15 @@ const NewHero = () => {
         Provalo gratis →
       </a>
 
-      {/* CTA Secondaria + Nota */}
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', marginTop: '16px' }}>
-        <a
-          href="https://calendly.com/derivant/new-meeting"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            fontFamily: "'Space Mono', monospace",
-            fontSize: '13px',
-            fontWeight: 400,
-            color: 'rgba(255, 255, 255, 0.5)',
-            letterSpacing: '0.02em',
-            textDecoration: 'none',
-            transition: 'color 0.2s ease',
-          }}
-          onMouseEnter={(e) => { e.currentTarget.style.color = 'rgba(255, 255, 255, 0.8)'; }}
-          onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255, 255, 255, 0.5)'; }}
-        >
-          oppure prenota una demo →
-        </a>
-      </div>
-
       {/* === VIDEO === */}
       <div style={{
         width: '100%',
-        maxWidth: '900px',
+        maxWidth: '1100px',
         marginTop: '40px',
+        opacity: 0,
+        animation: 'heroVideoScale 1s ease forwards',
+        animationDelay: '1.1s',
       }}>
-
         <div style={{
           borderRadius: '24px',
           overflow: 'hidden',
@@ -356,18 +376,43 @@ const NewHero = () => {
         </div>
       </div>
 
-      <div className="mobile-divider" style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
+      {/* === FRAMED SECTION === */}
+      <div className="corner-frame" style={{
+        width: '100%',
+        maxWidth: '1200px',
+        marginTop: '180px',
+        padding: '10px 60px 80px',
+        borderRadius: '20px',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+        {/* Corner lines */}
+        <div className="corner-line corner-tl" />
+        <div className="corner-line corner-tr" />
+        <div className="corner-line corner-bl" />
+        <div className="corner-line corner-br" />
+
+        {/* Rotating conic gradient border */}
+        <div className="ambient-glow" style={{
+          position: 'absolute',
+          inset: 0,
+          borderRadius: '20px',
+          overflow: 'hidden',
+          zIndex: 0,
+        }}>
+          <div className="ambient-blob blob-teal" />
+          <div className="ambient-blob blob-red" />
+        </div>
 
       {/* === FEATURE SECTION === */}
       <div ref={(el) => { sectionRef.current = el; slide2Ref.current = el; }} className="mobile-section-spacing" style={{
         width: '100%',
         maxWidth: '1200px',
-        marginTop: '120px',
       }}>
         {/* Header Centrale */}
         <div style={{
           textAlign: 'center',
-          marginBottom: '64px',
+          marginBottom: '48px',
           opacity: slide2Visible ? 1 : 0,
           transform: slide2Visible ? 'translateY(0)' : 'translateY(20px)',
           transition: 'opacity 0.8s ease 0s, transform 0.8s ease 0s',
@@ -381,20 +426,20 @@ const NewHero = () => {
             lineHeight: 1.1,
             margin: 0,
             marginBottom: '24px',
+            minHeight: '66px',
           }}>
-            Derivant AI genera presentazioni perfette.
+            {typedCount <= posTitle.length ? (
+              <>
+                {fullPosTitle.slice(0, typedCount)}
+                <span className="typing-cursor">|</span>
+              </>
+            ) : (
+              <>
+                {posTitle}<span className="fire-text">{posTitleFire.slice(0, typedCount - posTitle.length)}</span>
+                {typedCount < fullPosTitle.length && <span className="typing-cursor">|</span>}
+              </>
+            )}
           </h3>
-          <p className="mobile-section-subtitle" style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '19px',
-            fontWeight: 400,
-            color: 'rgba(255, 255, 255, 0.7)',
-            lineHeight: 1.7,
-            margin: '0 auto',
-            maxWidth: '800px',
-          }}>
-            Dal brief al PowerPoint. In minuti.
-          </p>
         </div>
 
         {/* Grid: Features + Video */}
@@ -536,6 +581,7 @@ const NewHero = () => {
           </div>
         </div>
       </div>
+      </div>{/* end corner-frame */}
 
       {/* === PER CHI È PENSATO === */}
       <div style={{ textAlign: 'center', marginTop: '72px', marginBottom: '32px' }}>
@@ -755,8 +801,6 @@ const NewHero = () => {
         ))}
       </div>
 
-      <div className="mobile-divider" style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
-
       {/* === SLIDE 3: GALLERY === */}
       <h2 className="mobile-section-title mobile-section-spacing" style={{
         fontFamily: "'Inter', sans-serif",
@@ -820,7 +864,7 @@ const NewHero = () => {
         </div>
       </div>
 
-      <div className="mobile-divider" style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
+      <div className="mobile-divider divider-animate" style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
 
       {/* === SLIDE 4: THE CANVAS === */}
       <h3 className="mobile-section-title mobile-section-spacing" style={{

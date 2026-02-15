@@ -73,6 +73,191 @@ section {
   --primary-blue-light: #60A5FA;
 }
 
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Video scale-up entrance */
+@keyframes heroVideoScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* Glass card 3D hover */
+.glass-card {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.03);
+}
+
+/* Divider grow from center */
+.divider-animate {
+  transform: scaleX(0) !important;
+  transform-origin: center;
+  transition: transform 1s ease;
+}
+
+.divider-animate.visible {
+  transform: scaleX(1) !important;
+}
+
+/* Corner frame with rotating conic border */
+.corner-frame {
+  background: transparent !important;
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ambient color blobs */
+.ambient-blob {
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* Corner frame — subtle border blobs */
+.corner-frame .ambient-blob {
+  filter: blur(80px);
+}
+.corner-frame .blob-teal {
+  width: 500px; height: 500px; background: #8a2a0a;
+  top: -200px; left: -100px;
+  animation: blobDrift1 12s ease-in-out infinite;
+}
+.corner-frame .blob-red {
+  width: 450px; height: 450px; background: #8a2a0a;
+  bottom: -200px; right: -100px;
+  animation: blobDrift2 14s ease-in-out infinite;
+}
+
+/* Enterprise — potente */
+.enterprise-glow .ambient-blob {
+  filter: blur(40px);
+}
+.enterprise-glow .blob-teal {
+  width: 800px; height: 800px; background: #0088ff;
+  top: -300px; right: -250px; left: auto;
+  filter: blur(20px);
+  animation: blobDrift1 12s ease-in-out infinite;
+}
+.enterprise-glow .blob-red {
+  width: 700px; height: 700px; background: #0066ee;
+  bottom: -250px; left: -250px;
+  filter: blur(20px);
+  animation: blobDrift2 14s ease-in-out infinite;
+}
+
+@keyframes blobDrift1 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(60px, 40px); }
+  66% { transform: translate(-30px, 20px); }
+}
+
+@keyframes blobDrift2 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(-40px, -30px); }
+  66% { transform: translate(30px, -50px); }
+}
+
+/* Dark overlay */
+.corner-frame::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background: #000;
+  border-radius: 19px;
+  z-index: 1;
+  transition: background 0.4s ease;
+}
+
+.corner-frame:hover::after {
+  background: #060608;
+}
+
+/* Enterprise glow overlay */
+.enterprise-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.enterprise-glow > *:not(.ambient-glow):not(.enterprise-overlay) {
+  position: relative;
+  z-index: 2;
+}
+
+/* Typing cursor */
+.typing-cursor {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  animation: cursorBlink 0.8s step-end infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Fire text gradient */
+.fire-text {
+  background: linear-gradient(90deg, #ffffff 0%, #8a2a0a 30%, #c44010 50%, #8a2a0a 70%, #ffffff 100%);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: fireTextMove 6s ease-in-out infinite;
+}
+
+@keyframes fireTextMove {
+  0%, 100% { background-position: 100% 0; }
+  50% { background-position: 0% 0; }
+}
+
+/* Content above overlay */
+.corner-frame > *:not(.ambient-glow):not(.corner-line) {
+  position: relative;
+  z-index: 2;
+}
+
+.corner-line {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.corner-frame:hover .corner-line {
+  opacity: 1;
+}
+
+.corner-tl { top: -1px; left: -1px; border-top: 1px solid rgba(255, 255, 255, 0.15); border-left: 1px solid rgba(255, 255, 255, 0.15); border-top-left-radius: 20px; }
+.corner-tr { top: -1px; right: -1px; border-top: 1px solid rgba(255, 255, 255, 0.15); border-right: 1px solid rgba(255, 255, 255, 0.15); border-top-right-radius: 20px; }
+.corner-bl { bottom: -1px; left: -1px; border-bottom: 1px solid rgba(255, 255, 255, 0.15); border-left: 1px solid rgba(255, 255, 255, 0.15); border-bottom-left-radius: 20px; }
+.corner-br { bottom: -1px; right: -1px; border-bottom: 1px solid rgba(255, 255, 255, 0.15); border-right: 1px solid rgba(255, 255, 255, 0.15); border-bottom-right-radius: 20px; }
+
 @keyframes fade-in-up {
   from {
     opacity: 0;
