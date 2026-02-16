@@ -815,6 +815,36 @@ html {
   .mobile-hero-desc {
     font-size: 16px !important;
     line-height: 1.5 !important;
+    margin-top: 28px !important;
+  }
+
+  .mobile-hero-desc br {
+    display: none;
+  }
+
+  .hero-cta {
+    margin-top: 24px !important;
+    padding: 12px 28px !important;
+  }
+
+  .hero-headline-container {
+    min-height: auto !important;
+    padding-top: 20px;
+  }
+
+  .corner-frame {
+    padding: 10px 16px 40px !important;
+    margin-top: 80px !important;
+  }
+
+  .presentation-video {
+    border-radius: 12px !important;
+    order: -1;
+  }
+
+  .presentation-cta-wrapper {
+    text-align: center;
+    margin-top: 24px !important;
   }
 
   /* Mobile Section Titles */

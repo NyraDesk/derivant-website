@@ -250,7 +250,7 @@ const NewHero = () => {
       }}>
 
       {/* === HEADLINE === */}
-      <div style={{
+      <div className="hero-headline-container" style={{
         textAlign: 'center',
         lineHeight: 1.05,
         position: 'relative',
@@ -305,7 +305,7 @@ const NewHero = () => {
         {/* CTA Button */}
         <a
           href="/early-access"
-          className="glass-nav"
+          className="glass-nav hero-cta"
           style={{
             opacity: 0,
             animation: 'heroFadeUp 0.8s ease forwards',
@@ -530,29 +530,32 @@ const NewHero = () => {
                 </p>
               </div>
             </div>
-            <a
-              href="/early-access"
-              className="glass-nav"
-              style={{
-                fontFamily: "'Space Mono', monospace",
-                fontSize: '14px',
-                fontWeight: 400,
-                color: '#ffffff',
-                letterSpacing: '0.04em',
-                textTransform: 'uppercase',
-                padding: '12px 28px',
-                borderRadius: '100px',
-                textDecoration: 'none',
-                display: 'inline-block',
-                transition: 'all 0.2s ease',
-              }}
-            >
-              Provalo gratis →
-            </a>
+            <div className="presentation-cta-wrapper" style={{ marginTop: '12px' }}>
+              <a
+                href="/early-access"
+                className="glass-nav presentation-cta"
+                style={{
+                  fontFamily: "'Space Mono', monospace",
+                  fontSize: '14px',
+                  fontWeight: 400,
+                  color: '#ffffff',
+                  letterSpacing: '0.04em',
+                  textTransform: 'uppercase',
+                  padding: '12px 28px',
+                  borderRadius: '100px',
+                  textDecoration: 'none',
+                  display: 'inline-block',
+                  transition: 'all 0.2s ease',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                Provalo gratis →
+              </a>
+            </div>
           </div>
 
           {/* Colonna Destra: Video */}
-          <div style={{
+          <div className="presentation-video" style={{
             borderRadius: '20px',
             overflow: 'hidden',
             aspectRatio: '16 / 9',
