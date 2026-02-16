@@ -55,9 +55,26 @@ async function prerender() {
 
       // Inject helmet meta tags into <head> if available
       if (helmet) {
+        // Replace existing <title> with helmet title if present
+        const helmetTitle = helmet.title?.toString() || '';
+        if (helmetTitle) {
+          page = page.replace(/<title>[^<]*<\/title>/, helmetTitle);
+        }
+
+        // Replace existing meta description with helmet version
+        const helmetMeta = helmet.meta?.toString() || '';
+        if (helmetMeta) {
+          // Remove existing meta description to avoid duplicates
+          page = page.replace(/<meta\s+name="description"[^>]*\/?>/, '');
+          // Remove existing OG tags that helmet will replace
+          page = page.replace(/<meta\s+property="og:title"[^>]*\/?>/, '');
+          page = page.replace(/<meta\s+property="og:description"[^>]*\/?>/, '');
+          page = page.replace(/<meta\s+name="twitter:title"[^>]*\/?>/, '');
+          page = page.replace(/<meta\s+name="twitter:description"[^>]*\/?>/, '');
+        }
+
         const headTags = [
-          helmet.title?.toString() || '',
-          helmet.meta?.toString() || '',
+          helmetMeta,
           helmet.link?.toString() || '',
         ].filter(Boolean).join('\n    ');
 
