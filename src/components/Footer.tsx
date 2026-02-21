@@ -125,42 +125,34 @@ const Footer = () => {
               FAQ
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              <a href="#" style={{
+              <span style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s ease',
               }}>
-                What is Derivant?
-              </a>
-              <a href="#" style={{
+                Cos'è Derivant?
+              </span>
+              <span style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s ease',
               }}>
-                Do credits expire?
-              </a>
-              <a href="#" style={{
+                I crediti scadono?
+              </span>
+              <span style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s ease',
               }}>
-                Can I cancel anytime?
-              </a>
-              <a href="#" style={{
+                Posso cancellare quando voglio?
+              </span>
+              <span style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s ease',
               }}>
-                How does AI work in blocks?
-              </a>
+                Come funziona l'AI?
+              </span>
             </div>
           </div>
 
@@ -177,41 +169,14 @@ const Footer = () => {
               Support
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              <a href="#" style={{
+              <a href="mailto:info@derivant.ai" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
                 textDecoration: 'none',
                 transition: 'color 0.2s ease',
               }}>
-                Help Center
-              </a>
-              <a href="mailto:info@derivant.it" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '14px',
-                color: 'rgba(255, 255, 255, 0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s ease',
-              }}>
-                Contact Us
-              </a>
-              <a href="#" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '14px',
-                color: 'rgba(255, 255, 255, 0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s ease',
-              }}>
-                Privacy Policy
-              </a>
-              <a href="#" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '14px',
-                color: 'rgba(255, 255, 255, 0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s ease',
-              }}>
-                Terms of Service
+                info@derivant.ai
               </a>
             </div>
           </div>

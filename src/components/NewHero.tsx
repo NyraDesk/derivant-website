@@ -261,33 +261,35 @@ const NewHero = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-        <span className="mobile-hero-main" style={{
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '72px',
-          fontWeight: 700,
-          color: '#ffffff',
-          letterSpacing: '-0.05em',
-          display: 'block',
-          opacity: 0,
-          animation: 'heroFadeUp 0.8s ease forwards',
-          animationDelay: '0.1s',
-        }}>
-          Accelera la produzione
-        </span>
-        <span className="mobile-hero-sub" style={{
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '52px',
-          fontWeight: 700,
-          color: '#ffffff',
-          letterSpacing: '-0.03em',
-          display: 'block',
-          marginTop: '12px',
-          opacity: 0,
-          animation: 'heroFadeUp 0.8s ease forwards',
-          animationDelay: '0.3s',
-        }}>
-          delle tue presentazioni.
-        </span>
+        <h1 style={{ margin: 0, textAlign: 'center' }}>
+          <span className="mobile-hero-main" style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: '72px',
+            fontWeight: 700,
+            color: '#ffffff',
+            letterSpacing: '-0.05em',
+            display: 'block',
+            opacity: 0,
+            animation: 'heroFadeUp 0.8s ease forwards',
+            animationDelay: '0.1s',
+          }}>
+            Accelera la produzione
+          </span>
+          <span className="mobile-hero-sub" style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: '52px',
+            fontWeight: 700,
+            color: '#ffffff',
+            letterSpacing: '-0.03em',
+            display: 'block',
+            marginTop: '12px',
+            opacity: 0,
+            animation: 'heroFadeUp 0.8s ease forwards',
+            animationDelay: '0.3s',
+          }}>
+            delle tue presentazioni.
+          </span>
+        </h1>
         <span className="mobile-hero-desc" style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '24px',
@@ -820,7 +822,7 @@ const NewHero = () => {
         marginBottom: '40px',
         textAlign: 'center',
       }}>
-        I tuoi contenuti, i nostri layout.
+        Presentazioni AI pronte alla consegna, con i tuoi contenuti.
       </h2>
 
       <div ref={galleryRef} className="gallery-wrapper" style={{
@@ -834,17 +836,17 @@ const NewHero = () => {
           width: 'max-content',
         }}>
           {[
-            '/gallery/SLIDE 2.png',
-            '/gallery/SLIDE 2 2.png',
-            '/gallery/SLIDE 3.png',
-            '/gallery/5.png',
-            '/gallery/slide 5.png',
-            '/gallery/SLIDE 2.png',
-            '/gallery/SLIDE 2 2.png',
-            '/gallery/SLIDE 3.png',
-            '/gallery/5.png',
-            '/gallery/slide 5.png',
-          ].map((src, i) => (
+            { src: '/gallery/SLIDE 2.png', alt: 'Presentazione AI con layout professionale generata da Derivant' },
+            { src: '/gallery/SLIDE 2 2.png', alt: 'Slide pitch deck creata con intelligenza artificiale' },
+            { src: '/gallery/SLIDE 3.png', alt: 'Esempio di moodboard AI per brand strategy' },
+            { src: '/gallery/5.png', alt: 'Slide aziendale con grafici e dati generati da AI' },
+            { src: '/gallery/slide 5.png', alt: 'Presentazione automatica con design professionale Derivant' },
+            { src: '/gallery/SLIDE 2.png', alt: 'Template presentazione AI per consulenti e startup' },
+            { src: '/gallery/SLIDE 2 2.png', alt: 'Pitch deck AI con layout strutturato e coerente' },
+            { src: '/gallery/SLIDE 3.png', alt: 'Moodboard generato automaticamente con Derivant AI' },
+            { src: '/gallery/5.png', alt: 'Slide con dati reali e ricerca web automatica' },
+            { src: '/gallery/slide 5.png', alt: 'Presentazione professionale generata in pochi secondi con AI' },
+          ].map((item, i) => (
             <div key={i} style={{
               width: '720px',
               aspectRatio: '16 / 9',
@@ -858,8 +860,9 @@ const NewHero = () => {
               transition: `opacity 0.9s ease ${i * 0.12}s, transform 0.9s ease ${i * 0.12}s`,
             }}>
               <img
-                src={src}
-                alt=""
+                src={item.src}
+                alt={item.alt}
+                loading="lazy"
                 style={{
                   width: '100%',
                   height: '100%',
@@ -1378,8 +1381,9 @@ const NewHero = () => {
         alignItems: 'center',
         padding: '0 24px',
       }}>
-        <h2
+        <div
           className="derivant-outline-text"
+          aria-hidden="true"
           style={{
             fontFamily: "'Syne', sans-serif",
             fontSize: 'clamp(80px, 14vw, 200px)',
@@ -1402,7 +1406,7 @@ const NewHero = () => {
           }}
         >
           DERIVANT
-        </h2>
+        </div>
       </div>
 
       {/* === SLIDE 7: FAQ === */}
