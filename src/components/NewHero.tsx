@@ -836,16 +836,16 @@ const NewHero = () => {
           width: 'max-content',
         }}>
           {[
-            { src: '/gallery/SLIDE 2.png', alt: 'Presentazione AI con layout professionale generata da Derivant' },
-            { src: '/gallery/SLIDE 2 2.png', alt: 'Slide pitch deck creata con intelligenza artificiale' },
-            { src: '/gallery/SLIDE 3.png', alt: 'Esempio di moodboard AI per brand strategy' },
-            { src: '/gallery/5.png', alt: 'Slide aziendale con grafici e dati generati da AI' },
-            { src: '/gallery/slide 5.png', alt: 'Presentazione automatica con design professionale Derivant' },
-            { src: '/gallery/SLIDE 2.png', alt: 'Template presentazione AI per consulenti e startup' },
-            { src: '/gallery/SLIDE 2 2.png', alt: 'Pitch deck AI con layout strutturato e coerente' },
-            { src: '/gallery/SLIDE 3.png', alt: 'Moodboard generato automaticamente con Derivant AI' },
-            { src: '/gallery/5.png', alt: 'Slide con dati reali e ricerca web automatica' },
-            { src: '/gallery/slide 5.png', alt: 'Presentazione professionale generata in pochi secondi con AI' },
+            { src: '/gallery/SLIDE 2.webp', alt: 'Presentazione AI con layout professionale generata da Derivant' },
+            { src: '/gallery/SLIDE 2 2.webp', alt: 'Slide pitch deck creata con intelligenza artificiale' },
+            { src: '/gallery/SLIDE 3.webp', alt: 'Esempio di moodboard AI per brand strategy' },
+            { src: '/gallery/5.webp', alt: 'Slide aziendale con grafici e dati generati da AI' },
+            { src: '/gallery/slide 5.webp', alt: 'Presentazione automatica con design professionale Derivant' },
+            { src: '/gallery/SLIDE 2.webp', alt: 'Template presentazione AI per consulenti e startup' },
+            { src: '/gallery/SLIDE 2 2.webp', alt: 'Pitch deck AI con layout strutturato e coerente' },
+            { src: '/gallery/SLIDE 3.webp', alt: 'Moodboard generato automaticamente con Derivant AI' },
+            { src: '/gallery/5.webp', alt: 'Slide con dati reali e ricerca web automatica' },
+            { src: '/gallery/slide 5.webp', alt: 'Presentazione professionale generata in pochi secondi con AI' },
           ].map((item, i) => (
             <div key={i} style={{
               width: '720px',
@@ -968,7 +968,7 @@ const NewHero = () => {
           border: '0.5px solid rgba(255, 255, 255, 0.08)',
         }}>
           <img
-            src="/slide3-image.png"
+            src="/slide3-image.webp"
             alt="Canvas preview"
             style={{
               width: '100%',
@@ -1388,7 +1388,7 @@ const NewHero = () => {
             fontFamily: "'Syne', sans-serif",
             fontSize: 'clamp(80px, 14vw, 200px)',
             fontWeight: 800,
-            backgroundImage: 'radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.2) 0%, transparent 50%), radial-gradient(ellipse at 70% 80%, rgba(0,0,0,0.25) 0%, transparent 50%), url(/sfondo.png)',
+            backgroundImage: 'radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.2) 0%, transparent 50%), radial-gradient(ellipse at 70% 80%, rgba(0,0,0,0.25) 0%, transparent 50%), url(/sfondo.webp)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundClip: 'text',
