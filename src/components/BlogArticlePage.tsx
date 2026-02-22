@@ -1610,17 +1610,22 @@ const BlogArticlePage = () => {
             "@type": "Article",
             "headline": article.title,
             "image": article.image,
-            "datePublished": "2026-01-27T00:00:00+01:00",
+            "datePublished": new Date(article.date).toISOString(),
+            "dateModified": new Date(article.date).toISOString(),
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://www.derivant.ai/blog/${articleSlug}`
+            },
             "author": {
               "@type": "Person",
               "name": article.author
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Derivant",
+              "name": "Derivant AI",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.derivant.ai/logo.png"
+                "url": "https://www.derivant.ai/icon/derivant-icon.png"
               }
             },
             "description": article.description
