@@ -38,7 +38,7 @@ const Footer = () => {
               lineHeight: 1.7,
               margin: 0,
             }}>
-              The AI Presentation Builder that combines strategy and design. Transform your ideas into professional presentations, pitch decks, and moodboards in minutes.
+              Il motore AI che trasforma testi, documenti e idee in presentazioni professionali. Pitch deck, moodboard e strategy deck pronti in pochi minuti.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ const Footer = () => {
               margin: 0,
               marginBottom: '20px',
             }}>
-              Product
+              Prodotto
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               <a href="/#enterprise" style={{
@@ -71,7 +71,7 @@ const Footer = () => {
                 textDecoration: 'none',
                 transition: 'color 0.2s ease',
               }}>
-                Pricing
+                Piani
               </Link>
               <Link to="/blog" style={{
                 fontFamily: "'Inter', sans-serif",
@@ -89,7 +89,7 @@ const Footer = () => {
                 textDecoration: 'none',
                 transition: 'color 0.2s ease',
               }}>
-                Resources
+                Risorse
               </Link>
               <Link to="/guida-pitch-deck-2026" style={{
                 fontFamily: "'Inter', sans-serif",
@@ -166,7 +166,7 @@ const Footer = () => {
               margin: 0,
               marginBottom: '20px',
             }}>
-              Support
+              Contatti
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               <a href="mailto:info@derivant.ai" style={{
@@ -197,7 +197,7 @@ const Footer = () => {
             color: 'rgba(255, 255, 255, 0.35)',
             margin: 0,
           }}>
-            &copy; 2026 Derivant AI. All rights reserved.
+            &copy; 2026 Derivant AI. Tutti i diritti riservati.
           </p>
           <p style={{
             fontFamily: "'Inter', sans-serif",
@@ -205,7 +205,7 @@ const Footer = () => {
             color: 'rgba(255, 255, 255, 0.35)',
             margin: 0,
           }}>
-            Made for strategy and design.
+            Strategia e design, automatizzati.
           </p>
         </div>
       </div>

@@ -144,7 +144,7 @@ const BlogPage = () => {
               letterSpacing: '-0.04em'
             }}
           >
-            Latest News <span className="italic text-gray-600">Articles</span>
+            Blog — <span className="italic text-gray-600">Guide e Approfondimenti sulle Presentazioni AI</span>
           </h1>
           <p
             className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed"
@@ -153,7 +153,7 @@ const BlogPage = () => {
               fontWeight: 300
             }}
           >
-            Stay up to date with the latest improvements and new features
+            Strategie, tutorial e novità per creare presentazioni professionali con l'intelligenza artificiale.
           </p>
         </div>
 
