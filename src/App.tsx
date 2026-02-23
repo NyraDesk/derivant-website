@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import PlansPage from './components/PlansPage';
 import BlogPage from './components/BlogPage';
-import EarlyAccessPage from './components/EarlyAccessPage';
+import { useEffect } from 'react';
 import BlogArticlePage from './components/BlogArticlePage';
 import ResourcesPage from './components/ResourcesPage';
 import ResourceArticlePage from './components/ResourceArticlePage';
@@ -14,6 +14,13 @@ import AiAgenzieComunicazionePage from './components/AiAgenzieComunicazionePage'
 const HomePage = () => (
   <NewHero />
 );
+
+const RedirectToApp = () => {
+  useEffect(() => {
+    window.location.href = 'https://app.derivant.ai';
+  }, []);
+  return null;
+};
 
 function App() {
   return (
@@ -47,12 +54,7 @@ function App() {
             <Footer />
           </>
         } />
-        <Route path="/early-access" element={
-          <>
-            <Header />
-            <EarlyAccessPage />
-          </>
-        } />
+        <Route path="/early-access" element={<RedirectToApp />} />
         <Route path="/resources" element={
           <>
             <Header />

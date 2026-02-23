@@ -86,7 +86,7 @@ In un mondo dove i dati sono il nuovo petrolio, scegliere strumenti che rispetta
 
 Con Derivant, puoi creare presentazioni di livello elite senza compromettere la sicurezza delle tue idee.
 
-Scopri i [piani disponibili](/plans) o inizia subito con [Early Access](/early-access).`
+Scopri i [piani disponibili](/plans) o inizia subito con [Early Access](https://app.derivant.ai).`
   },
   'derivant-vs-gamma-powerpoint-2026': {
     date: 'January 27, 2026',
@@ -148,7 +148,7 @@ Se hai bisogno di una presentazione che chiuda il deal, che incanti gli investit
 
 Non è questione di funzionalità. È questione di standard.
 
-Scopri i [piani disponibili](/plans) o [inizia gratis oggi](/early-access).`
+Scopri i [piani disponibili](/plans) o [inizia gratis oggi](https://app.derivant.ai).`
   },
   'ai-assistants-operations': {
     date: 'January 10, 2026',
@@ -290,7 +290,7 @@ Il secondo passo è configurare il Brand Kit — colori, font, logo. Una volta f
 
 Il terzo passo è provare. Genera una presentazione reale su un brief reale e confronta il risultato con il tuo processo attuale.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
   },
   'presentazioni-consulenti-ai-risparmio-tempo': {
     date: 'February 14, 2026',
@@ -387,7 +387,7 @@ Il consiglio è semplice: prendi la prossima presentazione che devi creare e pro
 
 La maggior parte dei consulenti che provano Derivant non tornano più al workflow manuale. Non per pigrizia — per efficienza.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
   },
   'presentazioni-pharma-ai-compliant': {
     date: 'February 14, 2026',
@@ -466,7 +466,7 @@ Il calcolo è semplice:
 
 Per un'azienda che produce 50+ presentazioni al mese, il risparmio è nell'ordine delle centinaia di ore annue.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
   },
   'presentazioni-hr-onboarding-formazione': {
     date: 'February 14, 2026',
@@ -559,7 +559,7 @@ Se gestisci un team HR, l'AI per le presentazioni non è un nice-to-have. È uno
 
 Il primo passo: prova a generare il prossimo deck di onboarding con l'AI e confronta tempi e risultato.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
   },
   'presentazioni-formazione-aziendale-ai': {
     date: 'February 14, 2026',
@@ -643,7 +643,7 @@ L'AI non sostituisce il formatore. Lo potenzia. Il formatore si concentra sui co
 
 È la stessa logica di qualsiasi automazione: elimina il lavoro ripetitivo per liberare tempo per ciò che conta davvero.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
   },
   'presentazioni-sales-team-ai': {
     date: 'February 14, 2026',
@@ -732,7 +732,7 @@ Se gestisci un team di 5-10 commerciali, l'AI per le presentazioni non è un too
 
 Ogni commercial produce deck migliori, più velocemente, con meno supporto dal marketing. Il pipeline si muove più veloce. I deal si chiudono prima.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
   },
   'pitch-deck-startup-ai-investitori': {
     date: 'February 14, 2026',
@@ -829,7 +829,7 @@ L'AI ti dà un vantaggio competitivo: più tempo per perfezionare la storia e i 
 
 Il tuo prossimo pitch potrebbe essere quello che cambia tutto. Fallo contare.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
   },
   'migliori-ai-presentazioni-2026': {
     date: 'February 14, 2026',
@@ -862,7 +862,7 @@ Contro:
 
 Ideale per: consulenti, agenzie, team marketing, aziende che producono presentazioni ad alto volume.
 
-[Prova Derivant gratis →](/early-access)
+[Prova Derivant gratis →](https://app.derivant.ai)
 
 
 2. Gamma — Il Più Popolare
@@ -996,7 +996,7 @@ Il mercato si sta dividendo in due: tool generici (che fanno tutto ma niente ben
 
 Per le presentazioni professionali — pitch deck, strategy deck, report aziendali — gli strumenti specializzati stanno emergendo come la scelta più efficace. Non perché gli altri siano cattivi, ma perché il contesto business richiede accuratezza, brand governance e qualità che i tool generici non garantiscono.
 
-Scopri i [piani disponibili](/plans) o [prova Derivant gratis](/early-access).`
+Scopri i [piani disponibili](/plans) o [prova Derivant gratis](https://app.derivant.ai).`
   },
   'creare-presentazioni-ai-guida': {
     date: 'February 14, 2026',
@@ -1123,7 +1123,7 @@ Con AI:
 
 Il risparmio è reale: 80-90% del tempo. Non perché il risultato sia perfetto al primo colpo, ma perché l'AI elimina il lavoro meccanico (layout, formattazione, struttura) e ti lascia concentrare sul contenuto.
 
-Scopri i [piani disponibili](/plans) o [prova Derivant gratis](/early-access).`
+Scopri i [piani disponibili](/plans) o [prova Derivant gratis](https://app.derivant.ai).`
   },
   'generatore-presentazioni-ai-gratis': {
     date: 'February 14, 2026',
@@ -1275,7 +1275,7 @@ Il trend è chiaro: le funzionalità AI più potenti stanno diventando premium. 
 
 Il consiglio: approfitta delle versioni gratuite e degli early access ora, mentre sono disponibili.
 
-Scopri i [piani disponibili](/plans) o [richiedi accesso gratuito a Derivant](/early-access).`
+Scopri i [piani disponibili](/plans) o [richiedi accesso gratuito a Derivant](https://app.derivant.ai).`
   },
   'automatizzare-presentazioni-azienda': {
     date: 'February 14, 2026',
@@ -1396,7 +1396,7 @@ Se gestisci un team e vuoi proporre l'automazione delle presentazioni al tuo man
 
 I dati parlano da soli.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](/early-access).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
   }
 };
 
@@ -1702,12 +1702,12 @@ const BlogArticlePage = () => {
                 <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
                   Inizia con Derivant oggi. AI potente, design professionale, privacy garantita.
                 </p>
-                <Link
-                  to="/early-access"
+                <a
+                  href="https://app.derivant.ai"
                   className="inline-flex items-center justify-center px-8 py-4 bg-black text-white rounded-full font-semibold text-lg hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
-                  Inizia Gratis
-                </Link>
+                  Prova gratis
+                </a>
               </div>
             </div>
 

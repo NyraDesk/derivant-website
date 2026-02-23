@@ -220,7 +220,7 @@ const NewHero = () => {
           Piani
         </a>
         <a
-          href="/early-access"
+          href="https://app.derivant.ai"
           style={{
             fontFamily: "'Space Mono', monospace",
             fontSize: '13px',
@@ -306,7 +306,7 @@ const NewHero = () => {
         </span>
         {/* CTA Button */}
         <a
-          href="/early-access"
+          href="https://app.derivant.ai"
           className="glass-nav hero-cta"
           style={{
             opacity: 0,
@@ -534,7 +534,7 @@ const NewHero = () => {
             </div>
             <div className="presentation-cta-wrapper" style={{ marginTop: '12px' }}>
               <a
-                href="/early-access"
+                href="https://app.derivant.ai"
                 className="glass-nav presentation-cta"
                 style={{
                   fontFamily: "'Space Mono', monospace",
@@ -1278,7 +1278,7 @@ const NewHero = () => {
                 / month
               </span>
             </div>
-            <a href="/early-access" style={{
+            <a href="https://app.derivant.ai" style={{
               textDecoration: 'none',
               marginBottom: '32px',
               display: 'block',
@@ -1342,7 +1342,7 @@ const NewHero = () => {
             Cancella quando vuoi. Senza domande.
           </p>
           <a
-            href="/early-access"
+            href="https://app.derivant.ai"
             style={{
               display: 'inline-block',
               marginTop: '32px',

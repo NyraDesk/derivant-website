@@ -214,7 +214,7 @@ const PlansPage = () => {
                 </span>
               </div>
 
-              <Link to="/early-access" style={{ textDecoration: 'none', marginBottom: '32px' }}>
+              <a href="https://app.derivant.ai" style={{ textDecoration: 'none', marginBottom: '32px', display: 'block' }}>
                 <div style={{
                   background: '#3B82F6',
                   borderRadius: '12px',
@@ -232,7 +232,7 @@ const PlansPage = () => {
                     Upgrade to Pro
                   </span>
                 </div>
-              </Link>
+              </a>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>

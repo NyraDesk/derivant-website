@@ -129,8 +129,8 @@ const GuidaPitchDeckPage = () => {
             }}>
               Pronto a creare il tuo pitch deck?
             </p>
-            <Link
-              to="/early-access"
+            <a
+              href="https://app.derivant.ai"
               style={{
                 display: 'inline-block',
                 padding: '14px 32px',
@@ -146,8 +146,8 @@ const GuidaPitchDeckPage = () => {
               onMouseEnter={(e) => e.currentTarget.style.opacity = '0.9'}
               onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
             >
-              Inizia Gratis
-            </Link>
+              Prova gratis
+            </a>
           </div>
         </div>
       </article>

@@ -61,13 +61,13 @@ const Header = () => {
 
             {/* CTA Button */}
             <div className="flex-shrink-0">
-              <Link
-                to="/early-access"
+              <a
+                href="https://app.derivant.ai"
                 className="bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 hover:scale-105 transition-all duration-200 border border-white/20"
                 style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
               >
-                Get early access →
-              </Link>
+                Try it free →
+              </a>
             </div>
           </div>
         </nav>
@@ -141,13 +141,13 @@ const Header = () => {
                 </Link>
 
                 <div className="px-6 py-4">
-                  <Link
-                    to="/early-access"
+                  <a
+                    href="https://app.derivant.ai"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="w-full bg-white/10 text-white px-6 py-4 rounded-full font-medium text-base hover:bg-white/20 transition-all duration-200 block text-center border border-white/20"
                   >
-                    Get early access →
-                  </Link>
+                    Try it free →
+                  </a>
                 </div>
               </div>
             </div>

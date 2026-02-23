@@ -110,8 +110,8 @@ const AiAgenzieComunicazionePage = () => {
             }}>
               Pronto a scalare la tua agenzia?
             </p>
-            <Link
-              to="/early-access"
+            <a
+              href="https://app.derivant.ai"
               style={{
                 display: 'inline-block',
                 padding: '14px 32px',
@@ -127,7 +127,7 @@ const AiAgenzieComunicazionePage = () => {
               onMouseEnter={(e) => e.currentTarget.style.opacity = '0.9'}
               onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
             >
-              Inizia Gratis
+              Prova gratis
             </Link>
           </div>
         </div>
