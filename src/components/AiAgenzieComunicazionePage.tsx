@@ -128,7 +128,7 @@ const AiAgenzieComunicazionePage = () => {
               onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
             >
               Prova gratis
-            </Link>
+            </a>
           </div>
         </div>
       </article>
