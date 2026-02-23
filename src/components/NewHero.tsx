@@ -1210,26 +1210,6 @@ const NewHero = () => {
             background: 'rgba(255, 255, 255, 0.03)',
             position: 'relative',
           }}>
-            <div style={{
-              position: 'absolute',
-              top: '20px',
-              right: '20px',
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
-              borderRadius: '100px',
-              padding: '6px 14px',
-            }}>
-              <span style={{
-                fontFamily: "'Space Mono', monospace",
-                fontSize: '11px',
-                fontWeight: 700,
-                color: '#ffffff',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase',
-              }}>
-                Offerta Lancio
-              </span>
-            </div>
             <h4 style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '28px',
@@ -1238,7 +1218,7 @@ const NewHero = () => {
               margin: 0,
               marginBottom: '8px',
             }}>
-              Pro
+              Starter
             </h4>
             <p style={{
               fontFamily: "'Inter', sans-serif",
@@ -1251,29 +1231,21 @@ const NewHero = () => {
             }}>
               Per professionisti che vogliono di più
             </p>
-            <div style={{ marginBottom: '32px', display: 'flex', alignItems: 'baseline', gap: '12px' }}>
-              <span style={{
-                fontFamily: "'Space Mono', monospace",
-                fontSize: '24px',
-                fontWeight: 400,
-                color: 'rgba(255, 255, 255, 0.4)',
-                textDecoration: 'line-through',
-              }}>
-                €9.99
-              </span>
+            <div style={{ marginBottom: '32px' }}>
               <span className="mobile-price" style={{
                 fontFamily: "'Space Mono', monospace",
                 fontSize: '48px',
                 fontWeight: 700,
                 color: '#ffffff',
               }}>
-                €6.99
+                €9
               </span>
               <span style={{
                 fontFamily: "'Space Mono', monospace",
                 fontSize: '16px',
                 fontWeight: 400,
                 color: 'rgba(255, 255, 255, 0.5)',
+                marginLeft: '8px',
               }}>
                 / month
               </span>
@@ -1294,13 +1266,13 @@ const NewHero = () => {
                 fontWeight: 700,
                 color: '#ffffff',
               }}>
-                Passa a Pro
+                Passa a Starter
               </span>
             </a>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>500 crediti/mese</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>400 crediti/mese</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
