@@ -4,7 +4,8 @@
 - **Tipo:** Sito marketing/landing page per derivant.ai
 - **Cartella:** `/Users/marcoconte/Desktop/Derivant/`
 - **Stack:** React + TypeScript + Vite + Tailwind CSS
-- **Deploy:** `npx vercel --prod` (da questa cartella!)
+- **Deploy:** `git push origin main` → auto-deploy Vercel progetto `derivant-website`
+- **ATTENZIONE:** `npx vercel --prod` deploya sul progetto SBAGLIATO (`derivant`). Usare SEMPRE git push.
 - **URL produzione:** https://derivant.ai
 
 ## ATTENZIONE CRITICA
@@ -30,53 +31,28 @@ Derivant è un **motore intelligente che genera presentazioni** con AI.
 - **Competitor**: Gamma.app, Tome, Beautiful.ai
 - **Target**: consulenti, startup, team corporate che perdono ore a fare slide
 
-## SEO — Task Operativo
+## SEO — Stato Attuale (aggiornato 23 Feb 2026)
 
-### STEP 1: Audit (SOLO lettura, zero modifiche)
-1. Leggi `index.html` — analizza meta tag, title, description, OG tags esistenti
-2. Leggi `vercel.json` — analizza routing, redirect, headers
-3. Leggi struttura `src/` — identifica pagine, componenti, routes
-4. Leggi `public/` — verifica se esistono sitemap.xml, robots.txt
-5. Verifica su https://derivant.ai come appare il sito live
-6. **Presenta un report completo ALL'UTENTE prima di toccare qualsiasi cosa**
+### COMPLETATI
+- **Pre-rendering SPA**: funzionante con `scripts/prerender.mjs` + `entry-server.tsx`
+- **H1 homepage**: `<h1>` con "Accelera la produzione delle tue presentazioni" (era un `<span>`)
+- **H2 con keyword SEO**: "Presentazioni AI pronte alla consegna, con i tuoi contenuti." — H2 decorativo "DERIVANT" convertito in `<div aria-hidden>`
+- **Alt text immagini**: tutte le 10 immagini gallery con alt descrittivo + keyword
+- **Meta tag index.html**: title, description, keywords, canonical, OG, Twitter Card — tutti presenti
+- **Schema.org**: Organization, SoftwareApplication, FAQPage in index.html
+- **Schema Article blog**: datePublished dinamica, dateModified, mainEntityOfPage, logo corretto
+- **Sitemap + Robots**: `public/sitemap.xml` con tutte le pagine e articoli blog, robots.txt presente
+- **Immagini WebP**: tutte convertite da PNG (~10MB → ~680KB, -93%). Originali PNG restano per OG meta tag
+- **Lazy loading**: attivo su immagini gallery
+- **Font loading**: preconnect + `display=swap` su Google Fonts
+- **Footer**: tutto in italiano, email corretta `info@derivant.ai`, link morti `href="#"` rimossi
+- **Blog H1**: da "Latest News Articles" → "Blog — Guide e Approfondimenti sulle Presentazioni AI"
 
-### STEP 2: Fix Prioritari (uno alla volta, con approvazione)
-
-**P0 — Pre-rendering SPA (CRITICO)**
-- React SPA = Google vede `<div id="root">` vuoto → nessuna indicizzazione
-- Opzioni da valutare: `vite-plugin-ssr`, `prerender-spa-plugin`, `vite-ssg`, o Vercel ISR
-- Questo è IL problema principale — senza risolverlo, tutto il resto è inutile
-
-**P1 — Meta Tag in index.html**
-- Title: "Derivant AI — Presentazioni professionali generate dall'intelligenza artificiale"
-- Description: focus su risparmio tempo + dati reali + automazione (NON design)
-- Keywords: presentazioni AI, generare slide, presentazioni automatiche, AI presentation maker
-- `lang="it"` (NON cambiare!)
-- Canonical: `https://derivant.ai`
-
-**P2 — Open Graph + Twitter Card**
-- og:title, og:description, og:image, og:url, og:type
-- twitter:card, twitter:title, twitter:description, twitter:image
-- Creare un'immagine OG se non esiste (1200x630px)
-
-**P3 — Schema.org / JSON-LD**
-- SoftwareApplication schema
-- FAQPage schema (se c'è una sezione FAQ)
-- Organization schema
-
-**P4 — Sitemap e Robots**
-- Creare `public/sitemap.xml` con tutte le pagine
-- Creare `public/robots.txt` con riferimento a sitemap
-- Sottomettere sitemap a Google Search Console
-
-**P5 — Video Indexing**
-- Se ci sono video nel sito, aggiungere VideoObject schema
-- Video sitemap separato se necessario
-
-### STEP 3: Performance
-- Core Web Vitals (LCP, FID, CLS)
-- Lazy loading immagini
-- Font loading optimization (preconnect, font-display: swap)
+### DA FARE (bassa priorità)
+- **Pagina /enterprise dedicata**: ora è solo anchor `/#enterprise` — keyword persa
+- **VideoObject schema**: video presenti ma senza schema strutturato
+- **Social media**: Instagram e TikTok quasi vuoti, LinkedIn da creare. Quando attivi → aggiungere a schema Organization `sameAs` e footer
+- **Refactor componenti grandi**: NewHero.tsx (1533 righe), BlogArticlePage.tsx (1786 righe) — funzionano ma sono enormi
 
 ## Stile e Brand
 - **Colori**: sfondo `#0d0d0f`, gradient `linear-gradient(90deg, #B8A4C9 0%, #E8B4A0 50%, #E8A4B8 100%)`
