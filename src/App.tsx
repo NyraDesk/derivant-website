@@ -13,6 +13,8 @@ import AiAgenzieComunicazionePage from './components/AiAgenzieComunicazionePage'
 import PrivacyPage from './components/PrivacyPage';
 import TermsPage from './components/TermsPage';
 import SupportPage from './components/SupportPage';
+import InsightsPage from './components/InsightsPage';
+import InsightArticlePage from './components/InsightArticlePage';
 
 const HomePage = () => (
   <NewHero />
@@ -84,6 +86,20 @@ function App() {
           <>
             <Header />
             <AiAgenzieComunicazionePage />
+            <Footer />
+          </>
+        } />
+        <Route path="/insights" element={
+          <>
+            <Header />
+            <InsightsPage />
+            <Footer />
+          </>
+        } />
+        <Route path="/insights/:slug" element={
+          <>
+            <Header />
+            <InsightArticlePage />
             <Footer />
           </>
         } />

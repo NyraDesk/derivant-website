@@ -361,7 +361,7 @@ const NewHero = () => {
             overflow: 'hidden',
           }}>
             <VideoComponent
-              src="/VIDEO/derivant-demo.webm"
+              src="/VIDEO/derivant-linkedin.webm"
               title="Derivant AI - Presentation Builder Demo"
               description="Scopri come Derivant trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck."
               thumbnailUrl="/VIDEO/derivant-demo-thumbnail.png"
@@ -569,10 +569,10 @@ const NewHero = () => {
             transition: 'opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s',
           }}>
             <VideoComponent
-              src="/VIDEO/slide2-demo.webm"
-              title="Derivant AI - Design Workflow Demo"
-              description="Guarda come il workflow di Derivant mantiene la coerenza estetica su tutto il deck. Dallo stile Aura ai layout professionali, tutto automatizzato dall'AI."
-              thumbnailUrl="/VIDEO/slide2-demo-thumbnail.png"
+              src="/VIDEO/derivant-demo.webm"
+              title="Derivant AI - Presentation Builder Demo"
+              description="Scopri come Derivant trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck."
+              thumbnailUrl="/VIDEO/derivant-demo-thumbnail.png"
               duration="PT45S"
               uploadDate="2026-01-27T00:00:00+01:00"
               autoPlay={true}
