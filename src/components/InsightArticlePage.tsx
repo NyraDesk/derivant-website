@@ -23,10 +23,10 @@ const renderInlineMarkdown = (text: string): React.ReactNode[] => {
 
     if (match[2]) {
       // **bold**
-      parts.push(<strong key={key++} className="font-semibold text-black">{match[2]}</strong>);
+      parts.push(<strong key={key++} style={{ fontWeight: 600, color: '#ffffff' }}>{match[2]}</strong>);
     } else if (match[3]) {
       // *italic*
-      parts.push(<em key={key++} className="italic text-gray-600">{match[3]}</em>);
+      parts.push(<em key={key++} style={{ fontStyle: 'italic', color: 'rgba(255,255,255,0.5)' }}>{match[3]}</em>);
     }
 
     lastIndex = match.index + match[0].length;
@@ -64,7 +64,7 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
       elements.push(
         <hr key={key++} style={{
           border: 'none',
-          borderTop: '1px solid #e5e7eb',
+          borderTop: '1px solid rgba(255,255,255,0.1)',
           margin: '48px 0'
         }} />
       );
@@ -79,9 +79,9 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
         <div key={key++} style={{
           margin: '40px 0',
           padding: '32px 24px',
-          background: 'linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%)',
+          background: 'rgba(255,255,255,0.03)',
           borderRadius: '16px',
-          border: '2px dashed #d4d4d4',
+          border: '2px dashed rgba(255,255,255,0.12)',
           textAlign: 'center',
         }}>
           <div style={{
@@ -89,7 +89,7 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
             marginBottom: '12px',
             opacity: 0.4,
           }}>
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ display: 'inline-block', color: '#999' }}>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ display: 'inline-block', color: 'rgba(255,255,255,0.3)' }}>
               <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
               <circle cx="8.5" cy="8.5" r="1.5"/>
               <polyline points="21 15 16 10 5 21"/>
@@ -98,7 +98,7 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
           <p style={{
             fontFamily: 'Inter, sans-serif',
             fontSize: '13px',
-            color: '#999',
+            color: 'rgba(255,255,255,0.35)',
             fontStyle: 'italic',
             margin: 0,
             lineHeight: 1.5,
@@ -115,10 +115,10 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
     if (trimmed.startsWith('### ')) {
       elements.push(
         <h3 key={key++} style={{
-          fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
+          fontFamily: "'Inter', sans-serif",
           fontSize: '22px',
           fontWeight: 700,
-          color: '#111',
+          color: '#ffffff',
           margin: '40px 0 16px',
           lineHeight: 1.3,
           letterSpacing: '-0.01em',
@@ -134,10 +134,10 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
     if (trimmed.startsWith('## ')) {
       elements.push(
         <h2 key={key++} style={{
-          fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
+          fontFamily: "'Inter', sans-serif",
           fontSize: '28px',
           fontWeight: 700,
-          color: '#000',
+          color: '#ffffff',
           margin: '48px 0 20px',
           lineHeight: 1.3,
           letterSpacing: '-0.02em',
@@ -158,12 +158,12 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
       }
       elements.push(
         <blockquote key={key++} style={{
-          borderLeft: '3px solid #000',
+          borderLeft: '3px solid #B8A4C9',
           paddingLeft: '20px',
           margin: '24px 0',
           fontStyle: 'italic',
-          color: '#555',
-          fontFamily: 'Inter, sans-serif',
+          color: 'rgba(255,255,255,0.6)',
+          fontFamily: "'Inter', sans-serif",
           fontSize: '17px',
           lineHeight: 1.7,
         }}>
@@ -190,18 +190,18 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
         }}>
           {items.map((item, idx) => (
             <li key={idx} style={{
-              fontFamily: 'Inter, sans-serif',
+              fontFamily: "'Inter', sans-serif",
               fontSize: '18px',
-              color: '#444',
+              color: 'rgba(255,255,255,0.7)',
               lineHeight: 1.8,
               paddingLeft: '20px',
-              position: 'relative',
+              position: 'relative' as const,
               marginBottom: '4px',
             }}>
               <span style={{
-                position: 'absolute',
+                position: 'absolute' as const,
                 left: 0,
-                color: '#999',
+                color: 'rgba(255,255,255,0.35)',
               }}>-</span>
               {renderInlineMarkdown(item)}
             </li>
@@ -227,19 +227,19 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
         }}>
           {items.map((item, idx) => (
             <li key={idx} style={{
-              fontFamily: 'Inter, sans-serif',
+              fontFamily: "'Inter', sans-serif",
               fontSize: '18px',
-              color: '#444',
+              color: 'rgba(255,255,255,0.7)',
               lineHeight: 1.8,
               paddingLeft: '28px',
-              position: 'relative',
+              position: 'relative' as const,
               marginBottom: '4px',
             }}>
               <span style={{
-                position: 'absolute',
+                position: 'absolute' as const,
                 left: 0,
                 fontWeight: 600,
-                color: '#111',
+                color: 'rgba(255,255,255,0.9)',
               }}>{idx + 1}.</span>
               {renderInlineMarkdown(item)}
             </li>
@@ -254,13 +254,13 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
       const inner = trimmed.slice(1, -1);
       elements.push(
         <p key={key++} style={{
-          fontFamily: 'Inter, sans-serif',
+          fontFamily: "'Inter', sans-serif",
           fontSize: '17px',
-          color: '#888',
+          color: 'rgba(255,255,255,0.5)',
           fontStyle: 'italic',
           lineHeight: 1.8,
           margin: '32px 0',
-          textAlign: 'center',
+          textAlign: 'center' as const,
         }}>
           {inner}
         </p>
@@ -291,9 +291,9 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
       const text = paraLines.join('\n');
       elements.push(
         <p key={key++} style={{
-          fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
+          fontFamily: "'Inter', sans-serif",
           fontSize: '18px',
-          color: '#444',
+          color: 'rgba(255,255,255,0.7)',
           lineHeight: 1.8,
           margin: '0 0 20px',
         }}>
@@ -316,18 +316,27 @@ const InsightArticlePage = () => {
 
   if (!article) {
     return (
-      <div className="pt-32 pb-24 bg-white min-h-screen">
-        <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+      <div style={{ paddingTop: '160px', paddingBottom: '96px', backgroundColor: '#0d0d0f', minHeight: '100vh' }}>
+        <div style={{ maxWidth: '768px', margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
           <h1
-            className="text-3xl font-bold text-black mb-6"
-            style={{ fontFamily: 'Inter, sans-serif' }}
+            style={{
+              fontFamily: "'Syne', sans-serif",
+              fontWeight: 800,
+              fontSize: '30px',
+              color: '#ffffff',
+              marginBottom: '24px',
+            }}
           >
             Articolo non trovato
           </h1>
           <Link
             to="/insights"
-            className="text-black underline hover:text-gray-600 transition-colors"
-            style={{ fontFamily: 'Inter, sans-serif' }}
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              color: '#B8A4C9',
+              textDecoration: 'underline',
+              transition: 'opacity 0.2s ease',
+            }}
           >
             Torna agli Insights
           </Link>
@@ -380,16 +389,32 @@ const InsightArticlePage = () => {
         </script>
       </Helmet>
 
-      <div className="pt-32 pb-24 bg-white min-h-screen">
+      <style>{`
+        .insight-back-link:hover { background-color: rgba(255,255,255,0.1) !important; color: #ffffff !important; }
+        .insight-back-link:hover svg { transform: translateX(-4px); }
+      `}</style>
+      <div style={{ paddingTop: '160px', paddingBottom: '96px', backgroundColor: '#0d0d0f', minHeight: '100vh' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
           {/* Back link */}
           <div style={{ marginBottom: '48px' }}>
             <Link
               to="/insights"
-              className="inline-flex items-center space-x-3 text-black hover:text-black/70 transition-colors group bg-gray-100 border border-gray-300 rounded-full px-6 py-3"
+              className="insight-back-link"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '12px',
+                color: 'rgba(255,255,255,0.7)',
+                textDecoration: 'none',
+                backgroundColor: 'rgba(255,255,255,0.06)',
+                border: '1px solid rgba(255,255,255,0.12)',
+                borderRadius: '9999px',
+                padding: '12px 24px',
+                transition: 'all 0.2s ease',
+              }}
             >
-              <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-              <span className="font-medium" style={{ fontFamily: 'Inter, sans-serif' }}>Tutti gli Insights</span>
+              <ArrowLeft style={{ width: '20px', height: '20px', transition: 'transform 0.2s ease' }} />
+              <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}>Tutti gli Insights</span>
             </Link>
           </div>
 
@@ -404,18 +429,18 @@ const InsightArticlePage = () => {
               flexWrap: 'wrap',
             }}>
               <span style={{
-                fontFamily: 'Inter, sans-serif',
+                fontFamily: "'Inter', sans-serif",
                 fontSize: '15px',
-                color: '#888',
+                color: 'rgba(255,255,255,0.4)',
                 fontWeight: 400,
               }}>
                 {article.dateFormatted}
               </span>
-              <span style={{ color: '#ccc' }}>·</span>
+              <span style={{ color: 'rgba(255,255,255,0.2)' }}>·</span>
               <span style={{
-                fontFamily: 'Inter, sans-serif',
+                fontFamily: "'Inter', sans-serif",
                 fontSize: '15px',
-                color: '#888',
+                color: 'rgba(255,255,255,0.4)',
                 fontWeight: 400,
               }}>
                 {article.readingTime} di lettura
@@ -424,10 +449,10 @@ const InsightArticlePage = () => {
 
             {/* Title */}
             <h1 style={{
-              fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
+              fontFamily: "'Syne', sans-serif",
               fontSize: 'clamp(32px, 5vw, 48px)',
               fontWeight: 800,
-              color: '#000',
+              color: '#ffffff',
               lineHeight: 1.15,
               letterSpacing: '-0.03em',
               margin: '0 0 24px',
@@ -441,18 +466,18 @@ const InsightArticlePage = () => {
               alignItems: 'center',
               gap: '12px',
               paddingTop: '24px',
-              borderTop: '1px solid #e5e7eb',
+              borderTop: '1px solid rgba(255,255,255,0.08)',
             }}>
               <div style={{
                 width: '40px',
                 height: '40px',
                 borderRadius: '50%',
-                background: '#111',
+                background: 'rgba(255,255,255,0.1)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: '#fff',
-                fontFamily: 'Syne, sans-serif',
+                color: '#ffffff',
+                fontFamily: "'Syne', sans-serif",
                 fontWeight: 800,
                 fontSize: '16px',
                 letterSpacing: '-0.02em',
@@ -461,20 +486,20 @@ const InsightArticlePage = () => {
               </div>
               <div>
                 <p style={{
-                  fontFamily: 'Inter, sans-serif',
+                  fontFamily: "'Inter', sans-serif",
                   fontSize: '15px',
                   fontWeight: 600,
-                  color: '#111',
+                  color: 'rgba(255,255,255,0.9)',
                   margin: 0,
                   lineHeight: 1.3,
                 }}>
                   {article.author}
                 </p>
                 <p style={{
-                  fontFamily: 'Inter, sans-serif',
+                  fontFamily: "'Inter', sans-serif",
                   fontSize: '13px',
                   fontWeight: 400,
-                  color: '#999',
+                  color: 'rgba(255,255,255,0.4)',
                   margin: 0,
                   lineHeight: 1.3,
                 }}>
@@ -492,9 +517,9 @@ const InsightArticlePage = () => {
           {/* Author box at bottom */}
           <div style={{
             padding: '32px',
-            background: '#f8f8f8',
+            background: 'rgba(255,255,255,0.03)',
             borderRadius: '16px',
-            border: '1px solid #e5e7eb',
+            border: '1px solid rgba(255,255,255,0.08)',
             marginBottom: '48px',
           }}>
             <div style={{
@@ -506,12 +531,12 @@ const InsightArticlePage = () => {
                 width: '52px',
                 height: '52px',
                 borderRadius: '50%',
-                background: '#111',
+                background: 'rgba(255,255,255,0.1)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: '#fff',
-                fontFamily: 'Syne, sans-serif',
+                color: '#ffffff',
+                fontFamily: "'Syne', sans-serif",
                 fontWeight: 800,
                 fontSize: '18px',
                 flexShrink: 0,
@@ -520,19 +545,19 @@ const InsightArticlePage = () => {
               </div>
               <div>
                 <p style={{
-                  fontFamily: 'Inter, sans-serif',
+                  fontFamily: "'Inter', sans-serif",
                   fontSize: '16px',
                   fontWeight: 600,
-                  color: '#111',
+                  color: '#ffffff',
                   margin: '0 0 4px',
                 }}>
                   Marco Conte
                 </p>
                 <p style={{
-                  fontFamily: 'Inter, sans-serif',
+                  fontFamily: "'Inter', sans-serif",
                   fontSize: '14px',
                   fontWeight: 400,
-                  color: '#777',
+                  color: 'rgba(255,255,255,0.5)',
                   margin: 0,
                   lineHeight: 1.5,
                 }}>

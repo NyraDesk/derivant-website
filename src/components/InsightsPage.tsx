@@ -19,64 +19,80 @@ const InsightsPage = () => {
         <meta name="twitter:description" content="Idee pratiche sull'intelligenza artificiale. Di Marco Conte." />
       </Helmet>
 
-      <div className="pt-32 pb-24 bg-white min-h-screen">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <style>{`
+        .insight-card-link:hover .insight-card { padding-left: 16px; }
+        .insight-card-link:hover .insight-card-title { color: rgba(255,255,255,0.7) !important; }
+        .insight-card-link:hover .insight-card-arrow { opacity: 1 !important; }
+        .insight-card-link:hover .insight-card-arrow svg { transform: translateX(4px); }
+      `}</style>
+      <div style={{ paddingTop: '160px', paddingBottom: '96px', backgroundColor: '#0d0d0f', minHeight: '100vh' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px' }}>
           {/* Header */}
-          <div className="text-center mb-20">
+          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
             <h1
-              className="text-4xl md:text-6xl font-bold text-black mb-6 leading-tight"
               style={{
-                fontFamily: 'Syne, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
+                fontFamily: "'Syne', sans-serif",
                 fontWeight: 800,
-                letterSpacing: '-0.04em'
+                letterSpacing: '-0.04em',
+                fontSize: 'clamp(36px, 5vw, 64px)',
+                color: '#ffffff',
+                marginBottom: '24px',
+                lineHeight: 1.1,
               }}
             >
               Insights
             </h1>
             <p
-              className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed"
               style={{
-                fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
-                fontWeight: 300
+                fontFamily: "'Inter', sans-serif",
+                fontWeight: 300,
+                fontSize: '20px',
+                color: 'rgba(255,255,255,0.5)',
+                maxWidth: '640px',
+                margin: '0 auto',
+                lineHeight: 1.6,
               }}
             >
               Idee pratiche sull'intelligenza artificiale.
               <br />
-              <span style={{ fontWeight: 500, color: '#111' }}>Di Marco Conte.</span>
+              <span style={{ fontWeight: 500, color: 'rgba(255,255,255,0.9)' }}>Di Marco Conte.</span>
             </p>
           </div>
 
           {/* Articles List */}
-          <div className="max-w-3xl mx-auto flex flex-col gap-0">
+          <div style={{ maxWidth: '768px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 0 }}>
             {insightsArticles.map((article, index) => (
               <Link
                 key={article.slug}
                 to={`/insights/${article.slug}`}
-                className="block group"
+                className="insight-card-link"
+                style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}
               >
                 <article
-                  className="py-10 border-b border-gray-200 transition-all duration-300 group-hover:pl-4"
-                  style={index === 0 ? { borderTop: '1px solid #e5e7eb' } : undefined}
+                  className="insight-card"
+                  style={{
+                    padding: '40px 0',
+                    borderBottom: '1px solid rgba(255,255,255,0.08)',
+                    transition: 'padding-left 0.3s ease',
+                    ...(index === 0 ? { borderTop: '1px solid rgba(255,255,255,0.08)' } : {}),
+                  }}
                 >
                   {/* Date + Reading time + Author */}
-                  <div className="flex items-center gap-3 mb-4">
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
                     <span
-                      className="text-sm text-gray-500"
-                      style={{ fontFamily: 'Inter, sans-serif', fontWeight: 400 }}
+                      style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: '14px', color: 'rgba(255,255,255,0.4)' }}
                     >
                       {article.dateFormatted}
                     </span>
-                    <span className="text-gray-300">·</span>
+                    <span style={{ color: 'rgba(255,255,255,0.2)' }}>·</span>
                     <span
-                      className="text-sm text-gray-500"
-                      style={{ fontFamily: 'Inter, sans-serif', fontWeight: 400 }}
+                      style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: '14px', color: 'rgba(255,255,255,0.4)' }}
                     >
                       {article.readingTime} di lettura
                     </span>
-                    <span className="text-gray-300">·</span>
+                    <span style={{ color: 'rgba(255,255,255,0.2)' }}>·</span>
                     <span
-                      className="text-sm text-gray-800"
-                      style={{ fontFamily: 'Inter, sans-serif', fontWeight: 600 }}
+                      style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: '14px', color: 'rgba(255,255,255,0.8)' }}
                     >
                       {article.author}
                     </span>
@@ -84,11 +100,16 @@ const InsightsPage = () => {
 
                   {/* Title */}
                   <h2
-                    className="text-2xl lg:text-3xl font-bold text-black mb-3 leading-tight group-hover:text-gray-700 transition-colors duration-300"
+                    className="insight-card-title"
                     style={{
-                      fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
+                      fontFamily: "'Inter', sans-serif",
                       fontWeight: 700,
-                      letterSpacing: '-0.02em'
+                      letterSpacing: '-0.02em',
+                      fontSize: 'clamp(24px, 3vw, 30px)',
+                      color: '#ffffff',
+                      marginBottom: '12px',
+                      lineHeight: 1.25,
+                      transition: 'color 0.3s ease',
                     }}
                   >
                     {article.title}
@@ -96,24 +117,36 @@ const InsightsPage = () => {
 
                   {/* Excerpt */}
                   <p
-                    className="text-gray-600 text-lg leading-relaxed"
                     style={{
-                      fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
-                      fontWeight: 400
+                      fontFamily: "'Inter', sans-serif",
+                      fontWeight: 400,
+                      fontSize: '18px',
+                      lineHeight: 1.6,
+                      color: 'rgba(255,255,255,0.5)',
                     }}
                   >
                     {article.excerpt}
                   </p>
 
                   {/* Read arrow */}
-                  <div className="mt-4 flex items-center gap-2 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div
+                    className="insight-card-arrow"
+                    style={{
+                      marginTop: '16px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      color: '#B8A4C9',
+                      opacity: 0,
+                      transition: 'opacity 0.3s ease',
+                    }}
+                  >
                     <span
-                      className="text-sm font-medium"
-                      style={{ fontFamily: 'Inter, sans-serif' }}
+                      style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: 500 }}
                     >
                       Leggi
                     </span>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="transform group-hover:translate-x-1 transition-transform duration-300">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ transition: 'transform 0.3s ease' }}>
                       <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
