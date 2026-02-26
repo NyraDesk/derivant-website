@@ -10,6 +10,9 @@ import ResourcesPage from './components/ResourcesPage';
 import ResourceArticlePage from './components/ResourceArticlePage';
 import GuidaPitchDeckPage from './components/GuidaPitchDeckPage';
 import AiAgenzieComunicazionePage from './components/AiAgenzieComunicazionePage';
+import PrivacyPage from './components/PrivacyPage';
+import TermsPage from './components/TermsPage';
+import SupportPage from './components/SupportPage';
 
 const HomePage = () => (
   <NewHero />
@@ -81,6 +84,27 @@ function App() {
           <>
             <Header />
             <AiAgenzieComunicazionePage />
+            <Footer />
+          </>
+        } />
+        <Route path="/privacy" element={
+          <>
+            <Header />
+            <PrivacyPage />
+            <Footer />
+          </>
+        } />
+        <Route path="/terms" element={
+          <>
+            <Header />
+            <TermsPage />
+            <Footer />
+          </>
+        } />
+        <Route path="/support" element={
+          <>
+            <Header />
+            <SupportPage />
             <Footer />
           </>
         } />

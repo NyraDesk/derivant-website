@@ -178,6 +178,15 @@ const Footer = () => {
               }}>
                 info@derivant.ai
               </a>
+              <Link to="/support" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease',
+              }}>
+                Support
+              </Link>
             </div>
           </div>
 
@@ -199,14 +208,30 @@ const Footer = () => {
           }}>
             &copy; 2026 Derivant AI. Tutti i diritti riservati.
           </p>
-          <p style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '13px',
-            color: 'rgba(255, 255, 255, 0.35)',
-            margin: 0,
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '24px',
           }}>
-            Strategia e design, automatizzati.
-          </p>
+            <Link to="/privacy" style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '13px',
+              color: 'rgba(255, 255, 255, 0.35)',
+              textDecoration: 'none',
+              transition: 'color 0.2s ease',
+            }}>
+              Privacy Policy
+            </Link>
+            <Link to="/terms" style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '13px',
+              color: 'rgba(255, 255, 255, 0.35)',
+              textDecoration: 'none',
+              transition: 'color 0.2s ease',
+            }}>
+              Terms of Use
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
