@@ -72,6 +72,26 @@ const renderArticleContent = (content: string): React.ReactNode[] => {
       continue;
     }
 
+    // ![alt](src) — real image
+    const imgMatch = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    if (imgMatch) {
+      elements.push(
+        <div key={key++} style={{ margin: '40px 0' }}>
+          <img
+            src={imgMatch[2]}
+            alt={imgMatch[1]}
+            style={{
+              width: '100%',
+              borderRadius: '16px',
+              display: 'block',
+            }}
+          />
+        </div>
+      );
+      i++;
+      continue;
+    }
+
     // [IMMAGINE: ...] placeholders — render as styled placeholder
     if (trimmed.startsWith('[IMMAGINE:')) {
       const description = trimmed.replace(/^\[IMMAGINE:\s*/, '').replace(/\]$/, '');
@@ -449,12 +469,12 @@ const InsightArticlePage = () => {
 
             {/* Title */}
             <h1 style={{
-              fontFamily: "'Syne', sans-serif",
-              fontSize: 'clamp(32px, 5vw, 48px)',
+              fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
+              fontSize: 'clamp(36px, 6vw, 56px)',
               fontWeight: 800,
               color: '#ffffff',
-              lineHeight: 1.15,
-              letterSpacing: '-0.03em',
+              lineHeight: 1.1,
+              letterSpacing: '-0.035em',
               margin: '0 0 24px',
             }}>
               {article.title}
@@ -561,7 +581,7 @@ const InsightArticlePage = () => {
                   margin: 0,
                   lineHeight: 1.5,
                 }}>
-                  Founder di Derivant AI. Scrivo di intelligenza artificiale applicata al lavoro — sistemi, non trucchetti.
+                  Founder di Derivant AI. Scrivo di intelligenza artificiale applicata al lavoro.
                 </p>
               </div>
             </div>

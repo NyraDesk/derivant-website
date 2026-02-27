@@ -20,10 +20,9 @@ const InsightsPage = () => {
       </Helmet>
 
       <style>{`
-        .insight-card-link:hover .insight-card { padding-left: 16px; }
-        .insight-card-link:hover .insight-card-title { color: rgba(255,255,255,0.7) !important; }
-        .insight-card-link:hover .insight-card-arrow { opacity: 1 !important; }
-        .insight-card-link:hover .insight-card-arrow svg { transform: translateX(4px); }
+        .insight-blog-card { transition: transform 0.5s ease, box-shadow 0.5s ease; }
+        .insight-blog-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); }
+        .insight-blog-card:hover .insight-card-image { transform: scale(1.05); }
       `}</style>
       <div style={{ paddingTop: '160px', paddingBottom: '96px', backgroundColor: '#0d0d0f', minHeight: '100vh' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px' }}>
@@ -59,98 +58,106 @@ const InsightsPage = () => {
             </p>
           </div>
 
-          {/* Articles List */}
-          <div style={{ maxWidth: '768px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 0 }}>
-            {insightsArticles.map((article, index) => (
+          {/* Articles Grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 500px), 1fr))', gap: '32px', maxWidth: '1100px', margin: '0 auto' }}>
+            {insightsArticles.map((article) => (
               <Link
                 key={article.slug}
                 to={`/insights/${article.slug}`}
-                className="insight-card-link"
                 style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}
               >
-                <article
-                  className="insight-card"
+                <div
+                  className="insight-blog-card"
                   style={{
-                    padding: '40px 0',
-                    borderBottom: '1px solid rgba(255,255,255,0.08)',
-                    transition: 'padding-left 0.3s ease',
-                    ...(index === 0 ? { borderTop: '1px solid rgba(255,255,255,0.08)' } : {}),
+                    background: '#E8DCC8',
+                    borderRadius: '24px',
+                    overflow: 'hidden',
+                    boxShadow: '0 10px 40px -10px rgba(0,0,0,0.3)',
                   }}
                 >
-                  {/* Date + Reading time + Author */}
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-                    <span
-                      style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: '14px', color: 'rgba(255,255,255,0.4)' }}
-                    >
-                      {article.dateFormatted}
-                    </span>
-                    <span style={{ color: 'rgba(255,255,255,0.2)' }}>·</span>
-                    <span
-                      style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: '14px', color: 'rgba(255,255,255,0.4)' }}
-                    >
-                      {article.readingTime} di lettura
-                    </span>
-                    <span style={{ color: 'rgba(255,255,255,0.2)' }}>·</span>
-                    <span
-                      style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: '14px', color: 'rgba(255,255,255,0.8)' }}
-                    >
-                      {article.author}
-                    </span>
+                  <div style={{ padding: '32px 32px 0' }}>
+                    {/* Meta */}
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' }}>
+                      <span style={{
+                        fontFamily: "'Inter', sans-serif",
+                        fontSize: '13px',
+                        fontWeight: 500,
+                        color: 'rgba(0,0,0,0.5)',
+                        background: 'rgba(0,0,0,0.08)',
+                        padding: '6px 14px',
+                        borderRadius: '100px',
+                      }}>
+                        {article.author}
+                      </span>
+                      <span style={{
+                        fontFamily: "'Inter', sans-serif",
+                        fontSize: '13px',
+                        color: 'rgba(0,0,0,0.4)',
+                      }}>
+                        {article.readingTime} di lettura
+                      </span>
+                    </div>
+
+                    {/* Title */}
+                    <h2 style={{
+                      fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
+                      fontWeight: 800,
+                      fontSize: 'clamp(26px, 4vw, 36px)',
+                      color: '#1a1a1a',
+                      lineHeight: 1.2,
+                      letterSpacing: '-0.03em',
+                      marginBottom: '16px',
+                    }}>
+                      {article.title}
+                    </h2>
+
+                    {/* Excerpt */}
+                    <p style={{
+                      fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
+                      fontWeight: 400,
+                      fontSize: '17px',
+                      lineHeight: 1.65,
+                      color: '#4a4a4a',
+                      marginBottom: '24px',
+                    }}>
+                      {article.excerpt}
+                    </p>
                   </div>
 
-                  {/* Title */}
-                  <h2
-                    className="insight-card-title"
-                    style={{
-                      fontFamily: "'Inter', sans-serif",
-                      fontWeight: 700,
-                      letterSpacing: '-0.02em',
-                      fontSize: 'clamp(24px, 3vw, 30px)',
-                      color: '#ffffff',
-                      marginBottom: '12px',
-                      lineHeight: 1.25,
-                      transition: 'color 0.3s ease',
-                    }}
-                  >
-                    {article.title}
-                  </h2>
-
-                  {/* Excerpt */}
-                  <p
-                    style={{
-                      fontFamily: "'Inter', sans-serif",
-                      fontWeight: 400,
-                      fontSize: '18px',
-                      lineHeight: 1.6,
-                      color: 'rgba(255,255,255,0.5)',
-                    }}
-                  >
-                    {article.excerpt}
-                  </p>
-
-                  {/* Read arrow */}
-                  <div
-                    className="insight-card-arrow"
-                    style={{
-                      marginTop: '16px',
+                  {/* Image */}
+                  {article.image ? (
+                    <div style={{ overflow: 'hidden', margin: '0 32px 32px', borderRadius: '16px' }}>
+                      <img
+                        src={article.image}
+                        alt={article.title}
+                        className="insight-card-image"
+                        style={{
+                          width: '100%',
+                          height: '256px',
+                          objectFit: 'cover',
+                          display: 'block',
+                          transition: 'transform 0.5s ease',
+                        }}
+                      />
+                    </div>
+                  ) : (
+                    <div style={{
+                      margin: '0 32px 32px',
+                      borderRadius: '16px',
+                      height: '200px',
+                      background: 'linear-gradient(135deg, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0.12) 100%)',
                       display: 'flex',
                       alignItems: 'center',
-                      gap: '8px',
-                      color: '#B8A4C9',
-                      opacity: 0,
-                      transition: 'opacity 0.3s ease',
-                    }}
-                  >
-                    <span
-                      style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: 500 }}
-                    >
-                      Leggi
-                    </span>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ transition: 'transform 0.3s ease' }}>
-                      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </div>
-                </article>
+                      justifyContent: 'center',
+                    }}>
+                      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.15)" strokeWidth="1.5">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                        <polyline points="21 15 16 10 5 21"/>
+                      </svg>
+                    </div>
+                  )}
+                </div>
               </Link>
             ))}
           </div>

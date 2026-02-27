@@ -6,6 +6,7 @@ export interface InsightArticle {
   author: string;
   excerpt: string;
   readingTime: string;
+  image?: string;
   content: string;
 }
 
@@ -71,8 +72,6 @@ Dentro un Progetto puoi mettere tre cose:
 
 **Un contesto che cresce nel tempo.** Ogni conversazione dentro il Progetto aggiunge informazioni. Dopo un mese, l'AI ti conosce meglio del tuo stagista.
 
-[IMMAGINE: screenshot della schermata Projects su Claude con un progetto aperto — si vedono istruzioni e file caricati]
-
 ---
 
 ## Come farlo in 5 minuti
@@ -83,7 +82,7 @@ Dentro un Progetto puoi mettere tre cose:
 - **Su Gemini** (gemini.google.com): clicca "Gems" → "Create Gem"
 - **Su ChatGPT**: clicca "Explore GPTs" → "Create" (si chiama "Custom GPT" ma il concetto è lo stesso)
 
-[IMMAGINE: screenshot dei 3 pulsanti/schermate di creazione progetto su Claude, Gemini e ChatGPT — side by side]
+![Creazione progetto su Claude, Gemini e ChatGPT](/blog-ai/crea-progetto-claude-gemini-chatgpt.webp)
 
 ### Passo 2: Carica 3 file chiave
 
@@ -95,7 +94,7 @@ Non servono 50 documenti. Ne bastano 3:
 
 3. **Come parli** — 3-5 esempi reali di testi che hai scritto e che ti rappresentano. Email, post, presentazioni. L'AI impara il tuo stile da questi.
 
-[IMMAGINE: screenshot della sezione file di un Progetto con 3 documenti caricati]
+![Sezione file di un Progetto su Claude](/blog-ai/file-progetto-claude.webp)
 
 ### Passo 3: Dai un ruolo e un'istruzione fissa
 
@@ -122,11 +121,11 @@ Inizia a rispondere come il tuo miglior consulente — uno che ha letto tutti i 
 La differenza non è nel prompt.
 La differenza è nel sistema.
 
-[IMMAGINE: screenshot di una risposta dell'AI dentro un Progetto — specifica, con riferimenti ai file, nel tono giusto]
+![Risposta dell'AI dentro un Progetto — specifica e nel tono giusto](/blog-ai/risposta-ai-progetto.webp)
 
 ---
 
-*Ogni settimana condivido come uso l'AI per lavorare meglio — sistemi, non trucchetti. Seguimi per non perderteli.*`
+*Ogni settimana condivido come uso l'AI per lavorare meglio. Seguimi per non perderteli.*`
   }
 ];
 
