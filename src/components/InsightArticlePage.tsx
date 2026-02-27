@@ -586,6 +586,38 @@ const InsightArticlePage = () => {
               </div>
             </div>
           </div>
+
+          {/* CTA */}
+          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+            <a
+              href="https://app.derivant.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block',
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '16px',
+                fontWeight: 600,
+                color: '#ffffff',
+                background: 'linear-gradient(135deg, #B8A4C9 0%, #E8B4A0 50%, #E8A4B8 100%)',
+                padding: '16px 40px',
+                borderRadius: '100px',
+                textDecoration: 'none',
+                letterSpacing: '-0.01em',
+                transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 8px 24px rgba(184, 164, 201, 0.3)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+            >
+              Prova Derivant →
+            </a>
+          </div>
         </div>
       </div>
     </>

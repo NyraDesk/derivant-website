@@ -41,7 +41,6 @@ Prima ancora di scrivere qualcosa nella chat, la maggior parte delle persone sal
 
 Questi non sono problemi tecnici. Sono problemi di pensiero. E nessun prompt magico li risolve.
 
-[IMMAGINE: screenshot di una chat AI generica con risposta mediocre vs una con ruolo definito e risposta precisa — before/after]
 
 ---
 
@@ -108,7 +107,7 @@ Nelle istruzioni del Progetto, scrivi due cose:
 
 Questo è il tuo sistema. L'AI sa chi è, cosa può fare e cosa no.
 
-[IMMAGINE: screenshot del campo istruzioni di un Progetto compilato con ruolo + regole]
+![Campo istruzioni di un Progetto compilato con ruolo e regole](/blog-ai/istruzioni-progetto-ruolo-regole.webp)
 
 ---
 
