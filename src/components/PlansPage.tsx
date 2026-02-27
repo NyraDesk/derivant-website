@@ -22,7 +22,7 @@ const PlansPage = () => {
 
           {/* Header */}
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <h2 style={{
+            <h1 style={{
               fontFamily: "'Space Mono', monospace",
               fontSize: '48px',
               fontWeight: 700,
@@ -32,7 +32,7 @@ const PlansPage = () => {
               marginBottom: '16px',
             }}>
               Choose your plan
-            </h2>
+            </h1>
             <p style={{
               fontFamily: "'Space Mono', monospace",
               fontSize: '16px',
@@ -60,7 +60,7 @@ const PlansPage = () => {
               flexDirection: 'column',
               background: 'rgba(255, 255, 255, 0.03)',
             }}>
-              <h3 style={{
+              <h2 style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '28px',
                 fontWeight: 700,
@@ -69,7 +69,7 @@ const PlansPage = () => {
                 marginBottom: '8px',
               }}>
                 Free
-              </h3>
+              </h2>
               <p style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '15px',
@@ -143,7 +143,7 @@ const PlansPage = () => {
               background: 'rgba(255, 255, 255, 0.03)',
               position: 'relative',
             }}>
-              <h3 style={{
+              <h2 style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '28px',
                 fontWeight: 700,
@@ -152,7 +152,7 @@ const PlansPage = () => {
                 marginBottom: '8px',
               }}>
                 Starter
-              </h3>
+              </h2>
               <p style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '15px',

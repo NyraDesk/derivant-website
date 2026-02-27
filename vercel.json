@@ -34,6 +34,11 @@
       "source": "/ai-fashion-presentations",
       "destination": "/resources",
       "permanent": true
+    },
+    {
+      "source": "/early-access",
+      "destination": "https://app.derivant.ai",
+      "permanent": true
     }
   ],
   "cleanUrls": true

@@ -423,7 +423,7 @@ const NewHero = () => {
           transform: slide2Visible ? 'translateY(0)' : 'translateY(20px)',
           transition: 'opacity 0.8s ease 0s, transform 0.8s ease 0s',
         }}>
-          <h3 className="mobile-section-title" style={{
+          <h2 className="mobile-section-title" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '60px',
             fontWeight: 700,
@@ -445,7 +445,7 @@ const NewHero = () => {
                 {typedCount < fullPosTitle.length && <span className="typing-cursor">|</span>}
               </>
             )}
-          </h3>
+          </h2>
         </div>
 
         {/* Grid: Features + Video */}
@@ -594,7 +594,7 @@ const NewHero = () => {
 
       {/* === PER CHI È PENSATO === */}
       <div style={{ textAlign: 'center', marginTop: '72px', marginBottom: '32px' }}>
-        <h3 className="mobile-section-title" style={{
+        <h2 className="mobile-section-title" style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '36px',
           fontWeight: 700,
@@ -603,7 +603,7 @@ const NewHero = () => {
           margin: 0,
         }}>
           Per chi è pensato
-        </h3>
+        </h2>
       </div>
       <div className="cards-grid" style={{
         width: '100%',
@@ -885,7 +885,7 @@ const NewHero = () => {
       <div className="mobile-divider divider-animate" style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
 
       {/* === SLIDE 4: THE CANVAS === */}
-      <h3 className="mobile-section-title mobile-section-spacing" style={{
+      <h2 className="mobile-section-title mobile-section-spacing" style={{
         fontFamily: "'Inter', sans-serif",
         fontSize: '48px',
         fontWeight: 700,
@@ -898,7 +898,7 @@ const NewHero = () => {
         textAlign: 'center',
       }}>
         Il tuo canvas, le tue regole.
-      </h3>
+      </h2>
       <div className="canvas-grid" style={{
         width: '100%',
         display: 'grid',
@@ -995,7 +995,7 @@ const NewHero = () => {
         textAlign: 'center',
         padding: '80px 60px',
       }}>
-        <h3 className="mobile-enterprise-title" style={{
+        <h2 className="mobile-enterprise-title" style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '54px',
           fontWeight: 700,
@@ -1006,7 +1006,7 @@ const NewHero = () => {
           marginBottom: '32px',
         }}>
           Automatizza i processi. Scala i risultati.
-        </h3>
+        </h2>
         <p className="mobile-enterprise-desc" style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '21px',
@@ -1100,7 +1100,7 @@ const NewHero = () => {
       {/* === SLIDE 6: PLANS === */}
       <div style={{ width: '100%', marginTop: '120px', maxWidth: '1100px' }}>
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-          <h3 className="mobile-section-title" style={{
+          <h2 className="mobile-section-title" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '60px',
             fontWeight: 700,
@@ -1111,7 +1111,7 @@ const NewHero = () => {
             marginBottom: '16px',
           }}>
             Scegli il tuo piano
-          </h3>
+          </h2>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '19px',
@@ -1138,7 +1138,7 @@ const NewHero = () => {
             flexDirection: 'column',
             background: 'rgba(255, 255, 255, 0.03)',
           }}>
-            <h4 style={{
+            <h3 style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '28px',
               fontWeight: 700,
@@ -1147,7 +1147,7 @@ const NewHero = () => {
               marginBottom: '8px',
             }}>
               Free
-            </h4>
+            </h3>
             <p style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '15px',
@@ -1218,7 +1218,7 @@ const NewHero = () => {
             background: 'rgba(255, 255, 255, 0.03)',
             position: 'relative',
           }}>
-            <h4 style={{
+            <h3 style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '28px',
               fontWeight: 700,
@@ -1227,7 +1227,7 @@ const NewHero = () => {
               marginBottom: '8px',
             }}>
               Starter
-            </h4>
+            </h3>
             <p style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '15px',
@@ -1392,7 +1392,7 @@ const NewHero = () => {
       {/* === SLIDE 7: FAQ === */}
       <div style={{ width: '100%', marginTop: '120px', maxWidth: '800px' }}>
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-          <h3 className="mobile-section-title" style={{
+          <h2 className="mobile-section-title" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '60px',
             fontWeight: 700,
@@ -1403,7 +1403,7 @@ const NewHero = () => {
             marginBottom: '16px',
           }}>
             FAQ
-          </h3>
+          </h2>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: '19px',
