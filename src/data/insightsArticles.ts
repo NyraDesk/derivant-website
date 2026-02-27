@@ -19,6 +19,7 @@ export const insightsArticles: InsightArticle[] = [
     author: 'Marco Conte',
     excerpt: 'La maggior parte delle persone usa l\'AI nel modo sbagliato. Non è un problema di prompt — è un problema di sistema.',
     readingTime: '6 min',
+    image: '/blog-ai/article-cover.webp',
     content: `La maggior parte delle persone usa l'AI così:
 
 Apre una chat vuota. Scrive una domanda. Ottiene una risposta mediocre. Riscrive la domanda. Ancora mediocre. Aggiunge più dettagli. Leggermente migliore. Cerca "migliori prompt per X". Copia il framework di qualcun altro. Nessun risultato.
