@@ -29,6 +29,11 @@ const routes = [
   '/resources',
   '/guida-pitch-deck-2026',
   '/ai-agenzie-comunicazione',
+  '/insights',
+  '/insights/smetti-di-scrivere-prompt-inizia-a-costruire-sistemi',
+  '/privacy',
+  '/terms',
+  '/support',
 ];
 
 async function prerender() {
