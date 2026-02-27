@@ -133,8 +133,8 @@ const InsightsPage = () => {
                         className="insight-card-image"
                         style={{
                           width: '100%',
-                          height: '256px',
-                          objectFit: 'cover',
+                          height: 'auto',
+                          objectFit: 'contain',
                           display: 'block',
                           transition: 'transform 0.5s ease',
                         }}
