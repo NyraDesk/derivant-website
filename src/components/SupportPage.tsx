@@ -41,9 +41,9 @@ const SupportPage = () => {
   return (
     <div style={{ minHeight: '100vh', background: '#0d0d0f' }}>
       <Helmet>
-        <title>Support | Derivant AI</title>
-        <meta name="description" content="Get help with Derivant AI. Contact our support team or browse frequently asked questions." />
-        <link rel="canonical" href="https://www.derivant.ai/support" />
+        <title>Support | SlideRun AI</title>
+        <meta name="description" content="Get help with SlideRun AI. Contact our support team or browse frequently asked questions." />
+        <link rel="canonical" href="https://www.sliderun.ai/support" />
       </Helmet>
 
       <section style={{ paddingTop: '160px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
@@ -95,7 +95,7 @@ const SupportPage = () => {
               For any questions, issues, or feedback, reach out to our team:
             </p>
             <p style={{ ...bodyText, marginBottom: '8px' }}>
-              Email: <a href="mailto:info@derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none', fontWeight: 500 }}>info@derivant.ai</a>
+              Email: <a href="mailto:info@sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none', fontWeight: 500 }}>info@sliderun.ai</a>
             </p>
             <p style={{ ...bodyText, marginBottom: '0' }}>
               We typically respond within <strong style={{ color: '#fff' }}>48 hours</strong> on business days.
@@ -114,7 +114,7 @@ const SupportPage = () => {
           }}>
             <h3 style={faqQuestion}>How do I reset my password?</h3>
             <p style={faqAnswer}>
-              On the login page at <a href="https://app.derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>app.derivant.ai</a>, click "Forgot password?" and enter the email address associated with your account. You will receive a password reset link via email. If you don't receive it within a few minutes, check your spam folder or contact us at <a href="mailto:info@derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@derivant.ai</a>.
+              On the login page at <a href="https://app.sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>app.sliderun.ai</a>, click "Forgot password?" and enter the email address associated with your account. You will receive a password reset link via email. If you don't receive it within a few minutes, check your spam folder or contact us at <a href="mailto:info@sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@sliderun.ai</a>.
             </p>
           </div>
 
@@ -138,7 +138,7 @@ const SupportPage = () => {
           }}>
             <h3 style={faqQuestion}>Can I cancel my subscription?</h3>
             <p style={faqAnswer}>
-              Yes, you can cancel your subscription at any time. Your access to paid features will continue until the end of your current billing period. After cancellation, your account will revert to the Free plan. To cancel, contact us at <a href="mailto:info@derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@derivant.ai</a>.
+              Yes, you can cancel your subscription at any time. Your access to paid features will continue until the end of your current billing period. After cancellation, your account will revert to the Free plan. To cancel, contact us at <a href="mailto:info@sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@sliderun.ai</a>.
             </p>
           </div>
 
@@ -150,7 +150,7 @@ const SupportPage = () => {
           }}>
             <h3 style={faqQuestion}>How do I delete my account?</h3>
             <p style={faqAnswer}>
-              To delete your account and all associated data, send a request to <a href="mailto:info@derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@derivant.ai</a> from the email address associated with your account. We will process your deletion request within 30 days, as described in our <Link to="/privacy" style={{ color: '#B8A4C9', textDecoration: 'none' }}>Privacy Policy</Link>.
+              To delete your account and all associated data, send a request to <a href="mailto:info@sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@sliderun.ai</a> from the email address associated with your account. We will process your deletion request within 30 days, as described in our <Link to="/privacy" style={{ color: '#B8A4C9', textDecoration: 'none' }}>Privacy Policy</Link>.
             </p>
           </div>
 
@@ -173,7 +173,7 @@ const SupportPage = () => {
           }}>
             <h3 style={faqQuestion}>What is the PowerPoint Add-in?</h3>
             <p style={faqAnswer}>
-              The Derivant PowerPoint Add-in brings AI-powered features directly into Microsoft PowerPoint. You can translate slides into multiple languages, edit content with AI assistance, and generate new slides without leaving PowerPoint. The add-in reads your slide content to process it through our AI engine. It is available through Microsoft AppSource.
+              The SlideRun PowerPoint Add-in brings AI-powered features directly into Microsoft PowerPoint. You can translate slides into multiple languages, edit content with AI assistance, and generate new slides without leaving PowerPoint. The add-in reads your slide content to process it through our AI engine. It is available through Microsoft AppSource.
             </p>
           </div>
 

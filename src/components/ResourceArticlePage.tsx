@@ -6,8 +6,8 @@ const articles: Record<string, {
   date: string;
   content: React.ReactNode;
 }> = {
-  'derivant-vs-competitors': {
-    title: 'Derivant vs Competitors',
+  'sliderun-vs-competitors': {
+    title: 'SlideRun vs Competitors',
     date: '2026-01-27',
     content: (
       <>

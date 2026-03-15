@@ -22,7 +22,7 @@ const HomePage = () => (
 
 const RedirectToApp = () => {
   useEffect(() => {
-    window.location.href = 'https://app.derivant.ai';
+    window.location.href = 'https://app.sliderun.ai';
   }, []);
   return null;
 };

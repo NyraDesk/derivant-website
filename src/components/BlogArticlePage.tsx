@@ -8,8 +8,8 @@ const articles = {
   'privacy-app-note-local-first': {
     date: 'January 27, 2026',
     category: 'Privacy',
-    title: 'Privacy nelle Presentazioni AI: Come Derivant Protegge i Tuoi Dati',
-    description: 'Scopri come funziona la privacy nelle piattaforme AI per presentazioni e perché Derivant è costruito con un approccio privacy-first.',
+    title: 'Privacy nelle Presentazioni AI: Come SlideRun Protegge i Tuoi Dati',
+    description: 'Scopri come funziona la privacy nelle piattaforme AI per presentazioni e perché SlideRun è costruito con un approccio privacy-first.',
     image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop',
     image2: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&h=600&q=80',
     image3: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=1200&h=600&q=80',
@@ -32,9 +32,9 @@ Per un'agenzia o una startup, questo è un rischio concreto.
 
 [IMG2]
 
-Come Derivant Gestisce i Tuoi Dati
+Come SlideRun Gestisce i Tuoi Dati
 
-Derivant è costruito con un approccio privacy-conscious:
+SlideRun è costruito con un approccio privacy-conscious:
 
 Dati Minimi:
 - Salviamo solo ciò che serve per il funzionamento
@@ -73,7 +73,7 @@ Fashion & Luxury:
 
 Il Nostro Impegno
 
-Derivant non è solo un tool per creare presentazioni belle velocemente. È uno strumento costruito per professionisti che lavorano con informazioni sensibili.
+SlideRun non è solo un tool per creare presentazioni belle velocemente. È uno strumento costruito per professionisti che lavorano con informazioni sensibili.
 
 Non vendiamo i tuoi dati. Non usiamo i tuoi contenuti per training. Non condividiamo con terze parti.
 
@@ -84,20 +84,20 @@ Conclusione
 
 In un mondo dove i dati sono il nuovo petrolio, scegliere strumenti che rispettano la tua privacy non è paranoia. È buon senso professionale.
 
-Con Derivant, puoi creare presentazioni di livello elite senza compromettere la sicurezza delle tue idee.
+Con SlideRun, puoi creare presentazioni di livello elite senza compromettere la sicurezza delle tue idee.
 
-Scopri i [piani disponibili](/plans) o inizia subito con [Early Access](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o inizia subito con [Early Access](https://app.sliderun.ai).`
   },
-  'derivant-vs-gamma-powerpoint-2026': {
+  'sliderun-vs-gamma-powerpoint-2026': {
     date: 'January 27, 2026',
     category: 'Comparison',
-    title: 'Derivant vs Gamma vs PowerPoint: Perché l\'AI Generativa non basta più nel 2026',
-    description: 'Scopri perché Derivant è l\'alternativa professionale a Gamma e PowerPoint per chi cerca un design d\'elite e risultati da studio creativo.',
+    title: 'SlideRun vs Gamma vs PowerPoint: Perché l\'AI Generativa non basta più nel 2026',
+    description: 'Scopri perché SlideRun è l\'alternativa professionale a Gamma e PowerPoint per chi cerca un design d\'elite e risultati da studio creativo.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=600&q=80',
     author: 'Marco Conte',
     content: `Il mercato dei software per presentazioni è saturo. Da un lato abbiamo il "vecchio" PowerPoint, potente ma manuale e frustrante; dall'altro la prima ondata di AI (come Gamma o Tome), che crea slide velocemente ma spesso con un design generico, caotico e poco professionale.
 
-Derivant nasce nel vuoto lasciato da questi strumenti: l'unione tra la velocità dell'AI e la precisione del Designer-Thinking.
+SlideRun nasce nel vuoto lasciato da questi strumenti: l'unione tra la velocità dell'AI e la precisione del Designer-Thinking.
 
 
 I 3 Punti di Svolta
@@ -105,14 +105,14 @@ I 3 Punti di Svolta
 [COMPARISON_TABLE]
 
 
-Perché Derivant vince sulla "Aura" delle Slide
+Perché SlideRun vince sulla "Aura" delle Slide
 
-Mentre gli altri strumenti si limitano a riempire dei box con del testo generato, Derivant ragiona sulla gerarchia visiva.
+Mentre gli altri strumenti si limitano a riempire dei box con del testo generato, SlideRun ragiona sulla gerarchia visiva.
 
 
 Non solo testo
 
-L'AI di Derivant capisce l'obiettivo della slide (è un Pitch? Una demo prodotto?) e adatta il layout di conseguenza. Non genera contenuto a caso: costruisce una narrazione visiva.
+L'AI di SlideRun capisce l'obiettivo della slide (è un Pitch? Una demo prodotto?) e adatta il layout di conseguenza. Non genera contenuto a caso: costruisce una narrazione visiva.
 
 
 Design-Thinking Integrato
@@ -130,7 +130,7 @@ Le prime AI per presentazioni hanno risolto un problema: la velocità. Ma ne han
 
 Tutte le presentazioni create con questi tool sembrano uguali. Lo stesso layout, gli stessi colori, lo stesso "sapore" generico. Quando un investitore vede centinaia di pitch deck, riconosce immediatamente un deck "fatto con l'AI".
 
-Derivant è diverso. Il nostro motore è stato addestrato per produrre risultati che sembrano usciti da uno studio creativo, non da un template.
+SlideRun è diverso. Il nostro motore è stato addestrato per produrre risultati che sembrano usciti da uno studio creativo, non da un template.
 
 
 PowerPoint: Potente ma Obsoleto
@@ -144,11 +144,11 @@ La scelta per chi non accetta compromessi
 
 Se hai bisogno di una presentazione "giusta per finire il lavoro", qualunque AI va bene.
 
-Se hai bisogno di una presentazione che chiuda il deal, che incanti gli investitori e che trasmetta un'immagine d'eccellenza, la scelta è Derivant.
+Se hai bisogno di una presentazione che chiuda il deal, che incanti gli investitori e che trasmetta un'immagine d'eccellenza, la scelta è SlideRun.
 
 Non è questione di funzionalità. È questione di standard.
 
-Scopri i [piani disponibili](/plans) o [inizia gratis oggi](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [inizia gratis oggi](https://app.sliderun.ai).`
   },
   'ai-assistants-operations': {
     date: 'January 10, 2026',
@@ -199,11 +199,11 @@ L'AI si occupa dell'esecuzione tecnica. Tu ti concentri su ciò che conta davver
 
 Il Futuro è Già Qui
 
-Derivant incarna questa visione. Un tool che combina la velocità dell'AI con l'estetica di uno studio creativo.
+SlideRun incarna questa visione. Un tool che combina la velocità dell'AI con l'estetica di uno studio creativo.
 
 Non rimpiazza la tua creatività. La amplifica.
 
-Scopri come su [derivant.ai](/).`
+Scopri come su [sliderun.ai](/).`
   },
   'automatizzare-presentazioni-aziendali-ai': {
     date: 'February 14, 2026',
@@ -239,9 +239,9 @@ La prima generazione di AI per presentazioni (Gamma, Tome, Beautiful.ai) ha riso
 Per un'agenzia che serve clienti diversi, o per un team corporate che deve mantenere la brand identity, questo non è accettabile.
 
 
-L'Approccio Derivant: Automazione con Qualità
+L'Approccio SlideRun: Automazione con Qualità
 
-Derivant affronta il problema in modo diverso. Non è un editor di slide. È un motore di generazione che combina tre elementi:
+SlideRun affronta il problema in modo diverso. Non è un editor di slide. È un motore di generazione che combina tre elementi:
 
 1. AI che capisce il contesto — non genera contenuto generico, ma analizza il tuo brief e struttura una narrazione logica
 2. Web research automatica — cerca dati reali e aggiornati dal web per rendere ogni presentazione credibile e data-driven
@@ -264,7 +264,7 @@ Il Caso delle Agenzie di Comunicazione
 
 Le agenzie sono il caso d'uso perfetto per l'automazione delle presentazioni. Ogni cliente ha un brand diverso, ogni progetto richiede un deck diverso, e i deadline sono sempre ieri.
 
-Con Derivant, un'agenzia può:
+Con SlideRun, un'agenzia può:
 - Caricare il Brand Kit di ogni cliente una sola volta
 - Generare strategy deck, report e pitch in minuti
 - Mantenere la coerenza visiva su centinaia di presentazioni
@@ -290,7 +290,7 @@ Il secondo passo è configurare il Brand Kit — colori, font, logo. Una volta f
 
 Il terzo passo è provare. Genera una presentazione reale su un brief reale e confronta il risultato con il tuo processo attuale.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.sliderun.ai).`
   },
   'presentazioni-consulenti-ai-risparmio-tempo': {
     date: 'February 14, 2026',
@@ -337,7 +337,7 @@ Il workflow tradizionale:
 4. Formatti, allinei, colori → 2 ore
 5. Revisione finale → 30 minuti
 
-Il workflow con Derivant:
+Il workflow con SlideRun:
 1. Scrivi il tuo brief in formato libero → 5 minuti
 2. L'AI genera struttura, contenuti e design → 2 minuti
 3. Personalizzi i dettagli nell'editor → 10 minuti
@@ -350,7 +350,7 @@ La Web Research che Fa la Differenza
 
 Uno dei problemi più frustranti per un consulente: trovare dati aggiornati per supportare le raccomandazioni.
 
-Derivant include una funzione di web research automatica. Quando generi una presentazione, l'AI cerca dati reali dal web — statistiche, trend di mercato, benchmark di settore — e li integra direttamente nelle slide.
+SlideRun include una funzione di web research automatica. Quando generi una presentazione, l'AI cerca dati reali dal web — statistiche, trend di mercato, benchmark di settore — e li integra direttamente nelle slide.
 
 Non devi più passare 30 minuti su Google a cercare "market size [settore] 2026" per poi formattare il dato a mano.
 
@@ -359,7 +359,7 @@ Il Brand Kit per il Consulente Indipendente
 
 Se lavori come consulente indipendente, il tuo brand personale è fondamentale. Ogni deck deve avere i tuoi colori, il tuo logo, il tuo stile.
 
-Con il Brand Kit di Derivant, configuri una volta e ogni presentazione successiva sarà automaticamente on-brand. Niente più "copia il template del mese scorso e sostituisci i contenuti".
+Con il Brand Kit di SlideRun, configuri una volta e ogni presentazione successiva sarà automaticamente on-brand. Niente più "copia il template del mese scorso e sostituisci i contenuti".
 
 
 Per le Società di Consulenza
@@ -385,9 +385,9 @@ Da Dove Iniziare
 
 Il consiglio è semplice: prendi la prossima presentazione che devi creare e prova a generarla con l'AI. Confronta il tempo impiegato e la qualità del risultato.
 
-La maggior parte dei consulenti che provano Derivant non tornano più al workflow manuale. Non per pigrizia — per efficienza.
+La maggior parte dei consulenti che provano SlideRun non tornano più al workflow manuale. Non per pigrizia — per efficienza.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.sliderun.ai).`
   },
   'presentazioni-pharma-ai-compliant': {
     date: 'February 14, 2026',
@@ -433,7 +433,7 @@ Come l'AI Accelera il Passaggio Critico
 
 L'AI non sostituisce il processo di compliance. Lo accelera riducendo drasticamente il tempo di creazione iniziale.
 
-Con Derivant, il product manager può:
+Con SlideRun, il product manager può:
 - Inserire il brief e ottenere un primo draft completo in minuti
 - Avere slide già strutturate con la gerarchia visiva corretta
 - Integrare dati reali dal web (studi clinici, dati di mercato, statistiche)
@@ -446,7 +446,7 @@ Brand Governance nel Pharma
 
 Nel farmaceutico, la coerenza del brand non è un nice-to-have. È un requisito regolatorio. Ogni presentazione deve usare i colori approvati, i font ufficiali, il logo nella posizione corretta, i disclaimer standard.
 
-Con il Brand Kit di Derivant, questi vincoli vengono applicati automaticamente a ogni presentazione generata. Zero rischio di slide "fuori standard" che richiedono revisioni aggiuntive.
+Con il Brand Kit di SlideRun, questi vincoli vengono applicati automaticamente a ogni presentazione generata. Zero rischio di slide "fuori standard" che richiedono revisioni aggiuntive.
 
 
 La Forza Vendita: Presentazioni Personalizzate su Scala
@@ -466,7 +466,7 @@ Il calcolo è semplice:
 
 Per un'azienda che produce 50+ presentazioni al mese, il risparmio è nell'ordine delle centinaia di ore annue.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.sliderun.ai).`
   },
   'presentazioni-hr-onboarding-formazione': {
     date: 'February 14, 2026',
@@ -520,7 +520,7 @@ Il risultato: zero coerenza visiva nonostante il template esista.
 
 Come l'AI Risolve il Problema
 
-Con Derivant, il team HR può:
+Con SlideRun, il team HR può:
 
 1. Configurare il Brand Kit una volta — colori, font, logo, stile dell'azienda
 2. Generare presentazioni da un brief — "crea un deck di onboarding per il team engineering, 10 slide"
@@ -546,7 +546,7 @@ Caso d'Uso: Formazione Continua
 
 I corsi di formazione interni soffrono di un problema cronico: slide create una volta e mai aggiornate. Il corso sulla safety del 2024 viene riproposto nel 2026 con gli stessi dati.
 
-Con la web research integrata di Derivant, i materiali formativi possono includere dati aggiornati automaticamente. Normative recenti, statistiche attuali, best practice del settore.
+Con la web research integrata di SlideRun, i materiali formativi possono includere dati aggiornati automaticamente. Normative recenti, statistiche attuali, best practice del settore.
 
 
 Per gli HR Director
@@ -559,7 +559,7 @@ Se gestisci un team HR, l'AI per le presentazioni non è un nice-to-have. È uno
 
 Il primo passo: prova a generare il prossimo deck di onboarding con l'AI e confronta tempi e risultato.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.sliderun.ai).`
   },
   'presentazioni-formazione-aziendale-ai': {
     date: 'February 14, 2026',
@@ -603,7 +603,7 @@ Il Problema del "Corso da Aggiornare"
 
 Ogni formatore ha quel corso creato 2 anni fa che andrebbe aggiornato ma non c'è mai tempo. I dati sono vecchi, le normative sono cambiate, le slide hanno il logo sbagliato.
 
-Con Derivant:
+Con SlideRun:
 1. Inserisci il nuovo contenuto aggiornato
 2. L'AI genera un deck fresco con dati attuali
 3. Personalizzi i dettagli specifici
@@ -621,7 +621,7 @@ Le presentazioni formative efficaci seguono regole precise:
 - Spazio bianco — il cervello ha bisogno di respiro per processare
 - Consistenza — stesso stile dall'inizio alla fine crea fiducia
 
-L'AI di Derivant applica queste regole automaticamente. Non genera "slide piene di testo" — genera slide strutturate per l'apprendimento.
+L'AI di SlideRun applica queste regole automaticamente. Non genera "slide piene di testo" — genera slide strutturate per l'apprendimento.
 
 
 Per le Società di Formazione
@@ -643,7 +643,7 @@ L'AI non sostituisce il formatore. Lo potenzia. Il formatore si concentra sui co
 
 È la stessa logica di qualsiasi automazione: elimina il lavoro ripetitivo per liberare tempo per ciò che conta davvero.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.sliderun.ai).`
   },
   'presentazioni-sales-team-ai': {
     date: 'February 14, 2026',
@@ -686,7 +686,7 @@ Il collo di bottiglia: il passaggio 3-4. Il commercial dovrebbe vendere, non far
 
 Come l'AI Risolve il Trade-off
 
-Con Derivant, il commercial può creare un deck personalizzato in 15 minuti:
+Con SlideRun, il commercial può creare un deck personalizzato in 15 minuti:
 
 1. Inserisce il brief — "presentazione per [azienda], settore [X], problema [Y], soluzione [Z]"
 2. L'AI genera un deck strutturato con dati reali sul settore del prospect
@@ -732,7 +732,7 @@ Se gestisci un team di 5-10 commerciali, l'AI per le presentazioni non è un too
 
 Ogni commercial produce deck migliori, più velocemente, con meno supporto dal marketing. Il pipeline si muove più veloce. I deal si chiudono prima.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.sliderun.ai).`
   },
   'pitch-deck-startup-ai-investitori': {
     date: 'February 14, 2026',
@@ -789,7 +789,7 @@ Ma attenzione: l'AI è un punto di partenza, non il prodotto finale. Il pitch de
 
 I Dati che gli Investitori Vogliono Vedere
 
-La web research di Derivant è particolarmente utile per i pitch deck perché trova automaticamente:
+La web research di SlideRun è particolarmente utile per i pitch deck perché trova automaticamente:
 
 - Market size del tuo settore con fonti verificate
 - Trend di crescita e proiezioni
@@ -807,7 +807,7 @@ Errori Comuni nei Pitch Deck
 4. Design inconsistente — font diversi, colori random = poca attenzione al dettaglio
 5. Nessuna ask chiara — se l'investitore non sa cosa vuoi, non può dartelo
 
-L'AI di Derivant evita automaticamente il punto 1, 2, 4 e 5. Il punto 3 dipende da te.
+L'AI di SlideRun evita automaticamente il punto 1, 2, 4 e 5. Il punto 3 dipende da te.
 
 
 Il Pitch Deck per Acceleratori e Grant
@@ -829,13 +829,13 @@ L'AI ti dà un vantaggio competitivo: più tempo per perfezionare la storia e i 
 
 Il tuo prossimo pitch potrebbe essere quello che cambia tutto. Fallo contare.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.sliderun.ai).`
   },
   'migliori-ai-presentazioni-2026': {
     date: 'February 14, 2026',
     category: 'Guide',
     title: 'Migliori AI per Presentazioni nel 2026: Guida Completa e Confronto',
-    description: 'Classifica aggiornata dei migliori strumenti AI per creare presentazioni professionali nel 2026. Confronto dettagliato: Derivant, Gamma, Beautiful.ai, Canva, PowerPoint Copilot e altri.',
+    description: 'Classifica aggiornata dei migliori strumenti AI per creare presentazioni professionali nel 2026. Confronto dettagliato: SlideRun, Gamma, Beautiful.ai, Canva, PowerPoint Copilot e altri.',
     image: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&h=600&q=80',
     author: 'Marco Conte',
     content: `Cerchi la migliore AI per creare presentazioni? Nel 2026 il mercato è esploso: ci sono decine di tool che promettono di generare slide professionali in pochi secondi.
@@ -845,9 +845,9 @@ Ma quale funziona davvero? Quale produce risultati utilizzabili senza ore di rit
 Abbiamo testato i principali strumenti AI per presentazioni disponibili oggi. Ecco la guida completa con pro, contro e per chi è pensato ogni tool.
 
 
-1. Derivant AI — Il Migliore per Professionisti e Aziende
+1. SlideRun AI — Il Migliore per Professionisti e Aziende
 
-Derivant è un motore AI per presentazioni pensato per chi ha bisogno di qualità professionale, non di slide generiche. A differenza degli altri tool, Derivant integra web research automatica (cerca dati reali dal web), Brand Kit (i tuoi colori, font e logo applicati automaticamente) e un editor canvas completo.
+SlideRun è un motore AI per presentazioni pensato per chi ha bisogno di qualità professionale, non di slide generiche. A differenza degli altri tool, SlideRun integra web research automatica (cerca dati reali dal web), Brand Kit (i tuoi colori, font e logo applicati automaticamente) e un editor canvas completo.
 
 Pro:
 - Web research integrata — le slide contengono dati reali e aggiornati
@@ -862,7 +862,7 @@ Contro:
 
 Ideale per: consulenti, agenzie, team marketing, aziende che producono presentazioni ad alto volume.
 
-[Prova Derivant gratis →](https://app.derivant.ai)
+[Prova SlideRun gratis →](https://app.sliderun.ai)
 
 
 2. Gamma — Il Più Popolare
@@ -981,7 +981,7 @@ Come Scegliere: La Matrice Decisionale
 
 La scelta dipende dal tuo caso d'uso:
 
-- Presentazioni professionali ad alto volume → Derivant
+- Presentazioni professionali ad alto volume → SlideRun
 - Draft veloci per uso personale → Gamma
 - Design automatico senza designer → Beautiful.ai
 - Già usi Microsoft 365 → PowerPoint Copilot
@@ -996,7 +996,7 @@ Il mercato si sta dividendo in due: tool generici (che fanno tutto ma niente ben
 
 Per le presentazioni professionali — pitch deck, strategy deck, report aziendali — gli strumenti specializzati stanno emergendo come la scelta più efficace. Non perché gli altri siano cattivi, ma perché il contesto business richiede accuratezza, brand governance e qualità che i tool generici non garantiscono.
 
-Scopri i [piani disponibili](/plans) o [prova Derivant gratis](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [prova SlideRun gratis](https://app.sliderun.ai).`
   },
   'creare-presentazioni-ai-guida': {
     date: 'February 14, 2026',
@@ -1056,7 +1056,7 @@ Una volta inserito il prompt, l'AI genera una prima versione completa della pres
 
 Questa prima versione non è il prodotto finale. È un punto di partenza solido — il "80% del lavoro" fatto in pochi minuti.
 
-Con tool come Derivant, la generazione include anche web research automatica: l'AI cerca dati reali dal web (statistiche, trend, benchmark) e li integra direttamente nelle slide. Questo significa che i numeri che vedi non sono inventati dall'AI — sono dati verificabili.
+Con tool come SlideRun, la generazione include anche web research automatica: l'AI cerca dati reali dal web (statistiche, trend, benchmark) e li integra direttamente nelle slide. Questo significa che i numeri che vedi non sono inventati dall'AI — sono dati verificabili.
 
 
 Step 4: Personalizza e Raffina
@@ -1123,7 +1123,7 @@ Con AI:
 
 Il risparmio è reale: 80-90% del tempo. Non perché il risultato sia perfetto al primo colpo, ma perché l'AI elimina il lavoro meccanico (layout, formattazione, struttura) e ti lascia concentrare sul contenuto.
 
-Scopri i [piani disponibili](/plans) o [prova Derivant gratis](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [prova SlideRun gratis](https://app.sliderun.ai).`
   },
   'generatore-presentazioni-ai-gratis': {
     date: 'February 14, 2026',
@@ -1226,9 +1226,9 @@ Limitazioni del piano gratuito:
 Qualità risultato: buona per draft veloci, limitata per uso professionale.
 
 
-5. Derivant AI (Early Access) — Per Risultati Professionali
+5. SlideRun AI (Early Access) — Per Risultati Professionali
 
-Derivant offre un accesso gratuito in early access con funzionalità complete: generazione AI, web research, Brand Kit e editor canvas.
+SlideRun offre un accesso gratuito in early access con funzionalità complete: generazione AI, web research, Brand Kit e editor canvas.
 
 Cosa è gratis:
 - Generazione completa con web research
@@ -1263,7 +1263,7 @@ Conviene pagare quando:
 Come Ottenere il Massimo dal Piano Gratuito
 
 1. Scrivi prompt dettagliati — più contesto = risultato migliore
-2. Usa il piano giusto per il caso d'uso — Canva per visual, Gamma per velocità, Derivant per qualità
+2. Usa il piano giusto per il caso d'uso — Canva per visual, Gamma per velocità, SlideRun per qualità
 3. Personalizza sempre — non usare il risultato AI così com'è
 4. Combina più tool — genera con l'AI, poi rifinisci in PowerPoint se serve
 5. Testa l'export — verifica che il PPTX funzioni prima di presentare
@@ -1275,7 +1275,7 @@ Il trend è chiaro: le funzionalità AI più potenti stanno diventando premium. 
 
 Il consiglio: approfitta delle versioni gratuite e degli early access ora, mentre sono disponibili.
 
-Scopri i [piani disponibili](/plans) o [richiedi accesso gratuito a Derivant](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [richiedi accesso gratuito a SlideRun](https://app.sliderun.ai).`
   },
   'automatizzare-presentazioni-azienda': {
     date: 'February 14, 2026',
@@ -1396,7 +1396,7 @@ Se gestisci un team e vuoi proporre l'automazione delle presentazioni al tuo man
 
 I dati parlano da soli.
 
-Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.derivant.ai).`
+Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.sliderun.ai).`
   }
 };
 
@@ -1434,7 +1434,7 @@ const BlogArticlePage = () => {
             <div className="relative bg-gradient-to-br from-gray-100 via-blue-50 to-gray-50 rounded-3xl overflow-hidden border border-gray-200 shadow-2xl">
               <img
                 src={article.image3}
-                alt="Privacy e sicurezza Derivant"
+                alt="Privacy e sicurezza SlideRun"
                 className="w-full h-80 lg:h-96 object-cover"
               />
             </div>
@@ -1457,7 +1457,7 @@ const BlogArticlePage = () => {
                   <th style={{ padding: '16px 12px', textAlign: 'left', fontWeight: 700, color: '#111' }}>Caratteristica</th>
                   <th style={{ padding: '16px 12px', textAlign: 'center', fontWeight: 600, color: '#6b7280' }}>PowerPoint</th>
                   <th style={{ padding: '16px 12px', textAlign: 'center', fontWeight: 600, color: '#6b7280' }}>AI Tradizionale<br/><span style={{ fontSize: '12px', fontWeight: 400 }}>(Gamma/Tome)</span></th>
-                  <th style={{ padding: '16px 12px', textAlign: 'center', fontWeight: 700, color: '#000', background: 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)', borderRadius: '8px 8px 0 0' }}>Derivant AI</th>
+                  <th style={{ padding: '16px 12px', textAlign: 'center', fontWeight: 700, color: '#000', background: 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)', borderRadius: '8px 8px 0 0' }}>SlideRun AI</th>
                 </tr>
               </thead>
               <tbody>
@@ -1585,16 +1585,16 @@ const BlogArticlePage = () => {
     <>
       <Helmet>
         {/* SEO Meta Tags */}
-        <title>{article.title} | Derivant.ai</title>
+        <title>{article.title} | SlideRun.ai</title>
         <meta name="description" content={article.description} />
-        <meta name="keywords" content="AI presentazioni, privacy presentazioni, pitch deck AI, Derivant, presentazioni professionali" />
-        <link rel="canonical" href={`https://www.derivant.ai/blog/${articleSlug}`} />
+        <meta name="keywords" content="AI presentazioni, privacy presentazioni, pitch deck AI, SlideRun, presentazioni professionali" />
+        <link rel="canonical" href={`https://www.sliderun.ai/blog/${articleSlug}`} />
 
         {/* Open Graph */}
         <meta property="og:title" content={article.title} />
         <meta property="og:description" content={article.description} />
         <meta property="og:image" content={article.image} />
-        <meta property="og:url" content={`https://www.derivant.ai/blog/${articleSlug}`} />
+        <meta property="og:url" content={`https://www.sliderun.ai/blog/${articleSlug}`} />
         <meta property="og:type" content="article" />
 
         {/* Twitter Card */}
@@ -1614,7 +1614,7 @@ const BlogArticlePage = () => {
             "dateModified": new Date(article.date).toISOString(),
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": `https://www.derivant.ai/blog/${articleSlug}`
+              "@id": `https://www.sliderun.ai/blog/${articleSlug}`
             },
             "author": {
               "@type": "Person",
@@ -1622,10 +1622,10 @@ const BlogArticlePage = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Derivant AI",
+              "name": "SlideRun AI",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.derivant.ai/icon/derivant-icon.png"
+                "url": "https://www.sliderun.ai/icon/sliderun-icon.png"
               }
             },
             "description": article.description
@@ -1700,10 +1700,10 @@ const BlogArticlePage = () => {
                   Pronto a Creare Presentazioni Elite?
                 </h3>
                 <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-                  Inizia con Derivant oggi. AI potente, design professionale, privacy garantita.
+                  Inizia con SlideRun oggi. AI potente, design professionale, privacy garantita.
                 </p>
                 <a
-                  href="https://app.derivant.ai"
+                  href="https://app.sliderun.ai"
                   className="inline-flex items-center justify-center px-8 py-4 bg-black text-white rounded-full font-semibold text-lg hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   Prova gratis
@@ -1714,7 +1714,7 @@ const BlogArticlePage = () => {
             {/* Author */}
             <div className="mt-16 p-6 bg-gray-100 backdrop-blur-xl border border-gray-200 rounded-2xl">
               <p className="text-gray-600 text-sm mb-2">Scritto da</p>
-              <p className="text-black text-lg font-medium">{article.author}, Founder di Derivant</p>
+              <p className="text-black text-lg font-medium">{article.author}, Founder di SlideRun</p>
             </div>
 
             {/* Share Section */}

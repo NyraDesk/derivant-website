@@ -24,7 +24,7 @@ const articles = [
     category: 'Guide',
     date: 'Feb 14, 2026',
     title: 'Migliori AI per Presentazioni nel 2026: Guida Completa e Confronto',
-    description: 'Classifica aggiornata dei migliori strumenti AI per creare presentazioni professionali. Derivant, Gamma, Beautiful.ai, Canva a confronto.',
+    description: 'Classifica aggiornata dei migliori strumenti AI per creare presentazioni professionali. SlideRun, Gamma, Beautiful.ai, Canva a confronto.',
     image: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&h=600&q=80'
   },
   {
@@ -92,19 +92,19 @@ const articles = [
     image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&h=600&q=80'
   },
   {
-    id: 'derivant-vs-gamma-powerpoint-2026',
+    id: 'sliderun-vs-gamma-powerpoint-2026',
     category: 'Comparison',
     date: 'Jan 27, 2026',
-    title: 'Derivant vs Gamma vs PowerPoint: Perché l\'AI Generativa non basta più',
-    description: 'Scopri perché Derivant è l\'alternativa professionale a Gamma e PowerPoint per chi cerca un design d\'elite e risultati da studio creativo.',
+    title: 'SlideRun vs Gamma vs PowerPoint: Perché l\'AI Generativa non basta più',
+    description: 'Scopri perché SlideRun è l\'alternativa professionale a Gamma e PowerPoint per chi cerca un design d\'elite e risultati da studio creativo.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&h=600&q=80'
   },
   {
     id: 'privacy-app-note-local-first',
     category: 'Privacy',
     date: 'Jan 27, 2026',
-    title: 'Privacy nelle Presentazioni AI: Come Derivant Protegge i Tuoi Dati',
-    description: 'Scopri come funziona la privacy nelle piattaforme AI per presentazioni e perché Derivant è costruito con un approccio privacy-first.',
+    title: 'Privacy nelle Presentazioni AI: Come SlideRun Protegge i Tuoi Dati',
+    description: 'Scopri come funziona la privacy nelle piattaforme AI per presentazioni e perché SlideRun è costruito con un approccio privacy-first.',
     image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
   },
   {
@@ -121,15 +121,15 @@ const BlogPage = () => {
   return (
     <>
       <Helmet>
-        <title>Blog | Derivant AI — News e Approfondimenti sulle Presentazioni AI</title>
+        <title>Blog | SlideRun AI — News e Approfondimenti sulle Presentazioni AI</title>
         <meta name="description" content="Articoli, guide e approfondimenti su presentazioni AI, pitch deck, strategie di comunicazione e produttività professionale." />
-        <link rel="canonical" href="https://www.derivant.ai/blog" />
-        <meta property="og:title" content="Blog | Derivant AI" />
+        <link rel="canonical" href="https://www.sliderun.ai/blog" />
+        <meta property="og:title" content="Blog | SlideRun AI" />
         <meta property="og:description" content="Articoli, guide e approfondimenti su presentazioni AI, pitch deck e produttività professionale." />
-        <meta property="og:url" content="https://www.derivant.ai/blog" />
+        <meta property="og:url" content="https://www.sliderun.ai/blog" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Blog | Derivant AI" />
+        <meta name="twitter:title" content="Blog | SlideRun AI" />
         <meta name="twitter:description" content="Articoli, guide e approfondimenti su presentazioni AI e produttività professionale." />
       </Helmet>
     <div className="pt-32 pb-24 bg-white min-h-screen">

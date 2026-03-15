@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.derivant.ai/sitemap.xml
+Sitemap: https://www.sliderun.ai/sitemap.xml
 
 # Host
-Host: https://www.derivant.ai
+Host: https://www.sliderun.ai

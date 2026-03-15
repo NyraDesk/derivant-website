@@ -32,9 +32,9 @@ const TermsPage = () => {
   return (
     <div style={{ minHeight: '100vh', background: '#0d0d0f' }}>
       <Helmet>
-        <title>Terms of Use | Derivant AI</title>
-        <meta name="description" content="Terms of Use and End User License Agreement for Derivant AI presentation generator." />
-        <link rel="canonical" href="https://www.derivant.ai/terms" />
+        <title>Terms of Use | SlideRun AI</title>
+        <meta name="description" content="Terms of Use and End User License Agreement for SlideRun AI presentation generator." />
+        <link rel="canonical" href="https://www.sliderun.ai/terms" />
       </Helmet>
 
       <section style={{ paddingTop: '160px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
@@ -63,7 +63,7 @@ const TermsPage = () => {
           </p>
 
           <p style={bodyText}>
-            These Terms of Use ("Terms") govern your access to and use of the Derivant platform, available at derivant.ai and through the Derivant PowerPoint Add-in (collectively, the "Service"). By creating an account or using the Service, you agree to be bound by these Terms.
+            These Terms of Use ("Terms") govern your access to and use of the SlideRun platform, available at sliderun.ai and through the SlideRun PowerPoint Add-in (collectively, the "Service"). By creating an account or using the Service, you agree to be bound by these Terms.
           </p>
 
           <p style={bodyText}>
@@ -73,7 +73,7 @@ const TermsPage = () => {
           {/* 1. Service Description */}
           <h2 style={sectionTitle}>1. Service Description</h2>
           <p style={bodyText}>
-            Derivant is an AI-powered presentation generator that transforms text, documents, and ideas into professional presentations. The Service includes:
+            SlideRun is an AI-powered presentation generator that transforms text, documents, and ideas into professional presentations. The Service includes:
           </p>
           <ul style={listStyle}>
             <li style={{ marginBottom: '8px' }}>AI-powered slide generation from text prompts and pasted content</li>
@@ -110,7 +110,7 @@ const TermsPage = () => {
             <li style={{ marginBottom: '8px' }}><strong style={{ color: '#fff' }}>Pro:</strong> Coming soon. Enhanced features and higher credit limits.</li>
           </ul>
           <p style={bodyText}>
-            Credits are allocated on a monthly basis for paid plans and do not roll over to the next billing period. Derivant reserves the right to modify plan pricing, credit allocations, and features with reasonable notice.
+            Credits are allocated on a monthly basis for paid plans and do not roll over to the next billing period. SlideRun reserves the right to modify plan pricing, credit allocations, and features with reasonable notice.
           </p>
 
           {/* 4. Payment Terms */}
@@ -119,7 +119,7 @@ const TermsPage = () => {
             Paid subscriptions are billed monthly through Stripe. By subscribing to a paid plan, you authorize us to charge your payment method on a recurring basis. You may cancel your subscription at any time, and your access will continue until the end of the current billing period.
           </p>
           <p style={bodyText}>
-            Refunds are handled on a case-by-case basis. Please contact us at <a href="mailto:info@derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@derivant.ai</a> for refund requests.
+            Refunds are handled on a case-by-case basis. Please contact us at <a href="mailto:info@sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@sliderun.ai</a> for refund requests.
           </p>
 
           {/* 5. Acceptable Use */}
@@ -141,10 +141,10 @@ const TermsPage = () => {
           {/* 6. Intellectual Property */}
           <h2 style={sectionTitle}>6. Intellectual Property</h2>
           <p style={bodyText}>
-            <strong style={{ color: '#fff' }}>Your Content:</strong> You retain ownership of all content you provide to the Service (text, images, logos, Brand Kit assets) and all presentations generated using your content. You grant Derivant a limited license to process your content solely for the purpose of providing the Service.
+            <strong style={{ color: '#fff' }}>Your Content:</strong> You retain ownership of all content you provide to the Service (text, images, logos, Brand Kit assets) and all presentations generated using your content. You grant SlideRun a limited license to process your content solely for the purpose of providing the Service.
           </p>
           <p style={bodyText}>
-            <strong style={{ color: '#fff' }}>Our Platform:</strong> The Derivant platform, including its design, code, AI models integration, templates, layout engine, and branding, is the intellectual property of Derivant. You may not copy, modify, or distribute any part of the platform without prior written permission.
+            <strong style={{ color: '#fff' }}>Our Platform:</strong> The SlideRun platform, including its design, code, AI models integration, templates, layout engine, and branding, is the intellectual property of SlideRun. You may not copy, modify, or distribute any part of the platform without prior written permission.
           </p>
           <p style={bodyText}>
             <strong style={{ color: '#fff' }}>AI-Generated Content:</strong> Presentations generated by the Service are created using AI technology. While you own the output generated from your inputs, you acknowledge that similar outputs may be generated for other users who provide similar inputs.
@@ -157,9 +157,9 @@ const TermsPage = () => {
           </p>
           <ul style={listStyle}>
             <li style={{ marginBottom: '8px' }}>The Service is provided "as is" and "as available" without warranties of any kind, express or implied</li>
-            <li style={{ marginBottom: '8px' }}>Derivant does not guarantee that AI-generated content will be accurate, complete, or suitable for any particular purpose</li>
-            <li style={{ marginBottom: '8px' }}>Derivant shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Service</li>
-            <li style={{ marginBottom: '8px' }}>Our total liability for any claim related to the Service shall not exceed the amount you paid to Derivant in the 12 months preceding the claim</li>
+            <li style={{ marginBottom: '8px' }}>SlideRun does not guarantee that AI-generated content will be accurate, complete, or suitable for any particular purpose</li>
+            <li style={{ marginBottom: '8px' }}>SlideRun shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Service</li>
+            <li style={{ marginBottom: '8px' }}>Our total liability for any claim related to the Service shall not exceed the amount you paid to SlideRun in the 12 months preceding the claim</li>
           </ul>
           <p style={bodyText}>
             You are responsible for reviewing and verifying all AI-generated content before using it in professional, legal, or business contexts.
@@ -168,10 +168,10 @@ const TermsPage = () => {
           {/* 8. Termination */}
           <h2 style={sectionTitle}>8. Termination</h2>
           <p style={bodyText}>
-            You may terminate your account at any time by contacting us at <a href="mailto:info@derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@derivant.ai</a>.
+            You may terminate your account at any time by contacting us at <a href="mailto:info@sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@sliderun.ai</a>.
           </p>
           <p style={bodyText}>
-            Derivant may suspend or terminate your account at any time if:
+            SlideRun may suspend or terminate your account at any time if:
           </p>
           <ul style={listStyle}>
             <li style={{ marginBottom: '8px' }}>You violate these Terms or our Acceptable Use policy</li>
@@ -206,8 +206,8 @@ const TermsPage = () => {
             If you have questions about these Terms, please contact us:
           </p>
           <p style={bodyText}>
-            Email: <a href="mailto:info@derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@derivant.ai</a><br />
-            Website: <a href="https://www.derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>derivant.ai</a>
+            Email: <a href="mailto:info@sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@sliderun.ai</a><br />
+            Website: <a href="https://www.sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>sliderun.ai</a>
           </p>
 
         </div>

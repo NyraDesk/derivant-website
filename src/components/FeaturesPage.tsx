@@ -16,7 +16,7 @@ const FeaturesPage = () => {
                 letterSpacing: '-0.04em'
               }}
             >
-              DERIVANT AI
+              SLIDERUN AI
             </h1>
             <p
               className="text-2xl md:text-3xl text-gray-700 leading-relaxed max-w-3xl mx-auto"
@@ -25,7 +25,7 @@ const FeaturesPage = () => {
                 fontWeight: 300
               }}
             >
-              Derivant AI costruisce strumenti AI che amplificano la produttività umana senza sostituirla.
+              SlideRun AI costruisce strumenti AI che amplificano la produttività umana senza sostituirla.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ const FeaturesPage = () => {
                   className="text-2xl font-medium text-black mb-2"
                   style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
                 >
-                  Derivant Presentation Builder
+                  SlideRun Presentation Builder
                 </h3>
                 <p
                   className="text-xl text-gray-700"

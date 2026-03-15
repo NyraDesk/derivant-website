@@ -370,11 +370,11 @@ const InsightArticlePage = () => {
       <Helmet>
         <title>{article.title} | Insights — Marco Conte</title>
         <meta name="description" content={article.excerpt} />
-        <link rel="canonical" href={`https://www.derivant.ai/insights/${article.slug}`} />
+        <link rel="canonical" href={`https://www.sliderun.ai/insights/${article.slug}`} />
 
         <meta property="og:title" content={article.title} />
         <meta property="og:description" content={article.excerpt} />
-        <meta property="og:url" content={`https://www.derivant.ai/insights/${article.slug}`} />
+        <meta property="og:url" content={`https://www.sliderun.ai/insights/${article.slug}`} />
         <meta property="og:type" content="article" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -390,7 +390,7 @@ const InsightArticlePage = () => {
             "dateModified": article.date,
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": `https://www.derivant.ai/insights/${article.slug}`
+              "@id": `https://www.sliderun.ai/insights/${article.slug}`
             },
             "author": {
               "@type": "Person",
@@ -398,10 +398,10 @@ const InsightArticlePage = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Derivant AI",
+              "name": "SlideRun AI",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.derivant.ai/icon/derivant-icon.png"
+                "url": "https://www.sliderun.ai/icon/sliderun-icon.png"
               }
             },
             "description": article.excerpt
@@ -523,7 +523,7 @@ const InsightArticlePage = () => {
                   margin: 0,
                   lineHeight: 1.3,
                 }}>
-                  Founder, Derivant AI
+                  Founder, SlideRun AI
                 </p>
               </div>
             </div>
@@ -581,7 +581,7 @@ const InsightArticlePage = () => {
                   margin: 0,
                   lineHeight: 1.5,
                 }}>
-                  Founder di Derivant AI. Scrivo di intelligenza artificiale applicata al lavoro.
+                  Founder di SlideRun AI. Scrivo di intelligenza artificiale applicata al lavoro.
                 </p>
               </div>
             </div>
@@ -590,7 +590,7 @@ const InsightArticlePage = () => {
           {/* CTA */}
           <div style={{ textAlign: 'center', marginBottom: '48px' }}>
             <a
-              href="https://app.derivant.ai"
+              href="https://app.sliderun.ai"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -615,7 +615,7 @@ const InsightArticlePage = () => {
                 e.currentTarget.style.boxShadow = 'none';
               }}
             >
-              Prova Derivant →
+              Prova SlideRun →
             </a>
           </div>
         </div>

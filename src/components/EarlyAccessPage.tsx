@@ -56,7 +56,7 @@ const EarlyAccessPage = () => {
             marginBottom: '32px',
             lineHeight: 1.6,
           }}>
-            We'll reach out as soon as Derivant is ready for you.
+            We'll reach out as soon as SlideRun is ready for you.
           </p>
           <button
             onClick={() => window.location.href = '/'}
@@ -84,16 +84,16 @@ const EarlyAccessPage = () => {
   return (
     <>
       <Helmet>
-        <title>Early Access | Derivant AI — Accedi in Anteprima</title>
-        <meta name="description" content="Registrati per accedere in anteprima a Derivant AI. Genera presentazioni professionali con intelligenza artificiale, brand kit e web research integrati." />
-        <link rel="canonical" href="https://www.derivant.ai/early-access" />
-        <meta property="og:title" content="Early Access | Derivant AI" />
-        <meta property="og:description" content="Registrati per accedere in anteprima a Derivant AI. Presentazioni professionali generate dall'AI." />
-        <meta property="og:url" content="https://www.derivant.ai/early-access" />
+        <title>Early Access | SlideRun AI — Accedi in Anteprima</title>
+        <meta name="description" content="Registrati per accedere in anteprima a SlideRun AI. Genera presentazioni professionali con intelligenza artificiale, brand kit e web research integrati." />
+        <link rel="canonical" href="https://www.sliderun.ai/early-access" />
+        <meta property="og:title" content="Early Access | SlideRun AI" />
+        <meta property="og:description" content="Registrati per accedere in anteprima a SlideRun AI. Presentazioni professionali generate dall'AI." />
+        <meta property="og:url" content="https://www.sliderun.ai/early-access" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Early Access | Derivant AI" />
-        <meta name="twitter:description" content="Registrati per accedere in anteprima a Derivant AI." />
+        <meta name="twitter:title" content="Early Access | SlideRun AI" />
+        <meta name="twitter:description" content="Registrati per accedere in anteprima a SlideRun AI." />
       </Helmet>
     <div style={{
       minHeight: '100vh',
@@ -131,7 +131,7 @@ const EarlyAccessPage = () => {
           marginBottom: '60px',
           maxWidth: '600px',
         }}>
-          Stop building slides. Start architecting narratives. Derivant combines elite editorial design with generative intelligence to deliver studio-quality decks in seconds.
+          Stop building slides. Start architecting narratives. SlideRun combines elite editorial design with generative intelligence to deliver studio-quality decks in seconds.
         </p>
 
         {/* Waitlist Section */}
@@ -156,8 +156,8 @@ const EarlyAccessPage = () => {
             style={{ width: '100%' }}
           >
             <input type="hidden" name="access_key" value="9f92b39f-70b2-4573-9b46-eb036376a2c8" />
-            <input type="hidden" name="redirect" value="https://derivant.ai/early-access?submitted=true" />
-            <input type="hidden" name="subject" value="New Derivant Waitlist Signup" />
+            <input type="hidden" name="redirect" value="https://sliderun.ai/early-access?submitted=true" />
+            <input type="hidden" name="subject" value="New SlideRun Waitlist Signup" />
 
             <div style={{ marginBottom: '24px' }}>
               <input

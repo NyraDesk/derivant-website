@@ -89,10 +89,10 @@ const VideoComponent = ({
   };
 
   // Full URL for structured data
-  const fullVideoUrl = contentUrl || `https://derivant.ai${src}`;
+  const fullVideoUrl = contentUrl || `https://sliderun.ai${src}`;
   const fullThumbnailUrl = thumbnailUrl.startsWith('http')
     ? thumbnailUrl
-    : `https://derivant.ai${thumbnailUrl}`;
+    : `https://sliderun.ai${thumbnailUrl}`;
 
   // JSON-LD VideoObject structured data
   const videoStructuredData = {
@@ -107,10 +107,10 @@ const VideoComponent = ({
     embedUrl: embedUrl || fullVideoUrl,
     publisher: {
       '@type': 'Organization',
-      name: 'Derivant',
+      name: 'SlideRun',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://derivant.ai/logo.png',
+        url: 'https://sliderun.ai/logo.png',
       },
     },
   };

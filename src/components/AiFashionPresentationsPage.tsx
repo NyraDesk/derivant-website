@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AiFashionPresentationsPage = () => {
   useEffect(() => {
-    document.title = 'AI per il Fashion: Creare Presentazioni Luxury | Derivant.ai';
+    document.title = 'AI per il Fashion: Creare Presentazioni Luxury | SlideRun.ai';
   }, []);
 
   return (
@@ -66,7 +66,7 @@ const AiFashionPresentationsPage = () => {
 
           <h2>L'Estetica "Aura": Il nuovo standard editoriale</h2>
           <p>
-            Derivant ha sviluppato lo stile Aura proprio per rispondere alle esigenze del settore moda. Non si tratta solo di scegliere un font elegante, ma di gestire gli spazi bianchi e le gerarchie visive come farebbe un art director di una rivista patinata.
+            SlideRun ha sviluppato lo stile Aura proprio per rispondere alle esigenze del settore moda. Non si tratta solo di scegliere un font elegante, ma di gestire gli spazi bianchi e le gerarchie visive come farebbe un art director di una rivista patinata.
           </p>
           <ul>
             <li><strong>Minimalismo Sofisticato:</strong> Meno rumore, più impatto.</li>
@@ -82,7 +82,7 @@ const AiFashionPresentationsPage = () => {
 
           <h2>Perché la Coerenza è l'unico parametro che conta</h2>
           <p>
-            Un brand di lusso si riconosce dalla costanza. Se le tue slide cambiano stile ogni tre pagine, il tuo brand perde forza. Il motore di Derivant è stato istruito per mantenere un "filo rosso" estetico che lega ogni singola slide, garantendo che l'output finale sia pronto per essere mostrato in un ufficio di Via della Spiga o Avenue Montaigne.
+            Un brand di lusso si riconosce dalla costanza. Se le tue slide cambiano stile ogni tre pagine, il tuo brand perde forza. Il motore di SlideRun è stato istruito per mantenere un "filo rosso" estetico che lega ogni singola slide, garantendo che l'output finale sia pronto per essere mostrato in un ufficio di Via della Spiga o Avenue Montaigne.
           </p>
 
           {/* CTA */}
@@ -104,7 +104,7 @@ const AiFashionPresentationsPage = () => {
               Pronto a elevare le tue presentazioni?
             </p>
             <a
-              href="https://app.derivant.ai"
+              href="https://app.sliderun.ai"
               style={{
                 display: 'inline-block',
                 padding: '14px 32px',

@@ -9,10 +9,10 @@ const InsightsPage = () => {
       <Helmet>
         <title>Insights | Marco Conte — Idee pratiche sull'intelligenza artificiale</title>
         <meta name="description" content="Idee pratiche sull'intelligenza artificiale. Sistemi, strategie e metodi concreti per usare l'AI nel lavoro. Di Marco Conte." />
-        <link rel="canonical" href="https://www.derivant.ai/insights" />
+        <link rel="canonical" href="https://www.sliderun.ai/insights" />
         <meta property="og:title" content="Insights | Marco Conte" />
         <meta property="og:description" content="Idee pratiche sull'intelligenza artificiale. Sistemi, strategie e metodi concreti per usare l'AI nel lavoro." />
-        <meta property="og:url" content="https://www.derivant.ai/insights" />
+        <meta property="og:url" content="https://www.sliderun.ai/insights" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Insights | Marco Conte" />

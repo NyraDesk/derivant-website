@@ -20,9 +20,9 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
               <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
-                <img src="/icon/derivant-icon.png" alt="Derivant" style={{ width: '28px', height: '28px', borderRadius: '6px' }} />
+                <img src="/icon/sliderun-icon.png" alt="SlideRun" style={{ width: '28px', height: '28px', borderRadius: '6px' }} />
                 <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: '18px', letterSpacing: '-0.03em', color: '#fff', textTransform: 'uppercase' }}>
-                  DERIVANT
+                  SLIDERUN
                 </span>
               </Link>
             </div>
@@ -62,7 +62,7 @@ const Header = () => {
             {/* CTA Button */}
             <div className="flex-shrink-0">
               <a
-                href="https://app.derivant.ai"
+                href="https://app.sliderun.ai"
                 className="bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 hover:scale-105 transition-all duration-200 border border-white/20"
                 style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
               >
@@ -78,9 +78,9 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
               <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
-                <img src="/icon/derivant-icon.png" alt="Derivant" style={{ width: '28px', height: '28px', borderRadius: '6px' }} />
+                <img src="/icon/sliderun-icon.png" alt="SlideRun" style={{ width: '28px', height: '28px', borderRadius: '6px' }} />
                 <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: '18px', letterSpacing: '-0.03em', color: '#fff', textTransform: 'uppercase' }}>
-                  DERIVANT
+                  SLIDERUN
                 </span>
               </Link>
             </div>
@@ -142,7 +142,7 @@ const Header = () => {
 
                 <div className="px-6 py-4">
                   <a
-                    href="https://app.derivant.ai"
+                    href="https://app.sliderun.ai"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="w-full bg-white/10 text-white px-6 py-4 rounded-full font-medium text-base hover:bg-white/20 transition-all duration-200 block text-center border border-white/20"
                   >

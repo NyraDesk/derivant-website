@@ -5,12 +5,12 @@ const GuidaPitchDeckPage = () => {
   return (
     <>
       <Helmet>
-        <title>Pitch Deck 2026: Guida e Tool AI per Startup | Derivant.ai</title>
+        <title>Pitch Deck 2026: Guida e Tool AI per Startup | SlideRun.ai</title>
         <meta name="description" content="Guida completa per creare un pitch deck vincente nel 2026. Scopri i 3 pilastri, le best practice e come l'AI sta cambiando le regole del pitch." />
-        <link rel="canonical" href="https://www.derivant.ai/guida-pitch-deck-2026" />
+        <link rel="canonical" href="https://www.sliderun.ai/guida-pitch-deck-2026" />
         <meta property="og:title" content="Pitch Deck 2026: Guida e Tool AI per Startup" />
         <meta property="og:description" content="Guida completa per creare un pitch deck vincente nel 2026. I 3 pilastri e come l'AI sta cambiando le regole del pitch." />
-        <meta property="og:url" content="https://www.derivant.ai/guida-pitch-deck-2026" />
+        <meta property="og:url" content="https://www.sliderun.ai/guida-pitch-deck-2026" />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Pitch Deck 2026: Guida e Tool AI per Startup" />
@@ -77,17 +77,17 @@ const GuidaPitchDeckPage = () => {
 
           <h3>1. Coerenza tra Visione e Grafica</h3>
           <p>
-            Un errore comune è presentare un'idea rivoluzionaria con slide che sembrano un template standard del 2020. Nel 2026, l'estetica è parte integrante del tuo brand. Se la tua grafica è generica, la tua idea sembrerà generica. Derivant garantisce che ogni slide — dal "Problem" al "Financials" — mantenga lo stesso peso visivo e la stessa autorevolezza.
+            Un errore comune è presentare un'idea rivoluzionaria con slide che sembrano un template standard del 2020. Nel 2026, l'estetica è parte integrante del tuo brand. Se la tua grafica è generica, la tua idea sembrerà generica. SlideRun garantisce che ogni slide — dal "Problem" al "Financials" — mantenga lo stesso peso visivo e la stessa autorevolezza.
           </p>
 
           <h3>2. Narrazione non lineare, ma fluida</h3>
           <p>
-            Il mazzo di slide deve scorrere come un unico organismo. Grazie al workflow di Derivant, puoi trasformare il tuo outline testuale in una struttura che mantiene il focus dell'investitore senza distrazioni, eliminando il rumore visivo tipico dei tool di vecchia generazione.
+            Il mazzo di slide deve scorrere come un unico organismo. Grazie al workflow di SlideRun, puoi trasformare il tuo outline testuale in una struttura che mantiene il focus dell'investitore senza distrazioni, eliminando il rumore visivo tipico dei tool di vecchia generazione.
           </p>
 
           <h3>3. La Regola del "Designer-Thinking"</h3>
           <p>
-            Il tempo in cui i fondatori passavano notti intere ad allineare box su PowerPoint è finito. L'intelligenza artificiale di Derivant agisce come un Art Director invisibile:
+            Il tempo in cui i fondatori passavano notti intere ad allineare box su PowerPoint è finito. L'intelligenza artificiale di SlideRun agisce come un Art Director invisibile:
           </p>
           <ul>
             <li>Analizza il tuo testo per capire quali sono i punti chiave.</li>
@@ -101,14 +101,14 @@ const GuidaPitchDeckPage = () => {
           </p>
           <ul>
             <li><strong>The Hook:</strong> Il problema enorme che stai risolvendo.</li>
-            <li><strong>The Solution:</strong> La tua magia tecnica (qui l'estetica "Aura" di Derivant brilla).</li>
+            <li><strong>The Solution:</strong> La tua magia tecnica (qui l'estetica "Aura" di SlideRun brilla).</li>
             <li><strong>Market & Traction:</strong> Dati presentati con pulizia estrema.</li>
             <li><strong>The Ask:</strong> Cosa ti serve per scalare.</li>
           </ul>
 
-          <h2>Perché usare Derivant per il tuo prossimo round?</h2>
+          <h2>Perché usare SlideRun per il tuo prossimo round?</h2>
           <p>
-            Mentre altri generatori creano slide "giocattolo", Derivant è costruito per professionisti che non hanno tempo da perdere ma non possono permettersi di trascurare il design. È lo strumento per i fondatori che, pur non avendo competenze di codice o grafica, pretendono un risultato che sembri uscito da uno studio creativo di Milano o Londra.
+            Mentre altri generatori creano slide "giocattolo", SlideRun è costruito per professionisti che non hanno tempo da perdere ma non possono permettersi di trascurare il design. È lo strumento per i fondatori che, pur non avendo competenze di codice o grafica, pretendono un risultato che sembri uscito da uno studio creativo di Milano o Londra.
           </p>
 
           {/* CTA */}
@@ -130,7 +130,7 @@ const GuidaPitchDeckPage = () => {
               Pronto a creare il tuo pitch deck?
             </p>
             <a
-              href="https://app.derivant.ai"
+              href="https://app.sliderun.ai"
               style={{
                 display: 'inline-block',
                 padding: '14px 32px',

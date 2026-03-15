@@ -5,15 +5,15 @@ const AiAgenzieComunicazionePage = () => {
   return (
     <>
       <Helmet>
-        <title>AI per Agenzie di Comunicazione: Strategy Deck Veloci | Derivant.ai</title>
+        <title>AI per Agenzie di Comunicazione: Strategy Deck Veloci | SlideRun.ai</title>
         <meta name="description" content="Come le agenzie di comunicazione possono scalare la produzione di strategy deck e presentazioni con l'AI, senza aumentare i costi." />
-        <link rel="canonical" href="https://www.derivant.ai/ai-agenzie-comunicazione" />
-        <meta property="og:title" content="AI per Agenzie di Comunicazione | Derivant" />
+        <link rel="canonical" href="https://www.sliderun.ai/ai-agenzie-comunicazione" />
+        <meta property="og:title" content="AI per Agenzie di Comunicazione | SlideRun" />
         <meta property="og:description" content="Scala la produzione di strategy deck e presentazioni con l'AI, senza aumentare i costi." />
-        <meta property="og:url" content="https://www.derivant.ai/ai-agenzie-comunicazione" />
+        <meta property="og:url" content="https://www.sliderun.ai/ai-agenzie-comunicazione" />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI per Agenzie di Comunicazione | Derivant" />
+        <meta name="twitter:title" content="AI per Agenzie di Comunicazione | SlideRun" />
         <meta name="twitter:description" content="Scala la produzione di strategy deck e presentazioni con l'AI." />
       </Helmet>
     <div style={{
@@ -75,21 +75,21 @@ const AiAgenzieComunicazionePage = () => {
 
           <h2>Automatizzare il "Lavoro Sporco" senza perdere il Tocco Creativo</h2>
           <p>
-            Ogni nuovo cliente richiede uno strategy deck, una proposta di campagna o un report di fine mese. Sono documenti essenziali che spesso rubano ore preziose ai creativi e agli account. Derivant permette di:
+            Ogni nuovo cliente richiede uno strategy deck, una proposta di campagna o un report di fine mese. Sono documenti essenziali che spesso rubano ore preziose ai creativi e agli account. SlideRun permette di:
           </p>
           <ul>
             <li><strong>Generare una base solida istantaneamente:</strong> Inserisci l'outline della strategia e ottieni un deck già impaginato professionalmente.</li>
             <li><strong>Mantenere il Mood del Cliente:</strong> Grazie ai nostri motori di design, puoi passare da uno stile "tech-corporate" a uno "luxury-editorial" con un click, assicurando che ogni presentazione rifletta l'identità del brand del cliente.</li>
           </ul>
 
-          <h2>Coerenza Multi-Account: Il vantaggio Derivant</h2>
+          <h2>Coerenza Multi-Account: Il vantaggio SlideRun</h2>
           <p>
-            Gestire 10 o 20 clienti contemporaneamente significa dover cambiare "pelle" continuamente. Derivant è l'unico strumento che garantisce una coerenza estetica assoluta all'interno di ogni singolo progetto, eliminando il rischio di slide incoerenti o errori di layout che danneggiano la reputazione dell'agenzia.
+            Gestire 10 o 20 clienti contemporaneamente significa dover cambiare "pelle" continuamente. SlideRun è l'unico strumento che garantisce una coerenza estetica assoluta all'interno di ogni singolo progetto, eliminando il rischio di slide incoerenti o errori di layout che danneggiano la reputazione dell'agenzia.
           </p>
 
           <h2>Scalare la Produzione, non i Costi</h2>
           <p>
-            Usare l'AI nativa di Derivant significa poter gestire più pitch e più clienti senza dover necessariamente aumentare l'headcount del reparto grafico per compiti ripetitivi. È lo strumento pensato per le agenzie che vogliono essere "lean" ma presentarsi come colossi del design.
+            Usare l'AI nativa di SlideRun significa poter gestire più pitch e più clienti senza dover necessariamente aumentare l'headcount del reparto grafico per compiti ripetitivi. È lo strumento pensato per le agenzie che vogliono essere "lean" ma presentarsi come colossi del design.
           </p>
 
           {/* CTA */}
@@ -111,7 +111,7 @@ const AiAgenzieComunicazionePage = () => {
               Pronto a scalare la tua agenzia?
             </p>
             <a
-              href="https://app.derivant.ai"
+              href="https://app.sliderun.ai"
               style={{
                 display: 'inline-block',
                 padding: '14px 32px',

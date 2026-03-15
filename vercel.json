@@ -37,7 +37,7 @@
     },
     {
       "source": "/early-access",
-      "destination": "https://app.derivant.ai",
+      "destination": "https://app.sliderun.ai",
       "permanent": true
     }
   ],

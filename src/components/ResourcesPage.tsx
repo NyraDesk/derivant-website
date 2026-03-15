@@ -22,15 +22,15 @@ const ResourcesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Risorse | Derivant AI — Guide e Approfondimenti</title>
+        <title>Risorse | SlideRun AI — Guide e Approfondimenti</title>
         <meta name="description" content="Guide pratiche su pitch deck, presentazioni per agenzie e strategie AI per la comunicazione professionale." />
-        <link rel="canonical" href="https://www.derivant.ai/resources" />
-        <meta property="og:title" content="Risorse | Derivant AI" />
+        <link rel="canonical" href="https://www.sliderun.ai/resources" />
+        <meta property="og:title" content="Risorse | SlideRun AI" />
         <meta property="og:description" content="Guide pratiche su pitch deck, presentazioni per agenzie e strategie AI per la comunicazione professionale." />
-        <meta property="og:url" content="https://www.derivant.ai/resources" />
+        <meta property="og:url" content="https://www.sliderun.ai/resources" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Risorse | Derivant AI" />
+        <meta name="twitter:title" content="Risorse | SlideRun AI" />
         <meta name="twitter:description" content="Guide pratiche su pitch deck, presentazioni per agenzie e comunicazione professionale." />
       </Helmet>
     <div style={{

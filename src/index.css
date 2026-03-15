@@ -732,7 +732,7 @@ html {
   animation-play-state: paused;
 }
 
-.derivant-outline-text:hover {
+.sliderun-outline-text:hover {
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -792,7 +792,7 @@ html {
     padding: 32px 24px !important;
   }
 
-  .derivant-outline-text {
+  .sliderun-outline-text {
     font-size: clamp(40px, 11vw, 80px) !important;
   }
 

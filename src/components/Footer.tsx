@@ -28,7 +28,7 @@ const Footer = () => {
               margin: 0,
               marginBottom: '16px',
             }}>
-              DERIVANT
+              SLIDERUN
             </p>
             <p style={{
               fontFamily: "'Inter', sans-serif",
@@ -139,7 +139,7 @@ const Footer = () => {
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
               }}>
-                Cos'è Derivant?
+                Cos'è SlideRun?
               </span>
               <span style={{
                 fontFamily: "'Inter', sans-serif",
@@ -178,14 +178,14 @@ const Footer = () => {
               Contatti
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              <a href="mailto:info@derivant.ai" style={{
+              <a href="mailto:info@sliderun.ai" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
                 textDecoration: 'none',
                 transition: 'color 0.2s ease',
               }}>
-                info@derivant.ai
+                info@sliderun.ai
               </a>
               <Link to="/support" style={{
                 fontFamily: "'Inter', sans-serif",
@@ -215,7 +215,7 @@ const Footer = () => {
             color: 'rgba(255, 255, 255, 0.35)',
             margin: 0,
           }}>
-            &copy; 2026 Derivant AI. Tutti i diritti riservati.
+            &copy; 2026 SlideRun AI. Tutti i diritti riservati.
           </p>
           <div style={{
             display: 'flex',

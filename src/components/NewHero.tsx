@@ -161,17 +161,17 @@ const NewHero = () => {
   return (
     <>
       <Helmet>
-        <title>Derivant AI — Accelera la produzione delle tue presentazioni</title>
-        <meta name="description" content="Derivant trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Un motore intelligente che automatizza la produzione e garantisce coerenza in ogni slide." />
-        <meta name="keywords" content="presentazioni AI, generare slide, presentazioni automatiche, AI presentation maker, pitch deck AI, Derivant, presentation operating system" />
-        <link rel="canonical" href="https://www.derivant.ai/" />
-        <meta property="og:title" content="Derivant AI — Accelera la produzione delle tue presentazioni" />
-        <meta property="og:description" content="Derivant trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Automatizza la produzione e garantisce coerenza in ogni slide." />
-        <meta property="og:url" content="https://www.derivant.ai/" />
+        <title>SlideRun AI — Accelera la produzione delle tue presentazioni</title>
+        <meta name="description" content="SlideRun trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Un motore intelligente che automatizza la produzione e garantisce coerenza in ogni slide." />
+        <meta name="keywords" content="presentazioni AI, generare slide, presentazioni automatiche, AI presentation maker, pitch deck AI, SlideRun, presentation operating system" />
+        <link rel="canonical" href="https://www.sliderun.ai/" />
+        <meta property="og:title" content="SlideRun AI — Accelera la produzione delle tue presentazioni" />
+        <meta property="og:description" content="SlideRun trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Automatizza la produzione e garantisce coerenza in ogni slide." />
+        <meta property="og:url" content="https://www.sliderun.ai/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Derivant AI — Accelera la produzione delle tue presentazioni" />
-        <meta name="twitter:description" content="Derivant trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Automatizza la produzione e garantisce coerenza in ogni slide." />
+        <meta name="twitter:title" content="SlideRun AI — Accelera la produzione delle tue presentazioni" />
+        <meta name="twitter:description" content="SlideRun trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Automatizza la produzione e garantisce coerenza in ogni slide." />
       </Helmet>
 
       {/* Floating Navigation */}
@@ -220,7 +220,7 @@ const NewHero = () => {
           Piani
         </a>
         <a
-          href="https://app.derivant.ai"
+          href="https://app.sliderun.ai"
           style={{
             fontFamily: "'Space Mono', monospace",
             fontSize: '13px',
@@ -302,11 +302,11 @@ const NewHero = () => {
           animation: 'heroFadeUp 0.8s ease forwards',
           animationDelay: '0.6s',
         }}>
-          Derivant trasforma testi, documenti e idee<br />in presentazioni strutturate e pronte alla consegna.<br />Un motore intelligente che automatizza la produzione<br />e garantisce coerenza in ogni slide.
+          SlideRun trasforma testi, documenti e idee<br />in presentazioni strutturate e pronte alla consegna.<br />Un motore intelligente che automatizza la produzione<br />e garantisce coerenza in ogni slide.
         </span>
         {/* CTA Button */}
         <a
-          href="https://app.derivant.ai"
+          href="https://app.sliderun.ai"
           className="glass-nav hero-cta"
           style={{
             opacity: 0,
@@ -361,10 +361,10 @@ const NewHero = () => {
             overflow: 'hidden',
           }}>
             <VideoComponent
-              src="/VIDEO/derivant-linkedin.webm"
-              title="Derivant AI - Presentation Builder Demo"
-              description="Scopri come Derivant trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck."
-              thumbnailUrl="/VIDEO/derivant-demo-thumbnail.png"
+              src="/VIDEO/sliderun-linkedin.webm"
+              title="SlideRun AI - Presentation Builder Demo"
+              description="Scopri come SlideRun trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck."
+              thumbnailUrl="/VIDEO/sliderun-demo-thumbnail.png"
               duration="PT1M"
               uploadDate="2026-01-27T00:00:00+01:00"
               autoPlay={true}
@@ -534,7 +534,7 @@ const NewHero = () => {
             </div>
             <div className="presentation-cta-wrapper" style={{ marginTop: '12px' }}>
               <a
-                href="https://app.derivant.ai"
+                href="https://app.sliderun.ai"
                 className="glass-nav presentation-cta"
                 style={{
                   fontFamily: "'Space Mono', monospace",
@@ -569,10 +569,10 @@ const NewHero = () => {
             transition: 'opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s',
           }}>
             <VideoComponent
-              src="/VIDEO/derivant-demo.webm"
-              title="Derivant AI - Presentation Builder Demo"
-              description="Scopri come Derivant trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck."
-              thumbnailUrl="/VIDEO/derivant-demo-thumbnail.png"
+              src="/VIDEO/sliderun-demo.webm"
+              title="SlideRun AI - Presentation Builder Demo"
+              description="Scopri come SlideRun trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck."
+              thumbnailUrl="/VIDEO/sliderun-demo-thumbnail.png"
               duration="PT45S"
               uploadDate="2026-01-27T00:00:00+01:00"
               autoPlay={true}
@@ -836,24 +836,24 @@ const NewHero = () => {
           width: 'max-content',
         }}>
           {[
-            { src: '/gallery/slide-1.webp', alt: 'Brand Launch — slide presentazione professionale generata da Derivant AI' },
+            { src: '/gallery/slide-1.webp', alt: 'Brand Launch — slide presentazione professionale generata da SlideRun AI' },
             { src: '/gallery/slide-2.webp', alt: 'Market Data — slide con grafici e statistiche generate da AI' },
-            { src: '/gallery/slide-3.webp', alt: 'Slide investimento con layout professionale Derivant' },
+            { src: '/gallery/slide-3.webp', alt: 'Slide investimento con layout professionale SlideRun' },
             { src: '/gallery/slide-4.webp', alt: 'Campagne marketing — slide aziendale generata con AI' },
             { src: '/gallery/slide-5.webp', alt: 'Red Bull case study — presentazione AI con dati reali' },
-            { src: '/gallery/slide-6.webp', alt: 'Slide minimalista con layout pulito generato da Derivant' },
+            { src: '/gallery/slide-6.webp', alt: 'Slide minimalista con layout pulito generato da SlideRun' },
             { src: '/gallery/slide-7.webp', alt: 'Fashion references — moodboard AI per brand strategy' },
             { src: '/gallery/slide-8.webp', alt: 'Sculptural Forms — slide creativa con design AI' },
-            { src: '/gallery/slide-9.webp', alt: 'The Aesthetic — slide editoriale generata con Derivant AI' },
+            { src: '/gallery/slide-9.webp', alt: 'The Aesthetic — slide editoriale generata con SlideRun AI' },
             { src: '/gallery/slide-1.webp', alt: 'Brand Launch — template presentazione AI per startup' },
             { src: '/gallery/slide-2.webp', alt: 'Market Data — pitch deck con dati automatizzati' },
             { src: '/gallery/slide-3.webp', alt: 'Slide investimento — presentazione professionale AI' },
-            { src: '/gallery/slide-4.webp', alt: 'Campagne — slide aziendale automatizzata con Derivant' },
+            { src: '/gallery/slide-4.webp', alt: 'Campagne — slide aziendale automatizzata con SlideRun' },
             { src: '/gallery/slide-5.webp', alt: 'Red Bull — presentazione AI pronta alla consegna' },
             { src: '/gallery/slide-6.webp', alt: 'Layout minimalista — slide AI per consulenti' },
             { src: '/gallery/slide-7.webp', alt: 'Fashion moodboard — presentazione creativa AI' },
             { src: '/gallery/slide-8.webp', alt: 'Design AI — slide con layout strutturato e coerente' },
-            { src: '/gallery/slide-9.webp', alt: 'Editoriale — presentazione automatica con Derivant AI' },
+            { src: '/gallery/slide-9.webp', alt: 'Editoriale — presentazione automatica con SlideRun AI' },
           ].map((item, i) => (
             <div key={i} style={{
               width: '720px',
@@ -1066,7 +1066,7 @@ const NewHero = () => {
           </div>
         </div>
         <a
-          href="https://calendly.com/derivant/new-meeting"
+          href="https://calendly.com/sliderun/new-meeting"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -1258,7 +1258,7 @@ const NewHero = () => {
                 / month
               </span>
             </div>
-            <a href="https://app.derivant.ai" style={{
+            <a href="https://app.sliderun.ai" style={{
               textDecoration: 'none',
               marginBottom: '32px',
               display: 'block',
@@ -1322,7 +1322,7 @@ const NewHero = () => {
             Cancella quando vuoi. Senza domande.
           </p>
           <a
-            href="https://app.derivant.ai"
+            href="https://app.sliderun.ai"
             style={{
               display: 'inline-block',
               marginTop: '32px',
@@ -1352,7 +1352,7 @@ const NewHero = () => {
         </div>
       </div>
 
-      {/* === DERIVANT OUTLINE TEXT === */}
+      {/* === SLIDERUN OUTLINE TEXT === */}
       <div style={{
         width: '100%',
         marginTop: '120px',
@@ -1362,7 +1362,7 @@ const NewHero = () => {
         padding: '0 24px',
       }}>
         <div
-          className="derivant-outline-text"
+          className="sliderun-outline-text"
           aria-hidden="true"
           style={{
             fontFamily: "'Syne', sans-serif",
@@ -1385,7 +1385,7 @@ const NewHero = () => {
             transform: 'scaleX(0.92)',
           }}
         >
-          DERIVANT
+          SLIDERUN
         </div>
       </div>
 
@@ -1418,7 +1418,7 @@ const NewHero = () => {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
           {[
             {
-              q: 'Come funziona la generazione di presentazioni con Derivant?',
+              q: 'Come funziona la generazione di presentazioni con SlideRun?',
               a: 'Inserisci un brief o un documento — l\'AI analizza il contenuto, crea un outline logico, ricerca dati reali dal web e genera un design professionale rispettando le regole d\'oro della composizione grafica.',
             },
             {

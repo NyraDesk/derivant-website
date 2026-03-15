@@ -32,9 +32,9 @@ const PrivacyPage = () => {
   return (
     <div style={{ minHeight: '100vh', background: '#0d0d0f' }}>
       <Helmet>
-        <title>Privacy Policy | Derivant AI</title>
-        <meta name="description" content="Privacy Policy for Derivant AI. Learn how we collect, use, and protect your data." />
-        <link rel="canonical" href="https://www.derivant.ai/privacy" />
+        <title>Privacy Policy | SlideRun AI</title>
+        <meta name="description" content="Privacy Policy for SlideRun AI. Learn how we collect, use, and protect your data." />
+        <link rel="canonical" href="https://www.sliderun.ai/privacy" />
       </Helmet>
 
       <section style={{ paddingTop: '160px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
@@ -63,7 +63,7 @@ const PrivacyPage = () => {
           </p>
 
           <p style={bodyText}>
-            This Privacy Policy describes how Derivant ("we", "us", or "our"), operated through the website derivant.ai and the Derivant PowerPoint Add-in, collects, uses, and protects your personal data. We are committed to protecting your privacy in compliance with the General Data Protection Regulation (GDPR) and applicable data protection laws.
+            This Privacy Policy describes how SlideRun ("we", "us", or "our"), operated through the website sliderun.ai and the SlideRun PowerPoint Add-in, collects, uses, and protects your personal data. We are committed to protecting your privacy in compliance with the General Data Protection Regulation (GDPR) and applicable data protection laws.
           </p>
 
           <p style={bodyText}>
@@ -76,9 +76,9 @@ const PrivacyPage = () => {
             The data controller responsible for your personal data is:
           </p>
           <p style={bodyText}>
-            <strong style={{ color: '#fff' }}>Derivant</strong><br />
-            Website: derivant.ai<br />
-            Email: <a href="mailto:info@derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@derivant.ai</a>
+            <strong style={{ color: '#fff' }}>SlideRun</strong><br />
+            Website: sliderun.ai<br />
+            Email: <a href="mailto:info@sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@sliderun.ai</a>
           </p>
 
           {/* 2. Data We Collect */}
@@ -110,7 +110,7 @@ const PrivacyPage = () => {
 
           <h3 style={{ ...sectionTitle, fontSize: '17px', marginTop: '24px' }}>2.4 PowerPoint Add-in Data</h3>
           <p style={bodyText}>
-            When you use the Derivant PowerPoint Add-in, the add-in reads slide content (text, tables, notes) from your active presentation to provide AI-powered features such as translation, content editing, and slide generation. This content is sent to our servers for AI processing and is not stored beyond the duration of the request.
+            When you use the SlideRun PowerPoint Add-in, the add-in reads slide content (text, tables, notes) from your active presentation to provide AI-powered features such as translation, content editing, and slide generation. This content is sent to our servers for AI processing and is not stored beyond the duration of the request.
           </p>
 
           <h3 style={{ ...sectionTitle, fontSize: '17px', marginTop: '24px' }}>2.5 Payment Information</h3>
@@ -190,7 +190,7 @@ const PrivacyPage = () => {
             <li style={{ marginBottom: '8px' }}><strong style={{ color: '#fff' }}>Right to withdraw consent:</strong> Where processing is based on consent, you may withdraw it at any time</li>
           </ul>
           <p style={bodyText}>
-            To exercise any of these rights, please contact us at <a href="mailto:info@derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@derivant.ai</a>. We will respond to your request within 30 days.
+            To exercise any of these rights, please contact us at <a href="mailto:info@sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@sliderun.ai</a>. We will respond to your request within 30 days.
           </p>
 
           {/* 9. Data Security */}
@@ -208,7 +208,7 @@ const PrivacyPage = () => {
           {/* 11. Children */}
           <h2 style={sectionTitle}>11. Children's Privacy</h2>
           <p style={bodyText}>
-            Our service is not directed to individuals under the age of 16. We do not knowingly collect personal data from children. If you believe we have inadvertently collected data from a child, please contact us at <a href="mailto:info@derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@derivant.ai</a> and we will promptly delete it.
+            Our service is not directed to individuals under the age of 16. We do not knowingly collect personal data from children. If you believe we have inadvertently collected data from a child, please contact us at <a href="mailto:info@sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@sliderun.ai</a> and we will promptly delete it.
           </p>
 
           {/* 12. Changes */}
@@ -223,8 +223,8 @@ const PrivacyPage = () => {
             If you have questions or concerns about this Privacy Policy or our data practices, please contact us:
           </p>
           <p style={bodyText}>
-            Email: <a href="mailto:info@derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@derivant.ai</a><br />
-            Website: <a href="https://www.derivant.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>derivant.ai</a>
+            Email: <a href="mailto:info@sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>info@sliderun.ai</a><br />
+            Website: <a href="https://www.sliderun.ai" style={{ color: '#B8A4C9', textDecoration: 'none' }}>sliderun.ai</a>
           </p>
           <p style={bodyText}>
             You also have the right to lodge a complaint with a supervisory authority, in particular in the EU Member State of your habitual residence, place of work, or place of the alleged infringement.
