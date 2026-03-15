@@ -407,6 +407,19 @@ const InsightArticlePage = () => {
             "description": article.excerpt
           })}
         </script>
+
+        {/* BreadcrumbList */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sliderun.ai" },
+              { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://www.sliderun.ai/insights" },
+              { "@type": "ListItem", "position": 3, "name": article.title, "item": `https://www.sliderun.ai/insights/${article.slug}` }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <style>{`

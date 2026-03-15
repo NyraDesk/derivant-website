@@ -161,17 +161,17 @@ const NewHero = () => {
   return (
     <>
       <Helmet>
-        <title>SlideRun AI — Accelera la produzione delle tue presentazioni</title>
-        <meta name="description" content="SlideRun trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Un motore intelligente che automatizza la produzione e garantisce coerenza in ogni slide." />
+        <title>SlideRun AI | Crea Presentazioni con l'AI — Pitch Deck e Slide Professionali</title>
+        <meta name="description" content="SlideRun genera presentazioni professionali in pochi minuti: carica un brief, ottieni pitch deck, strategy deck e moodboard pronti alla consegna. Prova gratis." />
         <meta name="keywords" content="presentazioni AI, generare slide, presentazioni automatiche, AI presentation maker, pitch deck AI, SlideRun, presentation operating system" />
         <link rel="canonical" href="https://www.sliderun.ai/" />
-        <meta property="og:title" content="SlideRun AI — Accelera la produzione delle tue presentazioni" />
-        <meta property="og:description" content="SlideRun trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Automatizza la produzione e garantisce coerenza in ogni slide." />
+        <meta property="og:title" content="SlideRun AI | Crea Presentazioni con l'AI — Pitch Deck e Slide Professionali" />
+        <meta property="og:description" content="SlideRun genera presentazioni professionali in pochi minuti: carica un brief, ottieni pitch deck, strategy deck e moodboard pronti alla consegna. Prova gratis." />
         <meta property="og:url" content="https://www.sliderun.ai/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="SlideRun AI — Accelera la produzione delle tue presentazioni" />
-        <meta name="twitter:description" content="SlideRun trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Automatizza la produzione e garantisce coerenza in ogni slide." />
+        <meta name="twitter:title" content="SlideRun AI | Crea Presentazioni con l'AI — Pitch Deck e Slide Professionali" />
+        <meta name="twitter:description" content="SlideRun genera presentazioni professionali in pochi minuti: carica un brief, ottieni pitch deck, strategy deck e moodboard pronti alla consegna. Prova gratis." />
       </Helmet>
 
       {/* Floating Navigation */}

@@ -1631,6 +1631,19 @@ const BlogArticlePage = () => {
             "description": article.description
           })}
         </script>
+
+        {/* BreadcrumbList */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sliderun.ai" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.sliderun.ai/blog" },
+              { "@type": "ListItem", "position": 3, "name": article.title, "item": `https://www.sliderun.ai/blog/${articleSlug}` }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="pt-32 pb-24 bg-white min-h-screen">

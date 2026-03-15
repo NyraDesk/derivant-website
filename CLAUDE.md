@@ -12,7 +12,17 @@
 - L'app (editor presentazioni) sta in `/Users/marcoconte/Desktop/NotezAI/`
 - **NON toccare MAI file fuori da questa cartella**
 - **NON aprire, leggere o modificare NULLA in NotezAI**
-- Questo progetto contiene SOLO il sito pubblico: landing page, pricing, blog
+- Questo progetto contiene SOLO il sito pubblico: landing page, pricing, blog, insights
+
+## Struttura Pagine
+- `/` — Landing page (NewHero.tsx)
+- `/plans` — Pricing
+- `/blog` + `/blog/:slug` — Blog Derivant (articoli prodotto/marketing)
+- `/insights` + `/insights/:slug` — Blog personale Marco Conte su AI (contenuti per social/personal branding). Dati articoli in `src/data/insightsArticles.ts`. Link solo nel footer, NO navbar.
+- `/resources` + `/resources/:slug` — Guide e risorse
+- `/privacy` — Privacy Policy (GDPR, per AppSource submission)
+- `/terms` — Terms of Use / EULA (per AppSource submission)
+- `/support` — Support page (FAQ + contatto, per AppSource submission)
 
 ## Regole
 - Rispondere in italiano all'utente
