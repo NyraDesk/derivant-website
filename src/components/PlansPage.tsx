@@ -54,11 +54,13 @@ const PlansPage = () => {
           }}>
 
             {/* Free Plan */}
-            <div className="glass-card" style={{
+            <div style={{
               padding: '40px 32px',
               display: 'flex',
               flexDirection: 'column',
-              background: 'rgba(255, 255, 255, 0.03)',
+              background: 'linear-gradient(160deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)',
+              borderRadius: '16px',
+              border: '1px solid rgba(255,255,255,0.08)',
             }}>
               <h2 style={{
                 fontFamily: "'Inter', sans-serif",
@@ -79,7 +81,7 @@ const PlansPage = () => {
                 marginBottom: '32px',
                 lineHeight: 1.5,
               }}>
-                Perfect for getting started with AI presentations
+                To try AI presentations
               </p>
 
               <div style={{ marginBottom: '32px' }}>
@@ -92,7 +94,7 @@ const PlansPage = () => {
                   €0
                 </span>
                 <span style={{
-                  fontFamily: "'Space Mono', monospace",
+                  fontFamily: "'Inter', sans-serif",
                   fontSize: '16px',
                   fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.5)',
@@ -103,46 +105,67 @@ const PlansPage = () => {
               </div>
 
               <div style={{
-                background: 'rgba(255, 255, 255, 0.08)',
+                background: 'rgba(255, 255, 255, 0.06)',
+                border: '1px solid rgba(255,255,255,0.12)',
                 borderRadius: '12px',
                 padding: '16px',
                 textAlign: 'center',
                 marginBottom: '32px',
               }}>
                 <span style={{
-                  fontFamily: "'Space Mono', monospace",
+                  fontFamily: "'Inter', sans-serif",
                   fontSize: '15px',
-                  fontWeight: 400,
-                  color: 'rgba(255, 255, 255, 0.5)',
+                  fontWeight: 500,
+                  color: 'rgba(255, 255, 255, 0.45)',
                 }}>
-                  Current Plan
+                  Current plan
                 </span>
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                  <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Try AI presentations</span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                  <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>All templates</span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                  <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>PDF export with watermark</span>
-                </div>
+                {['100 credits to start', 'All templates', 'PDF export with watermark'].map((feat) => (
+                  <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <span style={{ color: 'rgba(255, 255, 255, 0.35)', fontSize: '16px' }}>✓</span>
+                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'rgba(255, 255, 255, 0.7)' }}>{feat}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
-            {/* Starter Plan */}
-            <div className="glass-card" style={{
+            {/* Pro Plan */}
+            <div style={{
               padding: '40px 32px',
               display: 'flex',
               flexDirection: 'column',
-              background: 'rgba(255, 255, 255, 0.03)',
+              background: 'linear-gradient(160deg, rgba(176,207,224,0.08) 0%, rgba(255,255,255,0.02) 100%)',
+              borderRadius: '16px',
+              border: '1px solid rgba(176,207,224,0.3)',
               position: 'relative',
             }}>
+              {/* Opening Offer Badge */}
+              <div style={{
+                position: 'absolute',
+                top: '-14px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                background: 'rgba(176,207,224,0.1)',
+                border: '1px solid rgba(176,207,224,0.5)',
+                borderRadius: '8px',
+                padding: '6px 18px',
+                whiteSpace: 'nowrap',
+              }}>
+                <span style={{
+                  fontFamily: "'Space Mono', monospace",
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  color: '#b0cfe0',
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                }}>
+                  Opening offer — first 100 only
+                </span>
+              </div>
+
               <h2 style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '28px',
@@ -150,8 +173,9 @@ const PlansPage = () => {
                 color: '#ffffff',
                 margin: 0,
                 marginBottom: '8px',
+                marginTop: '8px',
               }}>
-                Starter
+                Pro
               </h2>
               <p style={{
                 fontFamily: "'Inter', sans-serif",
@@ -162,20 +186,31 @@ const PlansPage = () => {
                 marginBottom: '32px',
                 lineHeight: 1.5,
               }}>
-                For professionals who need more power
+                For professionals who create regularly
               </p>
 
               <div style={{ marginBottom: '32px' }}>
+                <div style={{ marginBottom: '4px' }}>
+                  <span style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '16px',
+                    fontWeight: 400,
+                    color: 'rgba(255, 255, 255, 0.4)',
+                    textDecoration: 'line-through',
+                  }}>
+                    €12.99
+                  </span>
+                </div>
                 <span style={{
                   fontFamily: "'Space Mono', monospace",
                   fontSize: '48px',
                   fontWeight: 700,
                   color: '#ffffff',
                 }}>
-                  €9
+                  €9.99
                 </span>
                 <span style={{
-                  fontFamily: "'Space Mono', monospace",
+                  fontFamily: "'Inter', sans-serif",
                   fontSize: '16px',
                   fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.5)',
@@ -187,7 +222,7 @@ const PlansPage = () => {
 
               <a href="https://app.sliderun.ai" style={{ textDecoration: 'none', marginBottom: '32px', display: 'block' }}>
                 <div style={{
-                  background: '#3B82F6',
+                  background: 'linear-gradient(135deg, #4ecdc4 0%, #7dd3d8 50%, #b0cfe0 100%)',
                   borderRadius: '12px',
                   padding: '16px',
                   textAlign: 'center',
@@ -195,33 +230,31 @@ const PlansPage = () => {
                   transition: 'all 0.2s ease',
                 }}>
                   <span style={{
-                    fontFamily: "'Space Mono', monospace",
-                    fontSize: '15px',
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '16px',
                     fontWeight: 700,
-                    color: '#ffffff',
+                    color: '#0d0d0f',
                   }}>
-                    Upgrade to Starter
+                    Upgrade to Pro
                   </span>
                 </div>
               </a>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                  <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>400 credits/month</span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                  <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Advanced AI images</span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                  <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>PDF export without watermark</span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                  <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Priority support</span>
-                </div>
+                {[
+                  '400 credits / month',
+                  'Advanced AI models — Opus 4.5',
+                  'All premium templates',
+                  'Brand Kit — logo, colors, fonts',
+                  'Editable PowerPoint export',
+                  'PDF export without watermark',
+                  'Priority support',
+                ].map((feat) => (
+                  <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <span style={{ color: '#b0cfe0', fontSize: '16px' }}>✓</span>
+                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'rgba(255, 255, 255, 0.85)' }}>{feat}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -230,21 +263,10 @@ const PlansPage = () => {
           {/* Footer Notes */}
           <div style={{ textAlign: 'center', marginTop: '60px' }}>
             <p style={{
-              fontFamily: "'Space Mono', monospace",
-              fontSize: '13px',
-              fontWeight: 400,
-              color: 'rgba(255, 255, 255, 0.4)',
-              margin: 0,
-              marginBottom: '12px',
-              fontStyle: 'italic',
-            }}>
-              * Unlimited AI creations refer to daily use within fair use. Premium features (Agent, advanced models) require credits.
-            </p>
-            <p style={{
-              fontFamily: "'Space Mono', monospace",
+              fontFamily: "'Inter', sans-serif",
               fontSize: '14px',
               fontWeight: 400,
-              color: 'rgba(255, 255, 255, 0.5)',
+              color: 'rgba(255, 255, 255, 0.45)',
               margin: 0,
             }}>
               Cancel anytime. No questions asked.
