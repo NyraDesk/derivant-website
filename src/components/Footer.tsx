@@ -18,17 +18,12 @@ const Footer = () => {
 
           {/* Column 1: Brand & Vision */}
           <div>
-            <p style={{
-              fontFamily: "'Syne', sans-serif",
-              fontWeight: 800,
-              fontSize: '18px',
-              letterSpacing: '-0.03em',
-              color: '#fff',
-              textTransform: 'uppercase',
-              margin: 0,
-              marginBottom: '16px',
-            }}>
-              SLIDERUN
+            <p style={{ margin: 0, marginBottom: '16px' }}>
+              <span style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: '18px', letterSpacing: '-0.01em' }}>
+                <span style={{ color: '#ffffff' }}>Slide</span>
+                <span style={{ color: '#b0cfe0' }}>Run</span>
+                <span style={{ color: 'rgba(255,255,255,0.82)', fontWeight: 400 }}>.ai</span>
+              </span>
             </p>
             <p style={{
               fontFamily: "'Inter', sans-serif",
@@ -215,7 +210,7 @@ const Footer = () => {
             color: 'rgba(255, 255, 255, 0.35)',
             margin: 0,
           }}>
-            &copy; 2026 SlideRun AI. Tutti i diritti riservati.
+            &copy; 2026 <span style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: '-0.01em' }}><span style={{ color: '#ffffff' }}>Slide</span><span style={{ color: '#b0cfe0' }}>Run</span><span style={{ color: 'rgba(255,255,255,0.82)', fontWeight: 400 }}>.ai</span></span>. Tutti i diritti riservati.
           </p>
           <div style={{
             display: 'flex',

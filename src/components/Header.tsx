@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
+const BrandName = ({ fontSize = '18px' }: { fontSize?: string }) => (
+  <span style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize, letterSpacing: '-0.01em' }}>
+    <span style={{ color: '#ffffff' }}>Slide</span>
+    <span style={{ color: '#b0cfe0' }}>Run</span>
+    <span style={{ color: 'rgba(255,255,255,0.82)', fontWeight: 400 }}>.ai</span>
+  </span>
+);
+
 const Header = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
@@ -21,9 +29,7 @@ const Header = () => {
             <div className="flex items-center flex-shrink-0">
               <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
                 <img src="/icon/sliderun-icon.png" alt="SlideRun" style={{ width: '28px', height: '28px', borderRadius: '6px' }} />
-                <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: '18px', letterSpacing: '-0.03em', color: '#fff', textTransform: 'uppercase' }}>
-                  SLIDERUN
-                </span>
+                <BrandName />
               </Link>
             </div>
 
@@ -79,9 +85,7 @@ const Header = () => {
             <div className="flex items-center flex-shrink-0">
               <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
                 <img src="/icon/sliderun-icon.png" alt="SlideRun" style={{ width: '28px', height: '28px', borderRadius: '6px' }} />
-                <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: '18px', letterSpacing: '-0.03em', color: '#fff', textTransform: 'uppercase' }}>
-                  SLIDERUN
-                </span>
+                <BrandName />
               </Link>
             </div>
 
