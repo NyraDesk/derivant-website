@@ -307,7 +307,7 @@ const NewHero = () => {
         {/* CTA Button */}
         <a
           href="https://app.sliderun.ai"
-          className="glass-nav hero-cta"
+          className="hero-cta"
           style={{
             opacity: 0,
             animation: 'heroFadeUp 0.8s ease forwards',
@@ -318,20 +318,20 @@ const NewHero = () => {
             fontFamily: "'Space Mono', monospace",
             fontSize: '15px',
             fontWeight: 400,
-            color: 'rgba(255, 255, 255, 0.9)',
+            color: '#ffffff',
             letterSpacing: '0.04em',
             textTransform: 'uppercase',
             textDecoration: 'none',
             cursor: 'pointer',
             transition: 'all 0.2s ease',
+            background: 'linear-gradient(135deg, #2a3a6b 0%, #3d5a9e 100%)',
+            border: '1px solid rgba(100, 150, 220, 0.35)',
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.12)';
-            e.currentTarget.style.color = '#ffffff';
+            e.currentTarget.style.opacity = '0.9';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.background = '';
-            e.currentTarget.style.color = 'rgba(255, 255, 255, 0.9)';
+            e.currentTarget.style.opacity = '1';
           }}
         >
           Provalo gratis →
@@ -535,7 +535,7 @@ const NewHero = () => {
             <div className="presentation-cta-wrapper" style={{ marginTop: '12px' }}>
               <a
                 href="https://app.sliderun.ai"
-                className="glass-nav presentation-cta"
+                className="presentation-cta"
                 style={{
                   fontFamily: "'Space Mono', monospace",
                   fontSize: '14px',
@@ -549,6 +549,8 @@ const NewHero = () => {
                   display: 'inline-block',
                   transition: 'all 0.2s ease',
                   whiteSpace: 'nowrap',
+                  background: 'linear-gradient(135deg, #2a3a6b 0%, #3d5a9e 100%)',
+                  border: '1px solid rgba(100, 150, 220, 0.35)',
                 }}
               >
                 Provalo gratis →

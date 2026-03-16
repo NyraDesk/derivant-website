@@ -69,10 +69,10 @@ const Header = () => {
             <div className="flex-shrink-0">
               <a
                 href="https://app.sliderun.ai"
-                className="bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 hover:scale-105 transition-all duration-200 border border-white/20"
-                style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
+                className="text-white px-6 py-2 rounded-full hover:scale-105 transition-all duration-200"
+                style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em', background: 'linear-gradient(135deg, #2a3a6b 0%, #3d5a9e 100%)', border: '1px solid rgba(100, 150, 220, 0.35)' }}
               >
-                Try it free →
+                Provalo gratis →
               </a>
             </div>
           </div>
@@ -148,9 +148,10 @@ const Header = () => {
                   <a
                     href="https://app.sliderun.ai"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="w-full bg-white/10 text-white px-6 py-4 rounded-full font-medium text-base hover:bg-white/20 transition-all duration-200 block text-center border border-white/20"
+                    className="w-full text-white px-6 py-4 rounded-full font-medium text-base hover:opacity-90 transition-all duration-200 block text-center"
+                    style={{ background: 'linear-gradient(135deg, #2a3a6b 0%, #3d5a9e 100%)', border: '1px solid rgba(100, 150, 220, 0.35)' }}
                   >
-                    Try it free →
+                    Provalo gratis →
                   </a>
                 </div>
               </div>
