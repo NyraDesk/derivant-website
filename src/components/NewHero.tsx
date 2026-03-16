@@ -1365,27 +1365,21 @@ const NewHero = () => {
           className="sliderun-outline-text"
           aria-hidden="true"
           style={{
-            fontFamily: "'Syne', sans-serif",
+            fontFamily: "'DM Sans', sans-serif",
             fontSize: 'clamp(80px, 14vw, 200px)',
-            fontWeight: 800,
-            backgroundImage: 'radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.2) 0%, transparent 50%), radial-gradient(ellipse at 70% 80%, rgba(0,0,0,0.25) 0%, transparent 50%), url(/sfondo.webp)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundClip: 'text',
-            WebkitBackgroundClip: 'text',
-            color: 'transparent',
-            opacity: 0.7,
-            letterSpacing: '-0.06em',
+            fontWeight: 700,
+            letterSpacing: '-0.01em',
             margin: '0 auto',
             lineHeight: 1,
             cursor: 'default',
             userSelect: 'none',
-            textTransform: 'uppercase',
             textAlign: 'center',
-            transform: 'scaleX(0.92)',
+            opacity: 0.7,
           }}
         >
-          SLIDERUN
+          <span style={{ color: '#ffffff' }}>Slide</span>
+          <span style={{ color: '#b0cfe0' }}>Run</span>
+          <span style={{ color: 'rgba(255,255,255,0.82)', fontWeight: 400 }}>.ai</span>
         </div>
       </div>
 
