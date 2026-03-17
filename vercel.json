@@ -41,5 +41,8 @@
       "permanent": true
     }
   ],
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/((?!assets|VIDEO|gallery|icon|blog-ai|public).*)", "destination": "/index.html" }
+  ]
 }
