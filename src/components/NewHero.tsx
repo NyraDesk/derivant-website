@@ -430,7 +430,7 @@ const NewHero = () => {
       <div className="corner-frame" style={{
         width: '100%',
         maxWidth: '1200px',
-        marginTop: '180px',
+        marginTop: '80px',
         padding: '10px 60px 80px',
         borderRadius: '20px',
         position: 'relative',
