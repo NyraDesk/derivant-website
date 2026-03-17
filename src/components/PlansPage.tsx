@@ -262,7 +262,7 @@ const PlansPage = () => {
                 </span>
               </div>
 
-              <a href="https://calendly.com/sliderun/new-meeting" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', marginBottom: '32px', display: 'block' }}>
+              <a href="mailto:info@derivant.ai?subject=Enterprise%20Demo%20Request" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', marginBottom: '32px', display: 'block' }}>
                 <div style={{
                   background: 'transparent',
                   border: '1px solid rgba(255,255,255,0.25)',

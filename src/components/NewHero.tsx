@@ -953,7 +953,7 @@ const NewHero = () => {
           </div>
         </div>
         <a
-          href="https://calendly.com/sliderun/new-meeting"
+          href="mailto:info@derivant.ai?subject=Enterprise%20Demo%20Request"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -1238,7 +1238,7 @@ const NewHero = () => {
                 Custom
               </span>
             </div>
-            <a href="https://calendly.com/sliderun/new-meeting" target="_blank" rel="noopener noreferrer" style={{
+            <a href="mailto:info@derivant.ai?subject=Enterprise%20Demo%20Request" target="_blank" rel="noopener noreferrer" style={{
               textDecoration: 'none',
               marginBottom: '32px',
               display: 'block',
