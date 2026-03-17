@@ -10,6 +10,7 @@ const serverDir = path.resolve(__dirname, '../dist/server');
 const routes = [
   '/',
   '/plans',
+  '/enterprise',
   '/blog',
   '/blog/privacy-app-note-local-first',
   '/blog/derivant-vs-gamma-powerpoint-2026',
