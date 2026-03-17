@@ -101,23 +101,25 @@ const PlansPage = () => {
                 </span>
               </div>
 
-              <div style={{
-                background: 'rgba(255, 255, 255, 0.06)',
-                border: '1px solid rgba(255,255,255,0.12)',
+              <a href="https://app.sliderun.ai" style={{
+                textDecoration: 'none',
+                marginBottom: '32px',
+                display: 'block',
+                background: 'linear-gradient(135deg, #4ecdc4 0%, #7dd3d8 50%, #b0cfe0 100%)',
                 borderRadius: '12px',
                 padding: '16px',
                 textAlign: 'center',
-                marginBottom: '32px',
+                transition: 'all 0.2s ease',
               }}>
                 <span style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '15px',
-                  fontWeight: 500,
-                  color: 'rgba(255, 255, 255, 0.45)',
+                  fontSize: '16px',
+                  fontWeight: 700,
+                  color: '#0d0d0f',
                 }}>
-                  Piano attuale
+                  Prova gratis
                 </span>
-              </div>
+              </a>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 {['100 crediti — 2 presentazioni complete', 'Tutti i template', 'Export PDF con watermark'].map((feat) => (

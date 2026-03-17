@@ -1064,22 +1064,25 @@ const NewHero = () => {
                 / month
               </span>
             </div>
-            <div style={{
-              background: 'rgba(255, 255, 255, 0.08)',
+            <a href="https://app.sliderun.ai" style={{
+              textDecoration: 'none',
+              marginBottom: '32px',
+              display: 'block',
+              background: 'linear-gradient(135deg, #4ecdc4 0%, #7dd3d8 50%, #b0cfe0 100%)',
               borderRadius: '12px',
               padding: '16px',
               textAlign: 'center',
-              marginBottom: '32px',
+              transition: 'all 0.2s ease',
             }}>
               <span style={{
                 fontFamily: "'Space Mono', monospace",
                 fontSize: '15px',
-                fontWeight: 400,
-                color: 'rgba(255, 255, 255, 0.5)',
+                fontWeight: 700,
+                color: '#0d0d0f',
               }}>
-                Piano attuale
+                Prova gratis
               </span>
-            </div>
+            </a>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
@@ -1123,32 +1126,34 @@ const NewHero = () => {
             }}>
               Per professionisti che creano ogni giorno
             </p>
-            <div style={{ marginBottom: '32px', display: 'flex', alignItems: 'baseline', gap: '12px' }}>
-              <span className="mobile-price" style={{
-                fontFamily: "'Space Mono', monospace",
-                fontSize: '48px',
-                fontWeight: 700,
-                color: '#ffffff',
-              }}>
-                €9.99
-              </span>
-              <span style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '16px',
-                fontWeight: 400,
-                color: 'rgba(255, 255, 255, 0.4)',
-                textDecoration: 'line-through',
-              }}>
-                €12.99
-              </span>
-              <span style={{
-                fontFamily: "'Space Mono', monospace",
-                fontSize: '16px',
-                fontWeight: 400,
-                color: 'rgba(255, 255, 255, 0.5)',
-              }}>
-                / month
-              </span>
+            <div style={{ marginBottom: '32px' }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', flexWrap: 'nowrap' }}>
+                <span className="mobile-price" style={{
+                  fontFamily: "'Space Mono', monospace",
+                  fontSize: '48px',
+                  fontWeight: 700,
+                  color: '#ffffff',
+                }}>
+                  €9.99
+                </span>
+                <span style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '14px',
+                  fontWeight: 400,
+                  color: 'rgba(255, 255, 255, 0.4)',
+                  textDecoration: 'line-through',
+                }}>
+                  €12.99
+                </span>
+                <span style={{
+                  fontFamily: "'Space Mono', monospace",
+                  fontSize: '14px',
+                  fontWeight: 400,
+                  color: 'rgba(255, 255, 255, 0.5)',
+                }}>
+                  / mese
+                </span>
+              </div>
             </div>
             <a href="https://app.sliderun.ai" style={{
               textDecoration: 'none',
@@ -1325,23 +1330,14 @@ const NewHero = () => {
               marginTop: '32px',
               fontFamily: "'Space Mono', monospace",
               fontSize: '14px',
-              fontWeight: 400,
-              color: '#ffffff',
+              fontWeight: 700,
+              color: '#0d0d0f',
               letterSpacing: '0.04em',
               textDecoration: 'none',
               padding: '14px 32px',
               borderRadius: '100px',
-              border: '1px solid rgba(255, 255, 255, 0.25)',
-              background: 'transparent',
+              background: 'linear-gradient(135deg, #4ecdc4 0%, #7dd3d8 50%, #b0cfe0 100%)',
               transition: 'all 0.2s ease',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
-              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.4)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'transparent';
-              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.25)';
             }}
           >
             Inizia a creare →
