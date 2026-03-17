@@ -70,7 +70,7 @@ const Footer = () => {
               }}>
                 {t.header.plans}
               </Link>
-              <Link to={localePath('/blog')} style={{
+              <Link to="/blog" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
@@ -79,7 +79,7 @@ const Footer = () => {
               }}>
                 Blog
               </Link>
-              <Link to={localePath('/resources')} style={{
+              <Link to="/resources" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
@@ -106,7 +106,7 @@ const Footer = () => {
               }}>
                 AI per Agenzie
               </Link>
-              <Link to={localePath('/insights')} style={{
+              <Link to="/insights" style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
