@@ -7,11 +7,11 @@
     <loc>https://sliderun.ai/</loc>
     <video:video>
       <video:thumbnail_loc>https://sliderun.ai/VIDEO/sliderun-demo-thumbnail.png</video:thumbnail_loc>
-      <video:title>SlideRun AI - Presentation Builder Demo</video:title>
-      <video:description>Scopri come SlideRun trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck.</video:description>
+      <video:title>SlideRun AI — Presentation Operating System Demo</video:title>
+      <video:description>See how SlideRun works: automatic web research, brand kit integration, and AI-powered slide generation. From brief to professional presentation in minutes.</video:description>
       <video:content_loc>https://sliderun.ai/VIDEO/sliderun-demo.webm</video:content_loc>
-      <video:duration>60</video:duration>
-      <video:publication_date>2026-01-27</video:publication_date>
+      <video:duration>23</video:duration>
+      <video:publication_date>2026-03-17</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:tag>AI presentation</video:tag>
       <video:tag>pitch deck</video:tag>
@@ -34,6 +34,75 @@
       <video:tag>design workflow</video:tag>
       <video:tag>AI design</video:tag>
       <video:tag>presentation design</video:tag>
+      <video:tag>SlideRun</video:tag>
+    </video:video>
+  </url>
+
+  <!-- LinkedIn Intro Video -->
+  <url>
+    <loc>https://sliderun.ai/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://sliderun.ai/VIDEO/sliderun-demo-thumbnail.png</video:thumbnail_loc>
+      <video:title>SlideRun AI - AI Presentation Builder for Teams</video:title>
+      <video:description>SlideRun generates professional presentations with AI. Web research, brand kit, and high-end slide design — from idea to pitch deck in seconds.</video:description>
+      <video:content_loc>https://sliderun.ai/VIDEO/sliderun-hero.webm</video:content_loc>
+      <video:duration>22</video:duration>
+      <video:publication_date>2026-03-17</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:tag>AI presentation builder</video:tag>
+      <video:tag>pitch deck generator</video:tag>
+      <video:tag>SlideRun AI</video:tag>
+      <video:tag>presentation automation</video:tag>
+    </video:video>
+  </url>
+
+  <!-- Canvas Generate Demo -->
+  <url>
+    <loc>https://sliderun.ai/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://sliderun.ai/VIDEO/sliderun-demo-thumbnail.png</video:thumbnail_loc>
+      <video:title>SlideRun AI — Generate Images with AI</video:title>
+      <video:description>Generate professional images and visuals for your presentations directly inside the SlideRun canvas editor.</video:description>
+      <video:content_loc>https://sliderun.ai/VIDEO/canvas/canvas-generate.webm</video:content_loc>
+      <video:duration>11</video:duration>
+      <video:publication_date>2026-03-17</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:tag>AI image generation</video:tag>
+      <video:tag>presentation editor</video:tag>
+      <video:tag>SlideRun</video:tag>
+    </video:video>
+  </url>
+
+  <!-- Canvas Edit Demo -->
+  <url>
+    <loc>https://sliderun.ai/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://sliderun.ai/VIDEO/sliderun-demo-thumbnail.png</video:thumbnail_loc>
+      <video:title>SlideRun AI — Edit Text with AI</video:title>
+      <video:description>Edit and generate text content for your slides using AI directly in the SlideRun canvas editor.</video:description>
+      <video:content_loc>https://sliderun.ai/VIDEO/canvas/canvas-edit.webm</video:content_loc>
+      <video:duration>16</video:duration>
+      <video:publication_date>2026-03-17</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:tag>AI text editing</video:tag>
+      <video:tag>presentation editor</video:tag>
+      <video:tag>SlideRun</video:tag>
+    </video:video>
+  </url>
+
+  <!-- Canvas Customize Demo -->
+  <url>
+    <loc>https://sliderun.ai/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://sliderun.ai/VIDEO/sliderun-demo-thumbnail.png</video:thumbnail_loc>
+      <video:title>SlideRun AI — Customize Your Canvas</video:title>
+      <video:description>Move blocks, resize elements, and customize your slide layout freely in the SlideRun pixel-perfect canvas.</video:description>
+      <video:content_loc>https://sliderun.ai/VIDEO/canvas/canvas-customize.webm</video:content_loc>
+      <video:duration>22</video:duration>
+      <video:publication_date>2026-03-17</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:tag>canvas editor</video:tag>
+      <video:tag>drag and drop</video:tag>
       <video:tag>SlideRun</video:tag>
     </video:video>
   </url>

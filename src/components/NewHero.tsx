@@ -2,6 +2,94 @@ import { useRef, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import VideoComponent from './VideoComponent';
 
+const CANVAS_VIDEOS = [
+  { src: '/VIDEO/canvas/canvas-generate.webm', label: 'Generate' },
+  { src: '/VIDEO/canvas/canvas-edit.webm', label: 'Edit' },
+  { src: '/VIDEO/canvas/canvas-customize.webm', label: 'Customize' },
+];
+
+const CanvasVideoSequence = () => {
+  const [current, setCurrent] = useState(0);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '200px', threshold: 0.1 }
+    );
+    if (containerRef.current) observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible || !videoRef.current) return;
+    const video = videoRef.current;
+    video.load();
+    video.play().catch(() => {});
+  }, [current, isVisible]);
+
+  const handleEnded = () => {
+    setCurrent((prev) => (prev + 1) % CANVAS_VIDEOS.length);
+  };
+
+  return (
+    <div ref={containerRef} className="mobile-canvas-video" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+      <div style={{
+        borderRadius: '20px',
+        overflow: 'hidden',
+        background: '#0a0a0a',
+        border: '0.5px solid rgba(255, 255, 255, 0.08)',
+      }}>
+        {isVisible && (
+          <video
+            ref={videoRef}
+            key={CANVAS_VIDEOS[current].src}
+            muted
+            playsInline
+            preload="metadata"
+            onEnded={handleEnded}
+            style={{ width: '100%', height: 'auto', display: 'block' }}
+            aria-label={`SlideRun canvas demo — ${CANVAS_VIDEOS[current].label}`}
+          >
+            <source src={CANVAS_VIDEOS[current].src} type="video/webm" />
+          </video>
+        )}
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '8px' }}>
+        {CANVAS_VIDEOS.map((v, i) => (
+          <button
+            key={v.label}
+            onClick={() => setCurrent(i)}
+            style={{
+              fontFamily: "'Space Mono', monospace",
+              fontSize: '12px',
+              fontWeight: current === i ? 700 : 400,
+              color: current === i ? '#ffffff' : 'rgba(255,255,255,0.4)',
+              background: current === i ? 'rgba(255,255,255,0.08)' : 'transparent',
+              border: '1px solid',
+              borderColor: current === i ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.06)',
+              borderRadius: '100px',
+              padding: '6px 16px',
+              cursor: 'pointer',
+              transition: 'all 0.2s ease',
+              letterSpacing: '0.04em',
+            }}
+          >
+            {v.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const NewHero = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const galleryRef = useRef<HTMLDivElement>(null);
@@ -361,7 +449,7 @@ const NewHero = () => {
             overflow: 'hidden',
           }}>
             <VideoComponent
-              src="/VIDEO/sliderun-linkedin.webm"
+              src="/VIDEO/sliderun-hero.webm"
               title="SlideRun AI - Presentation Builder Demo"
               description="Scopri come SlideRun trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck."
               thumbnailUrl="/VIDEO/sliderun-demo-thumbnail.png"
@@ -594,224 +682,6 @@ const NewHero = () => {
       </div>
       </div>{/* end corner-frame */}
 
-      {/* === PER CHI È PENSATO === */}
-      <div style={{ textAlign: 'center', marginTop: '72px', marginBottom: '32px' }}>
-        <h2 className="mobile-section-title" style={{
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '36px',
-          fontWeight: 700,
-          color: '#ffffff',
-          letterSpacing: '-0.03em',
-          margin: 0,
-        }}>
-          Per chi è pensato
-        </h2>
-      </div>
-      <div className="cards-grid" style={{
-        width: '100%',
-        maxWidth: '1200px',
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: '24px',
-      }}>
-        <div className="glass-card" style={{
-          padding: '40px 36px',
-        }}>
-          <h3 className="mobile-feature-title" style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '22px',
-            fontWeight: 700,
-            color: '#ffffff',
-            letterSpacing: '-0.02em',
-            margin: 0,
-            marginBottom: '20px',
-          }}>
-            CONSULENTI E FREELANCE
-          </h3>
-          <p className="mobile-feature-desc" style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '16px',
-            fontWeight: 400,
-            color: 'rgba(255, 255, 255, 0.6)',
-            lineHeight: 1.7,
-            margin: 0,
-          }}>
-            Accelera la produzione dei deck per clienti senza perdere struttura, coerenza e qualità.
-          </p>
-        </div>
-
-        <div className="glass-card" style={{
-          padding: '40px 36px',
-        }}>
-          <h3 className="mobile-feature-title" style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '22px',
-            fontWeight: 700,
-            color: '#ffffff',
-            letterSpacing: '-0.02em',
-            margin: 0,
-            marginBottom: '20px',
-          }}>
-            PICCOLI TEAM E STARTUP
-          </h3>
-          <p className="mobile-feature-desc" style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '16px',
-            fontWeight: 400,
-            color: 'rgba(255, 255, 255, 0.6)',
-            lineHeight: 1.7,
-            margin: 0,
-          }}>
-            Mantieni coerenza visiva con il brand kit personalizzabile, anche con volumi medi di presentazioni.
-          </p>
-        </div>
-
-        <div className="glass-card" style={{
-          padding: '40px 36px',
-        }}>
-          <h3 className="mobile-feature-title" style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '22px',
-            fontWeight: 700,
-            color: '#ffffff',
-            letterSpacing: '-0.02em',
-            margin: 0,
-            marginBottom: '20px',
-          }}>
-            TEAM MARKETING E CORPORATE
-          </h3>
-          <p className="mobile-feature-desc" style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '16px',
-            fontWeight: 400,
-            color: 'rgba(255, 255, 255, 0.6)',
-            lineHeight: 1.7,
-            margin: 0,
-          }}>
-            Standardizza template e riduci tempi di revisione, anche per grandi volumi di presentazioni.
-          </p>
-        </div>
-      </div>
-
-      {/* === STATS COUNTER === */}
-      <div ref={statsRef} style={{
-        width: '100%',
-        maxWidth: '1000px',
-        marginTop: '100px',
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: '40px',
-        textAlign: 'center',
-      }} className="cards-grid">
-        <div style={{
-          opacity: statsVisible ? 1 : 0,
-          transform: statsVisible ? 'translateY(0)' : 'translateY(20px)',
-          transition: 'opacity 0.6s ease 0s, transform 0.6s ease 0s',
-        }}>
-          <span style={{
-            fontFamily: "'Space Mono', monospace",
-            fontSize: '64px',
-            fontWeight: 700,
-            color: '#ffffff',
-            display: 'block',
-            lineHeight: 1,
-          }}>{counters.speed}x</span>
-          <span style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '15px',
-            fontWeight: 400,
-            color: 'rgba(255, 255, 255, 0.5)',
-            marginTop: '12px',
-            display: 'block',
-          }}>più veloce del processo manuale</span>
-        </div>
-        <div style={{
-          opacity: statsVisible ? 1 : 0,
-          transform: statsVisible ? 'translateY(0)' : 'translateY(20px)',
-          transition: 'opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s',
-        }}>
-          <span style={{
-            fontFamily: "'Space Mono', monospace",
-            fontSize: '64px',
-            fontWeight: 700,
-            color: '#ffffff',
-            display: 'block',
-            lineHeight: 1,
-          }}>{counters.time}%</span>
-          <span style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '15px',
-            fontWeight: 400,
-            color: 'rgba(255, 255, 255, 0.5)',
-            marginTop: '12px',
-            display: 'block',
-          }}>tempo risparmiato per deck</span>
-        </div>
-        <div style={{
-          opacity: statsVisible ? 1 : 0,
-          transform: statsVisible ? 'translateY(0)' : 'translateY(20px)',
-          transition: 'opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s',
-        }}>
-          <span style={{
-            fontFamily: "'Space Mono', monospace",
-            fontSize: '64px',
-            fontWeight: 700,
-            color: '#ffffff',
-            display: 'block',
-            lineHeight: 1,
-          }}>{counters.brand}%</span>
-          <span style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '15px',
-            fontWeight: 400,
-            color: 'rgba(255, 255, 255, 0.5)',
-            marginTop: '12px',
-            display: 'block',
-          }}>coerenza brand garantita</span>
-        </div>
-      </div>
-
-      {/* === FEATURE PROCESSO === */}
-      <div style={{
-        width: '100%',
-        maxWidth: '1000px',
-        marginTop: '100px',
-        display: 'grid',
-        gridTemplateColumns: 'repeat(2, 1fr)',
-        gap: '20px 48px',
-      }} className="cards-grid">
-        {[
-          { title: 'Brand kit personalizzabile', desc: 'Colori, font e loghi sempre coerenti su ogni deck.' },
-          { title: 'Creazione slide da link', desc: 'Trasforma pagine web o documenti in presentazioni complete.' },
-          { title: 'Generazione contenuti', desc: 'Testi, titoli e bullet pronti all\'uso, generati dall\'AI.' },
-          { title: 'Mood visivi su misura', desc: 'Look & feel personalizzati per ogni progetto o cliente.' },
-          { title: 'Editing completo', desc: 'Modifica manuale su ogni elemento, preview immediata.' },
-          { title: 'Export pronto', desc: 'PowerPoint, PDF o formati aziendali standard.' },
-        ].map((feat, i) => (
-          <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', padding: '16px 0' }}>
-            <span style={{ color: 'rgba(255, 255, 255, 0.3)', fontSize: '14px', marginTop: '2px', flexShrink: 0 }}>✓</span>
-            <div>
-              <p style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '16px',
-                fontWeight: 600,
-                color: '#ffffff',
-                margin: 0,
-                marginBottom: '4px',
-              }}>{feat.title}</p>
-              <p style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '14px',
-                fontWeight: 400,
-                color: 'rgba(255, 255, 255, 0.5)',
-                margin: 0,
-                lineHeight: 1.5,
-              }}>{feat.desc}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
       {/* === SLIDE 3: GALLERY === */}
       <h2 className="mobile-section-title mobile-section-spacing" style={{
         fontFamily: "'Inter', sans-serif",
@@ -884,108 +754,123 @@ const NewHero = () => {
         </div>
       </div>
 
-      <div className="mobile-divider divider-animate" style={{ width: '100%', maxWidth: '1200px', height: '1px', background: 'rgba(255, 255, 255, 0.08)', marginTop: '100px' }} />
-
       {/* === SLIDE 4: THE CANVAS === */}
-      <h2 className="mobile-section-title mobile-section-spacing" style={{
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '48px',
-        fontWeight: 700,
-        color: '#ffffff',
-        letterSpacing: '-0.03em',
-        lineHeight: 1.1,
-        margin: 0,
-        marginTop: '120px',
-        marginBottom: '48px',
-        textAlign: 'center',
-      }}>
-        Il tuo canvas, le tue regole.
-      </h2>
-      <div className="canvas-grid" style={{
+      <div className="corner-frame" style={{
         width: '100%',
-        display: 'grid',
-        gridTemplateColumns: '380px 1fr',
-        gap: '60px',
-        alignItems: 'center',
-        paddingLeft: '40px',
         maxWidth: '1200px',
+        marginTop: '120px',
+        padding: '60px 60px 80px',
+        borderRadius: '20px',
+        position: 'relative',
+        overflow: 'hidden',
       }}>
-        <div>
-          <p className="mobile-feature-desc" style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '22px',
-            fontWeight: 400,
-            color: 'rgba(255, 255, 255, 0.7)',
-            lineHeight: 1.7,
-            margin: 0,
-            marginBottom: '40px',
-          }}>
-            Ogni elemento è modificabile. Sposta blocchi, ridimensiona, cambia stili. Il risultato finale lo decidi tu.
-          </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
-            <div>
-              <p className="mobile-feature-title" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '22px',
-                fontWeight: 700,
-                color: '#ffffff',
-                margin: 0,
-                marginBottom: '8px',
-              }}>
-                Canvas pixel-perfect
-              </p>
-              <p className="mobile-feature-desc" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '17px',
-                fontWeight: 400,
-                color: 'rgba(255, 255, 255, 0.6)',
-                margin: 0,
-                lineHeight: 1.6,
-              }}>
-                Sposta e organizza i contenuti con drag-and-drop naturale e senza frizioni.
-              </p>
-            </div>
-            <div>
-              <p className="mobile-feature-title" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '22px',
-                fontWeight: 700,
-                color: '#ffffff',
-                margin: 0,
-                marginBottom: '8px',
-              }}>
-                Personalizzazione totale
-              </p>
-              <p className="mobile-feature-desc" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '17px',
-                fontWeight: 400,
-                color: 'rgba(255, 255, 255, 0.6)',
-                margin: 0,
-                lineHeight: 1.6,
-              }}>
-                Modifica stili, pesi visivi e asset grafici per rendere ogni singolo deck unico.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mobile-canvas-video" style={{
+        <div className="ambient-glow" style={{
+          position: 'absolute',
+          inset: 0,
           borderRadius: '20px',
           overflow: 'hidden',
-          background: '#0a0a0a',
-          position: 'relative',
-          border: '0.5px solid rgba(255, 255, 255, 0.08)',
+          zIndex: 0,
         }}>
-          <img
-            src="/slide3-image.webp"
-            alt="Canvas preview"
-            style={{
-              width: '100%',
-              height: 'auto',
-              display: 'block',
-            }}
-          />
+          <div className="ambient-blob blob-teal" />
+          <div className="ambient-blob blob-red" />
+        </div>
+        <div className="corner-line corner-tl" />
+        <div className="corner-line corner-tr" />
+        <div className="corner-line corner-bl" />
+        <div className="corner-line corner-br" />
+
+        <h2 className="mobile-section-title" style={{
+          fontFamily: "'Inter', sans-serif",
+          fontSize: '60px',
+          fontWeight: 700,
+          color: '#ffffff',
+          letterSpacing: '-0.03em',
+          lineHeight: 1.1,
+          margin: 0,
+          marginBottom: '48px',
+          textAlign: 'center',
+        }}>
+          Il tuo canvas, le tue regole.
+        </h2>
+        <div className="canvas-grid" style={{
+          width: '100%',
+          display: 'grid',
+          gridTemplateColumns: '380px 1fr',
+          gap: '60px',
+          alignItems: 'center',
+        }}>
+          <div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+              <div>
+                <p className="mobile-feature-title" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '22px',
+                  fontWeight: 700,
+                  color: '#ffffff',
+                  margin: 0,
+                  marginBottom: '8px',
+                }}>
+                  Genera immagini con l'AI
+                </p>
+                <p className="mobile-feature-desc" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '17px',
+                  fontWeight: 400,
+                  color: 'rgba(255, 255, 255, 0.6)',
+                  margin: 0,
+                  lineHeight: 1.6,
+                }}>
+                  Descrivi quello che vuoi. L'AI crea immagini su misura, direttamente dentro la slide.
+                </p>
+              </div>
+              <div>
+                <p className="mobile-feature-title" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '22px',
+                  fontWeight: 700,
+                  color: '#ffffff',
+                  margin: 0,
+                  marginBottom: '8px',
+                }}>
+                  Riscrivi testi con un click
+                </p>
+                <p className="mobile-feature-desc" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '17px',
+                  fontWeight: 400,
+                  color: 'rgba(255, 255, 255, 0.6)',
+                  margin: 0,
+                  lineHeight: 1.6,
+                }}>
+                  Seleziona un blocco di testo, chiedi all'AI di riscriverlo, accorciarlo o tradurlo.
+                </p>
+              </div>
+              <div>
+                <p className="mobile-feature-title" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '22px',
+                  fontWeight: 700,
+                  color: '#ffffff',
+                  margin: 0,
+                  marginBottom: '8px',
+                }}>
+                  Canvas libero
+                </p>
+                <p className="mobile-feature-desc" style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '17px',
+                  fontWeight: 400,
+                  color: 'rgba(255, 255, 255, 0.6)',
+                  margin: 0,
+                  lineHeight: 1.6,
+                }}>
+                  Sposta blocchi, ridimensiona, cambia layout. Ogni slide è completamente personalizzabile.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <CanvasVideoSequence />
         </div>
       </div>
 
@@ -1134,11 +1019,10 @@ const NewHero = () => {
         }}>
 
           {/* Free Plan */}
-          <div className="glass-card" style={{
+          <div className="glass-card pricing-card-free" style={{
             padding: '40px 32px',
             display: 'flex',
             flexDirection: 'column',
-            background: 'rgba(255, 255, 255, 0.03)',
           }}>
             <h3 style={{
               fontFamily: "'Inter', sans-serif",
@@ -1213,13 +1097,10 @@ const NewHero = () => {
           </div>
 
           {/* Pro Plan */}
-          <div className="glass-card" style={{
+          <div className="glass-card pricing-card-pro" style={{
             padding: '40px 32px',
             display: 'flex',
             flexDirection: 'column',
-            background: 'linear-gradient(160deg, rgba(176,207,224,0.08) 0%, rgba(255,255,255,0.02) 100%)',
-            border: '1px solid rgba(176,207,224,0.3)',
-            borderRadius: '16px',
           }}>
             <h3 style={{
               fontFamily: "'Inter', sans-serif",
@@ -1242,18 +1123,7 @@ const NewHero = () => {
             }}>
               For professionals who create regularly
             </p>
-            <div style={{ marginBottom: '32px' }}>
-              <div style={{ marginBottom: '4px' }}>
-                <span style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '16px',
-                  fontWeight: 400,
-                  color: 'rgba(255, 255, 255, 0.4)',
-                  textDecoration: 'line-through',
-                }}>
-                  €12.99
-                </span>
-              </div>
+            <div style={{ marginBottom: '32px', display: 'flex', alignItems: 'baseline', gap: '12px' }}>
               <span className="mobile-price" style={{
                 fontFamily: "'Space Mono', monospace",
                 fontSize: '48px',
@@ -1263,11 +1133,19 @@ const NewHero = () => {
                 €9.99
               </span>
               <span style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '16px',
+                fontWeight: 400,
+                color: 'rgba(255, 255, 255, 0.4)',
+                textDecoration: 'line-through',
+              }}>
+                €12.99
+              </span>
+              <span style={{
                 fontFamily: "'Space Mono', monospace",
                 fontSize: '16px',
                 fontWeight: 400,
                 color: 'rgba(255, 255, 255, 0.5)',
-                marginLeft: '8px',
               }}>
                 / month
               </span>
@@ -1324,11 +1202,10 @@ const NewHero = () => {
           </div>
 
           {/* Enterprise Plan */}
-          <div className="glass-card" style={{
+          <div className="glass-card pricing-card-enterprise" style={{
             padding: '40px 32px',
             display: 'flex',
             flexDirection: 'column',
-            background: 'rgba(255, 255, 255, 0.03)',
           }}>
             <h3 style={{
               fontFamily: "'Inter', sans-serif",
@@ -1494,12 +1371,11 @@ const NewHero = () => {
             cursor: 'default',
             userSelect: 'none',
             textAlign: 'center',
-            opacity: 0.7,
           }}
         >
-          <span style={{ color: '#ffffff' }}>Slide</span>
+          <span style={{ color: 'rgba(255,255,255,0.9)' }}>Slide</span>
           <span style={{ color: '#b0cfe0' }}>Run</span>
-          <span style={{ color: 'rgba(255,255,255,0.82)', fontWeight: 400 }}>.ai</span>
+          <span style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 400 }}>.ai</span>
         </div>
       </div>
 

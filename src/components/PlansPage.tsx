@@ -54,13 +54,10 @@ const PlansPage = () => {
           }}>
 
             {/* Free Plan */}
-            <div style={{
+            <div className="pricing-card-free" style={{
               padding: '40px 32px',
               display: 'flex',
               flexDirection: 'column',
-              background: 'linear-gradient(160deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)',
-              borderRadius: '16px',
-              border: '1px solid rgba(255,255,255,0.08)',
             }}>
               <h2 style={{
                 fontFamily: "'Inter', sans-serif",
@@ -133,13 +130,10 @@ const PlansPage = () => {
             </div>
 
             {/* Pro Plan */}
-            <div style={{
+            <div className="pricing-card-pro" style={{
               padding: '40px 32px',
               display: 'flex',
               flexDirection: 'column',
-              background: 'linear-gradient(160deg, rgba(176,207,224,0.08) 0%, rgba(255,255,255,0.02) 100%)',
-              borderRadius: '16px',
-              border: '1px solid rgba(176,207,224,0.3)',
             }}>
               <h2 style={{
                 fontFamily: "'Inter', sans-serif",
@@ -163,18 +157,7 @@ const PlansPage = () => {
                 For professionals who create regularly
               </p>
 
-              <div style={{ marginBottom: '32px' }}>
-                <div style={{ marginBottom: '4px' }}>
-                  <span style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '16px',
-                    fontWeight: 400,
-                    color: 'rgba(255, 255, 255, 0.4)',
-                    textDecoration: 'line-through',
-                  }}>
-                    €12.99
-                  </span>
-                </div>
+              <div style={{ marginBottom: '32px', display: 'flex', alignItems: 'baseline', gap: '12px' }}>
                 <span style={{
                   fontFamily: "'Space Mono', monospace",
                   fontSize: '48px',
@@ -187,8 +170,16 @@ const PlansPage = () => {
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '16px',
                   fontWeight: 400,
+                  color: 'rgba(255, 255, 255, 0.4)',
+                  textDecoration: 'line-through',
+                }}>
+                  €12.99
+                </span>
+                <span style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '16px',
+                  fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.5)',
-                  marginLeft: '8px',
                 }}>
                   / month
                 </span>
@@ -233,13 +224,10 @@ const PlansPage = () => {
             </div>
 
             {/* Enterprise Plan */}
-            <div style={{
+            <div className="pricing-card-enterprise" style={{
               padding: '40px 32px',
               display: 'flex',
               flexDirection: 'column',
-              background: 'linear-gradient(160deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)',
-              borderRadius: '16px',
-              border: '1px solid rgba(255,255,255,0.08)',
             }}>
               <h2 style={{
                 fontFamily: "'Inter', sans-serif",

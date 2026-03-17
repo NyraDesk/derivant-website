@@ -40,7 +40,7 @@ const VideoComponent = ({
   playsInline = true,
   controls = false,
   poster,
-  preload = 'none',
+  preload = 'metadata',
   lazyLoad = true,
   rootMargin = '200px',
 }: VideoComponentProps) => {
@@ -75,18 +75,31 @@ const VideoComponent = ({
     return () => observer.disconnect();
   }, [lazyLoad, rootMargin]);
 
-  // Auto-play when visible
+  // Auto-play when visible and loaded
   useEffect(() => {
     if (isVisible && videoRef.current && autoPlay) {
-      videoRef.current.play().catch(() => {
-        // Autoplay blocked, user interaction required
-      });
+      const video = videoRef.current;
+      const tryPlay = () => {
+        video.play().catch(() => {
+          // Autoplay blocked, user interaction required
+        });
+      };
+      // If already has enough data, play immediately
+      if (video.readyState >= 3) {
+        tryPlay();
+      } else {
+        video.addEventListener('canplay', tryPlay, { once: true });
+        return () => video.removeEventListener('canplay', tryPlay);
+      }
     }
   }, [isVisible, isLoaded, autoPlay]);
 
   const handleLoadedData = () => {
     setIsLoaded(true);
   };
+
+  // Use thumbnail as poster if no poster provided
+  const effectivePoster = poster || thumbnailUrl;
 
   // Full URL for structured data
   const fullVideoUrl = contentUrl || `https://sliderun.ai${src}`;
@@ -134,13 +147,13 @@ const VideoComponent = ({
         }}
       >
         {/* Placeholder/Thumbnail while loading */}
-        {lazyLoad && !isLoaded && (
+        {!isLoaded && (
           <div
             style={{
               position: 'absolute',
               inset: 0,
               background: poster
-                ? `url(${poster}) center/cover no-repeat`
+                ? `url(${effectivePoster}) center/cover no-repeat`
                 : 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)',
               display: 'flex',
               alignItems: 'center',
@@ -185,7 +198,7 @@ const VideoComponent = ({
             muted={muted}
             playsInline={playsInline}
             controls={controls}
-            poster={poster}
+            poster={effectivePoster}
             preload={preload}
             onLoadedData={handleLoadedData}
             style={{
