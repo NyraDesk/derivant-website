@@ -47,9 +47,9 @@ const PlansPage = () => {
           {/* Plans Grid */}
           <div className="plans-grid" style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
+            gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '24px',
-            maxWidth: '800px',
+            maxWidth: '1100px',
             margin: '0 auto',
           }}>
 
@@ -123,7 +123,7 @@ const PlansPage = () => {
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                {['100 credits to start', 'All templates', 'PDF export with watermark'].map((feat) => (
+                {['100 credits — 2 full presentations', 'All templates', 'PDF export with watermark'].map((feat) => (
                   <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ color: 'rgba(255, 255, 255, 0.35)', fontSize: '16px' }}>✓</span>
                     <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'rgba(255, 255, 255, 0.7)' }}>{feat}</span>
@@ -140,32 +140,7 @@ const PlansPage = () => {
               background: 'linear-gradient(160deg, rgba(176,207,224,0.08) 0%, rgba(255,255,255,0.02) 100%)',
               borderRadius: '16px',
               border: '1px solid rgba(176,207,224,0.3)',
-              position: 'relative',
             }}>
-              {/* Opening Offer Badge */}
-              <div style={{
-                position: 'absolute',
-                top: '-14px',
-                left: '50%',
-                transform: 'translateX(-50%)',
-                background: 'rgba(176,207,224,0.1)',
-                border: '1px solid rgba(176,207,224,0.5)',
-                borderRadius: '8px',
-                padding: '6px 18px',
-                whiteSpace: 'nowrap',
-              }}>
-                <span style={{
-                  fontFamily: "'Space Mono', monospace",
-                  fontSize: '11px',
-                  fontWeight: 700,
-                  color: '#b0cfe0',
-                  letterSpacing: '0.08em',
-                  textTransform: 'uppercase',
-                }}>
-                  Opening offer — first 100 only
-                </span>
-              </div>
-
               <h2 style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '28px',
@@ -173,7 +148,6 @@ const PlansPage = () => {
                 color: '#ffffff',
                 margin: 0,
                 marginBottom: '8px',
-                marginTop: '8px',
               }}>
                 Pro
               </h2>
@@ -242,7 +216,7 @@ const PlansPage = () => {
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 {[
-                  '400 credits / month',
+                  '400 credits / month — 10 full presentations',
                   'Advanced AI models — Opus 4.5',
                   'All premium templates',
                   'Brand Kit — logo, colors, fonts',
@@ -253,6 +227,88 @@ const PlansPage = () => {
                   <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ color: '#b0cfe0', fontSize: '16px' }}>✓</span>
                     <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'rgba(255, 255, 255, 0.85)' }}>{feat}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Enterprise Plan */}
+            <div style={{
+              padding: '40px 32px',
+              display: 'flex',
+              flexDirection: 'column',
+              background: 'linear-gradient(160deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)',
+              borderRadius: '16px',
+              border: '1px solid rgba(255,255,255,0.08)',
+            }}>
+              <h2 style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '28px',
+                fontWeight: 700,
+                color: '#ffffff',
+                margin: 0,
+                marginBottom: '8px',
+              }}>
+                Enterprise
+              </h2>
+              <p style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '15px',
+                fontWeight: 400,
+                color: 'rgba(255, 255, 255, 0.5)',
+                margin: 0,
+                marginBottom: '32px',
+                lineHeight: 1.5,
+              }}>
+                For teams that present every day
+              </p>
+
+              <div style={{ marginBottom: '32px' }}>
+                <span style={{
+                  fontFamily: "'Space Mono', monospace",
+                  fontSize: '48px',
+                  fontWeight: 700,
+                  color: '#ffffff',
+                }}>
+                  Custom
+                </span>
+              </div>
+
+              <a href="https://calendly.com/sliderun/new-meeting" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', marginBottom: '32px', display: 'block' }}>
+                <div style={{
+                  background: 'transparent',
+                  border: '1px solid rgba(255,255,255,0.25)',
+                  borderRadius: '12px',
+                  padding: '16px',
+                  textAlign: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                }}>
+                  <span style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '16px',
+                    fontWeight: 700,
+                    color: '#ffffff',
+                  }}>
+                    Talk to Sales
+                  </span>
+                </div>
+              </a>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                {[
+                  'Everything in Pro, plus:',
+                  'Custom design templates — your brand, your layouts',
+                  'Team workspace — shared folders, collaboration, asset library',
+                  'White-label export — no SlideRun branding',
+                  'SSO & admin controls',
+                  'API access — integrate with your existing workflow',
+                  'Dedicated account manager',
+                  'Custom integrations (Slack, Notion, Google Drive)',
+                ].map((feat) => (
+                  <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <span style={{ color: 'rgba(255, 255, 255, 0.35)', fontSize: '16px' }}>✓</span>
+                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'rgba(255, 255, 255, 0.7)' }}>{feat}</span>
                   </div>
                 ))}
               </div>

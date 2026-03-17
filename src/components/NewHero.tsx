@@ -1112,7 +1112,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '16px',
           }}>
-            Scegli il tuo piano
+            Choose your plan
           </h2>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
@@ -1121,15 +1121,15 @@ const NewHero = () => {
             color: 'rgba(255, 255, 255, 0.6)',
             margin: 0,
           }}>
-            Sblocca tutta la potenza delle presentazioni AI
+            Unlock the full power of AI presentations
           </p>
         </div>
 
         <div className="plans-grid" style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(2, 1fr)',
+          gridTemplateColumns: 'repeat(3, 1fr)',
           gap: '24px',
-          maxWidth: '800px',
+          maxWidth: '1100px',
           margin: '0 auto',
         }}>
 
@@ -1159,7 +1159,7 @@ const NewHero = () => {
               marginBottom: '32px',
               lineHeight: 1.5,
             }}>
-              Perfetto per iniziare con le presentazioni AI
+              To try AI presentations
             </p>
             <div style={{ marginBottom: '32px' }}>
               <span className="mobile-price" style={{
@@ -1193,21 +1193,21 @@ const NewHero = () => {
                 fontWeight: 400,
                 color: 'rgba(255, 255, 255, 0.5)',
               }}>
-                Piano attuale
+                Current plan
               </span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Prova le presentazioni AI</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>100 credits — 2 full presentations</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Tutti i template</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>All templates</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Export PDF con watermark</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>PDF export with watermark</span>
               </div>
             </div>
           </div>
@@ -1217,8 +1217,9 @@ const NewHero = () => {
             padding: '40px 32px',
             display: 'flex',
             flexDirection: 'column',
-            background: 'rgba(255, 255, 255, 0.03)',
-            position: 'relative',
+            background: 'linear-gradient(160deg, rgba(176,207,224,0.08) 0%, rgba(255,255,255,0.02) 100%)',
+            border: '1px solid rgba(176,207,224,0.3)',
+            borderRadius: '16px',
           }}>
             <h3 style={{
               fontFamily: "'Inter', sans-serif",
@@ -1228,7 +1229,7 @@ const NewHero = () => {
               margin: 0,
               marginBottom: '8px',
             }}>
-              Starter
+              Pro
             </h3>
             <p style={{
               fontFamily: "'Inter', sans-serif",
@@ -1239,16 +1240,27 @@ const NewHero = () => {
               marginBottom: '32px',
               lineHeight: 1.5,
             }}>
-              Per professionisti che vogliono di più
+              For professionals who create regularly
             </p>
             <div style={{ marginBottom: '32px' }}>
+              <div style={{ marginBottom: '4px' }}>
+                <span style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '16px',
+                  fontWeight: 400,
+                  color: 'rgba(255, 255, 255, 0.4)',
+                  textDecoration: 'line-through',
+                }}>
+                  €12.99
+                </span>
+              </div>
               <span className="mobile-price" style={{
                 fontFamily: "'Space Mono', monospace",
                 fontSize: '48px',
                 fontWeight: 700,
                 color: '#ffffff',
               }}>
-                €9
+                €9.99
               </span>
               <span style={{
                 fontFamily: "'Space Mono', monospace",
@@ -1264,7 +1276,7 @@ const NewHero = () => {
               textDecoration: 'none',
               marginBottom: '32px',
               display: 'block',
-              background: '#3B82F6',
+              background: 'linear-gradient(135deg, #4ecdc4 0%, #7dd3d8 50%, #b0cfe0 100%)',
               borderRadius: '12px',
               padding: '16px',
               textAlign: 'center',
@@ -1274,27 +1286,133 @@ const NewHero = () => {
                 fontFamily: "'Space Mono', monospace",
                 fontSize: '15px',
                 fontWeight: 700,
-                color: '#ffffff',
+                color: '#0d0d0f',
               }}>
-                Passa a Starter
+                Upgrade to Pro
               </span>
             </a>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>400 crediti/mese</span>
+                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>400 credits / month — 10 full presentations</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Immagini AI avanzate</span>
+                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Advanced AI models — Opus 4.5</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Export PDF senza watermark</span>
+                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>All premium templates</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#3B82F6', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Supporto prioritario</span>
+                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Brand Kit — logo, colors, fonts</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Editable PowerPoint export</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>PDF export without watermark</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Priority support</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Enterprise Plan */}
+          <div className="glass-card" style={{
+            padding: '40px 32px',
+            display: 'flex',
+            flexDirection: 'column',
+            background: 'rgba(255, 255, 255, 0.03)',
+          }}>
+            <h3 style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '28px',
+              fontWeight: 700,
+              color: '#ffffff',
+              margin: 0,
+              marginBottom: '8px',
+            }}>
+              Enterprise
+            </h3>
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '15px',
+              fontWeight: 400,
+              color: 'rgba(255, 255, 255, 0.5)',
+              margin: 0,
+              marginBottom: '32px',
+              lineHeight: 1.5,
+            }}>
+              For teams that present every day
+            </p>
+            <div style={{ marginBottom: '32px' }}>
+              <span className="mobile-price" style={{
+                fontFamily: "'Space Mono', monospace",
+                fontSize: '48px',
+                fontWeight: 700,
+                color: '#ffffff',
+              }}>
+                Custom
+              </span>
+            </div>
+            <a href="https://calendly.com/sliderun/new-meeting" target="_blank" rel="noopener noreferrer" style={{
+              textDecoration: 'none',
+              marginBottom: '32px',
+              display: 'block',
+              borderRadius: '12px',
+              padding: '16px',
+              textAlign: 'center',
+              transition: 'all 0.2s ease',
+              border: '1px solid rgba(255, 255, 255, 0.25)',
+              background: 'transparent',
+            }}>
+              <span style={{
+                fontFamily: "'Space Mono', monospace",
+                fontSize: '15px',
+                fontWeight: 700,
+                color: '#ffffff',
+              }}>
+                Talk to Sales
+              </span>
+            </a>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Everything in Pro, plus:</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Custom design templates</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Team workspace & collaboration</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>White-label export</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>SSO & admin controls</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>API access</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Dedicated account manager</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Custom integrations (Slack, Notion, Google Drive)</span>
               </div>
             </div>
           </div>
@@ -1312,7 +1430,7 @@ const NewHero = () => {
             marginBottom: '12px',
             fontStyle: 'italic',
           }}>
-            * Le creazioni AI illimitate si riferiscono all'uso giornaliero entro il fair use. Le funzionalità premium (Agent, modelli avanzati) richiedono crediti.
+            * Unlimited AI creations refer to daily fair use. Premium features (Agent, advanced models) require credits.
           </p>
           <p style={{
             fontFamily: "'Space Mono', monospace",
@@ -1321,7 +1439,7 @@ const NewHero = () => {
             color: 'rgba(255, 255, 255, 0.5)',
             margin: 0,
           }}>
-            Cancella quando vuoi. Senza domande.
+            Cancel anytime. No questions asked.
           </p>
           <a
             href="https://app.sliderun.ai"
@@ -1349,7 +1467,7 @@ const NewHero = () => {
               e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.25)';
             }}
           >
-            Inizia a creare →
+            Start creating →
           </a>
         </div>
       </div>

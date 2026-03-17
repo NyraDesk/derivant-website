@@ -15,6 +15,7 @@ import TermsPage from './components/TermsPage';
 import SupportPage from './components/SupportPage';
 import InsightsPage from './components/InsightsPage';
 import InsightArticlePage from './components/InsightArticlePage';
+import EnterprisePage from './components/EnterprisePage';
 
 const HomePage = () => (
   <NewHero />
@@ -100,6 +101,13 @@ function App() {
           <>
             <Header />
             <InsightArticlePage />
+            <Footer />
+          </>
+        } />
+        <Route path="/enterprise" element={
+          <>
+            <Header />
+            <EnterprisePage />
             <Footer />
           </>
         } />

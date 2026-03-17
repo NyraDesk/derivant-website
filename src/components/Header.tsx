@@ -43,7 +43,7 @@ const Header = () => {
                 home
               </Link>
               <a
-                href="/#enterprise"
+                href="/enterprise"
                 className="text-white/70 hover:text-white hover:bg-white/10 transition-all duration-200 px-3 py-2 rounded-full"
                 style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
               >
@@ -121,7 +121,7 @@ const Header = () => {
                 </Link>
 
                 <a
-                  href="/#enterprise"
+                  href="/enterprise"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="px-6 py-4 text-white/70 font-medium text-base hover:text-white hover:bg-white/10 transition-all duration-200"
                 >
