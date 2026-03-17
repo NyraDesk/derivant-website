@@ -997,7 +997,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '16px',
           }}>
-            Choose your plan
+            Scegli il tuo piano
           </h2>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
@@ -1006,7 +1006,7 @@ const NewHero = () => {
             color: 'rgba(255, 255, 255, 0.6)',
             margin: 0,
           }}>
-            Unlock the full power of AI presentations
+            Sblocca tutta la potenza delle presentazioni AI
           </p>
         </div>
 
@@ -1043,7 +1043,7 @@ const NewHero = () => {
               marginBottom: '32px',
               lineHeight: 1.5,
             }}>
-              To try AI presentations
+              Per provare le presentazioni AI
             </p>
             <div style={{ marginBottom: '32px' }}>
               <span className="mobile-price" style={{
@@ -1077,21 +1077,21 @@ const NewHero = () => {
                 fontWeight: 400,
                 color: 'rgba(255, 255, 255, 0.5)',
               }}>
-                Current plan
+                Piano attuale
               </span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>100 credits — 2 full presentations</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>100 crediti — 2 presentazioni complete</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>All templates</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Tutti i template</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>PDF export with watermark</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Export PDF con watermark</span>
               </div>
             </div>
           </div>
@@ -1121,7 +1121,7 @@ const NewHero = () => {
               marginBottom: '32px',
               lineHeight: 1.5,
             }}>
-              For professionals who create regularly
+              Per professionisti che creano ogni giorno
             </p>
             <div style={{ marginBottom: '32px', display: 'flex', alignItems: 'baseline', gap: '12px' }}>
               <span className="mobile-price" style={{
@@ -1166,37 +1166,37 @@ const NewHero = () => {
                 fontWeight: 700,
                 color: '#0d0d0f',
               }}>
-                Upgrade to Pro
+                Passa a Pro
               </span>
             </a>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>400 credits / month — 10 full presentations</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>400 crediti/mese — 10 presentazioni complete</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Advanced AI models — Opus 4.5</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Modelli AI avanzati — Opus 4.5</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>All premium templates</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Tutti i template premium</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Brand Kit — logo, colors, fonts</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Brand Kit — logo, colori, font</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Editable PowerPoint export</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Export PowerPoint editabile</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>PDF export without watermark</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Export PDF senza watermark</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Priority support</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Supporto prioritario</span>
               </div>
             </div>
           </div>
@@ -1226,7 +1226,7 @@ const NewHero = () => {
               marginBottom: '32px',
               lineHeight: 1.5,
             }}>
-              For teams that present every day
+              Per team che presentano ogni giorno
             </p>
             <div style={{ marginBottom: '32px' }}>
               <span className="mobile-price" style={{
@@ -1255,41 +1255,41 @@ const NewHero = () => {
                 fontWeight: 700,
                 color: '#ffffff',
               }}>
-                Talk to Sales
+                Contattaci
               </span>
             </a>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Everything in Pro, plus:</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Tutto incluso in Pro, più:</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Custom design templates</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Template personalizzati</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Team workspace & collaboration</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Workspace di team e collaborazione</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>White-label export</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Export white-label</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>SSO & admin controls</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>SSO e controlli admin</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>API access</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Accesso API</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Dedicated account manager</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Account manager dedicato</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Custom integrations (Slack, Notion, Google Drive)</span>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Integrazioni personalizzate (Slack, Notion, Google Drive)</span>
               </div>
             </div>
           </div>
@@ -1307,7 +1307,7 @@ const NewHero = () => {
             marginBottom: '12px',
             fontStyle: 'italic',
           }}>
-            * Unlimited AI creations refer to daily fair use. Premium features (Agent, advanced models) require credits.
+            * Le creazioni AI illimitate si riferiscono all'uso giornaliero entro il fair use. Le funzionalità premium (Agent, modelli avanzati) richiedono crediti.
           </p>
           <p style={{
             fontFamily: "'Space Mono', monospace",
@@ -1316,7 +1316,7 @@ const NewHero = () => {
             color: 'rgba(255, 255, 255, 0.5)',
             margin: 0,
           }}>
-            Cancel anytime. No questions asked.
+            Cancella quando vuoi. Senza domande.
           </p>
           <a
             href="https://app.sliderun.ai"
@@ -1344,7 +1344,7 @@ const NewHero = () => {
               e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.25)';
             }}
           >
-            Start creating →
+            Inizia a creare →
           </a>
         </div>
       </div>

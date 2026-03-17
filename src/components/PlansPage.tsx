@@ -31,7 +31,7 @@ const PlansPage = () => {
               margin: 0,
               marginBottom: '16px',
             }}>
-              Choose your plan
+              Scegli il tuo piano
             </h1>
             <p style={{
               fontFamily: "'Space Mono', monospace",
@@ -40,7 +40,7 @@ const PlansPage = () => {
               color: 'rgba(255, 255, 255, 0.6)',
               margin: 0,
             }}>
-              Unlock the full power of AI presentations
+              Sblocca tutta la potenza delle presentazioni AI
             </p>
           </div>
 
@@ -78,7 +78,7 @@ const PlansPage = () => {
                 marginBottom: '32px',
                 lineHeight: 1.5,
               }}>
-                To try AI presentations
+                Per provare le presentazioni AI
               </p>
 
               <div style={{ marginBottom: '32px' }}>
@@ -97,7 +97,7 @@ const PlansPage = () => {
                   color: 'rgba(255, 255, 255, 0.5)',
                   marginLeft: '8px',
                 }}>
-                  / month
+                  / mese
                 </span>
               </div>
 
@@ -115,12 +115,12 @@ const PlansPage = () => {
                   fontWeight: 500,
                   color: 'rgba(255, 255, 255, 0.45)',
                 }}>
-                  Current plan
+                  Piano attuale
                 </span>
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                {['100 credits — 2 full presentations', 'All templates', 'PDF export with watermark'].map((feat) => (
+                {['100 crediti — 2 presentazioni complete', 'Tutti i template', 'Export PDF con watermark'].map((feat) => (
                   <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ color: 'rgba(255, 255, 255, 0.35)', fontSize: '16px' }}>✓</span>
                     <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'rgba(255, 255, 255, 0.7)' }}>{feat}</span>
@@ -154,7 +154,7 @@ const PlansPage = () => {
                 marginBottom: '32px',
                 lineHeight: 1.5,
               }}>
-                For professionals who create regularly
+                Per professionisti che creano ogni giorno
               </p>
 
               <div style={{ marginBottom: '32px', display: 'flex', alignItems: 'baseline', gap: '12px' }}>
@@ -181,7 +181,7 @@ const PlansPage = () => {
                   fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.5)',
                 }}>
-                  / month
+                  / mese
                 </span>
               </div>
 
@@ -200,20 +200,20 @@ const PlansPage = () => {
                     fontWeight: 700,
                     color: '#0d0d0f',
                   }}>
-                    Upgrade to Pro
+                    Passa a Pro
                   </span>
                 </div>
               </a>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 {[
-                  '400 credits / month — 10 full presentations',
-                  'Advanced AI models — Opus 4.5',
-                  'All premium templates',
-                  'Brand Kit — logo, colors, fonts',
-                  'Editable PowerPoint export',
-                  'PDF export without watermark',
-                  'Priority support',
+                  '400 crediti/mese — 10 presentazioni complete',
+                  'Modelli AI avanzati — Opus 4.5',
+                  'Tutti i template premium',
+                  'Brand Kit — logo, colori, font',
+                  'Export PowerPoint editabile',
+                  'Export PDF senza watermark',
+                  'Supporto prioritario',
                 ].map((feat) => (
                   <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ color: '#b0cfe0', fontSize: '16px' }}>✓</span>
@@ -248,7 +248,7 @@ const PlansPage = () => {
                 marginBottom: '32px',
                 lineHeight: 1.5,
               }}>
-                For teams that present every day
+                Per team che presentano ogni giorno
               </p>
 
               <div style={{ marginBottom: '32px' }}>
@@ -278,21 +278,21 @@ const PlansPage = () => {
                     fontWeight: 700,
                     color: '#ffffff',
                   }}>
-                    Talk to Sales
+                    Contattaci
                   </span>
                 </div>
               </a>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 {[
-                  'Everything in Pro, plus:',
-                  'Custom design templates — your brand, your layouts',
-                  'Team workspace — shared folders, collaboration, asset library',
-                  'White-label export — no SlideRun branding',
-                  'SSO & admin controls',
-                  'API access — integrate with your existing workflow',
-                  'Dedicated account manager',
-                  'Custom integrations (Slack, Notion, Google Drive)',
+                  'Tutto incluso in Pro, più:',
+                  'Template personalizzati — il tuo brand, i tuoi layout',
+                  'Workspace di team — cartelle condivise, collaborazione, libreria asset',
+                  'Export white-label — senza branding SlideRun',
+                  'SSO e controlli admin',
+                  'Accesso API — integra nel tuo workflow',
+                  'Account manager dedicato',
+                  'Integrazioni personalizzate (Slack, Notion, Google Drive)',
                 ].map((feat) => (
                   <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ color: 'rgba(255, 255, 255, 0.35)', fontSize: '16px' }}>✓</span>
@@ -313,7 +313,7 @@ const PlansPage = () => {
               color: 'rgba(255, 255, 255, 0.45)',
               margin: 0,
             }}>
-              Cancel anytime. No questions asked.
+              Cancella quando vuoi. Senza domande.
             </p>
           </div>
 
