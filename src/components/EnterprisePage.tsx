@@ -102,7 +102,7 @@ const EnterprisePage = () => {
         {/* CTA */}
         <div style={{ textAlign: 'center' }}>
           <a
-            href="mailto:info@derivant.ai?subject=Enterprise%20Demo%20Request"
+            href="mailto:info@sliderun.ai?subject=Enterprise%20Demo%20Request"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -293,7 +293,7 @@ const EnterprisePage = () => {
           Parla con il nostro team per una demo personalizzata sulle esigenze del tuo business.
         </p>
         <a
-          href="mailto:info@derivant.ai?subject=Enterprise%20Demo%20Request"
+          href="mailto:info@sliderun.ai?subject=Enterprise%20Demo%20Request"
           target="_blank"
           rel="noopener noreferrer"
           style={{
