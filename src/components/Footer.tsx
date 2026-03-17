@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLocale } from '../i18n/useLocale';
 
 const Footer = () => {
+  const { t, localePath } = useLocale();
   return (
     <footer style={{
       background: '#000',
@@ -33,7 +35,7 @@ const Footer = () => {
               lineHeight: 1.7,
               margin: 0,
             }}>
-              Il motore AI che trasforma testi, documenti e idee in presentazioni professionali. Pitch deck, moodboard e strategy deck pronti in pochi minuti.
+              {t.footer.tagline}
             </p>
           </div>
 
@@ -47,10 +49,10 @@ const Footer = () => {
               margin: 0,
               marginBottom: '20px',
             }}>
-              Prodotto
+              {t.footer.product}
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              <a href="/enterprise" style={{
+              <a href={localePath('/enterprise')} style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
@@ -59,16 +61,16 @@ const Footer = () => {
               }}>
                 Enterprise
               </a>
-              <Link to="/plans" style={{
+              <Link to={localePath('/plans')} style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
                 textDecoration: 'none',
                 transition: 'color 0.2s ease',
               }}>
-                Piani
+                {t.header.plans}
               </Link>
-              <Link to="/blog" style={{
+              <Link to={localePath('/blog')} style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
@@ -77,7 +79,7 @@ const Footer = () => {
               }}>
                 Blog
               </Link>
-              <Link to="/resources" style={{
+              <Link to={localePath('/resources')} style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
@@ -86,7 +88,7 @@ const Footer = () => {
               }}>
                 Risorse
               </Link>
-              <Link to="/guida-pitch-deck-2026" style={{
+              <Link to={localePath('/guida-pitch-deck-2026')} style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
@@ -95,7 +97,7 @@ const Footer = () => {
               }}>
                 Guida Pitch Deck 2026
               </Link>
-              <Link to="/ai-agenzie-comunicazione" style={{
+              <Link to={localePath('/ai-agenzie-comunicazione')} style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
@@ -104,7 +106,7 @@ const Footer = () => {
               }}>
                 AI per Agenzie
               </Link>
-              <Link to="/insights" style={{
+              <Link to={localePath('/insights')} style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
@@ -170,7 +172,7 @@ const Footer = () => {
               margin: 0,
               marginBottom: '20px',
             }}>
-              Contatti
+              {t.footer.contacts}
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               <a href="mailto:info@sliderun.ai" style={{
@@ -182,7 +184,7 @@ const Footer = () => {
               }}>
                 info@sliderun.ai
               </a>
-              <Link to="/support" style={{
+              <Link to={localePath('/support')} style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '14px',
                 color: 'rgba(255, 255, 255, 0.5)',
@@ -210,14 +212,14 @@ const Footer = () => {
             color: 'rgba(255, 255, 255, 0.35)',
             margin: 0,
           }}>
-            &copy; 2026 <span style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: '-0.01em' }}><span style={{ color: '#ffffff' }}>Slide</span><span style={{ color: '#b0cfe0' }}>Run</span><span style={{ color: 'rgba(255,255,255,0.82)', fontWeight: 400 }}>.ai</span></span>. Tutti i diritti riservati.
+            &copy; 2026 <span style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: '-0.01em' }}><span style={{ color: '#ffffff' }}>Slide</span><span style={{ color: '#b0cfe0' }}>Run</span><span style={{ color: 'rgba(255,255,255,0.82)', fontWeight: 400 }}>.ai</span></span>. {t.footer.copyright}
           </p>
           <div style={{
             display: 'flex',
             alignItems: 'center',
             gap: '24px',
           }}>
-            <Link to="/privacy" style={{
+            <Link to={localePath('/privacy')} style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '13px',
               color: 'rgba(255, 255, 255, 0.35)',
@@ -226,7 +228,7 @@ const Footer = () => {
             }}>
               Privacy Policy
             </Link>
-            <Link to="/terms" style={{
+            <Link to={localePath('/terms')} style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '13px',
               color: 'rgba(255, 255, 255, 0.35)',

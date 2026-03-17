@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { useLocale } from '../i18n/useLocale';
 
 const BrandName = ({ fontSize = '18px' }: { fontSize?: string }) => (
   <span style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize, letterSpacing: '-0.01em' }}>
@@ -12,7 +13,8 @@ const BrandName = ({ fontSize = '18px' }: { fontSize?: string }) => (
 
 const Header = () => {
   const location = useLocation();
-  const isHomePage = location.pathname === '/';
+  const { locale, t, localePath } = useLocale();
+  const isHomePage = location.pathname === '/' || location.pathname === '/en';
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -27,7 +29,7 @@ const Header = () => {
           <div className="flex items-center justify-between w-full">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
-              <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+              <Link to={localePath('/')} style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
                 <img src="/icon/sliderun-icon.png" alt="SlideRun" style={{ width: '28px', height: '28px', borderRadius: '6px' }} />
                 <BrandName />
               </Link>
@@ -36,43 +38,50 @@ const Header = () => {
             {/* Navigation Links */}
             <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-8">
               <Link
-                to="/"
+                to={localePath('/')}
                 className="text-white/70 hover:text-white hover:bg-white/10 transition-all duration-200 px-3 py-2 rounded-full"
                 style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
               >
-                home
+                {t.header.home}
               </Link>
               <a
-                href="/enterprise"
+                href={localePath('/enterprise')}
                 className="text-white/70 hover:text-white hover:bg-white/10 transition-all duration-200 px-3 py-2 rounded-full"
                 style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
               >
-                enterprise
+                {t.header.enterprise}
               </a>
               <Link
-                to="/plans"
+                to={localePath('/plans')}
                 className="text-white/70 hover:text-white hover:bg-white/10 transition-all duration-200 px-3 py-2 rounded-full"
                 style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
               >
-                plans
+                {t.header.plans}
               </Link>
               <Link
-                to="/blog"
+                to={localePath('/blog')}
                 className="text-white/70 hover:text-white hover:bg-white/10 transition-all duration-200 px-3 py-2 rounded-full"
                 style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em' }}
               >
-                blog
+                {t.header.blog}
               </Link>
             </div>
 
-            {/* CTA Button */}
-            <div className="flex-shrink-0">
+            {/* Language Switcher + CTA Button */}
+            <div className="flex-shrink-0 flex items-center space-x-4">
+              <a
+                href={locale === 'it' ? `/en${location.pathname}` : location.pathname.replace(/^\/en/, '') || '/'}
+                className="text-white/50 hover:text-white transition-all duration-200 px-2 py-1 rounded-full"
+                style={{ fontFamily: "'Space Mono', monospace", fontSize: '12px', fontWeight: 400, letterSpacing: '0.06em' }}
+              >
+                {locale === 'it' ? 'EN' : 'IT'}
+              </a>
               <a
                 href="https://app.sliderun.ai"
                 className="text-white px-6 py-2 rounded-full hover:scale-105 transition-all duration-200"
                 style={{ fontFamily: "'Space Mono', monospace", fontSize: '13px', fontWeight: 400, letterSpacing: '0.04em', background: 'linear-gradient(135deg, #2a3a6b 0%, #3d5a9e 100%)', border: '1px solid rgba(100, 150, 220, 0.35)' }}
               >
-                Registrati gratis →
+                {t.header.cta}
               </a>
             </div>
           </div>
@@ -83,7 +92,7 @@ const Header = () => {
           <div className="flex items-center justify-between w-full">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
-              <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+              <Link to={localePath('/')} style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
                 <img src="/icon/sliderun-icon.png" alt="SlideRun" style={{ width: '28px', height: '28px', borderRadius: '6px' }} />
                 <BrandName />
               </Link>
@@ -112,7 +121,7 @@ const Header = () => {
             <div className="py-6">
               <div className="flex flex-col space-y-1">
                 <Link
-                  to="/"
+                  to={localePath('/')}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="flex items-center space-x-3 px-6 py-4 font-medium text-base text-white/70 hover:text-white hover:bg-white/10 transition-all duration-200"
                 >
@@ -121,7 +130,7 @@ const Header = () => {
                 </Link>
 
                 <a
-                  href="/enterprise"
+                  href={localePath('/enterprise')}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="px-6 py-4 text-white/70 font-medium text-base hover:text-white hover:bg-white/10 transition-all duration-200"
                 >
@@ -129,7 +138,7 @@ const Header = () => {
                 </a>
 
                 <Link
-                  to="/plans"
+                  to={localePath('/plans')}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="px-6 py-4 text-white/70 font-medium text-base hover:text-white hover:bg-white/10 transition-all duration-200"
                 >
@@ -137,21 +146,28 @@ const Header = () => {
                 </Link>
 
                 <Link
-                  to="/blog"
+                  to={localePath('/blog')}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="px-6 py-4 text-white/70 font-medium text-base hover:text-white hover:bg-white/10 transition-all duration-200"
                 >
                   Blog
                 </Link>
 
-                <div className="px-6 py-4">
+                <div className="px-6 py-4 flex items-center justify-between">
+                  <a
+                    href={locale === 'it' ? `/en${location.pathname}` : location.pathname.replace(/^\/en/, '') || '/'}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-white/50 hover:text-white transition-all duration-200 px-4 py-3 rounded-full font-medium text-base"
+                  >
+                    {locale === 'it' ? 'EN' : 'IT'}
+                  </a>
                   <a
                     href="https://app.sliderun.ai"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="w-full text-white px-6 py-4 rounded-full font-medium text-base hover:opacity-90 transition-all duration-200 block text-center"
+                    className="text-white px-6 py-4 rounded-full font-medium text-base hover:opacity-90 transition-all duration-200 block text-center flex-1 ml-3"
                     style={{ background: 'linear-gradient(135deg, #2a3a6b 0%, #3d5a9e 100%)', border: '1px solid rgba(100, 150, 220, 0.35)' }}
                   >
-                    Registrati gratis →
+                    {t.header.cta}
                   </a>
                 </div>
               </div>

@@ -1,16 +1,18 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useLocale } from '../i18n/useLocale';
 
 const EnterprisePage = () => {
+  const { t, locale, localePath } = useLocale();
   return (
     <div style={{ minHeight: '100vh', background: '#000' }}>
       <Helmet>
-        <title>Enterprise | SlideRun AI — Presentazioni AI per Aziende e Agenzie</title>
-        <meta name="description" content="SlideRun AI per team aziendali e agenzie. Web research automatica, brand kit integrato, generazione in pochi minuti. Prenota una demo." />
-        <link rel="canonical" href="https://www.sliderun.ai/enterprise" />
-        <meta property="og:title" content="Enterprise | SlideRun AI" />
-        <meta property="og:description" content="Automatizza la produzione di presentazioni per il tuo team. Brand kit, web research, AI avanzata." />
-        <meta property="og:url" content="https://www.sliderun.ai/enterprise" />
+        <title>{t.meta.enterpriseTitle}</title>
+        <meta name="description" content={t.meta.enterpriseDesc} />
+        <link rel="canonical" href={locale === 'en' ? 'https://www.sliderun.ai/en/enterprise' : 'https://www.sliderun.ai/enterprise'} />
+        <meta property="og:title" content={t.meta.enterpriseTitle} />
+        <meta property="og:description" content={t.meta.enterpriseDesc} />
+        <meta property="og:url" content={locale === 'en' ? 'https://www.sliderun.ai/en/enterprise' : 'https://www.sliderun.ai/enterprise'} />
         <meta property="og:type" content="website" />
       </Helmet>
 
@@ -27,7 +29,7 @@ const EnterprisePage = () => {
             margin: 0,
             marginBottom: '32px',
           }}>
-            Automatizza i processi. Scala i risultati.
+            {t.enterprise.title}
           </h1>
           <p style={{
             fontFamily: "'Inter', sans-serif",
@@ -39,7 +41,7 @@ const EnterprisePage = () => {
             marginBottom: '60px',
             maxWidth: '680px',
           }}>
-            Web research automatica, brand kit integrato, generazione in pochi minuti. La tecnologia che serve al tuo team per produrre di più, in meno tempo.
+            {t.enterprise.desc}
           </p>
         </div>
       </section>
@@ -62,7 +64,7 @@ const EnterprisePage = () => {
               margin: 0,
               marginBottom: '8px',
             }}>
-              Riduzione tempi 80%
+              {t.enterprise.stat1Title}
             </p>
             <p style={{
               fontFamily: "'Inter', sans-serif",
@@ -72,7 +74,7 @@ const EnterprisePage = () => {
               margin: 0,
               lineHeight: 1.6,
             }}>
-              Da ore di lavoro a pochi minuti. Per ogni singola presentazione.
+              {t.enterprise.stat1Desc}
             </p>
           </div>
           <div style={{ textAlign: 'center', flex: 1 }}>
@@ -84,7 +86,7 @@ const EnterprisePage = () => {
               margin: 0,
               marginBottom: '8px',
             }}>
-              100% on-brand
+              {t.enterprise.stat2Title}
             </p>
             <p style={{
               fontFamily: "'Inter', sans-serif",
@@ -94,7 +96,7 @@ const EnterprisePage = () => {
               margin: 0,
               lineHeight: 1.6,
             }}>
-              Ogni output rispetta colori, font e linee guida. Automaticamente.
+              {t.enterprise.stat2Desc}
             </p>
           </div>
         </div>
@@ -129,7 +131,7 @@ const EnterprisePage = () => {
               e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.25)';
             }}
           >
-            Prenota una demo
+            {t.enterprise.ctaDemo}
           </a>
         </div>
       </section>
@@ -147,7 +149,7 @@ const EnterprisePage = () => {
             margin: 0,
             marginBottom: '60px',
           }}>
-            Pensato per chi produce presentazioni ogni giorno
+            {t.enterprisePage.featuresTitle}
           </h2>
 
           <div className="plans-grid" style={{
@@ -155,24 +157,7 @@ const EnterprisePage = () => {
             gridTemplateColumns: 'repeat(2, 1fr)',
             gap: '24px',
           }}>
-            {[
-              {
-                title: 'Brand Kit integrato',
-                desc: 'Carica logo, colori e font del tuo brand. Ogni presentazione generata sarà già allineata alle linee guida aziendali.',
-              },
-              {
-                title: 'Web research automatica',
-                desc: 'L\'AI cerca dati aggiornati dal web e li integra nelle slide. Report, analisi di mercato e pitch sempre con informazioni reali.',
-              },
-              {
-                title: 'Esportazione professionale',
-                desc: 'PDF senza watermark e PowerPoint editabile. Il tuo team può intervenire sulle slide generate senza ripartire da zero.',
-              },
-              {
-                title: 'Modelli AI avanzati',
-                desc: 'Accesso ai modelli più potenti per generazione, analisi e struttura dei contenuti. Risultati di qualità superiore, ogni volta.',
-              },
-            ].map((feat) => (
+            {t.enterprisePage.features.map((feat) => (
               <div key={feat.title} style={{
                 padding: '40px 32px',
                 background: 'rgba(255, 255, 255, 0.03)',
@@ -217,24 +202,11 @@ const EnterprisePage = () => {
             margin: 0,
             marginBottom: '48px',
           }}>
-            Chi usa SlideRun
+            {t.enterprisePage.useCasesTitle}
           </h2>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', textAlign: 'left' }}>
-            {[
-              {
-                label: 'Agenzie di comunicazione',
-                desc: 'Pitch, strategy deck e report per i clienti. Generati in minuti, personalizzati sul brand di ciascun cliente.',
-              },
-              {
-                label: 'Consulenti e freelance',
-                desc: 'Proposte commerciali, analisi e deliverable professionali. Senza passare ore su PowerPoint.',
-              },
-              {
-                label: 'Team corporate',
-                desc: 'Board meeting, review trimestrali, presentazioni interne. Sempre on-brand, sempre aggiornate con dati reali.',
-              },
-            ].map((uc) => (
+            {t.enterprisePage.useCases.map((uc) => (
               <div key={uc.label} style={{
                 padding: '32px',
                 background: 'rgba(255, 255, 255, 0.03)',
@@ -278,7 +250,7 @@ const EnterprisePage = () => {
           margin: 0,
           marginBottom: '16px',
         }}>
-          Pronto a scalare la produzione?
+          {t.enterprisePage.bottomTitle}
         </h2>
         <p style={{
           fontFamily: "'Inter', sans-serif",
@@ -290,7 +262,7 @@ const EnterprisePage = () => {
           maxWidth: '500px',
           lineHeight: 1.6,
         }}>
-          Parla con il nostro team per una demo personalizzata sulle esigenze del tuo business.
+          {t.enterprisePage.bottomDesc}
         </p>
         <a
           href="mailto:info@sliderun.ai?subject=Enterprise%20Demo%20Request"
@@ -320,7 +292,7 @@ const EnterprisePage = () => {
             e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.25)';
           }}
         >
-          Prenota una demo
+          {t.enterprise.ctaDemo}
         </a>
       </section>
     </div>

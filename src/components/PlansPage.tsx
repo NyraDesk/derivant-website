@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { useLocale } from '../i18n/useLocale';
 
 const PlansPage = () => {
+  const { t, locale, localePath } = useLocale();
   return (
     <div style={{ minHeight: '100vh', background: '#000' }}>
       <Helmet>
-        <title>Piani e Prezzi | SlideRun AI — Presentazioni Professionali</title>
-        <meta name="description" content="Scegli il piano SlideRun perfetto per te. Genera presentazioni professionali con AI: brand kit, web research, esportazione PPTX e PDF." />
-        <link rel="canonical" href="https://www.sliderun.ai/plans" />
-        <meta property="og:title" content="Piani e Prezzi | SlideRun AI" />
-        <meta property="og:description" content="Scegli il piano SlideRun perfetto per te. Genera presentazioni professionali con AI." />
-        <meta property="og:url" content="https://www.sliderun.ai/plans" />
+        <title>{t.meta.plansTitle}</title>
+        <meta name="description" content={t.meta.plansDesc} />
+        <link rel="canonical" href={locale === 'en' ? 'https://www.sliderun.ai/en/plans' : 'https://www.sliderun.ai/plans'} />
+        <meta property="og:title" content={t.meta.plansTitle} />
+        <meta property="og:description" content={t.meta.plansDesc} />
+        <meta property="og:url" content={locale === 'en' ? 'https://www.sliderun.ai/en/plans' : 'https://www.sliderun.ai/plans'} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Piani e Prezzi | SlideRun AI" />
-        <meta name="twitter:description" content="Scegli il piano SlideRun perfetto per te. Genera presentazioni professionali con AI." />
+        <meta name="twitter:title" content={t.meta.plansTitle} />
+        <meta name="twitter:description" content={t.meta.plansDesc} />
       </Helmet>
       <section style={{ paddingTop: '160px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -31,7 +33,7 @@ const PlansPage = () => {
               margin: 0,
               marginBottom: '16px',
             }}>
-              Scegli il tuo piano
+              {t.plans.title}
             </h1>
             <p style={{
               fontFamily: "'Space Mono', monospace",
@@ -40,7 +42,7 @@ const PlansPage = () => {
               color: 'rgba(255, 255, 255, 0.6)',
               margin: 0,
             }}>
-              Sblocca tutta la potenza delle presentazioni AI
+              {t.plans.subtitle}
             </p>
           </div>
 
@@ -78,7 +80,7 @@ const PlansPage = () => {
                 marginBottom: '32px',
                 lineHeight: 1.5,
               }}>
-                Per provare le presentazioni AI
+                {t.plans.freeDesc}
               </p>
 
               <div style={{ marginBottom: '32px' }}>
@@ -97,7 +99,7 @@ const PlansPage = () => {
                   color: 'rgba(255, 255, 255, 0.5)',
                   marginLeft: '8px',
                 }}>
-                  / mese
+                  {t.plans.month}
                 </span>
               </div>
 
@@ -117,12 +119,12 @@ const PlansPage = () => {
                   fontWeight: 700,
                   color: '#0d0d0f',
                 }}>
-                  Prova gratis
+                  {t.plans.freeCta}
                 </span>
               </a>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                {['100 crediti — 2 presentazioni complete', 'Tutti i template', 'Export PDF con watermark'].map((feat) => (
+                {t.plans.freeFeatures.map((feat) => (
                   <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ color: 'rgba(255, 255, 255, 0.35)', fontSize: '16px' }}>✓</span>
                     <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'rgba(255, 255, 255, 0.7)' }}>{feat}</span>
@@ -156,7 +158,7 @@ const PlansPage = () => {
                 marginBottom: '32px',
                 lineHeight: 1.5,
               }}>
-                Per professionisti che creano ogni giorno
+                {t.plans.proDesc}
               </p>
 
               <div style={{ marginBottom: '32px', display: 'flex', alignItems: 'baseline', gap: '12px' }}>
@@ -183,7 +185,7 @@ const PlansPage = () => {
                   fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.5)',
                 }}>
-                  / mese
+                  {t.plans.month}
                 </span>
               </div>
 
@@ -202,21 +204,13 @@ const PlansPage = () => {
                     fontWeight: 700,
                     color: '#0d0d0f',
                   }}>
-                    Passa a Pro
+                    {t.plans.proCta}
                   </span>
                 </div>
               </a>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                {[
-                  '400 crediti/mese — 10 presentazioni complete',
-                  'Modelli AI avanzati — Opus 4.5',
-                  'Tutti i template premium',
-                  'Brand Kit — logo, colori, font',
-                  'Export PowerPoint editabile',
-                  'Export PDF senza watermark',
-                  'Supporto prioritario',
-                ].map((feat) => (
+                {t.plans.proFeatures.map((feat) => (
                   <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ color: '#b0cfe0', fontSize: '16px' }}>✓</span>
                     <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'rgba(255, 255, 255, 0.85)' }}>{feat}</span>
@@ -250,7 +244,7 @@ const PlansPage = () => {
                 marginBottom: '32px',
                 lineHeight: 1.5,
               }}>
-                Per team che presentano ogni giorno
+                {t.plans.entDesc}
               </p>
 
               <div style={{ marginBottom: '32px' }}>
@@ -280,22 +274,13 @@ const PlansPage = () => {
                     fontWeight: 700,
                     color: '#ffffff',
                   }}>
-                    Contattaci
+                    {t.plans.entCta}
                   </span>
                 </div>
               </a>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                {[
-                  'Tutto incluso in Pro, più:',
-                  'Template personalizzati — il tuo brand, i tuoi layout',
-                  'Workspace di team — cartelle condivise, collaborazione, libreria asset',
-                  'Export white-label — senza branding SlideRun',
-                  'SSO e controlli admin',
-                  'Accesso API — integra nel tuo workflow',
-                  'Account manager dedicato',
-                  'Integrazioni personalizzate (Slack, Notion, Google Drive)',
-                ].map((feat) => (
+                {t.plans.entFeaturesLong.map((feat) => (
                   <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ color: 'rgba(255, 255, 255, 0.35)', fontSize: '16px' }}>✓</span>
                     <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'rgba(255, 255, 255, 0.7)' }}>{feat}</span>
@@ -315,7 +300,7 @@ const PlansPage = () => {
               color: 'rgba(255, 255, 255, 0.45)',
               margin: 0,
             }}>
-              Cancella quando vuoi. Senza domande.
+              {t.plans.footer}
             </p>
           </div>
 

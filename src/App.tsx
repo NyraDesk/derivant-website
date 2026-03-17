@@ -111,6 +111,28 @@ function App() {
             <Footer />
           </>
         } />
+        {/* English routes */}
+        <Route path="/en" element={
+          <>
+            <Header />
+            <HomePage />
+            <Footer />
+          </>
+        } />
+        <Route path="/en/plans" element={
+          <>
+            <Header />
+            <PlansPage />
+            <Footer />
+          </>
+        } />
+        <Route path="/en/enterprise" element={
+          <>
+            <Header />
+            <EnterprisePage />
+            <Footer />
+          </>
+        } />
         <Route path="/privacy" element={
           <>
             <Header />

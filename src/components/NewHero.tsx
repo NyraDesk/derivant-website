@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import VideoComponent from './VideoComponent';
+import { useLocale } from '../i18n/useLocale';
 
 const CANVAS_VIDEOS = [
   { src: '/VIDEO/canvas/canvas-generate.webm', label: 'Generate' },
@@ -91,6 +92,7 @@ const CanvasVideoSequence = () => {
 };
 
 const NewHero = () => {
+  const { t, locale, localePath } = useLocale();
   const sectionRef = useRef<HTMLDivElement>(null);
   const galleryRef = useRef<HTMLDivElement>(null);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -249,17 +251,17 @@ const NewHero = () => {
   return (
     <>
       <Helmet>
-        <title>SlideRun AI | Crea Presentazioni con l'AI — Pitch Deck e Slide Professionali</title>
-        <meta name="description" content="SlideRun genera presentazioni professionali in pochi minuti: carica un brief, ottieni pitch deck, strategy deck e moodboard pronti alla consegna. Prova gratis." />
+        <title>{t.meta.homeTitle}</title>
+        <meta name="description" content={t.meta.homeDesc} />
         <meta name="keywords" content="presentazioni AI, generare slide, presentazioni automatiche, AI presentation maker, pitch deck AI, SlideRun, presentation operating system" />
-        <link rel="canonical" href="https://www.sliderun.ai/" />
-        <meta property="og:title" content="SlideRun AI | Crea Presentazioni con l'AI — Pitch Deck e Slide Professionali" />
-        <meta property="og:description" content="SlideRun genera presentazioni professionali in pochi minuti: carica un brief, ottieni pitch deck, strategy deck e moodboard pronti alla consegna. Prova gratis." />
-        <meta property="og:url" content="https://www.sliderun.ai/" />
+        <link rel="canonical" href={locale === 'en' ? 'https://www.sliderun.ai/en' : 'https://www.sliderun.ai/'} />
+        <meta property="og:title" content={t.meta.homeTitle} />
+        <meta property="og:description" content={t.meta.homeDesc} />
+        <meta property="og:url" content={locale === 'en' ? 'https://www.sliderun.ai/en' : 'https://www.sliderun.ai/'} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="SlideRun AI | Crea Presentazioni con l'AI — Pitch Deck e Slide Professionali" />
-        <meta name="twitter:description" content="SlideRun genera presentazioni professionali in pochi minuti: carica un brief, ottieni pitch deck, strategy deck e moodboard pronti alla consegna. Prova gratis." />
+        <meta name="twitter:title" content={t.meta.homeTitle} />
+        <meta name="twitter:description" content={t.meta.homeDesc} />
       </Helmet>
 
       {/* Floating Navigation */}
@@ -361,7 +363,7 @@ const NewHero = () => {
             animation: 'heroFadeUp 0.8s ease forwards',
             animationDelay: '0.1s',
           }}>
-            Accelera la produzione
+            {t.hero.title1}
           </span>
           <span className="mobile-hero-sub" style={{
             fontFamily: "'Inter', sans-serif",
@@ -375,7 +377,7 @@ const NewHero = () => {
             animation: 'heroFadeUp 0.8s ease forwards',
             animationDelay: '0.3s',
           }}>
-            delle tue presentazioni.
+            {t.hero.title2}
           </span>
         </h1>
         <span className="mobile-hero-desc" style={{
@@ -390,7 +392,7 @@ const NewHero = () => {
           animation: 'heroFadeUp 0.8s ease forwards',
           animationDelay: '0.6s',
         }}>
-          SlideRun trasforma testi, documenti e idee<br />in presentazioni strutturate e pronte alla consegna.<br />Un motore intelligente che automatizza la produzione<br />e garantisce coerenza in ogni slide.
+          {t.hero.subtitle}<br />{t.hero.subtitleBr2}<br />{t.hero.subtitleBr3}<br />{t.hero.subtitleBr4}
         </span>
         {/* CTA Button */}
         <a
@@ -422,7 +424,7 @@ const NewHero = () => {
             e.currentTarget.style.opacity = '1';
           }}
         >
-          Provalo gratis →
+          {t.hero.cta}
         </a>
       </div>
 
@@ -516,7 +518,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  Ricerche web automatiche
+                  {t.pos.webResearchTitle}
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -526,7 +528,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Incolli il brief. L'AI esplora il web, trova dati aggiornati, struttura slide intelligenti.
+                  {t.pos.webResearchDesc}
                 </p>
               </div>
               <div>
@@ -539,7 +541,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  Brand sempre perfetto
+                  {t.pos.brandTitle}
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -549,7 +551,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Il tuo kit — colori, font, stile — applicato istantaneamente. Ogni deck coerente.
+                  {t.pos.brandDesc}
                 </p>
               </div>
               <div>
@@ -562,7 +564,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '10px',
                 }}>
-                  Pronto in un click
+                  {t.pos.exportTitle}
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -572,7 +574,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Esporta PowerPoint o PDF. Editabile. Professionale. Subito utilizzabile.
+                  {t.pos.exportDesc}
                 </p>
               </div>
             </div>
@@ -597,7 +599,7 @@ const NewHero = () => {
                   border: '1px solid rgba(100, 150, 220, 0.35)',
                 }}
               >
-                Provalo gratis →
+                {t.pos.ctaTryFree}
               </a>
             </div>
           </div>
@@ -650,7 +652,7 @@ const NewHero = () => {
         marginBottom: '40px',
         textAlign: 'center',
       }}>
-        Presentazioni AI pronte alla consegna, con i tuoi contenuti.
+        {t.gallery.title}
       </h2>
 
       <div ref={galleryRef} className="gallery-wrapper" style={{
@@ -746,7 +748,7 @@ const NewHero = () => {
           marginBottom: '48px',
           textAlign: 'center',
         }}>
-          Il tuo canvas, le tue regole.
+          {t.canvas.title}
         </h2>
         <div className="canvas-grid" style={{
           width: '100%',
@@ -766,7 +768,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '8px',
                 }}>
-                  Genera immagini con l'AI
+                  {t.canvas.generateTitle}
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -776,7 +778,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Descrivi quello che vuoi. L'AI crea immagini su misura, direttamente dentro la slide.
+                  {t.canvas.generateDesc}
                 </p>
               </div>
               <div>
@@ -788,7 +790,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '8px',
                 }}>
-                  Riscrivi testi con un click
+                  {t.canvas.editTitle}
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -798,7 +800,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Seleziona un blocco di testo, chiedi all'AI di riscriverlo, accorciarlo o tradurlo.
+                  {t.canvas.editDesc}
                 </p>
               </div>
               <div>
@@ -810,7 +812,7 @@ const NewHero = () => {
                   margin: 0,
                   marginBottom: '8px',
                 }}>
-                  Canvas libero
+                  {t.canvas.canvasTitle}
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
@@ -820,7 +822,7 @@ const NewHero = () => {
                   margin: 0,
                   lineHeight: 1.6,
                 }}>
-                  Sposta blocchi, ridimensiona, cambia layout. Ogni slide è completamente personalizzabile.
+                  {t.canvas.canvasDesc}
                 </p>
               </div>
             </div>
@@ -848,7 +850,7 @@ const NewHero = () => {
           margin: 0,
           marginBottom: '32px',
         }}>
-          Automatizza i processi. Scala i risultati.
+          {t.enterprise.title}
         </h2>
         <p className="mobile-enterprise-desc" style={{
           fontFamily: "'Inter', sans-serif",
@@ -860,7 +862,7 @@ const NewHero = () => {
           marginBottom: '44px',
           maxWidth: '680px',
         }}>
-          Web research automatica, brand kit integrato, generazione in pochi minuti. La tecnologia che serve al tuo team per produrre di più, in meno tempo.
+          {t.enterprise.desc}
         </p>
         <div className="enterprise-features" style={{ display: 'flex', justifyContent: 'center', gap: '60px', maxWidth: '700px', margin: '0 auto 48px' }}>
           <div style={{ textAlign: 'center', flex: 1 }}>
@@ -872,7 +874,7 @@ const NewHero = () => {
               margin: 0,
               marginBottom: '8px',
             }}>
-              Riduzione tempi 80%
+              {t.enterprise.stat1Title}
             </p>
             <p className="mobile-feature-desc" style={{
               fontFamily: "'Inter', sans-serif",
@@ -882,7 +884,7 @@ const NewHero = () => {
               margin: 0,
               lineHeight: 1.6,
             }}>
-              Da ore di lavoro a pochi minuti. Per ogni singola presentazione.
+              {t.enterprise.stat1Desc}
             </p>
           </div>
           <div style={{ textAlign: 'center', flex: 1 }}>
@@ -894,7 +896,7 @@ const NewHero = () => {
               margin: 0,
               marginBottom: '8px',
             }}>
-              100% on-brand
+              {t.enterprise.stat2Title}
             </p>
             <p className="mobile-feature-desc" style={{
               fontFamily: "'Inter', sans-serif",
@@ -904,7 +906,7 @@ const NewHero = () => {
               margin: 0,
               lineHeight: 1.6,
             }}>
-              Ogni output rispetta colori, font e linee guida. Automaticamente.
+              {t.enterprise.stat2Desc}
             </p>
           </div>
         </div>
@@ -936,7 +938,7 @@ const NewHero = () => {
             e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.25)';
           }}
         >
-          PRENOTA UNA DEMO
+          {t.enterprise.ctaDemo.toUpperCase()}
         </a>
       </div>
 
@@ -953,7 +955,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '16px',
           }}>
-            Scegli il tuo piano
+            {t.plans.title}
           </h2>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
@@ -962,7 +964,7 @@ const NewHero = () => {
             color: 'rgba(255, 255, 255, 0.6)',
             margin: 0,
           }}>
-            Sblocca tutta la potenza delle presentazioni AI
+            {t.plans.subtitle}
           </p>
         </div>
 
@@ -999,7 +1001,7 @@ const NewHero = () => {
               marginBottom: '32px',
               lineHeight: 1.5,
             }}>
-              Per provare le presentazioni AI
+              {t.plans.freeDesc}
             </p>
             <div style={{ marginBottom: '32px' }}>
               <span className="mobile-price" style={{
@@ -1017,7 +1019,7 @@ const NewHero = () => {
                 color: 'rgba(255, 255, 255, 0.5)',
                 marginLeft: '8px',
               }}>
-                / month
+                {t.plans.month}
               </span>
             </div>
             <a href="https://app.sliderun.ai" style={{
@@ -1036,22 +1038,16 @@ const NewHero = () => {
                 fontWeight: 700,
                 color: '#0d0d0f',
               }}>
-                Prova gratis
+                {t.plans.freeCta}
               </span>
             </a>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>100 crediti — 2 presentazioni complete</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Tutti i template</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>Export PDF con watermark</span>
-              </div>
+              {t.plans.freeFeatures.map((feat, i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
+                  <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.8)' }}>{feat}</span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -1080,7 +1076,7 @@ const NewHero = () => {
               marginBottom: '32px',
               lineHeight: 1.5,
             }}>
-              Per professionisti che creano ogni giorno
+              {t.plans.proDesc}
             </p>
             <div style={{ marginBottom: '32px' }}>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', flexWrap: 'nowrap' }}>
@@ -1107,7 +1103,7 @@ const NewHero = () => {
                   fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.5)',
                 }}>
-                  / mese
+                  {t.plans.month}
                 </span>
               </div>
             </div>
@@ -1127,38 +1123,16 @@ const NewHero = () => {
                 fontWeight: 700,
                 color: '#0d0d0f',
               }}>
-                Passa a Pro
+                {t.plans.proCta}
               </span>
             </a>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>400 crediti/mese — 10 presentazioni complete</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Modelli AI avanzati — Opus 4.5</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Tutti i template premium</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Brand Kit — logo, colori, font</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Export PowerPoint editabile</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Export PDF senza watermark</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Supporto prioritario</span>
-              </div>
+              {t.plans.proFeatures.map((feat, i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <span style={{ color: '#b0cfe0', fontSize: '14px' }}>✓</span>
+                  <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>{feat}</span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -1187,7 +1161,7 @@ const NewHero = () => {
               marginBottom: '32px',
               lineHeight: 1.5,
             }}>
-              Per team che presentano ogni giorno
+              {t.plans.entDesc}
             </p>
             <div style={{ marginBottom: '32px' }}>
               <span className="mobile-price" style={{
@@ -1216,42 +1190,16 @@ const NewHero = () => {
                 fontWeight: 700,
                 color: '#ffffff',
               }}>
-                Contattaci
+                {t.plans.entCta}
               </span>
             </a>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Tutto incluso in Pro, più:</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Template personalizzati</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Workspace di team e collaborazione</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Export white-label</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>SSO e controlli admin</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Accesso API</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Account manager dedicato</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>Integrazioni personalizzate (Slack, Notion, Google Drive)</span>
-              </div>
+              {t.plans.entFeatures.map((feat, i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <span style={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '14px' }}>✓</span>
+                  <span style={{ fontFamily: "'Space Mono', monospace", fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>{feat}</span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -1268,7 +1216,7 @@ const NewHero = () => {
             marginBottom: '12px',
             fontStyle: 'italic',
           }}>
-            * Le creazioni AI illimitate si riferiscono all'uso giornaliero entro il fair use. Le funzionalità premium (Agent, modelli avanzati) richiedono crediti.
+            {t.plans.footerNote}
           </p>
           <p style={{
             fontFamily: "'Space Mono', monospace",
@@ -1277,7 +1225,7 @@ const NewHero = () => {
             color: 'rgba(255, 255, 255, 0.5)',
             margin: 0,
           }}>
-            Cancella quando vuoi. Senza domande.
+            {t.plans.footer}
           </p>
           <a
             href="https://app.sliderun.ai"
@@ -1296,7 +1244,7 @@ const NewHero = () => {
               transition: 'all 0.2s ease',
             }}
           >
-            Inizia a creare →
+            {t.plans.startCreating}
           </a>
         </div>
       </div>
@@ -1344,7 +1292,7 @@ const NewHero = () => {
             margin: 0,
             marginBottom: '16px',
           }}>
-            FAQ
+            {t.faq.title}
           </h2>
           <p className="mobile-section-subtitle" style={{
             fontFamily: "'Inter', sans-serif",
@@ -1353,41 +1301,12 @@ const NewHero = () => {
             color: 'rgba(255, 255, 255, 0.6)',
             margin: 0,
           }}>
-            Trasparenza e controllo
+            {t.faq.subtitle}
           </p>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
-          {[
-            {
-              q: 'Come funziona la generazione di presentazioni con SlideRun?',
-              a: 'Inserisci un brief o un documento — l\'AI analizza il contenuto, crea un outline logico, ricerca dati reali dal web e genera un design professionale rispettando le regole d\'oro della composizione grafica.',
-            },
-            {
-              q: 'Cosa sono i crediti e come vengono consumati?',
-              a: 'I crediti sono l\'unità di misura del sistema. Ogni azione (generare una slide, un testo o un\'immagine) consuma una quantità predeterminata di crediti inclusi nel tuo piano mensile.',
-            },
-            {
-              q: 'I crediti scadono?',
-              a: 'No. I crediti non utilizzati a fine mese non scadono — si accumulano nel tuo account per essere usati quando ne hai più bisogno.',
-            },
-            {
-              q: 'Posso generare nuove immagini direttamente nei blocchi?',
-              a: 'Sì. Nessun suggerimento automatico: chiedi all\'AI di creare visual unici inserendo un prompt testuale direttamente nel blocco immagine, senza uscire dall\'editor.',
-            },
-            {
-              q: 'Come funziona l\'AI nei singoli blocchi di testo?',
-              a: 'Puoi selezionare qualsiasi blocco per chiedere all\'AI di riassumere il contenuto, espanderlo, tradurlo o cambiarne il tono di voce istantaneamente.',
-            },
-            {
-              q: 'Posso cancellare l\'abbonamento in qualsiasi momento?',
-              a: 'Sì. Nessun vincolo o contratto a lungo termine. Puoi cancellare il piano Pro con un click dalle impostazioni, mantenendo l\'accesso fino alla fine del periodo pagato.',
-            },
-            {
-              q: 'Posso tradurre le slide in altre lingue?',
-              a: 'Assolutamente. Puoi tradurre intere slide o singoli blocchi mantenendo il layout e la formattazione originali.',
-            },
-          ].map((faq, index) => (
+          {t.faq.items.map((faq, index) => (
             <div
               key={index}
               style={{
