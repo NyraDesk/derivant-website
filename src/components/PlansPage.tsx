@@ -107,7 +107,8 @@ const PlansPage = () => {
                 textDecoration: 'none',
                 marginBottom: '32px',
                 display: 'block',
-                background: 'linear-gradient(135deg, #4ecdc4 0%, #7dd3d8 50%, #b0cfe0 100%)',
+                background: 'rgba(255, 255, 255, 0.08)',
+                border: '1px solid rgba(255,255,255,0.15)',
                 borderRadius: '12px',
                 padding: '16px',
                 textAlign: 'center',
@@ -116,8 +117,8 @@ const PlansPage = () => {
                 <span style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '16px',
-                  fontWeight: 700,
-                  color: '#0d0d0f',
+                  fontWeight: 500,
+                  color: 'rgba(255, 255, 255, 0.5)',
                 }}>
                   {t.plans.freeCta}
                 </span>
