@@ -426,50 +426,6 @@ const NewHero = () => {
         </a>
       </div>
 
-      {/* === VIDEO === */}
-      <div style={{
-        width: '100%',
-        maxWidth: '1100px',
-        marginTop: '80px',
-        opacity: 0,
-        animation: 'heroVideoScale 1s ease forwards',
-        animationDelay: '1.1s',
-      }}>
-        <div style={{
-          borderRadius: '24px',
-          overflow: 'hidden',
-          border: '0.5px solid rgba(255, 255, 255, 0.12)',
-          boxShadow: 'inset 0 0.5px 0 0 rgba(255, 255, 255, 0.08), 0 2px 12px rgba(0, 0, 0, 0.5)',
-        }}>
-          <div style={{
-            width: '100%',
-            aspectRatio: '16 / 9',
-            background: '#0a0a0a',
-            position: 'relative',
-            overflow: 'hidden',
-          }}>
-            <VideoComponent
-              src="/VIDEO/sliderun-hero.webm"
-              title="SlideRun AI - Presentation Builder Demo"
-              description="Scopri come SlideRun trasforma le tue idee in presentazioni professionali in pochi secondi. AI-powered presentation builder per pitch deck, moodboard e strategy deck."
-              thumbnailUrl="/VIDEO/sliderun-demo-thumbnail.png"
-              duration="PT1M"
-              uploadDate="2026-01-27T00:00:00+01:00"
-              autoPlay={true}
-              loop={true}
-              muted={true}
-              playsInline={true}
-              lazyLoad={false}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-              }}
-            />
-          </div>
-        </div>
-      </div>
-
       {/* === FRAMED SECTION === */}
       <div className="corner-frame" style={{
         width: '100%',
