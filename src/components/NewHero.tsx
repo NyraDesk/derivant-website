@@ -839,6 +839,8 @@ const NewHero = () => {
         marginTop: '120px',
         textAlign: 'center',
         padding: '80px 60px',
+        border: '1px solid rgba(200, 100, 50, 0.3)',
+        borderTopColor: 'rgba(200, 100, 50, 0.45)',
       }}>
         <h2 className="mobile-enterprise-title" style={{
           fontFamily: "'Inter', sans-serif",
@@ -926,16 +928,14 @@ const NewHero = () => {
             textDecoration: 'none',
             display: 'inline-block',
             transition: 'all 0.2s ease',
-            border: '1px solid rgba(255, 255, 255, 0.25)',
-            background: 'transparent',
+            border: '1px solid rgba(100, 150, 220, 0.35)',
+            background: 'linear-gradient(135deg, #2a3a6b 0%, #3d5a9e 100%)',
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
-            e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.4)';
+            e.currentTarget.style.opacity = '0.9';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.background = 'transparent';
-            e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.25)';
+            e.currentTarget.style.opacity = '1';
           }}
         >
           {t.enterprise.ctaDemo.toUpperCase()}
