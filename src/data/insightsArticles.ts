@@ -129,6 +129,11 @@ La differenza è nel sistema.
   }
 ];
 
+// Comparison articles (imported and merged for routing)
+import { comparisonArticles } from './comparisonArticles';
+
+const allArticles = [...insightsArticles, ...comparisonArticles.map(a => ({ ...a, image: undefined }))];
+
 export const getInsightBySlug = (slug: string): InsightArticle | undefined => {
-  return insightsArticles.find(article => article.slug === slug);
+  return allArticles.find(article => article.slug === slug);
 };
