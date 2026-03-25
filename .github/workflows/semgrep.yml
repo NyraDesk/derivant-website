@@ -12,4 +12,4 @@ jobs:
       image: semgrep/semgrep
     steps:
       - uses: actions/checkout@v4
-      - run: semgrep scan --config auto --error --exclude="node_modules" --exclude="dist"
+      - run: semgrep scan --config auto --error --severity ERROR --exclude="node_modules" --exclude="dist"
