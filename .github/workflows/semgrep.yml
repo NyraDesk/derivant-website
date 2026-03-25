@@ -1,18 +1,15 @@
-name: Semgrep Security Scan                                                             
-                                                                                          
-  on:                                                                                     
-    push:                                                   
-      branches: [main]
-    pull_request:
-      branches: [main]
-
-  jobs:
-    semgrep:
-      name: Security scan
-      runs-on: ubuntu-latest                                                              
-      container:
-        image: semgrep/semgrep                                                            
-      steps:                                                
-        - uses: actions/checkout@v4
-        - run: semgrep scan --config auto --error --exclude="node_modules"                
-  --exclude="dist"
+name: Semgrep Security Scan
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  semgrep:
+    name: Security scan
+    runs-on: ubuntu-latest
+    container:
+      image: semgrep/semgrep
+    steps:
+      - uses: actions/checkout@v4
+      - run: semgrep scan --config auto --error --exclude="node_modules" --exclude="dist"
