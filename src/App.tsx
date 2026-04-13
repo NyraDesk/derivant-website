@@ -16,6 +16,7 @@ import SupportPage from './components/SupportPage';
 import InsightsPage from './components/InsightsPage';
 import InsightArticlePage from './components/InsightArticlePage';
 import EnterprisePage from './components/EnterprisePage';
+import CookieBanner from './components/CookieBanner';
 
 const HomePage = () => (
   <NewHero />
@@ -31,6 +32,7 @@ const RedirectToApp = () => {
 function App() {
   return (
     <div className="glass-shell">
+      <CookieBanner />
       <Routes>
         <Route path="/" element={
           <>
