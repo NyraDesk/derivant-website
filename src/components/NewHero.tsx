@@ -497,7 +497,7 @@ const NewHero = () => {
         {/* Grid: Features + Video */}
         <div className="hero-grid" style={{
           display: 'grid',
-          gridTemplateColumns: '2fr 3fr',
+          gridTemplateColumns: '1fr 2fr',
           gap: '60px',
           alignItems: 'start',
         }}>
@@ -507,11 +507,11 @@ const NewHero = () => {
             transform: slide2Visible ? 'translateY(0)' : 'translateY(20px)',
             transition: 'opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s',
           }}>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '36px', marginBottom: '48px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '28px', marginBottom: '36px' }}>
               <div>
                 <p className="mobile-feature-title" style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '24px',
+                  fontSize: '18px',
                   fontWeight: 800,
                   color: '#ffffff',
                   letterSpacing: '-0.02em',
@@ -522,7 +522,7 @@ const NewHero = () => {
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '17px',
+                  fontSize: '14px',
                   fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.55)',
                   margin: 0,
@@ -534,7 +534,7 @@ const NewHero = () => {
               <div>
                 <p className="mobile-feature-title" style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '24px',
+                  fontSize: '18px',
                   fontWeight: 800,
                   color: '#ffffff',
                   letterSpacing: '-0.02em',
@@ -545,7 +545,7 @@ const NewHero = () => {
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '17px',
+                  fontSize: '14px',
                   fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.55)',
                   margin: 0,
@@ -557,7 +557,7 @@ const NewHero = () => {
               <div>
                 <p className="mobile-feature-title" style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '24px',
+                  fontSize: '18px',
                   fontWeight: 800,
                   color: '#ffffff',
                   letterSpacing: '-0.02em',
@@ -568,7 +568,7 @@ const NewHero = () => {
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '17px',
+                  fontSize: '14px',
                   fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.55)',
                   margin: 0,
@@ -606,6 +606,7 @@ const NewHero = () => {
 
           {/* Colonna Destra: Video */}
           <div className="presentation-video" style={{
+            marginTop: '24px',
             borderRadius: '20px',
             overflow: 'hidden',
             aspectRatio: '16 / 9',
@@ -632,7 +633,7 @@ const NewHero = () => {
               style={{
                 width: '100%',
                 height: '100%',
-                objectFit: 'contain',
+                objectFit: 'cover',
               }}
             />
           </div>
@@ -772,7 +773,7 @@ const NewHero = () => {
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '17px',
+                  fontSize: '14px',
                   fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.6)',
                   margin: 0,
@@ -794,7 +795,7 @@ const NewHero = () => {
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '17px',
+                  fontSize: '14px',
                   fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.6)',
                   margin: 0,
@@ -816,7 +817,7 @@ const NewHero = () => {
                 </p>
                 <p className="mobile-feature-desc" style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '17px',
+                  fontSize: '14px',
                   fontWeight: 400,
                   color: 'rgba(255, 255, 255, 0.6)',
                   margin: 0,
