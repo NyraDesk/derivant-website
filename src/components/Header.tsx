@@ -14,7 +14,9 @@ const BrandName = ({ fontSize = '18px' }: { fontSize?: string }) => (
 const Header = () => {
   const location = useLocation();
   const { locale, t, localePath } = useLocale();
-  const isHomePage = location.pathname === '/' || location.pathname === '/en';
+  // Sanitize pathname to prevent DOM-based XSS via crafted URLs
+  const safePath = /^\/[\w\-\/]*$/.test(location.pathname) ? location.pathname : '/';
+  const isHomePage = safePath === '/' || safePath === '/en';
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -70,7 +72,7 @@ const Header = () => {
             {/* Language Switcher + CTA Button */}
             <div className="flex-shrink-0 flex items-center space-x-4">
               <a
-                href={locale === 'it' ? `/en${location.pathname}` : location.pathname.replace(/^\/en/, '') || '/'}
+                href={locale === 'it' ? `/en${safePath}` : safePath.replace(/^\/en/, '') || '/'}
                 className="text-white/50 hover:text-white transition-all duration-200 px-2 py-1 rounded-full"
                 style={{ fontFamily: "'Space Mono', monospace", fontSize: '12px', fontWeight: 400, letterSpacing: '0.06em' }}
               >
@@ -155,7 +157,7 @@ const Header = () => {
 
                 <div className="px-6 py-4 flex items-center justify-between">
                   <a
-                    href={locale === 'it' ? `/en${location.pathname}` : location.pathname.replace(/^\/en/, '') || '/'}
+                    href={locale === 'it' ? `/en${safePath}` : safePath.replace(/^\/en/, '') || '/'}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="text-white/50 hover:text-white transition-all duration-200 px-4 py-3 rounded-full font-medium text-base"
                   >

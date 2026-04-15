@@ -1402,7 +1402,8 @@ Scopri i [piani disponibili](/plans) o [richiedi l'accesso](https://app.sliderun
 
 const BlogArticlePage = () => {
   const { slug } = useParams<{ slug: string }>();
-  const articleSlug = slug || 'privacy-app-note-local-first';
+  // Sanitize slug to prevent DOM-based XSS — allow only alphanumeric, hyphens, underscores
+  const articleSlug = (slug && /^[\w\-]+$/.test(slug) ? slug : 'privacy-app-note-local-first');
 
   const article = articles[articleSlug as keyof typeof articles] || articles['privacy-app-note-local-first'];
 
