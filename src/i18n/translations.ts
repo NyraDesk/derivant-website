@@ -150,8 +150,8 @@ export const translations = {
     },
     // Meta
     meta: {
-      homeTitle: "SlideRun AI | Crea Presentazioni Professionali con l'AI",
-      homeDesc: 'SlideRun trasforma testi, documenti e idee in presentazioni strutturate e pronte alla consegna. Web research automatica, brand kit, export PPTX e PDF.',
+      homeTitle: 'SlideRun AI | Un nuovo modo di creare presentazioni uniche',
+      homeDesc: 'SlideRun ti permette di progettare, animare e generare presentazioni senza limiti. Un agente creativo autonomo che costruisce layout e stili da qualsiasi input.',
       plansTitle: 'Piani e Prezzi | SlideRun AI — Presentazioni Professionali',
       plansDesc: 'Scegli il piano SlideRun perfetto per te. Genera presentazioni professionali con AI: brand kit, web research, esportazione PPTX e PDF.',
       enterpriseTitle: 'Enterprise | SlideRun AI — Presentazioni AI per Aziende e Agenzie',
@@ -327,8 +327,8 @@ export const translations = {
     },
     // Meta
     meta: {
-      homeTitle: 'SlideRun AI | Create Professional Presentations with AI',
-      homeDesc: 'SlideRun turns text, documents and ideas into structured, delivery-ready presentations. Automatic web research, brand kit, PPTX and PDF export.',
+      homeTitle: 'SlideRun AI | A new way to create unique presentations',
+      homeDesc: 'SlideRun lets you design, animate, and generate presentations without limits. An autonomous creative agent that builds layouts and styles from any input.',
       plansTitle: 'Plans & Pricing | SlideRun AI — Professional Presentations',
       plansDesc: 'Choose the perfect SlideRun plan. Generate professional presentations with AI: brand kit, web research, PPTX and PDF export.',
       enterpriseTitle: 'Enterprise | SlideRun AI — AI Presentations for Teams & Agencies',
